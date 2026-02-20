@@ -1,0 +1,100 @@
+import joblib
+import numpy as np
+import logging
+from pathlib import Path
+
+logger = logging.getLogger(__name__)
+
+# ── Path to the trained model files ──────────────────────────────────────────
+# These .pkl files are created by ml/train_model.py
+# They live in ml/models/ folder and are copied here after training
+BASE_DIR      = Path(__file__).resolve().parent
+MODEL_PATH    = BASE_DIR / 'models' / 'rf_model.pkl'
+ENCODER_PATH  = BASE_DIR / 'models' / 'label_encoder.pkl'
+
+# ── Load model once at import time ────────────────────────────────────────────
+# Module-level variables = loaded ONCE when Django starts, not on each request.
+# This is critical for performance — loading a model takes ~1 second.
+_model   = None
+_encoder = None
+
+def _load_model():
+    """Load model from disk if not already loaded (lazy loading)."""
+    global _model, _encoder
+    if _model is None:
+        try:
+            _model   = joblib.load(MODEL_PATH)
+            _encoder = joblib.load(ENCODER_PATH)
+            logger.info("ML model loaded successfully.")
+        except FileNotFoundError:
+            logger.warning("rf_model.pkl not found. Run ml/train_model.py first.")
+
+
+# ── Feature names — must match what the model was trained on ──────────────────
+FEATURE_NAMES = [
+    'competitor_count',     # number of cafes within 500m
+    'avg_competitor_rating', # average rating of those cafes
+    'road_length_m',         # total road length in buffer (meters)
+    'population_density',    # people per sq km in the ward
+]
+
+# ── Human-readable labels ─────────────────────────────────────────────────────
+CAFE_TYPE_LABELS = {
+    'coffee_shop':   'Coffee Shop',
+    'bakery':        'Bakery Café',
+    'dessert_shop':  'Dessert Shop',
+    'restaurant':    'Restaurant Café',
+}
+
+
+def get_prediction(features: list) -> dict:
+    """
+    Run prediction from the trained Random Forest model.
+
+    Args:
+        features: [competitor_count, avg_rating, road_length_m, pop_density]
+
+    Returns:
+        { 'predicted_type': 'Bakery Café', 'confidence': 0.87,
+          'all_probabilities': {'Coffee Shop': 0.08, 'Bakery Café': 0.87, ...} }
+    """
+    _load_model()
+
+    if _model is None:
+        # Model not trained yet — return a safe fallback
+        return {
+            'predicted_type':    'Model not trained yet',
+            'confidence':        0,
+            'all_probabilities': {},
+        }
+
+    # Convert feature list to 2D array (sklearn expects shape: [n_samples, n_features])
+    X = np.array([features])    # shape: (1, 4)
+
+    # Get predicted class (integer) and convert to label string
+    predicted_int   = _model.predict(X)[0]
+    predicted_label = _encoder.inverse_transform([predicted_int])[0]
+
+    # Get probabilities for all classes
+    # predict_proba returns [[0.05, 0.87, 0.03, 0.05]] for 4 classes
+    probabilities = _model.predict_proba(X)[0]
+    class_labels  = _encoder.inverse_transform(_model.classes_)
+
+    all_probs = {
+        CAFE_TYPE_LABELS.get(label, label): round(float(prob), 3)
+        for label, prob in zip(class_labels, probabilities)
+    }
+
+    return {
+        'predicted_type':    CAFE_TYPE_LABELS.get(predicted_label, predicted_label),
+        'confidence':        round(float(max(probabilities)), 3),
+        'all_probabilities':  all_probs,
+    }
+    # Example output:
+    # { "predicted_type": "Bakery Café",
+    #   "confidence": 0.87,
+    #   "all_probabilities": {
+    #     "Coffee Shop": 0.05, "Bakery Café": 0.87,
+    #     "Dessert Shop": 0.03, "Restaurant Café": 0.05
+    #   }
+    # }

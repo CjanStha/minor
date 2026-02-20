@@ -1,0 +1,112 @@
+# ══════════════════════════════════════════════════════════════════
+# CafeLocate ML — Python Dependencies
+# ══════════════════════════════════════════════════════════════════
+# Install all at once:  pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════════
+
+
+# ── 1. WEB FRAMEWORK ───────────────────────────────────────────────
+# Django: the main backend web framework
+Django==4.2.13
+
+# Django REST Framework: turns Django into a JSON API server
+djangorestframework==3.15.1
+
+# CORS headers: allows the frontend (port 5500) to call backend (port 8000)
+django-cors-headers==4.3.1
+
+# Reads .env file into Django settings automatically
+django-environ==0.11.2
+
+
+# ── 2. DATABASE ────────────────────────────────────────────────────
+# psycopg2: Python connector to PostgreSQL (binary = no extra C compiler needed)
+psycopg2-binary==2.9.9
+
+# GDAL: required by Django's GIS backend (PostGIS spatial queries)
+# NOTE: On Windows, install GDAL manually first from:
+# https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
+# Then: pip install GDAL-3.4.3-cp311-cp311-win_amd64.whl
+# On Ubuntu/Linux: sudo apt install gdal-bin libgdal-dev
+GDAL==3.4.3
+
+
+# ── 3. GIS / SPATIAL ───────────────────────────────────────────────
+# Shapely: creates and manipulates geometric shapes (circles, polygons)
+# Used to build the 500m buffer around a pinned point
+Shapely==2.0.4
+
+# Geopy: distance calculations between GPS coordinates
+geopy==2.4.1
+
+# Fiona: reads/writes GeoJSON and Shapefile formats
+# Used to load kathmandu_roads.geojson and ward boundaries
+Fiona==1.9.6
+
+# PyProj: coordinate system transformations (WGS84 ↔ other projections)
+pyproj==3.6.1
+
+# Geopandas: spatial version of Pandas — works with geometry data
+# Used in ML pipeline for spatial joins (census data + ward boundaries)
+geopandas==0.14.4
+
+
+# ── 4. HTTP / API REQUESTS ─────────────────────────────────────────
+# requests: makes HTTP calls to Google Places API and Overpass (OSM) API
+requests==2.31.0
+
+
+# ── 5. MACHINE LEARNING ────────────────────────────────────────────
+# scikit-learn: contains RandomForestClassifier and all evaluation tools
+scikit-learn==1.4.2
+
+# Pandas: data tables, CSV reading/writing, feature engineering
+pandas==2.2.2
+
+# NumPy: numerical arrays and matrix operations (used by sklearn internally)
+numpy==1.26.4
+
+# Joblib: saves and loads trained model files (.pkl)
+# joblib.dump(model, 'rf_model.pkl') / joblib.load('rf_model.pkl')
+joblib==1.4.2
+
+# Matplotlib: plots confusion matrix and feature importance charts
+matplotlib==3.9.0
+
+# Seaborn: prettier statistical visualizations (optional but useful for EDA)
+seaborn==0.13.2
+
+
+# ── 6. AUTHENTICATION ──────────────────────────────────────────────
+# google-auth: validates Google OAuth 2.0 ID tokens sent from the frontend
+google-auth==2.29.0
+
+# PyJWT: creates and verifies JSON Web Tokens for user sessions
+PyJWT==2.8.0
+
+
+# ── 7. ENVIRONMENT / SECURITY ──────────────────────────────────────
+# python-dotenv: loads .env file variables into os.environ
+python-dotenv==1.0.1
+
+
+# ── 8. DEVELOPMENT UTILITIES ───────────────────────────────────────
+# ipython: better interactive Python shell (useful for debugging)
+ipython==8.24.0
+
+# django-extensions: extra Django management commands (show_urls, shell_plus)
+django-extensions==3.2.3
+
+
+# ══════════════════════════════════════════════════════════════════
+# INSTALL ORDER (if you face errors on Windows):
+#
+# Step 1: Install GDAL wheel manually (see GDAL note above)
+# Step 2: pip install -r requirements.txt
+#
+# If geopandas fails, try:
+#   pip install geopandas --no-build-isolation
+#
+# If psycopg2-binary fails, try:
+#   pip install psycopg2 (without -binary, requires PostgreSQL installed)
+# ══════════════════════════════════════════════════════════════════
