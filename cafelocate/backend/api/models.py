@@ -1,5 +1,5 @@
 from django.db import models
-# from django.contrib.gis.db import models  # Temporarily disabled due to GDAL installation issues on Windows
+# from django.contrib.gis.db import models as gis_models  # GDAL not available yet
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -24,9 +24,8 @@ class Cafe(models.Model):
     # PointField: stores the location as a PostGIS geometry object
     # srid=4326 means WGS84 coordinate system (standard GPS coordinates)
     # This field enables spatial queries like ST_DWithin()
-    # null=True because we might add data without geometry first
-    # Temporarily changed to CharField due to GDAL issues
-    location     = models.CharField(max_length=255, null=True, blank=True)
+    # Temporarily using JSONField until GDAL is properly configured
+    location     = models.JSONField(null=True, blank=True)  # Will store {'type': 'Point', 'coordinates': [lng, lat]}
 
     # Rating 1.0–5.0 from Google
     rating       = models.FloatField(null=True, blank=True)
@@ -66,8 +65,8 @@ class Ward(models.Model):
 
     # The actual boundary polygon of this ward
     # MultiPolygonField handles wards with non-contiguous boundaries
-    # Temporarily changed to TextField due to GDAL issues
-    boundary          = models.TextField(null=True, blank=True)
+    # Temporarily using JSONField until GDAL is properly configured
+    boundary          = models.JSONField(null=True, blank=True)  # Will store GeoJSON MultiPolygon
 
     class Meta:
         db_table = 'wards'
@@ -87,8 +86,8 @@ class Road(models.Model):
     # Type: "primary", "secondary", "residential", "footway", etc.
     road_type   = models.CharField(max_length=50, blank=True)
     # The road geometry as a line
-    # Temporarily changed to TextField due to GDAL issues
-    geometry    = models.TextField()
+    # Temporarily using JSONField until GDAL is properly configured
+    geometry    = models.JSONField()  # Will store GeoJSON LineString or MultiLineString
 
     class Meta:
         db_table = 'roads'

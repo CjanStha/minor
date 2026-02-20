@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.gis',  # Needed for the GIS Django backend
+    # 'django.contrib.gis',  # Temporarily disabled until GDAL is properly configured
 
     # ── Third-party packages we installed ──
     'rest_framework',              # djangorestframework
@@ -98,14 +98,9 @@ WSGI_APPLICATION = 'cafelocate.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        #           ↑ Use GIS backend (not just 'django.db.backends.postgresql')
-        #           This enables PostGIS spatial fields in Django models
-        'NAME':     env('DB_NAME',     default='cafelocate_db'),
-        'USER':     env('DB_USER',     default='cafelocate_user'),
-        'PASSWORD': env('DB_PASSWORD', default='yourpassword123'),
-        'HOST':     env('DB_HOST',     default='localhost'),
-        'PORT':     env('DB_PORT',     default='5432'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        #           ↑ Temporarily using SQLite for testing until PostgreSQL is set up
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
