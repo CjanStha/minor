@@ -1,0 +1,499 @@
+TRIBHUVAN UNIVERSITY  
+INSTITUTE OF ENGINEERING  
+ADVANCED COLLEGE OF ENGINEERING AND MANAGEMENT  
+DEPARTM ENT OF ELECTRONICS AND COMPUTER E NGINEERING  
+KALANKI, KATHMANDU  
+ 
+ 
+A Minor Project Mid-Term  Report On //14 bold  uppercase 
+preferred  with title on double quo tations “ ”  
+<Project Title > //14 bold  
+<Project Code> //12   
+ 
+Submitted By://14 Bold  
+<Student’s Name> <Roll No>  
+<Student’s Name> <Roll No>  
+<Student’s Name> <Roll No>  
+  
+ 
+ 
+A  Minor Project Mid-term report submitted to the Department of Electronics and 
+Compu ter Engineering in the partial fulfillment of the requirements for Degree of 
+Bachelor of Engineering in Computer Engineering  
+Kathmandu, Nepal  
+<date>
+
+
+ii 
+ ACKNOWLEDGEMENT  
+ 
+We take this opportunity to express our deepest and sincere gratitude to our project 
+super visor s <Title> <Supervisor’s Name> <Supervisor’s Designation> and <Title> 
+<Supervisor’s Name> <Supervisor’s Designation> for their insightful advice, motivating 
+suggestions, invaluable guidance, help and support in successful completion of this project 
+and also for his/her constant encouragement and advice throughout our Bachelor's 
+programme.  
+ 
+We express our deep gratitude to Er. Roshani Ghimire, Head of Department of Electronics 
+and Computer Engineering, Er. Navaraj Banstola and Dr. Raksha Dangol Deputy Hea d, 
+Department Of Electronics and Computer Engineering for their regular support, co -
+operation, and coordination.    
+ 
+The in -time facilities provided by the department throughout the Bachelors program are 
+also equally acknowledgeable.    
+ 
+We would like to c onvey our thanks to the teaching and non -teaching staff of the 
+Department of Electronics & Communication and Computer Engineering, ACEM for their 
+invaluable help and support till the date. We are also grateful to all our classmates for their 
+help, encourag ement and invaluable suggestions.    
+ 
+Finally, yet more importantly, I would like to express our deep appreciation to my 
+grandparents, parents, siblings for their perpetual support and encouragement throughout 
+the Bachelor’s degree period.  
+ 
+<Student’s nam e> <Roll No>  
+<Student’s name> <Roll No>  
+<Student’s name> <Roll No>  
+  
+
+iii 
+ ABSTRACT  
+ 
+Abstract is compulsory. The heading ABSTRACT , in capital letters and bold should be 
+centered between the left and right margins, without punctuating or underlining.Limited to 
+one page only.  
+  
+Keywords: 3-7 keywords based on the research/project should be kept in the page of the 
+abstract below the main text of the abstract leaving one blank line and should be in Italics  
+and alphabetical order . 
+ 
+ 
+  
+
+iv 
+  
+Table of Contents  
+ 
+Title                                                               Page  
+ACKNOWLEDGEMENT  ii 
+ABSTRACT  iii 
+Table of Contents  iv 
+List of Table  vi 
+List of Appendices  vii 
+List of Abbreviations/Acronyms  viii 
+List of Units and Conversions  ix 
+CHAPTER 1  1 
+INTRODUCTION  1 
+1.1 Background  1 
+1.2 Motivation  1 
+1.3 State ment of the Problem  1 
+1.4 Project objective  2 
+1.5 Significance of the study  2 
+CHAPTER 2  3 
+LITERATURE REVIEW  3 
+Section 2.1  3 
+Sub-section 2.1.1  3 
+Sub Section 2.1.2  3 
+Section 2.2  3 
+Sub-section 2.2.1  3 
+CHAPTER 3  4 
+REQUIREMENT ANALYSIS  4 
+Section 3.1  4 
+Sub-Section 3.1.1  4 
+CHAPTER 4  5 
+
+v 
+ SYSTEM DESIGN AND ARCHITECTURE  5 
+CHAPTER 5  6 
+METHODOLOGY  6 
+Section 5.1  6 
+Sub-section 5.1.1  6 
+Sub Section 5.1.2  6 
+Section 5.2  6 
+Sub-section 5.2.1  6 
+CHAPTER 6  7 
+EPILOGUE  7 
+Section 6.1 Work Progress  7 
+Sub-section 6.1.1  7 
+Sub Section 6.1.2  7 
+Section 6.2 Work Remaining  7 
+Sub-section 6.2.1  7 
+REFERENCES  8 
+APPENDICES  9 
+ 
+  
+
+vi 
+ List of Table  
+ 
+Title                                                                                                                              Page  
+Figure 1.1  
+Figure 1.2  
+Figure 2.1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+vii 
+  
+List of Appendices  
+ 
+Title                                                                                                                              Page  
+Appendix 1 ************  
+Appendix 2 ************  
+Appendix 3 ************  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+viii 
+  
+List of Abbreviations/Acronyms  
+ 
+CO 2    Carbon dioxide  
+CPS    Center for Postgraduate Studies  
+Ha.    Hectare  
+m3                Meter cube (Cubic 
+meter)  
+NEC                Nepal Engineering 
+College  
+PU    Pokhara University  
+Sq.ft    Square feet  
+UNDP    United Nations Development Programme  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ix 
+  
+List of Units and Conversions  
+ 
+m3            Meter cube (Cubic Meter)  
+Sq.ft                         Square  feet  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+1 
+  
+CHAPTER 1  
+INTRODUCTION  
+ 
+This chapter should discuss the background of the research/project issues being dealt with, 
+the statement of the problem, project objectives, significance of the study, and scope and 
+limitation of the study .  
+Introduction must revolve around the central research/project issue.   
+ 
+1.1 Background  
+ 
+Brief background of the issues should be discussed under the background section. It should 
+be done in the form of a brief literature review of related literature, wh ich is essential to 
+build a statement of the problem, research question, and research objectives in the later part 
+of INTRODUCTION chapter  
+ 
+1.2 Motivation  
+ 
+Explain about the motivating factor that inspired you to carry out this project.  
+ 
+1.3 Statement of t he Problem  
+ 
+This section must indicate what the problem is, why and how it is a problem. Similarly, the 
+necessity to conduct the research should also be discussed. It should be supported by data 
+or evidence. This section should be well connected with the b ackground section and as 
+brief as possible.  
+ 
+ 
+ 
+
+2 
+  
+1.4 Project objective  
+ 
+This section should clearly mention what you want to achieve from the research. Usually objective 
+is presented as general objective and specific objectives. The general objective of res earch should 
+be only one and should be in line with the title. To meet the general objective, several specific 
+objectives could be set. Specific objectives should be in line with research questions and are more 
+or less equal in numbers of research question s. 
+ 
+1.5 Significance of the study  
+ 
+The importance of this research /project  should be stated in this section, in terms of potential 
+beneficiaries & the way they will be benefitted. The section should focus on justifying the 
+topic of the proposed research.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+3 
+  
+ 
+CHAPTER 2  
+LITERATURE REVIEW  
+ 
+Literature review is basically a survey of published materials on the topic of interest 
+authored by accredited scholars and researchers. It is quite important to uncover what is 
+already known in the body of kn owledge prior to initiating any research (Hart, 1998). 
+Hence, it is a crucial endeavor for any academic research in theoretical and conceptual 
+progress (Shaw, 1995 and, Webster and Watson, 2002). Thus, it helps to situate your 
+research in the context of wh at is already known about the topic and find the gap that your 
+research will bridge.  
+ 
+Section 2.1  
+ 
+Sub-section 2.1.1  
+ 
+Sub Section 2.1.2  
+ 
+Section 2.2  
+ 
+Sub-section 2.2.1  
+ 
+ 
+ 
+ 
+ 
+ 
+
+4 
+  
+CHAPTER 3  
+REQUIREMENT ANALYSIS  
+ 
+This chapter includes about projects requirements  (hardware and software requirement),  
+Functional and non - functional requirements of the project and feasibility study of your 
+project.  
+ 
+Section 3.1  
+ 
+Sub-Section 3.1.1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+5 
+  
+CHAPTER 4  
+SYSTEM DESIGN AND ARCHITECTURE  
+ 
+This chapter includes th e discussion about the way you conducted your project in order to 
+meet the objectives. The System design and Architecture should be summarized in the form 
+of block diagram /flowchart. Selected methodology should be discussed in details along 
+with the justi fication of selecting the methodology. It should include project design (DFD 
+Diagrams, Use Case Diagrams, ER Diagrams etc...),  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+6 
+  
+CHAPTER 5  
+METHODOLOGY  
+ 
+This chapter includes the discussion about the way you conducted your project in order  to 
+meet the objectives. It may contain the same thing (blocks or units) that have been 
+explained in chapter 5. But the explanation should be in detail in a particular sequence in 
+which you have done your work along with detail algorithms, procedures, circ uit diagrams 
+or others which illustrate the “how” part in detail.  
+Example:   
+Preprocessing block --- write down what and how it does along with different algorithms 
+or diagrams that you have designed or used.  
+In few of the projects the chapter 4 and 5 ma y be combined together into “System (or 
+Project) Design and Methodology”   
+ 
+Section 5.1  
+ 
+Sub-section 5.1.1  
+ 
+Sub Section 5.1.2  
+ 
+Section 5.2  
+ 
+Sub-section 5.2.1  
+ 
+ 
+ 
+ 
+ 
+
+7 
+  
+CHAPTER 6  
+EPILOGUE  
+ 
+This chapter includes the output of your ongoing  project and work remaini ng. 
+ 
+Section 6.1  Work Progress  
+ 
+Sub-section 6.1.1  
+ 
+Sub Section 6.1.2  
+ 
+Section 6.2  Work Remaining  
+ 
+Sub-section 6.2.1  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+8 
+  
+REFERENCES  
+ 
+The arguments in the project should be supported by proper evidences. This needs to be 
+done by referring to ear lier publications such as patents, journals, books, reports, thesis and 
+other materials. Hence, referencing gives credit to the authors or organizations for using 
+their work in your thesis. It provides the reader with evidence of the breadth and depth of 
+researchers reading and enables readers to locate the references easily.   
+It is strongly recommended to follow the IEEE referencing  format for the project.  The 
+referencing should be consistent on IEEE referencing . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+9 
+  
+APPENDICES  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
