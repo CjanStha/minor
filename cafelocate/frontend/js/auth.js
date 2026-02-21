@@ -5,40 +5,37 @@ class AuthManager {
     constructor() {
         this.user = null;
         this.token = null;
-        this.uiManager = null;
-        this.init();
     }
 
-    init() {
-        // Check for existing session
+    /**
+     * Check for existing session on page load
+     */
+    checkExistingSession() {
         const savedToken = localStorage.getItem('auth_token');
         const savedUser = localStorage.getItem('user_data');
         const isGuest = localStorage.getItem('is_guest') === 'true';
 
         if (isGuest && savedUser) {
-            this.user = JSON.parse(savedUser);
-            this.token = null;
-            this.showMapPage();
+            try {
+                this.user = JSON.parse(savedUser);
+                this.token = null;
+                this.showMapPage();
+            } catch (e) {
+                this.clearStorage();
+            }
         } else if (savedToken && savedUser) {
-            this.token = savedToken;
-            this.user = JSON.parse(savedUser);
-            this.showMapPage();
+            try {
+                this.token = savedToken;
+                this.user = JSON.parse(savedUser);
+                this.showMapPage();
+            } catch (e) {
+                this.clearStorage();
+            }
         }
     }
 
     /**
-     * Set UI Manager dependency
-     * @param {UIManager} uiManager - The UI manager instance
-     */
-    setUIManager(uiManager) {
-        this.uiManager = uiManager;
-    }
-
-    /**
      * Login user with credentials
-     * @param {string} username - Username or email
-     * @param {string} password - User password
-     * @returns {Promise<Object>} - Login result
      */
     async login(username, password) {
         try {
@@ -54,7 +51,6 @@ class AuthManager {
                 this.user = data.user;
                 this.token = data.token;
 
-                // Save to localStorage
                 localStorage.setItem('auth_token', this.token);
                 localStorage.setItem('user_data', JSON.stringify(this.user));
                 localStorage.removeItem('is_guest');
@@ -62,20 +58,17 @@ class AuthManager {
                 this.showMapPage();
                 return { success: true, user: this.user };
             } else {
-                return { success: false, message: data.detail || 'Login failed' };
+                const errorMsg = data.error || data.detail || data.message || 'Login failed';
+                return { success: false, message: errorMsg };
             }
         } catch (error) {
             console.error('Login error:', error);
-            return { success: false, message: 'Network error. Please try again.' };
+            return { success: false, message: 'Network error. Is the backend server running on port 8000?' };
         }
     }
 
     /**
      * Register new user
-     * @param {string} username - Desired username
-     * @param {string} email - User email
-     * @param {string} password - User password
-     * @returns {Promise<Object>} - Registration result
      */
     async register(username, email, password) {
         try {
@@ -88,20 +81,18 @@ class AuthManager {
             const data = await response.json();
 
             if (response.ok) {
-                // Registration successful, but don't auto-login
-                return { success: true, message: 'Registration successful' };
+                return { success: true, message: 'Registration successful! Please login.' };
             } else {
-                return { success: false, message: this.getErrorMessage(data) };
+                return { success: false, message: this._getErrorMessage(data) };
             }
         } catch (error) {
             console.error('Registration error:', error);
-            return { success: false, message: 'Network error. Please try again.' };
+            return { success: false, message: 'Network error. Is the backend server running on port 8000?' };
         }
     }
 
     /**
      * Login as guest user
-     * @returns {Promise<Object>} - Guest login result
      */
     async guestLogin() {
         this.user = {
@@ -110,9 +101,8 @@ class AuthManager {
             email: '',
             is_guest: true
         };
-        this.token = null; // No token for guests
+        this.token = null;
 
-        // Save guest status to localStorage
         localStorage.setItem('is_guest', 'true');
         localStorage.setItem('user_data', JSON.stringify(this.user));
         localStorage.removeItem('auth_token');
@@ -127,16 +117,11 @@ class AuthManager {
     async logout() {
         this.user = null;
         this.token = null;
+        this.clearStorage();
 
-        localStorage.removeItem('auth_token');
-        localStorage.removeItem('user_data');
-        localStorage.removeItem('is_guest');
-
-        // Switch back to login page
         document.getElementById('map-page').classList.remove('active');
         document.getElementById('login-page').classList.add('active');
 
-        // Clear map if it exists
         if (window.mapManager) {
             window.mapManager.clearMap();
         }
@@ -151,166 +136,57 @@ class AuthManager {
         document.getElementById('login-page').classList.remove('active');
         document.getElementById('map-page').classList.add('active');
 
-        // Update user info in header via UI manager
-        if (this.uiManager && this.user) {
-            this.uiManager.updateUserDisplay(this.user.username);
-        }
-
-        // Initialize map if not already done
-        if (window.mapManager) {
-            window.mapManager.init();
-        }
-    }
-
-    /**
-     * Extract error message from API response
-     * @param {Object} data - API response data
-     * @returns {string} - Error message
-     */
-    getErrorMessage(data) {
-        if (typeof data === 'string') return data;
-        if (data.detail) return data.detail;
-        if (data.message) return data.message;
-
-        // Handle field-specific errors
-        const errors = [];
-        for (const [field, messages] of Object.entries(data)) {
-            if (Array.isArray(messages)) {
-                errors.push(`${field}: ${messages.join(', ')}`);
-            } else {
-                errors.push(`${field}: ${messages}`);
-            }
-        }
-
-        return errors.length > 0 ? errors.join('; ') : 'Registration failed';
-    }
-
-    /**
-     * Check if user is authenticated
-     * @returns {boolean} - Authentication status
-     */
-    isAuthenticated() {
-        return this.token !== null;
-    }
-
-    /**
-     * Get authentication token
-     * @returns {string|null} - Auth token
-     */
-    getToken() {
-        return this.token;
-    }
-
-    /**
-     * Get current user data
-     * @returns {Object|null} - User data
-     */
-    getUser() {
-        return this.user;
-    }
-}
-
-// Initialize auth manager when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    window.authManager = new AuthManager();
-});
-
-                this.showMapPage();
-            } else {
-                alert(data.error || 'Registration failed');
-            }
-        } catch (error) {
-            console.error('Registration failed:', error);
-            alert('Registration failed. Please try again.');
-        }
-    }
-
-    async login() {
-        const username = document.getElementById('login-username').value;
-        const password = document.getElementById('login-password').value;
-
-        if (!username || !password) {
-            alert('Please enter username/email and password');
-            return;
-        }
-
-        try {
-            const response = await fetch('http://localhost:8000/api/auth/login/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, password })
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                this.user = data.user;
-                this.token = data.token;
-
-                // Save to localStorage
-                localStorage.setItem('auth_token', this.token);
-                localStorage.setItem('user_data', JSON.stringify(this.user));
-
-                this.showMapPage();
-            } else {
-                alert(data.error || 'Login failed');
-            }
-        } catch (error) {
-            console.error('Login failed:', error);
-            alert('Login failed. Please try again.');
-        }
-    }
-
-    guestLogin() {
-        // Set guest user data
-        this.user = {
-            id: null,
-            username: 'Guest User',
-            email: '',
-            is_guest: true
-        };
-        this.token = null; // No token for guests
-
-        // Save guest status to localStorage
-        localStorage.setItem('is_guest', 'true');
-        localStorage.setItem('user_data', JSON.stringify(this.user));
-
-        this.showMapPage();
-    }
-
-    showRegisterForm() {
-        document.getElementById('login-form-container').style.display = 'none';
-        document.getElementById('register-form-container').style.display = 'block';
-    }
-
-    showLoginForm() {
-        document.getElementById('register-form-container').style.display = 'none';
-        document.getElementById('login-form-container').style.display = 'block';
-    }
-
-    showMapPage() {
-        document.getElementById('login-page').classList.remove('active');
-        document.getElementById('map-page').classList.add('active');
-
-        // Update user info in header
         const userNameEl = document.getElementById('user-name');
         if (userNameEl && this.user) {
             userNameEl.textContent = this.user.username;
         }
 
-        // Initialize map if not already done
-        if (window.mapManager) {
-            window.mapManager.init();
-        }
+        // Initialize map after page is visible
+        setTimeout(() => {
+            if (window.mapManager) {
+                window.mapManager.init();
+            }
+        }, 100);
     }
 
-// Initialize auth manager when DOM is loaded
+    clearStorage() {
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('user_data');
+        localStorage.removeItem('is_guest');
+    }
+
+    _getErrorMessage(data) {
+        if (typeof data === 'string') return data;
+        if (data.error) return data.error;
+        if (data.detail) return data.detail;
+        if (data.message) return data.message;
+
+        const errors = [];
+        for (const [field, messages] of Object.entries(data)) {
+            if (Array.isArray(messages)) {
+                errors.push(`${field}: ${messages.join(', ')}`);
+            } else if (typeof messages === 'string') {
+                errors.push(`${field}: ${messages}`);
+            }
+        }
+        return errors.length > 0 ? errors.join('; ') : 'Registration failed';
+    }
+
+    isAuthenticated() {
+        return this.token !== null;
+    }
+
+    getToken() {
+        return this.token;
+    }
+
+    getUser() {
+        return this.user;
+    }
+}
+
+// Initialize on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
     window.authManager = new AuthManager();
-
-    // Set up dependencies when UI manager is ready
-    if (window.uiManager) {
-        window.authManager.setUIManager(window.uiManager);
-        window.uiManager.setDependencies(window.authManager, window.mapManager, window.apiManager);
-    }
+    window.authManager.checkExistingSession();
 });

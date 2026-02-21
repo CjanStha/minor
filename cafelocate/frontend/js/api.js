@@ -4,11 +4,6 @@
 class APIManager {
     constructor() {
         this.baseURL = 'http://localhost:8000/api';
-        this.init();
-    }
-
-    init() {
-        // Set up any initial API configurations
     }
 
     async makeRequest(endpoint, options = {}) {
@@ -26,26 +21,30 @@ class APIManager {
             config.headers['Authorization'] = `Bearer ${window.authManager.getToken()}`;
         }
 
-        try {
-            const response = await fetch(url, config);
+        const response = await fetch(url, config);
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-
-            return await response.json();
-        } catch (error) {
-            console.error('API request failed:', error);
-            throw error;
+        if (!response.ok) {
+            let errMsg = `Server error (${response.status})`;
+            try {
+                const errData = await response.json();
+                errMsg = errData.error || errData.detail || errMsg;
+            } catch (_) {}
+            throw new Error(errMsg);
         }
+
+        return await response.json();
     }
 
-    // Get nearby cafes within radius
-    async getNearbyCafes(lat, lng, radius = 1000) {
+    /**
+     * Get nearby cafes within radius
+     */
+    async getNearbyCafes(lat, lng, radius = 500) {
         return this.makeRequest(`/cafes/nearby/?lat=${lat}&lng=${lng}&radius=${radius}`);
     }
 
-    // Get full suitability analysis
+    /**
+     * Get full suitability analysis (main endpoint)
+     */
     async getSuitabilityAnalysis(lat, lng, cafeType, radius = 500) {
         return this.makeRequest('/analyze/', {
             method: 'POST',
@@ -58,31 +57,21 @@ class APIManager {
         });
     }
 
-    // Google OAuth authentication (mock)
-    async authenticateWithGoogle(token) {
-        return this.makeRequest('/auth/google/', {
-            method: 'POST',
-            body: JSON.stringify({ token: token })
-        });
-    }
-
-    // Format API errors for user display
+    /**
+     * Format errors for user display
+     */
     formatError(error) {
-        if (error.message.includes('Failed to fetch')) {
-            return 'Unable to connect to the server. Please check your internet connection.';
+        const msg = error.message || '';
+        if (msg.includes('Failed to fetch') || msg.includes('NetworkError')) {
+            return 'Cannot connect to server. Make sure the backend is running on port 8000.';
         }
-
-        if (error.message.includes('401')) {
-            return 'Authentication required. Please log in again.';
-        }
-
-        if (error.message.includes('500')) {
-            return 'Server error. Please try again later.';
-        }
-
-        return 'An unexpected error occurred. Please try again.';
+        if (msg.includes('401')) return 'Session expired. Please log in again.';
+        if (msg.includes('500')) return 'Server error. Please try again later.';
+        return msg || 'An unexpected error occurred.';
     }
 }
 
 // Initialize API manager
-window.apiManager = new APIManager();
+document.addEventListener('DOMContentLoaded', () => {
+    window.apiManager = new APIManager();
+});
