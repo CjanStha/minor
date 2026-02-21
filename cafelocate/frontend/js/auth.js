@@ -5,6 +5,7 @@ class AuthManager {
     constructor() {
         this.user = null;
         this.token = null;
+        this.uiManager = null;
         this.init();
     }
 
@@ -23,69 +24,28 @@ class AuthManager {
             this.user = JSON.parse(savedUser);
             this.showMapPage();
         }
-
-        this.setupEventListeners();
     }
 
-    setupEventListeners() {
-        // Registration form
-        const registerForm = document.getElementById('register-form');
-        if (registerForm) {
-            registerForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                this.register();
-            });
-        }
-
-        // Login form
-        const loginForm = document.getElementById('login-form');
-        if (loginForm) {
-            loginForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                this.login();
-            });
-        }
-
-        // Switch between login and register
-        const showRegisterLink = document.getElementById('show-register');
-        const showLoginLink = document.getElementById('show-login');
-
-        if (showRegisterLink) {
-            showRegisterLink.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.showRegisterForm();
-            });
-        }
-
-        if (showLoginLink) {
-            showLoginLink.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.showLoginForm();
-            });
-        }
-
-        // Guest login button
-        const guestLoginBtn = document.getElementById('guest-login-btn');
-        if (guestLoginBtn) {
-            guestLoginBtn.addEventListener('click', () => this.guestLogin());
-        }
+    /**
+     * Set UI Manager dependency
+     * @param {UIManager} uiManager - The UI manager instance
+     */
+    setUIManager(uiManager) {
+        this.uiManager = uiManager;
     }
 
-    async register() {
-        const username = document.getElementById('register-username').value;
-        const email = document.getElementById('register-email').value;
-        const password = document.getElementById('register-password').value;
-
-        if (!username || !email || !password) {
-            alert('Please fill in all fields');
-            return;
-        }
-
+    /**
+     * Login user with credentials
+     * @param {string} username - Username or email
+     * @param {string} password - User password
+     * @returns {Promise<Object>} - Login result
+     */
+    async login(username, password) {
         try {
-            const response = await fetch('http://localhost:8000/api/auth/register/', {
+            const response = await fetch('http://localhost:8000/api/auth/login/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, email, password })
+                body: JSON.stringify({ username, password })
             });
 
             const data = await response.json();
@@ -97,6 +57,163 @@ class AuthManager {
                 // Save to localStorage
                 localStorage.setItem('auth_token', this.token);
                 localStorage.setItem('user_data', JSON.stringify(this.user));
+                localStorage.removeItem('is_guest');
+
+                this.showMapPage();
+                return { success: true, user: this.user };
+            } else {
+                return { success: false, message: data.detail || 'Login failed' };
+            }
+        } catch (error) {
+            console.error('Login error:', error);
+            return { success: false, message: 'Network error. Please try again.' };
+        }
+    }
+
+    /**
+     * Register new user
+     * @param {string} username - Desired username
+     * @param {string} email - User email
+     * @param {string} password - User password
+     * @returns {Promise<Object>} - Registration result
+     */
+    async register(username, email, password) {
+        try {
+            const response = await fetch('http://localhost:8000/api/auth/register/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, email, password })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                // Registration successful, but don't auto-login
+                return { success: true, message: 'Registration successful' };
+            } else {
+                return { success: false, message: this.getErrorMessage(data) };
+            }
+        } catch (error) {
+            console.error('Registration error:', error);
+            return { success: false, message: 'Network error. Please try again.' };
+        }
+    }
+
+    /**
+     * Login as guest user
+     * @returns {Promise<Object>} - Guest login result
+     */
+    async guestLogin() {
+        this.user = {
+            id: null,
+            username: 'Guest User',
+            email: '',
+            is_guest: true
+        };
+        this.token = null; // No token for guests
+
+        // Save guest status to localStorage
+        localStorage.setItem('is_guest', 'true');
+        localStorage.setItem('user_data', JSON.stringify(this.user));
+        localStorage.removeItem('auth_token');
+
+        this.showMapPage();
+        return { success: true, user: this.user };
+    }
+
+    /**
+     * Logout current user
+     */
+    async logout() {
+        this.user = null;
+        this.token = null;
+
+        localStorage.removeItem('auth_token');
+        localStorage.removeItem('user_data');
+        localStorage.removeItem('is_guest');
+
+        // Switch back to login page
+        document.getElementById('map-page').classList.remove('active');
+        document.getElementById('login-page').classList.add('active');
+
+        // Clear map if it exists
+        if (window.mapManager) {
+            window.mapManager.clearMap();
+        }
+
+        return { success: true };
+    }
+
+    /**
+     * Show map page and update UI
+     */
+    showMapPage() {
+        document.getElementById('login-page').classList.remove('active');
+        document.getElementById('map-page').classList.add('active');
+
+        // Update user info in header via UI manager
+        if (this.uiManager && this.user) {
+            this.uiManager.updateUserDisplay(this.user.username);
+        }
+
+        // Initialize map if not already done
+        if (window.mapManager) {
+            window.mapManager.init();
+        }
+    }
+
+    /**
+     * Extract error message from API response
+     * @param {Object} data - API response data
+     * @returns {string} - Error message
+     */
+    getErrorMessage(data) {
+        if (typeof data === 'string') return data;
+        if (data.detail) return data.detail;
+        if (data.message) return data.message;
+
+        // Handle field-specific errors
+        const errors = [];
+        for (const [field, messages] of Object.entries(data)) {
+            if (Array.isArray(messages)) {
+                errors.push(`${field}: ${messages.join(', ')}`);
+            } else {
+                errors.push(`${field}: ${messages}`);
+            }
+        }
+
+        return errors.length > 0 ? errors.join('; ') : 'Registration failed';
+    }
+
+    /**
+     * Check if user is authenticated
+     * @returns {boolean} - Authentication status
+     */
+    isAuthenticated() {
+        return this.token !== null;
+    }
+
+    /**
+     * Get authentication token
+     * @returns {string|null} - Auth token
+     */
+    getToken() {
+        return this.token;
+    }
+
+    /**
+     * Get current user data
+     * @returns {Object|null} - User data
+     */
+    getUser() {
+        return this.user;
+    }
+}
+
+// Initialize auth manager when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    window.authManager = new AuthManager();
+});
 
                 this.showMapPage();
             } else {
@@ -187,37 +304,13 @@ class AuthManager {
         }
     }
 
-    logout() {
-        this.user = null;
-        this.token = null;
-
-        localStorage.removeItem('auth_token');
-        localStorage.removeItem('user_data');
-        localStorage.removeItem('is_guest');
-
-        document.getElementById('map-page').classList.remove('active');
-        document.getElementById('login-page').classList.add('active');
-
-        // Clear map if it exists
-        if (window.mapManager) {
-            window.mapManager.clearMap();
-        }
-    }
-
-    isAuthenticated() {
-        return this.token !== null;
-    }
-
-    getToken() {
-        return this.token;
-    }
-
-    getUser() {
-        return this.user;
-    }
-}
-
 // Initialize auth manager when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     window.authManager = new AuthManager();
+
+    // Set up dependencies when UI manager is ready
+    if (window.uiManager) {
+        window.authManager.setUIManager(window.uiManager);
+        window.uiManager.setDependencies(window.authManager, window.mapManager, window.apiManager);
+    }
 });
