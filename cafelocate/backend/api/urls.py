@@ -2,9 +2,13 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # POST /api/auth/google/
-    # Frontend sends Google's ID token → we validate → return our JWT
-    path('auth/google/',  views.GoogleLoginView.as_view(),  name='google-login'),
+    # POST /api/auth/register/
+    # Create new user account with username, email, password
+    path('auth/register/', views.UserRegistrationView.as_view(), name='user-register'),
+
+    # POST /api/auth/login/
+    # Authenticate user with username/email and password
+    path('auth/login/',    views.UserLoginView.as_view(),    name='user-login'),
 
     # GET /api/cafes/nearby/?lat=27.71&lng=85.32&radius=500
     # Returns list of all cafes within radius meters of point

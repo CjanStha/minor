@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Test</title>
+</head>
+<body>
+    <h1>Authentication Test</h1>
+
+    <h2>Register Test User</h2>
+    <button onclick="testRegister()">Register Test User</button>
+    <div id="register-result"></div>
+
+    <h2>Login Test</h2>
+    <button onclick="testLogin()">Login Test User</button>
+    <div id="login-result"></div>
+
+    <h2>Guest Login</h2>
+    <button onclick="testGuest()">Continue as Guest</button>
+    <div id="guest-result"></div>
+
+    <script>
+        async function testRegister() {
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/register/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        username: 'testuser789',
+                        email: 'test789@example.com',
+                        password: 'testpass123'
+                    })
+                });
+                const data = await response.json();
+                document.getElementById('register-result').innerHTML = `
+                    <p>Status: ${response.status}</p>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+            } catch (error) {
+                document.getElementById('register-result').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+
+        async function testLogin() {
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/login/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        username: 'testuser789',
+                        password: 'testpass123'
+                    })
+                });
+                const data = await response.json();
+                document.getElementById('login-result').innerHTML = `
+                    <p>Status: ${response.status}</p>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+            } catch (error) {
+                document.getElementById('login-result').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+
+        function testGuest() {
+            // Simulate guest login
+            const guestUser = {
+                id: null,
+                username: 'Guest User',
+                email: '',
+                is_guest: true
+            };
+
+            localStorage.setItem('is_guest', 'true');
+            localStorage.setItem('user_data', JSON.stringify(guestUser));
+
+            document.getElementById('guest-result').innerHTML = `
+                <p>Guest login successful!</p>
+                <p>User data saved to localStorage</p>
+                <pre>${JSON.stringify(guestUser, null, 2)}</pre>
+            `;
+        }
+    </script>
+</body>
+</html>

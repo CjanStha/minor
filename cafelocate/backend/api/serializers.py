@@ -71,5 +71,5 @@ class SuitabilityRequestSerializer(serializers.Serializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model  = UserProfile
-        fields = ['id', 'email', 'name', 'picture_url', 'joined_at']
-        read_only_fields = ['joined_at']  # can't be set by the client
+        fields = ['id', 'username', 'email', 'date_joined', 'is_active', 'first_name', 'last_name']
+        read_only_fields = ['date_joined', 'is_active']  # can't be set by the client

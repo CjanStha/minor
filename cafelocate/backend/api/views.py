@@ -69,62 +69,93 @@ def point_in_polygon(point_lng, point_lat, polygon_geojson):
 
 
 # ═══════════════════════════════════════════════════════════════════
-# VIEW 1: Google OAuth Login
-# POST /api/auth/google/
-# Frontend sends Google's ID token → we validate it → return our JWT
+# VIEW 1: User Registration
+# POST /api/auth/register/
+# Create a new user account with username, email, password
 # ═══════════════════════════════════════════════════════════════════
-class GoogleLoginView(APIView):
-    authentication_classes = []  # no auth required to log in
+class UserRegistrationView(APIView):
+    authentication_classes = []  # no auth required to register
     permission_classes = []     # open to anyone
 
     def post(self, request):
-        # TEMPORARY: Mock login for testing
+        username = request.data.get('username')
+        email = request.data.get('email')
+        password = request.data.get('password')
+
+        if not username or not email or not password:
+            return Response({'error': 'Username, email, and password are required'}, status=400)
+
+        if UserProfile.objects.filter(username=username).exists():
+            return Response({'error': 'Username already exists'}, status=400)
+
+        if UserProfile.objects.filter(email=email).exists():
+            return Response({'error': 'Email already exists'}, status=400)
+
+        # Create user
+        user = UserProfile.objects.create_user(
+            username=username,
+            email=email,
+            password=password
+        )
+
+        # Generate JWT token
+        token = jwt.encode(
+            {'user_id': user.id, 'username': user.username, 'email': user.email},
+            settings.SECRET_KEY,
+            algorithm='HS256'
+        )
+
         return Response({
-            'token': 'mock-jwt-token-for-testing',
-            'user': {
-                'id': 1,
-                'email': 'test@example.com',
-                'name': 'Test User',
-                'picture_url': ''
-            }
+            'token': token,
+            'user': UserProfileSerializer(user).data
         })
 
-        # Original Google OAuth code (commented out temporarily)
-        # token = request.data.get('token')
-        # if not token:
-        #     return Response({'error': 'Token required'}, status=400)
-        #
-        # try:
-        #     # Verify with Google — confirms the token is legitimate
-        #     idinfo = id_token.verify_oauth2_token(
-        #         token,
-        #         google_requests.Request(),
-        #         settings.GOOGLE_CLIENT_ID
-        #     )
-        #
-        #     # Get or create user in our database
-        #     user, created = UserProfile.objects.get_or_create(
-        #         google_id=idinfo['sub'],
-        #         defaults={
-        #             'email':       idinfo['email'],
-        #             'name':        idinfo.get('name', ''),
-        #             'picture_url': idinfo.get('picture', ''),
-        #         }
-        #     )
-        #
-        #     # Create our own JWT so frontend doesn't need Google's token again
-        #     our_token = jwt.encode(
-        #         {'user_id': user.id, 'email': user.email},
-        #         settings.SECRET_KEY,
-        #         algorithm='HS256'
-        #     )
-        #     return Response({
-        #         'token': our_token,
-        #         'user':  UserProfileSerializer(user).data
-        #     })
-        #
-        # except ValueError as e:
-        #     return Response({'error': 'Invalid Google token'}, status=401)
+
+# ═══════════════════════════════════════════════════════════════════
+# VIEW 2: User Login
+# POST /api/auth/login/
+# Authenticate user with username/email and password
+# ═══════════════════════════════════════════════════════════════════
+class UserLoginView(APIView):
+    authentication_classes = []  # no auth required to login
+    permission_classes = []     # open to anyone
+
+    def post(self, request):
+        login_credential = request.data.get('username')  # can be username or email
+        password = request.data.get('password')
+
+        if not login_credential or not password:
+            return Response({'error': 'Username/email and password are required'}, status=400)
+
+        # Try to find user by username or email
+        user = None
+        if '@' in login_credential:
+            # It's an email
+            try:
+                user = UserProfile.objects.get(email=login_credential)
+            except UserProfile.DoesNotExist:
+                pass
+        else:
+            # It's a username
+            try:
+                user = UserProfile.objects.get(username=login_credential)
+            except UserProfile.DoesNotExist:
+                pass
+
+        if user is None or not user.check_password(password):
+            return Response({'error': 'Invalid credentials'}, status=401)
+
+        # Generate JWT token
+        token = jwt.encode(
+            {'user_id': user.id, 'username': user.username, 'email': user.email},
+            settings.SECRET_KEY,
+            algorithm='HS256'
+        )
+
+        return Response({
+            'token': token,
+            'user': UserProfileSerializer(user).data
+        })
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -209,7 +240,7 @@ class SuitabilityAnalysisView(APIView):
         )[:5]
 
         # Step 5: Get population density from the ward containing this point
-        pop_density = 5000  # fallback
+        pop_density = 10000  # Default fallback if no ward data available
         for ward in Ward.objects.all():
             if ward.boundary and isinstance(ward.boundary, dict):
                 if point_in_polygon(lng, lat, ward.boundary):

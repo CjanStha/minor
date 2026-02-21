@@ -31,10 +31,10 @@ class MapManager {
             maxZoom: 18,
         }).addTo(this.map);
 
-        // Set bounds to Kathmandu Metropolitan City
+        // Set bounds to Kathmandu Valley (more inclusive)
         const kathmanduBounds = L.latLngBounds(
-            [27.6, 85.2], // Southwest
-            [27.8, 85.4]  // Northeast
+            [27.5, 85.1], // Southwest - more west and south
+            [27.9, 85.6]  // Northeast - more east and north
         );
         this.map.setMaxBounds(kathmanduBounds);
         this.map.on('drag', () => {
@@ -73,6 +73,32 @@ class MapManager {
                     if (this.selectedCafeType) {
                         this.analyzeLocation();
                     }
+                }
+            });
+        }
+
+        // Full report button
+        const fullReportBtn = document.getElementById('full-report-btn');
+        if (fullReportBtn) {
+            fullReportBtn.addEventListener('click', () => {
+                this.showFullReport();
+            });
+        }
+
+        // Modal close
+        const modalClose = document.querySelector('.modal-close');
+        if (modalClose) {
+            modalClose.addEventListener('click', () => {
+                this.hideFullReport();
+            });
+        }
+
+        // Close modal when clicking outside
+        const modal = document.getElementById('full-report-modal');
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    this.hideFullReport();
                 }
             });
         }
@@ -298,6 +324,122 @@ class MapManager {
     loadKathmanduBounds() {
         // This could load GeoJSON boundaries for more precise bounds
         // For now, using simple rectangular bounds set in initializeMap()
+    }
+
+    showFullReport() {
+        const modal = document.getElementById('full-report-modal');
+        const reportContent = document.getElementById('report-content');
+
+        if (!modal || !reportContent || !this.selectedLocation) return;
+
+        // Generate comprehensive report
+        const reportHTML = this.generateFullReport();
+        reportContent.innerHTML = reportHTML;
+
+        modal.style.display = 'block';
+    }
+
+    hideFullReport() {
+        const modal = document.getElementById('full-report-modal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    generateFullReport() {
+        if (!this.selectedLocation) return '<p>No location selected for analysis.</p>';
+
+        const { lat, lng } = this.selectedLocation;
+        const score = document.getElementById('suitability-score')?.textContent || '-';
+        const competitors = document.getElementById('competitor-count')?.textContent || '-';
+        const roadLength = document.getElementById('road-length')?.textContent || '-';
+        const population = document.getElementById('population-density')?.textContent || '-';
+
+        return `
+            <div class="report-section">
+                <h3>📍 Location Details</h3>
+                <div class="report-grid">
+                    <div class="report-item">
+                        <strong>Coordinates:</strong> ${lat.toFixed(6)}, ${lng.toFixed(6)}
+                    </div>
+                    <div class="report-item">
+                        <strong>Analysis Radius:</strong> ${this.analysisRadius} meters
+                    </div>
+                    <div class="report-item">
+                        <strong>Café Type:</strong> ${this.selectedCafeType ? this.selectedCafeType.replace('_', ' ').toUpperCase() : 'Not selected'}
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3>📊 Suitability Analysis</h3>
+                <div class="report-grid">
+                    <div class="report-item">
+                        <strong>Overall Score:</strong> ${score}/100
+                    </div>
+                    <div class="report-item">
+                        <strong>Competitor Count:</strong> ${competitors} cafés
+                    </div>
+                    <div class="report-item">
+                        <strong>Road Accessibility:</strong> ${roadLength}
+                    </div>
+                    <div class="report-item">
+                        <strong>Population Density:</strong> ${population}
+                    </div>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3>🤖 AI Prediction Details</h3>
+                <div id="prediction-details">
+                    <p>Loading prediction details...</p>
+                </div>
+            </div>
+
+            <div class="report-section">
+                <h3>⭐ Nearby Competitors</h3>
+                <div id="competitors-details">
+                    <p>Loading competitor details...</p>
+                </div>
+            </div>
+
+            <div class="report-insights">
+                <h4>💡 Key Insights & Recommendations</h4>
+                <ul>
+                    <li><strong>Location Strength:</strong> ${this.getLocationStrength(parseInt(score))}</li>
+                    <li><strong>Competition Level:</strong> ${this.getCompetitionLevel(parseInt(competitors))}</li>
+                    <li><strong>Accessibility:</strong> ${this.getAccessibilityLevel(roadLength)}</li>
+                    <li><strong>Market Potential:</strong> ${this.getMarketPotential(population)}</li>
+                </ul>
+            </div>
+        `;
+    }
+
+    getLocationStrength(score) {
+        if (score >= 80) return "Excellent location with high success potential";
+        if (score >= 60) return "Good location with moderate success potential";
+        if (score >= 40) return "Fair location, consider improvements";
+        return "Poor location, high risk of failure";
+    }
+
+    getCompetitionLevel(count) {
+        if (count < 5) return "Low competition - good opportunity";
+        if (count < 15) return "Moderate competition - competitive market";
+        return "High competition - saturated market";
+    }
+
+    getAccessibilityLevel(roadLength) {
+        const meters = parseInt(roadLength) || 0;
+        if (meters > 2000) return "Excellent road access";
+        if (meters > 1000) return "Good road access";
+        return "Limited road access";
+    }
+
+    getMarketPotential(population) {
+        const density = parseInt(population.replace(',', '').replace('/km²', '')) || 0;
+        if (density > 15000) return "High population density - strong market";
+        if (density > 10000) return "Moderate population density - good market";
+        return "Low population density - limited market";
     }
 }
 

@@ -93,21 +93,27 @@ class Road(models.Model):
         db_table = 'roads'
 
 
+from django.contrib.auth.models import AbstractUser
+from django.db import models
+
+
 # ═══════════════════════════════════════════════════════════════════
 # TABLE 4: UserProfile
-# Stores users who log in via Google OAuth
+# Custom user model with username, email, password authentication
 # ═══════════════════════════════════════════════════════════════════
-class UserProfile(models.Model):
+class UserProfile(AbstractUser):
 
-    # Google's unique ID for this user
-    google_id    = models.CharField(max_length=100, unique=True)
-    email        = models.EmailField(unique=True)
-    name         = models.CharField(max_length=200)
-    picture_url  = models.URLField(blank=True)
-    joined_at    = models.DateTimeField(auto_now_add=True)
+    # Email is already included in AbstractUser, but we make it required
+    email = models.EmailField(unique=True)
+
+    # Additional fields if needed
+    joined_at = models.DateTimeField(auto_now_add=True)
+
+    # Remove Google OAuth fields
+    # google_id and picture_url are no longer needed
 
     class Meta:
         db_table = 'user_profiles'
 
     def __str__(self):
-        return f"{self.name} ({self.email})"
+        return f"{self.username} ({self.email})"

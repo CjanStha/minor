@@ -66,11 +66,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# ── CORS settings (allow frontend to call backend API) ──
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5500",       # VS Code Live Server
-    "http://127.0.0.1:5500",
-]
+# ── Custom user model ──
+AUTH_USER_MODEL = 'api.UserProfile'
 
 ROOT_URLCONF = 'cafelocate.urls'
 
@@ -145,3 +142,27 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CORS settings for frontend communication
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5500",  # VS Code Live Server default port
+    "http://127.0.0.1:5500",
+    "http://localhost:3000",  # Alternative development ports
+    "http://127.0.0.1:3000",
+]
+
+CORS_ALLOW_CREDENTIALS = True
+
+# Allow all headers and methods for development
+CORS_ALLOW_ALL_ORIGINS = True  # Remove in production
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]

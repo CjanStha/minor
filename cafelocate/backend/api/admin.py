@@ -23,8 +23,8 @@ class WardAdmin(admin.ModelAdmin):  # Temporarily changed from GeoModelAdmin
 
 @admin.register(UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display  = ['name', 'email', 'joined_at']
-    search_fields = ['name', 'email']
-    readonly_fields = ['google_id', 'joined_at']
+    list_display  = ['username', 'email', 'date_joined']
+    search_fields = ['username', 'email']
+    readonly_fields = ['date_joined']
 
 # Road is not registered — too many records to browse in admin

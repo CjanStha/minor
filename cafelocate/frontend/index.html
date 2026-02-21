@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     <!-- Login Page -->
@@ -35,10 +34,41 @@
                         <p>Based on competitor analysis, demographics, and road access</p>
                     </div>
                 </div>
-                <div id="google-signin-button" class="google-signin"></div>
-                <div class="demo-notice">
-                    <p>🔧 <strong>Demo Mode:</strong> Click "Continue as Guest" to explore the features</p>
-                    <button id="guest-login" class="btn btn-primary">Continue as Guest</button>
+
+                <!-- Login Form -->
+                <div id="login-form-container" class="auth-form">
+                    <h3>Login to Your Account</h3>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <input type="text" id="login-username" placeholder="Username or Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <div class="guest-option">
+                        <button id="guest-login-btn" class="btn btn-secondary">Continue as Guest</button>
+                    </div>
+                    <p class="auth-switch">Don't have an account? <a href="#" id="show-register">Register here</a></p>
+                </div>
+
+                <!-- Registration Form -->
+                <div id="register-form-container" class="auth-form" style="display: none;">
+                    <h3>Create New Account</h3>
+                    <form id="register-form">
+                        <div class="form-group">
+                            <input type="text" id="register-username" placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="register-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="register-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                    <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login here</a></p>
                 </div>
             </div>
         </div>
@@ -67,6 +97,10 @@
                         <option value="bakery">Bakery Café</option>
                         <option value="dessert_shop">Dessert Shop</option>
                         <option value="restaurant">Restaurant Café</option>
+                        <option value="juice_bar">Juice Bar</option>
+                        <option value="ice_cream">Ice Cream Parlor</option>
+                        <option value="cafe_bar">Café Bar</option>
+                        <option value="internet_cafe">Internet Café</option>
                     </select>
                 </div>
 
@@ -153,8 +187,22 @@
                                 <div class="metric-value" id="population-density">-</div>
                             </div>
                         </div>
+                        <button id="full-report-btn" class="btn btn-secondary" style="margin-top: 15px; width: 100%;">📋 View Full Report</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Report Modal -->
+    <div id="full-report-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📊 Complete Location Analysis Report</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body" id="report-content">
+                <!-- Report content will be populated by JavaScript -->
             </div>
         </div>
     </div>
