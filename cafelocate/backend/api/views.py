@@ -13,7 +13,7 @@ import jwt, math, logging, json
 
 from .models import Cafe, Ward, Road, UserProfile
 from .serializers import CafeSerializer, SuitabilityRequestSerializer, UserProfileSerializer
-from ml_engine.predictor import get_prediction
+from ml_engine.predictor import get_suitability_prediction
 
 logger = logging.getLogger(__name__)
 
@@ -288,18 +288,19 @@ class SuitabilityAnalysisView(APIView):
         pop_score         = min(1, pop_density / 15000) * 30
         suitability_score = round(competitor_score + road_score + pop_score)
 
-        # Step 8: Get ML prediction
-        # Build the feature vector the model expects
+        # Step 8: Get ML prediction for location suitability
+        # Build the feature vector the model expects (4 features for café type model)
         ratings = [c.rating for c in nearby_cafes if c.rating is not None]
         avg_rating = sum(ratings) / len(ratings) if ratings else 0
 
         features = [
-            total_competitors,
-            avg_rating,
-            road_m,
-            pop_density,
+            total_competitors,  # competitor_count
+            avg_rating,         # avg_competitor_rating
+            road_m,             # road_length_m
+            pop_density,        # population_density
         ]
-        prediction = get_prediction(features)  # from ml_engine/predictor.py
+
+        prediction = get_suitability_prediction(features)  # from ml_engine/predictor.py
 
         # Step 9: Build and return the full response
         return Response({
@@ -308,9 +309,11 @@ class SuitabilityAnalysisView(APIView):
             'top5':       CafeSerializer(top5_qs, many=True).data,
             'suitability': {
                 'score':           suitability_score,
+                'level':           prediction.get('predicted_suitability', 'Unknown'),
+                'confidence':      prediction.get('confidence', 0),
                 'competitor_count': total_competitors,
                 'road_length_m':   round(road_m),
                 'population_density': pop_density,
             },
-            'prediction': prediction,  # { type: "Bakery Café", confidence: 0.87 }
+            'prediction': prediction,  # { suitability: "High Suitability", confidence: 0.87, all_probabilities: {...} }
         })
