@@ -7,7 +7,6 @@ class MapManager {
         this.marker = null;
         this.circle = null;
         this.cafeMarkers = [];
-        this.amenityMarkers = [];
         this.selectedLocation = null;
         this.selectedCafeType = null;
         this.analysisRadius = 500;
@@ -394,75 +393,10 @@ class MapManager {
         this.cafeMarkers = [];
     }
 
-    clearAmenityMarkers() {
-        this.amenityMarkers.forEach(m => this.map.removeLayer(m));
-        this.amenityMarkers = [];
-    }
-
-    getAmenityColorAndSymbol(amenityType) {
-        const typeMap = {
-            'school': { color: '#3498db', symbol: '🎓' },
-            'university': { color: '#2980b9', symbol: '🏫' },
-            'hospital': { color: '#e74c3c', symbol: '🏥' },
-            'clinic': { color: '#e67e22', symbol: '⚕️' },
-            'bus_station': { color: '#f39c12', symbol: '🚌' },
-            'bus_stop': { color: '#f39c12', symbol: '🚌' },
-            'pharmacy': { color: '#9b59b6', symbol: '💊' },
-            'bank': { color: '#27ae60', symbol: '🏦' },
-            'atm': { color: '#16a085', symbol: '💰' },
-            'restaurant': { color: '#c0392b', symbol: '🍽️' },
-            'cafe': { color: '#8b4513', symbol: '☕' },
-            'park': { color: '#27ae60', symbol: '🌳' },
-            'library': { color: '#34495e', symbol: '📚' },
-            'police': { color: '#2c3e50', symbol: '🚔' },
-            'fire_station': { color: '#e74c3c', symbol: '🚒' }
-        };
-        
-        return typeMap[amenityType.toLowerCase()] || { color: '#95a5a6', symbol: '📍' };
-    }
-
-    displayAmenitiesOnMap(amenitiesReport) {
-        if (!amenitiesReport || !this.map || !this.selectedLocation) return;
-
-        this.clearAmenityMarkers();
-
-        // Iterate through each amenity type
-        for (const [amenityType, data] of Object.entries(amenitiesReport)) {
-            if (!data || !data.amenities) continue;
-
-            const { color, symbol } = this.getAmenityColorAndSymbol(amenityType);
-
-            data.amenities.forEach(amenity => {
-                if (!amenity.latitude || !amenity.longitude) return;
-
-                const marker = L.circleMarker([amenity.latitude, amenity.longitude], {
-                    radius: 6,
-                    fillColor: color,
-                    color: '#fff',
-                    weight: 2,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                }).addTo(this.map);
-
-                const name = amenity.name || `${amenityType.replace('_', ' ')}`;
-                const distance = amenity.distance ? `${Math.round(amenity.distance)} m` : 'N/A';
-
-                marker.bindPopup(`
-                    ${symbol} <b>${name}</b><br>
-                    <small>Type: ${amenityType.replace('_', ' ')}</small><br>
-                    Distance: ${distance}
-                `);
-
-                this.amenityMarkers.push(marker);
-            });
-        }
-    }
-
     clearMap() {
         if (this.map) {
             this.clearMarkerAndCircle();
             this.clearCafeMarkers();
-            this.clearAmenityMarkers();
         }
         this.selectedLocation = null;
         this.selectedCafeType = null;
@@ -513,10 +447,6 @@ class MapManager {
         // Fetch amenities and population data
         this.fetchReportData().then(() => {
             reportContent.innerHTML = this.generateFullReport();
-            // Display amenities on the map
-            if (this.lastAmenitiesReport && this.lastAmenitiesReport.amenities_report) {
-                this.displayAmenitiesOnMap(this.lastAmenitiesReport.amenities_report);
-            }
             // Attach event handlers for "See more" buttons after content is inserted
             this.attachAmenityHandlers();
         }).catch(error => {
