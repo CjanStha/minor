@@ -432,7 +432,7 @@ class UserLoginView(APIView):
 
 
 # ═══════════════════════════════════════════════════════════════════
-# VIEW 3: Nearby Cafés
+# VIEW 3: Nearby Cafes
 # GET /api/cafes/nearby/?lat=27.71&lng=85.32&radius=500
 # ═══════════════════════════════════════════════════════════════════
 class NearbyCafesView(APIView):
@@ -473,6 +473,43 @@ class NearbyCafesView(APIView):
             'count':  len(cafes),
             'cafes':  serializer.data,
             'center': {'lat': lat, 'lng': lng}
+        })
+
+
+# ═══════════════════════════════════════════════════════════════════
+# VIEW 3: Dataset Stats
+# GET /api/cafes/stats/
+# ═══════════════════════════════════════════════════════════════════════════
+class CafeStatsView(APIView):
+    def get(self, request):
+        cafes = Cafe.objects.all()
+        total = cafes.count()
+        open_cafes = cafes.filter(is_open=True).count()
+
+        rating_values = [c.rating for c in cafes if c.rating is not None]
+        avg_rating = round(sum(rating_values) / len(rating_values), 2) if rating_values else None
+
+        review_values = [c.review_count for c in cafes if c.review_count is not None]
+        avg_reviews = round(sum(review_values) / len(review_values), 1) if review_values else 0
+
+        # Cafe type distribution (group by cafe_type)
+        type_counts = {}
+        for c in cafes:
+            t = (c.cafe_type or 'unknown').strip().lower()
+            if not t:
+                t = 'unknown'
+            type_counts[t] = type_counts.get(t, 0) + 1
+
+        # Top 5 types by count
+        type_ranking = sorted(type_counts.items(), key=lambda kv: kv[1], reverse=True)[:5]
+
+        return Response({
+            'total_cafes': total,
+            'open_cafes': open_cafes,
+            'avg_rating': avg_rating,
+            'avg_review_count': avg_reviews,
+            'type_counts': type_counts,
+            'top_type_ranking': [{'type': t, 'count': count} for t, count in type_ranking]
         })
 
 

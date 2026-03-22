@@ -30,9 +30,9 @@ class RegressionPredictor:
     def interpret_score(self, score):
         """Interpret continuous suitability score"""
         if score >= 75:
-            return "🟢 Excellent Location - Highly suitable for café"
+            return "🟢 Excellent Location - Highly suitable for cafe"
         elif score >= 60:
-            return "🔵 Good Location - Suitable for café"
+            return "🔵 Good Location - Suitable for cafe"
         elif score >= 45:
             return "🟡 Average Location - Moderate suitability"
         elif score >= 30:
@@ -42,7 +42,7 @@ class RegressionPredictor:
     
     def predict_single(self, features_dict, model_type='ensemble'):
         """
-        Predict suitability score for a single café
+        Predict suitability score for a single cafe
         
         Args:
             features_dict: Dictionary with feature values
@@ -78,7 +78,7 @@ class RegressionPredictor:
         return score
     
     def batch_predict(self, df, model_type='ensemble'):
-        """Predict for multiple cafés"""
+        """Predict for multiple cafes"""
         
         X = df[self.feature_cols].copy()
         X_scaled = self.scaler.transform(X)
@@ -105,7 +105,7 @@ class RegressionPredictor:
 
 
 def demo_predictions():
-    """Demonstrate prediction on sample cafés"""
+    """Demonstrate prediction on sample cafes"""
     
     print("\n" + "="*70)
     print("REGRESSION MODEL PREDICTION DEMONSTRATION")
@@ -127,7 +127,7 @@ def demo_predictions():
     # Pick 10 random samples
     sample_indices = np.random.choice(len(df), 10, replace=False)
     
-    print(f"\n{'#':>2} {'Café Name':<40} {'Score':>8} {'Interpretation':<30}")
+    print(f"\n{'#':>2} {'Cafe Name':<40} {'Score':>8} {'Interpretation':<30}")
     print(f"{'-'*100}")
     
     results = []
@@ -155,7 +155,7 @@ def demo_predictions():
     
     batch_scores = predictor.batch_predict(df[feature_cols], model_type='ensemble')
     
-    print(f"\nEnsemble Predictions on Full Dataset (1,072 cafés):")
+    print(f"\nEnsemble Predictions on Full Dataset (1,072 cafes):")
     print(f"  Mean Score: {batch_scores.mean():.2f}")
     print(f"  Median Score: {np.median(batch_scores):.2f}")
     print(f"  Std Dev: {batch_scores.std():.2f}")
@@ -180,7 +180,7 @@ def demo_predictions():
     print(f"{'-'*70}")
     
     top_10 = df.nlargest(10, 'suitability_score_predicted')[['name', 'suitability_score_predicted', 'lat', 'lng']]
-    print(f"\n{'#':<3} {'Café Name':<45} {'Score':>8} {'Coordinates':<20}")
+    print(f"\n{'#':<3} {'Cafe Name':<45} {'Score':>8} {'Coordinates':<20}")
     print(f"{'-'*78}")
     
     for i, (idx, row) in enumerate(top_10.iterrows(), 1):

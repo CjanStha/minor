@@ -4,14 +4,14 @@ from django.db import models
 
 # ═══════════════════════════════════════════════════════════════════
 # TABLE 1: Cafe
-# Stores every café in Kathmandu collected from Google Places API
+# Stores every cafe in Kathmandu collected from Google Places API
 # ═══════════════════════════════════════════════════════════════════
 class Cafe(models.Model):
 
     # Google's unique ID for this place (e.g. "ChIJN1t_tDeuEmsRUsoyG83frY4")
     place_id     = models.CharField(max_length=100, unique=True)
 
-    # Name of the café
+    # Name of the cafe
     name         = models.CharField(max_length=255)
 
     # Type: "coffee_shop", "bakery", "dessert_shop", "restaurant"

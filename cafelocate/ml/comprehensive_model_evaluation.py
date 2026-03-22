@@ -345,7 +345,7 @@ class ModelEvaluator:
         print(f"│  └─ Production ready: YES")
         
         print(f"\n└─ DEPLOYMENT GUIDANCE")
-        print(f"   Expected accuracy on new café locations: ±{best_mae:.2f} points (0-100 scale)")
+        print(f"   Expected accuracy on new cafe locations: ±{best_mae:.2f} points (0-100 scale)")
         print(f"   Confidence level: {best_r2*100:.1f}%")
         print(f"   Recommended prediction range: [{best_r2*0.95:.2f}, {best_r2*1.05:.2f}] R²")
 

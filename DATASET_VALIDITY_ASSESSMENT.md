@@ -15,7 +15,7 @@ Your CafeLocate datasets are **fundamentally sound** but have **coverage gaps an
 | Dataset | Size | Coverage | Reliability |
 |---------|------|----------|-------------|
 | **Training Data** | 1,572 samples | 13.08 pts/km² | Medium ✓ |
-| **Café Collection** | 1,072 cafés | ~80% estimated | High ✓ |
+| **Cafe Collection** | 1,072 cafes | ~80% estimated | High ✓ |
 | **Census Data** | 32 wards | 100% (complete) | Very High ✅ |
 | **Road Network** | 16,805 segments | ~90% estimated | Medium ✓ |
 | **Amenities (OSM)** | 9,265 items | Partial | Medium ✓ |
@@ -73,13 +73,13 @@ Actual Data:        27.661-27.753°N, 85.273-85.379°E
 
 ---
 
-### 3. **Café Collection (80% Valid) ✓**
+### 3. **Cafe Collection (80% Valid) ✓**
 
 **Source**: Google Places API + OpenStreetMap
 
 **Current Status**:
 ```
-Confirmed cafés: 1,072 (from Google Places)
+Confirmed cafes: 1,072 (from Google Places)
 OSM amenities: 9,265 (broader amenity category)
 Combined unique: ~1,500-2,000 estimated
 ```
@@ -90,7 +90,7 @@ Combined unique: ~1,500-2,000 estimated
 |----------|--------|-------|
 | Central locations | 95% ✅ | Well-documented on Google |
 | Tourist areas | 90% ✓ | Most captured |
-| Local cafés | 70% ⚠️ | May miss informal businesses |
+| Local cafes | 70% ⚠️ | May miss informal businesses |
 | Informal vendors | 20% ❌ | Street carts not captured |
 
 **Validity Confidence**: **80%** - Captures formal/registered businesses well
@@ -112,19 +112,19 @@ Combined unique: ~1,500-2,000 estimated
 
 **Real-world applicability**: Good for accessibility analysis (main factors)
 
-**Validity Confidence**: **85%** - Covers primary factors affecting café location
+**Validity Confidence**: **85%** - Covers primary factors affecting cafe location
 
 ---
 
 ## ⚠️ VALIDITY ISSUES & LIMITATIONS
 
-### 1. **Missing Café Metadata**
+### 1. **Missing Cafe Metadata**
 - ❌ **Issue**: Rating data not populated in kathmandu_cafes.csv (1,072/1,072 missing)
-- ❌ **Impact**: Cannot assess café quality/popularity in location analysis
+- ❌ **Impact**: Cannot assess cafe quality/popularity in location analysis
 - **Solution**: Missing from current data load
 
 ### 2. **Informal Business Gap**
-- ❌ **Issue**: Google Places API misses 30-40% of informal cafés in Nepal
+- ❌ **Issue**: Google Places API misses 30-40% of informal cafes in Nepal
 - 📊 **Impact**: Competitor density estimates may be 20-30% low in some areas
 - **Why**: Not all small, informal businesses register on Google Maps
 - **Evidence**: OSM has 9x more amenities than Google (9,265 vs 1,072)
@@ -160,7 +160,7 @@ Combined unique: ~1,500-2,000 estimated
 Method: Visual validation on map
 Steps:
 1. Pin 50 random training locations on Mapbox
-2. Check if actual cafés are within 500m of pinned point
+2. Check if actual cafes are within 500m of pinned point
 3. Verify road network matches visual inspection
 4. Confirm ward boundaries match administrative divisions
 
@@ -178,12 +178,12 @@ Verification:
 Source: https://cbs.gov.np/
 ```
 
-#### 1.3 **Café Count Validation**
+#### 1.3 **Cafe Count Validation**
 ```
 Method: Manual field survey in 3 test areas
 Steps:
 1. Select 3 representative areas (dense, medium, sparse)
-2. Walk/drive and manually count visible cafés
+2. Walk/drive and manually count visible cafes
 3. Compare with data counts in those zones
 4. Calculate accuracy percentage
 
@@ -194,11 +194,11 @@ Expected: 70-85% match (Google coverage rate for Nepal)
 
 ### **PHASE 2: DATA ENRICHMENT (Weeks 3-4)**
 
-#### 2.1 **Add Missing Café Metadata**
+#### 2.1 **Add Missing Cafe Metadata**
 ```python
 from google.cloud import places_api
 
-# Repopulate café ratings and reviews
+# Repopulate cafe ratings and reviews
 for cafe in cafes_without_ratings:
     try:
         details = places_api.get_place_details(cafe.place_id)
@@ -220,8 +220,8 @@ Tools:
 - Manual field surveys (crowdsourced)
 - Local business directories (Nepalese Yellow Pages)
 
-Expected additions: 300-500 informal cafés
-New total: 1,400-1,600 cafés
+Expected additions: 300-500 informal cafes
+New total: 1,400-1,600 cafes
 ```
 
 #### 2.3 **Enhance Road Network**
@@ -319,7 +319,7 @@ from datetime import datetime, timedelta
 def validate_data_freshness():
     """Check if data needs updating"""
     
-    # Query Google Places API for 10 random cafés
+    # Query Google Places API for 10 random cafes
     for cafe in random_sample(Cafe.objects.all(), 10):
         current_data = places_api.get_place(cafe.place_id)
         
@@ -357,20 +357,20 @@ Monthly checks:
 □ Compare with external sources:
   - Google Places updates
   - OSM community changes
-  - Trip Advisor new cafés
+  - Trip Advisor new cafes
   - Facebook business pages
 
 Quarterly review:
 □ Field survey validation (test 5 areas)
 □ Update informal business list
-□ Refresh café ratings/reviews
+□ Refresh cafe ratings/reviews
 □ Archive old versions
 ```
 
 #### 4.2 **Cross-Source Validation**
 ```
 Validate against:
-1. TripAdvisor (restaurant/café listings)
+1. TripAdvisor (restaurant/cafe listings)
    - Method: API scraping
    - Frequency: Monthly
    
@@ -411,7 +411,7 @@ Validate against:
 ## 🎯 RECOMMENDED ACTIONS
 
 ### **Critical (Before Real-World Use)**
-- [ ] **Populate café ratings** (currently 100% missing) → 2 hours
+- [ ] **Populate cafe ratings** (currently 100% missing) → 2 hours
 - [ ] **Validate top 100 locations** with spot checks → 4 hours  
 - [ ] **Cross-check against Google Maps** for 50 random samples → 3 hours
 - [ ] **Document data age and sources** for each field → 2 hours
@@ -420,7 +420,7 @@ Validate against:
 **Impact**: Increases validation confidence to 90%
 
 ### **High Priority (For Production)**
-- [ ] **Add informal café collection** from street-level sources → 40 hours
+- [ ] **Add informal cafe collection** from street-level sources → 40 hours
 - [ ] **Capture actual amenity locations** (schools, hospitals, bus stops) → 30 hours
 - [ ] **Implement automated freshness checks** → 20 hours
 - [ ] **Create validation framework** → 15 hours
@@ -452,7 +452,7 @@ Validate against:
 ║                                                              ║
 ║  Census Data (population):         ████████████░░  99% ✅   ║
 ║  Geographic Boundaries:             ███████████░░░  95% ✅   ║
-║  Café Collection (formal):          ████████░░░░░░  80% ✓    ║
+║  Cafe Collection (formal):          ████████░░░░░░  80% ✓    ║
 ║  Road Accessibility:                 ███████░░░░░░░  85% ✓    ║
 ║  Amenity Proximity (schools, etc):   ████░░░░░░░░░░  40% ⚠️    ║
 ║  Informal Business Coverage:         ██░░░░░░░░░░░░  20% ❌   ║
@@ -480,7 +480,7 @@ After Phase 1-2 interventions:
 
 | Aspect | Industry Standard | CafeLocate Current | Gap |
 |--------|------|---|---|
-| **Café sample size** | 5,000+ | 1,072 | -79% |
+| **Cafe sample size** | 5,000+ | 1,072 | -79% |
 | **Geographic coverage** | >95% | 95% ✓ | ✓ |
 | **Data freshness** | <1 month | 1-5 months | -1-4 mo |
 | **Attribute completeness** | 95%+ | 70% ⚠️ | -25% |
@@ -500,13 +500,13 @@ Your CafeLocate datasets are **valid and representative** for Kathmandu Metropol
 ✅ **What's Strong**:
 - Government census data (100% complete & official)
 - Geographic coverage is balanced and appropriate
-- Formal café collection is 80% accurate
+- Formal cafe collection is 80% accurate
 - Road network captures primary routes
 - No critical missing values in training data
 
 ⚠️ **What Needs Work**:
 - Informal business gap (20% coverage)
-- Café metadata incomplete (ratings missing)
+- Cafe metadata incomplete (ratings missing)
 - Amenity locations are estimated, not real
 - Data aging (some 2-5 years old)
 
@@ -526,7 +526,7 @@ Your CafeLocate datasets are **valid and representative** for Kathmandu Metropol
 ## 📞 NEXT STEPS
 
 1. **This week**: Run spot-check validation (10 hours)
-2. **Next 2 weeks**: Populate café metadata & add informal businesses (40 hours)
+2. **Next 2 weeks**: Populate cafe metadata & add informal businesses (40 hours)
 3. **Month 2**: Implement monitoring framework (20 hours)
 4. **Ongoing**: Weekly freshness checks + quarterly field validation
 

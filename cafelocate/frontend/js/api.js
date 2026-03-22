@@ -58,6 +58,13 @@ class APIManager {
     }
 
     /**
+     * Get global cafe dataset statistics
+     */
+    async getCafeDatasetStats() {
+        return this.makeRequest('/cafes/stats/');
+    }
+
+    /**
      * Format errors for user display
      */
     formatError(error) {

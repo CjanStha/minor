@@ -41,9 +41,9 @@ for csv_file in sorted(csv_files):
 # Step 3: Analyze for combining strategy
 print('\n[Step 3] Analyzing data structure...')
 
-# Core café data
+# Core cafe data
 cafes_df = dataframes.get('kathmandu_cafes.csv', pd.DataFrame())
-print(f'\nCafé Data: {cafes_df.shape}')
+print(f'\nCafe Data: {cafes_df.shape}')
 print(f'  Columns: {list(cafes_df.columns)}')
 
 # Training dataset
@@ -69,7 +69,7 @@ print(f'  Columns: {list(education_df.columns)}')
 # Step 4: Create comprehensive combined dataset
 print('\n[Step 4] Creating comprehensive combined dataset...')
 
-# Start with café locations as base
+# Start with cafe locations as base
 combined = cafes_df.copy()
 print(f'Starting with cafes: {combined.shape}')
 
@@ -125,8 +125,8 @@ metadata = f"""# Dataset Combination Metadata
 ## Source Files
 All original data files have been archived in the 'raw_data' folder:
 
-### Café Data
-- kathmandu_cafes.csv (1,072 cafés with coordinates)
+### Cafe Data
+- kathmandu_cafes.csv (1,072 cafes with coordinates)
 
 ### Training Features
 - cafe_location_training_dataset.csv (1,572 records with 17 engineered features)
@@ -143,13 +143,13 @@ All original data files have been archived in the 'raw_data' folder:
 
 ## Column Information
 
-### Café Location Columns
-- place_id: Unique café identifier
-- name: Café name
+### Cafe Location Columns
+- place_id: Unique cafe identifier
+- name: Cafe name
 - lat: Latitude
 - lng: Longitude
 - type: Amenity type
-- rating: Café rating (NULL if not available)
+- rating: Cafe rating (NULL if not available)
 - review_count: Review count (NULL if not available)
 - price_level: Price level (NULL if not available)
 - is_operational: Operation status

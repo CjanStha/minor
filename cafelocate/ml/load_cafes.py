@@ -1,5 +1,5 @@
 """
-Load café data into Django/PostGIS database
+Load cafe data into Django/PostGIS database
 """
 
 import os
@@ -16,7 +16,7 @@ from api.models import Cafe
 
 def load_cafe_data():
     """
-    Load café data from CSV into the database
+    Load cafe data from CSV into the database
     """
     csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'kathmandu_cafes.csv')
 
@@ -25,7 +25,7 @@ def load_cafe_data():
         print("Run collect_data.py first to collect the data")
         return
 
-    print("Loading café data...")
+    print("Loading cafe data...")
 
     # Read CSV
     df = pd.read_csv(csv_path)
@@ -33,7 +33,7 @@ def load_cafe_data():
 
     # Clear existing data
     Cafe.objects.all().delete()
-    print("Cleared existing café data")
+    print("Cleared existing cafe data")
 
     loaded_count = 0
     for _, row in df.iterrows():

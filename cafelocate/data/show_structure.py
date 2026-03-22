@@ -45,7 +45,7 @@ for i, col in enumerate(combined.columns, 1):
     print(f'  {i:2d}. {col}')
 
 print(f'\nData Summary:')
-print(f'  Cafés covered: {len(combined):,}')
+print(f'  Cafes covered: {len(combined):,}')
 print(f'  Geographic range: {combined["lat"].min():.4f} to {combined["lat"].max():.4f}°N')
 print(f'                    {combined["lng"].min():.4f} to {combined["lng"].max():.4f}°E')
 print(f'  Missing values: {combined.isnull().sum().sum():,}')

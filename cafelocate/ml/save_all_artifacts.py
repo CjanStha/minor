@@ -127,14 +127,14 @@ summary = f"""
 # CAFE LOCATION SUITABILITY PREDICTION - PREPROCESSING SUMMARY
 
 ## Overview
-Complete preprocessing pipeline for café location suitability prediction model.
+Complete preprocessing pipeline for cafe location suitability prediction model.
 Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 
 ## Dataset Information
 
 ### Source Data
 - **Original Dataset**: combined_comprehensive_dataset.csv
-- **Total Records**: 1,072 café locations
+- **Total Records**: 1,072 cafe locations
 - **Total Columns**: 28
 
 ### Preprocessing Results
@@ -291,7 +291,7 @@ test_scaled = pd.read_csv('cafelocate/data/splits/test_scaled_v2_80_20.csv')
 2. **Hyperparameter Tuning**: Fine-tune RF and XGBoost parameters
 3. **Feature Engineering**: Explore additional spatial features
 4. **Deployment**: Use saved models and scalers for production prediction
-5. **Monitoring**: Track model performance on new café data
+5. **Monitoring**: Track model performance on new cafe data
 
 ## Notes
 

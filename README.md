@@ -1,6 +1,6 @@
 # CafeLocate ML
 
-A machine learning-powered café location recommendation system for Kathmandu, Nepal. Uses real spatial data analysis, Mapbox Geocoding API, OpenStreetMap, and Random Forest classification to suggest optimal café locations based on competitor density, road access, and population demographics.
+A machine learning-powered cafe location recommendation system for Kathmandu, Nepal. Uses real spatial data analysis, Mapbox Geocoding API, OpenStreetMap, and Random Forest classification to suggest optimal cafe locations based on competitor density, road access, and population demographics.
 
 ## 🚀 Quick Start
 
@@ -79,7 +79,7 @@ If you prefer to set up manually, follow these steps:
 
 6. **Load initial data (optional - for testing):**
    ```bash
-   # Load café data
+   # Load cafe data
    python manage.py shell -c "from ml.load_cafes import load_cafes; load_cafes()"
 
    # Load census data
@@ -147,9 +147,9 @@ MP2/
 1. **Register/Login:** Create an account or login with existing credentials
 2. **Guest Access:** Click "Continue as Guest" to explore without registration
 3. **Pin Location:** Click anywhere on the Kathmandu map
-4. **Select Café Type:** Choose from Coffee Shop, Bakery, Restaurant, etc.
+4. **Select Cafe Type:** Choose from Coffee Shop, Bakery, Restaurant, etc.
 5. **Get Analysis:** View competitor analysis, population data, and ML recommendations
-6. **Explore Results:** See top 5 nearby cafés and suitability score
+6. **Explore Results:** See top 5 nearby cafes and suitability score
 
 ## 🛠 Development Workflow
 
@@ -174,7 +174,7 @@ python evaluate.py
 ### Data Collection Scripts
 ```bash
 cd cafelocate/ml
-python collect_data.py    # Collect café data via Mapbox
+python collect_data.py    # Collect cafe data via Mapbox
 python download_census.py # Process census PDF data
 python download_roads.py  # Download OSM road data
 ```
@@ -206,7 +206,7 @@ python download_roads.py  # Download OSM road data
 
 ## 📊 Data Sources
 
-- **Café Locations:** Mapbox Geocoding API (1,072+ locations)
+- **Cafe Locations:** Mapbox Geocoding API (1,072+ locations)
 - **Road Network:** OpenStreetMap data
 - **Population Data:** Nepal Census 2021 (862,400 total population)
 - **Ward Boundaries:** Kathmandu administrative divisions (32 wards)

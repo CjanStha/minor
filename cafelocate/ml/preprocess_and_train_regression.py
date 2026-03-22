@@ -1,5 +1,5 @@
 """
-Regression-Based Model Training for Café Location Suitability
+Regression-Based Model Training for Cafe Location Suitability
 Uses continuous suitability scores instead of categorical labels.
 
 Models:
@@ -395,7 +395,7 @@ class RegressionModelTrainer:
 
 def main():
     print("\n" + "="*70)
-    print("REGRESSION-BASED CAFÉ LOCATION SUITABILITY PREDICTION")
+    print("REGRESSION-BASED CAFE LOCATION SUITABILITY PREDICTION")
     print("="*70)
     print("\nApproach: Continuous Regression (Random Forest & XGBoost)")
     print("Target: Suitability Score (0-100)")

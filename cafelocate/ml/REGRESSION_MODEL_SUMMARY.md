@@ -1,8 +1,8 @@
-# Regression-Based Café Location Suitability Prediction Model
+# Regression-Based Cafe Location Suitability Prediction Model
 
 ## Overview
 
-Successfully transitioned the café location suitability prediction project from **classification** to **regression-based modeling**. This approach provides continuous suitability scores (0-100) instead of discrete categories, enabling more nuanced location recommendations.
+Successfully transitioned the cafe location suitability prediction project from **classification** to **regression-based modeling**. This approach provides continuous suitability scores (0-100) instead of discrete categories, enabling more nuanced location recommendations.
 
 ## Dataset Adjustments
 
@@ -143,7 +143,7 @@ Test Set:
 
 ## Prediction Results
 
-### Full Dataset Predictions (1,072 Cafés)
+### Full Dataset Predictions (1,072 Cafes)
 
 **Ensemble Model** (Average of all 4 models):
 
@@ -158,16 +158,16 @@ Max Score: 95.27
 ### Score Distribution
 
 ```
- 0-30 (Very Poor):      101 cafés (9.4%)   - 🔴 Not recommended
-30-45 (Poor):           686 cafés (64.0%)  - 🟠 Below average
-45-60 (Average):        130 cafés (12.1%)  - 🟡 Moderate suitability
-60-75 (Good):           108 cafés (10.1%)  - 🔵 Suitable
-75-100 (Excellent):      47 cafés (4.4%)   - 🟢 Highly suitable
+ 0-30 (Very Poor):      101 cafes (9.4%)   - 🔴 Not recommended
+30-45 (Poor):           686 cafes (64.0%)  - 🟠 Below average
+45-60 (Average):        130 cafes (12.1%)  - 🟡 Moderate suitability
+60-75 (Good):           108 cafes (10.1%)  - 🔵 Suitable
+75-100 (Excellent):      47 cafes (4.4%)   - 🟢 Highly suitable
 ```
 
 ### Top 10 Most Suitable Locations
 
-| Rank | Café Name | Score | Coordinates | Rating |
+| Rank | Cafe Name | Score | Coordinates | Rating |
 |------|-----------|-------|-------------|--------|
 | 1 | H2O Cafe | 95.27 | 27.7178, 85.3474 | 🟢 Excellent |
 | 2 | Unknown Cafe | 94.35 | 27.7010, 85.3226 | 🟢 Excellent |
@@ -197,7 +197,7 @@ Max Score: 95.27
 - `regression_model_comparison.csv` - Side-by-side model comparison
 - `regression_detailed_metrics.json` - Comprehensive evaluation metrics
 - `regression_predictions_summary.json` - Prediction statistics
-- `regression_predictions.csv` - All 1,072 cafés with predicted scores
+- `regression_predictions.csv` - All 1,072 cafes with predicted scores
 
 ## Usage Instructions
 
@@ -218,7 +218,7 @@ features = df.iloc[0][predictor.feature_cols].to_dict()
 score = predictor.predict_single(features, model_type='ensemble')
 print(f"Suitability Score: {score:.2f}")
 
-# Batch predictions for all cafés
+# Batch predictions for all cafes
 predictions = predictor.batch_predict(df, model_type='ensemble')
 ```
 
@@ -240,23 +240,23 @@ predictions = predictor.batch_predict(df, model_type='ensemble')
 ✅ **No Class Imbalance**: Regression doesn't suffer from categorical skew
 ✅ **High Accuracy**: R² > 0.95 on test sets
 ✅ **Interpretable**: Scores directly indicate suitability
-✅ **Scalable**: Works on full 1,072 café dataset
+✅ **Scalable**: Works on full 1,072 cafe dataset
 ✅ **Ensemble Robust**: Multiple models reduce overfitting risk
 
 ## Next Steps
 
-1. **Real-World Validation**: Test on newly opening cafés in Kathmandu
+1. **Real-World Validation**: Test on newly opening cafes in Kathmandu
 2. **Feature Importance Analysis**: Identify which factors matter most
 3. **Production Deployment**: Integrate into web/mobile applications
 4. **Continuous Improvement**: Collect actual outcomes (operating status, revenue) and retrain
-5. **Clustering Analysis**: Discover natural café segments (optional)
+5. **Clustering Analysis**: Discover natural cafe segments (optional)
 
 ## Note on Synthetic Data
 
 Current scores are derived from a **synthetic formula** based on engineered features. For production use, validate against:
-- Actual café performance metrics (revenue, customer count)
+- Actual cafe performance metrics (revenue, customer count)
 - Real foot traffic data (Google Popular Times API)
-- Café operating status (still open after 12 months?)
+- Cafe operating status (still open after 12 months?)
 - Customer reviews and satisfaction
 
 See `CONTINUOUS_SCORE_REAL_WORLD_ANALYSIS.md` for detailed roadmap to production.

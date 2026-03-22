@@ -1,7 +1,7 @@
 # 🤖 Model Training Guide: Random Forest & XGBoost
 
 ## Overview
-Train two ML models (Random Forest and XGBoost) to predict café location suitability using your comprehensive dataset.
+Train two ML models (Random Forest and XGBoost) to predict cafe location suitability using your comprehensive dataset.
 
 ---
 
@@ -21,7 +21,7 @@ print(df['suitability'].value_counts())
 ```
 
 ✅ **What you need:**
-- ✓ 1,072 café records
+- ✓ 1,072 cafe records
 - ✓ 28 columns (10 location + 18 features)
 - ✓ Target variable: `suitability` (0-100 score)
 - ✓ All training features populated
@@ -438,7 +438,7 @@ python get_importances.py
 ## 🚀 **Next Steps After Training**
 
 1. **Deploy Models** → Backend API integration
-2. **Create Predictions** → Use models on new café locations
+2. **Create Predictions** → Use models on new cafe locations
 3. **Monitor Performance** → Track accuracy over time
 4. **Retrain Quarterly** → Keep models updated
 5. **A/B Test** → Compare recommendations accuracy

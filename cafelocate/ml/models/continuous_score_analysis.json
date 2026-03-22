@@ -6,7 +6,7 @@
     "current_state": "Using synthetic formula to generate labels",
     "continuous_scores_help": "Yes - reduces information loss and removes arbitrary boundaries",
     "makes_real_world": "No - still predicting synthetic scores, not actual business outcomes",
-    "validation_needed": "Must collect real café success/failure data to validate predictions"
+    "validation_needed": "Must collect real cafe success/failure data to validate predictions"
   },
   "score_assignment_methods": {
     "current_synthetic": {
@@ -30,9 +30,9 @@
       "validation": null
     },
     "real_world_needed": {
-      "method": "Regression on actual café success metrics",
+      "method": "Regression on actual cafe success metrics",
       "data_sources": [
-        "Café operating status (open/closed)",
+        "Cafe operating status (open/closed)",
         "Years in operation",
         "Customer reviews",
         "Foot traffic estimates",
@@ -48,11 +48,11 @@
       "✅ Accessibility metrics (roads, schools, transit)",
       "✅ Location coordinates",
       "✅ Synthetic suitability labels",
-      "✅ 1,000+ café locations"
+      "✅ 1,000+ cafe locations"
     ],
     "What You're Missing": [
-      "❌ Café operating status (open/closed)",
-      "❌ Historical café data (when opened, when closed)",
+      "❌ Cafe operating status (open/closed)",
+      "❌ Historical cafe data (when opened, when closed)",
       "❌ Revenue/profitability data",
       "❌ Customer satisfaction scores",
       "❌ Actual foot traffic counts",
@@ -61,19 +61,19 @@
       "❌ Time series data (trends over years)"
     ],
     "How to Get Missing Data": [
-      "📍 Google Maps: Is café currently shown? When did it close?",
+      "📍 Google Maps: Is cafe currently shown? When did it close?",
       "🌐 Web archives: Wayback Machine to find historical data",
       "⭐ Reviews: Google/TripAdvisor ratings = satisfaction proxy",
       "📊 Business databases: OpenTable, Yelp, local registration",
       "🚶 Foot traffic: Google Popular Times, foot traffic APIs",
       "💰 Financial: Better Business Bureau, D&B scores",
-      "📰 News: Local news for café closures, expansions",
+      "📰 News: Local news for cafe closures, expansions",
       "📸 Satellite: Google Earth historical images"
     ]
   },
   "recommendations": [
     "Phase 1: Implement continuous regression scores (better than categories)",
-    "Phase 2: Collect real café outcome data (6-12 months)",
+    "Phase 2: Collect real cafe outcome data (6-12 months)",
     "Phase 3: Retrain models on real data",
     "Phase 4: Validate predictions against new locations"
   ]

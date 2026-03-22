@@ -1,6 +1,6 @@
-# Docker Setup for CaféLocate 🐳
+# Docker Setup for CafeLocate 🐳
 
-This guide explains how to run the CaféLocate application using Docker and Docker Compose.
+This guide explains how to run the CafeLocate application using Docker and Docker Compose.
 
 ## Prerequisites
 

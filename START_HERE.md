@@ -4,7 +4,7 @@
 
 You have **everything needed** to train Random Forest and XGBoost models:
 
-✅ **Combined Dataset** - 1,072 cafés with 28 features  
+✅ **Combined Dataset** - 1,072 cafes with 28 features  
 ✅ **Training Scripts** - 6 ready-to-run Python files  
 ✅ **Documentation** - 4 comprehensive guides  
 ✅ **Startup Script** - Automated setup & training  
@@ -34,7 +34,7 @@ python train_xgboost_comparison.py
 
 **Expected output:**
 ```
-✓ Loading data... (1072 cafés, 18 features)
+✓ Loading data... (1072 cafes, 18 features)
 ✓ Preprocessing... (856 train, 216 test)
 ✓ Training Random Forest... (99.68% accuracy)
 ✓ Training XGBoost... (100.00% accuracy)
@@ -286,7 +286,7 @@ cd c:\Users\v15\Desktop\minorversion2\MP\cafelocate\ml && python train_xgboost_c
 ```
 
 **This single command will:**
-1. Load your 1,072 café dataset
+1. Load your 1,072 cafe dataset
 2. Split into 80% train, 20% test
 3. Train Random Forest (200 trees)
 4. Train XGBoost (100 boosting rounds)
@@ -303,7 +303,7 @@ cd c:\Users\v15\Desktop\minorversion2\MP\cafelocate\ml && python train_xgboost_c
 
 ## 💡 **Key Points**
 
-✅ **You have the data** - Combined dataset with 1,072 cafés ✅  
+✅ **You have the data** - Combined dataset with 1,072 cafes ✅  
 ✅ **You have the code** - Training scripts ready to use  
 ✅ **You have the guide** - Documentation step-by-step  
 ✅ **You have everything needed** - Just execute!

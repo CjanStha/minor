@@ -43,16 +43,16 @@ FEATURE_NAMES = [
 # ── Human-readable labels ─────────────────────────────────────────────────────
 CAFE_TYPE_LABELS = {
     'coffee_shop':   'Coffee Shop',
-    'bakery':        'Bakery Café',
+    'bakery':        'Bakery Cafe',
     'dessert_shop':  'Dessert Shop',
-    'restaurant':    'Restaurant Café',
+    'restaurant':    'Restaurant Cafe',
     'juice_bar':     'Juice Bar',
     'ice_cream':     'Ice Cream Parlor',
-    'cafe_bar':      'Café Bar',
-    'internet_cafe': 'Internet Café',
+    'cafe_bar':      'Cafe Bar',
+    'internet_cafe': 'Internet Cafe',
 }
 
-# Map café types to suitability levels
+# Map cafe types to suitability levels
 TYPE_TO_SUITABILITY = {
     'coffee_shop':   'High Suitability',
     'bakery':        'High Suitability',
@@ -67,10 +67,10 @@ TYPE_TO_SUITABILITY = {
 
 def get_suitability_prediction(features: list) -> dict:
     """
-    Get location suitability prediction based on café type prediction.
-    This maps café type predictions to suitability levels.
+    Get location suitability prediction based on cafe type prediction.
+    This maps cafe type predictions to suitability levels.
     """
-    # Get café type prediction
+    # Get cafe type prediction
     type_prediction = get_prediction(features)
 
     if type_prediction.get('predicted_type') == 'Model not trained yet':
@@ -91,9 +91,9 @@ def get_suitability_prediction(features: list) -> dict:
     suitability_probs = {'Low Suitability': 0, 'Medium Suitability': 0, 'High Suitability': 0}
 
     for type_name, prob in type_probs.items():
-        if type_name in ['Coffee Shop', 'Bakery Café']:
+        if type_name in ['Coffee Shop', 'Bakery Cafe']:
             suitability_probs['High Suitability'] += prob
-        elif type_name in ['Dessert Shop', 'Restaurant Café', 'Juice Bar']:
+        elif type_name in ['Dessert Shop', 'Restaurant Cafe', 'Juice Bar']:
             suitability_probs['Medium Suitability'] += prob
         else:
             suitability_probs['Low Suitability'] += prob
@@ -113,8 +113,8 @@ def get_prediction(features: list) -> dict:
         features: [competitor_count, avg_rating, road_length_m, pop_density]
 
     Returns:
-        { 'predicted_type': 'Bakery Café', 'confidence': 0.87,
-          'all_probabilities': {'Coffee Shop': 0.08, 'Bakery Café': 0.87, ...} }
+        { 'predicted_type': 'Bakery Cafe', 'confidence': 0.87,
+          'all_probabilities': {'Coffee Shop': 0.08, 'Bakery Cafe': 0.87, ...} }
     """
     _load_model()
 

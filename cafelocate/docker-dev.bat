@@ -1,5 +1,5 @@
 @echo off
-REM CaféLocate Docker Development Script for Windows
+REM CafeLocate Docker Development Script for Windows
 REM Usage: docker-dev.bat [command]
 
 if "%1"=="build" (
@@ -71,7 +71,7 @@ if "%1"=="clean" (
     goto end
 )
 
-echo CaféLocate Docker Development Helper
+echo CafeLocate Docker Development Helper
 echo.
 echo Usage: docker-dev.bat [command]
 echo.

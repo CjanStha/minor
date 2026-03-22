@@ -4,7 +4,7 @@
 
 ```
 ✅ Dataset Ready
-   └─ combined_comprehensive_dataset.csv (1,072 cafés × 28 features)
+   └─ combined_comprehensive_dataset.csv (1,072 cafes × 28 features)
    
 ✅ Training Code Exists  
    ├─ train_model.py (Random Forest)
@@ -27,7 +27,7 @@ START HERE
 ┌─────────────────────────────────────────────────────┐
 │ STEP 1: Load Combined Dataset                       │
 │ File: combined_comprehensive_dataset.csv            │
-│ Data: 1,072 cafés × 28 columns                      │
+│ Data: 1,072 cafes × 28 columns                      │
 │       - 10 location columns                         │
 │       - 18 engineered features                      │
 │       - Target: suitability (0-100)                 │
@@ -318,7 +318,7 @@ cd c:\Users\v15\Desktop\minorversion2\MP\cafelocate\ml && python train_xgboost_c
 ```
 
 ### What it will do:
-1. Load your 1,072 café dataset
+1. Load your 1,072 cafe dataset
 2. Preprocess automatically (remove non-features, scale, split)
 3. Train Random Forest (200 trees)
 4. Train XGBoost (100 rounds)

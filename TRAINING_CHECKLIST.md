@@ -297,7 +297,7 @@ cafelocate/ml/models/
 
 1. **Review Results** → Open MODEL_TRAINING_GUIDE.md for detailed analysis
 2. **Deploy Model** → Integrate into Django API
-3. **Test Predictions** → Create sample café locations and test
+3. **Test Predictions** → Create sample cafe locations and test
 4. **Monitor** → Track accuracy over time
 5. **Retrain** → Schedule monthly/quarterly retraining
 

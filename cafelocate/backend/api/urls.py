@@ -29,6 +29,10 @@ urlpatterns = [
     # GET /api/area-population/?lat=27.71&lng=85.32&radius=500
     # Calculates exact population within the area based on ward boundaries
     path('area-population/', views.AreaPopulationView.as_view(), name='area-population'),
+
+    # GET /api/cafes/stats/
+    # Returns dataset level statistics for all cafes
+    path('cafes/stats/', views.CafeStatsView.as_view(), name='cafes-stats'),
 ]
 
 # Final URL structure:

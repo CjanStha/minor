@@ -1,4 +1,4 @@
-# Kathmandu Café Location Strategy: Evidence-Based Analysis
+# Kathmandu Cafe Location Strategy: Evidence-Based Analysis
 ## Academic Framework Applied to Your Data
 
 ---
@@ -17,7 +17,7 @@
 ### Applied to Kathmandu Top Performers
 
 ```
-HIGH-PERFORMING CAFÉ CLUSTER
+HIGH-PERFORMING CAFE CLUSTER
 Coordinates: 27.71-27.72°N, 85.34-85.35°E (approximately 1 km² area)
 
 ┌─────────────────────────────────────────┐
@@ -32,11 +32,11 @@ Coordinates: 27.71-27.72°N, 85.34-85.35°E (approximately 1 km² area)
 │                                          │  - Destination neighborhood
 │   Cafe Zen           91.18  🟢 STRONG   │
 │  (27.7183, 85.3470)                      │  Agglomeration Effect:
-│                                          │  = These cafés BENEFIT from
+│                                          │  = These cafes BENEFIT from
 │   क्याफे डे पासज    89.80  🟢 STRONG   │    each other's presence
 │  (27.7183, 85.3465)                      │
 │                                          │  + Shared reputation
-│   ⬜ NEW CAFÉ #6 (opportunity)            │  + Increased total foot traffic
+│   ⬜ NEW CAFE #6 (opportunity)            │  + Increased total foot traffic
 │  (27.71-27.72, 85.34-85.35)               │  + Customer clustering
 └─────────────────────────────────────────┘
 ```
@@ -44,10 +44,10 @@ Coordinates: 27.71-27.72°N, 85.34-85.35°E (approximately 1 km² area)
 ### Quantitative Prediction
 Based on Rosenthal & Strange (2004) agglomeration math:
 
-- **Current cluster value**: 5 cafés × their individual foot traffic
-- **With 6th quality café**: Area foot traffic increases by ~25-30%
-- **Spillover to existing cafés**: Each existing café sees +15-20% more walk-by traffic
-- **Result**: 6th café is VIABLE despite competition
+- **Current cluster value**: 5 cafes × their individual foot traffic
+- **With 6th quality cafe**: Area foot traffic increases by ~25-30%
+- **Spillover to existing cafes**: Each existing cafe sees +15-20% more walk-by traffic
+- **Result**: 6th cafe is VIABLE despite competition
 
 ---
 
@@ -84,19 +84,19 @@ Population Growth           population_density_proxy: HIGH
                            = Increasing demand base
                            = Room for growth
                            
-Customer Base Size          1,072 cafés in Kathmandu dataset
+Customer Base Size          1,072 cafes in Kathmandu dataset
                            Only 47 (4.4%) score 75+
                            Only 155 (14.5%) score 60+
                            = Market far from saturated globally
                            = This cluster IS the premium segment
                            
 Willingness to Pay          Price-level indicators
-                           Multiple premium cafés coexist
+                           Multiple premium cafes coexist
                            = Customers pay for quality
                            = Market supports multiple tiers
 ```
 
-**Prediction**: Opening café #6 will EXPAND market, not cannibalize
+**Prediction**: Opening cafe #6 will EXPAND market, not cannibalize
 
 ---
 
@@ -109,7 +109,7 @@ Willingness to Pay          Price-level indicators
 - Primary business effect: +100% traffic from direct customers
 - Spillover effect: +40-60% traffic from adjacent businesses
 
-### Applied to Kathmandu Café Cluster
+### Applied to Kathmandu Cafe Cluster
 
 ```
 H2O Cafe (95.27) = ANCHOR BUSINESS
@@ -123,20 +123,20 @@ H2O Cafe (95.27) = ANCHOR BUSINESS
                    ├─ Walk past Cafe Zen → 40-60% enter (+40-60 customers)  
                    ├─ Walk past क्याफे डे पासज → 40-60% enter (+40-60 customers)
                    │
-                   └─ Walk past NEW CAFÉ #6 → 40-60% enter (+40-60 customers)
+                   └─ Walk past NEW CAFE #6 → 40-60% enter (+40-60 customers)
 
-IMPORTANT: Each café is BOTH destination AND source of spillover customers
+IMPORTANT: Each cafe is BOTH destination AND source of spillover customers
 ```
 
 ### Quantitative Spillover Calculation
 
-For a new café in the cluster:
+For a new cafe in the cluster:
 
 **Baseline from direct marketing**: 30-50 customers/day (new business)
-**Spillover from existing cafés**: 40-60 customers/day (walking past)
+**Spillover from existing cafes**: 40-60 customers/day (walking past)
 **Total first year potential**: 70-110 customers/day = 25,550-40,150 annually
 
-This is VIABLE for café business.
+This is VIABLE for cafe business.
 
 ---
 
@@ -156,17 +156,17 @@ This is VIABLE for café business.
 ```
 SATURATION ANALYSIS
 
-Current Status:          5 major quality cafés (scores 89-95)
+Current Status:          5 major quality cafes (scores 89-95)
                          Position: AT OPTIMAL DENSITY
 
-Adding 6th Café:         Would move to lower-end of saturation
+Adding 6th Cafe:         Would move to lower-end of saturation
                          Position: STILL VIABLE but tight
 
 Saturation Risk:         Only if both follow:
-                         1. New café scores <80 (low quality)
-                         2. New café copies existing concept
+                         1. New cafe scores <80 (low quality)
+                         2. New cafe copies existing concept
 
-Safe Growth Path:        6th café CAN succeed if:
+Safe Growth Path:        6th cafe CAN succeed if:
                          ✓ Scores ≥85 on suitability metrics
                          ✓ Offers distinct positioning
                          ✓ Targets unmet customer segment
@@ -176,21 +176,21 @@ Safe Growth Path:        6th café CAN succeed if:
 ### Competitive Density Chart
 
 ```
-CAFÉ CLUSTER DENSITY OVER TIME
+CAFE CLUSTER DENSITY OVER TIME
 (Kathmandu optimal scenario)
 
 Density Score    Viable Range    Typical Outcome
 ═════════════════════════════════════════════════════
-1-2 cafés        START           Market underdeveloped
-3-5 cafés  ✓ OPTIMAL            All can thrive with differentiation
-6 cafés    ⚠ THRESHOLD          Viable but risky (needs excellence)
-7-8 cafés        SATURATION      Only best survive
-9+ cafés         INTENSE          Commodity competition
+1-2 cafes        START           Market underdeveloped
+3-5 cafes  ✓ OPTIMAL            All can thrive with differentiation
+6 cafes    ⚠ THRESHOLD          Viable but risky (needs excellence)
+7-8 cafes        SATURATION      Only best survive
+9+ cafes         INTENSE          Commodity competition
 
 KATHMANDU STATUS:
-Current:  5 cafés (OPTIMAL) 
-Proposed: 6 cafés (THRESHOLD but VIABLE)
-Risk:     7th café (approaching danger zone)
+Current:  5 cafes (OPTIMAL) 
+Proposed: 6 cafes (THRESHOLD but VIABLE)
+Risk:     7th cafe (approaching danger zone)
 ```
 
 ---
@@ -202,7 +202,7 @@ Risk:     7th café (approaching danger zone)
 
 *Principle*: In crowded markets, success = occupying unique mental position in customers' minds
 
-### Applied to Kathmandu Café Cluster
+### Applied to Kathmandu Cafe Cluster
 
 **Current Positioning** (inferred from names & scores):
 
@@ -229,7 +229,7 @@ Cafe Zen (91.18)
 └─ Position: INTERNATIONAL/FRENCH
    └─ Owned: Cosmopolitan, European sophistication
 
-NEW CAFÉ #6 - OPPORTUNITY
+NEW CAFE #6 - OPPORTUNITY
 └─ UNOCCUPIED POSITIONS:
    
    Option A: SPECIALTY COFFEE
@@ -240,21 +240,21 @@ NEW CAFÉ #6 - OPPORTUNITY
    └─ Market sizing: Espresso + specialty coffee = growing trend
    
    Option B: SOCIAL/COWORKING HUB
-   └─ Position: "Workspace Café"
+   └─ Position: "Workspace Cafe"
    └─ Target: Remote workers, freelancers, students
    └─ Differentiation: Reliable WiFi, long seating, power outlets
    └─ Against: None (others prioritize dine-in leisure)
    └─ Market sizing: Remote work explosion in Kathmandu
    
    Option C: HEALTH/WELLNESS
-   └─ Position: "Clean Eating Café"
+   └─ Position: "Clean Eating Cafe"
    └─ Target: Health-conscious, fitness enthusiasts
    └─ Differentiation: Organic, vegan, macro-tracked
    └─ Against: None (others don't specialize in health)
    └─ Market sizing: Wellness trend growing globally
    
    Option D: PRICE/VALUE
-   └─ Position: "Quality-Value Café"
+   └─ Position: "Quality-Value Cafe"
    └─ Target: Students, working class, value seekers
    └─ Differentiation: Great taste at 60-70% price
    └─ Against: None (cluster is all premium)
@@ -279,26 +279,26 @@ NEW CAFÉ #6 - OPPORTUNITY
 
 *Formula*: Network Value ∝ (Number of nodes)²
 
-*Application to Cafés*: Value of café district grows exponentially with number of quality cafés
+*Application to Cafes*: Value of cafe district grows exponentially with number of quality cafes
 
-### Applied to Kathmandu Café Cluster
+### Applied to Kathmandu Cafe Cluster
 
 ```
 NETWORK EFFECT CALCULATION
 
-Scenario A: 3 Quality Cafés
+Scenario A: 3 Quality Cafes
 ─────────────────────────────
 Network Value = 3² = 9 units
 Customer trips to area = 100/day
 Reason: Single destination appeal
 
-Scenario B: 5 Quality Cafés (Current)
+Scenario B: 5 Quality Cafes (Current)
 ──────────────────────────────────────
 Network Value = 5² = 25 units  ← 3x more valuable than 3
 Customer trips to area = 225/day  ← Market expands
-Reason: Café district emerges, multi-stop trip
+Reason: Cafe district emerges, multi-stop trip
 
-Scenario C: 6 Quality Cafés (Proposed)
+Scenario C: 6 Quality Cafes (Proposed)
 ───────────────────────────────────────
 Network Value = 6² = 36 units  ← 4x more valuable than 3
 Customer trips to area = 270/day  ← Further expansion
@@ -306,13 +306,13 @@ Reason: Destination neighborhood established
 
 MULTIPLIER EFFECTS:
 - Customer comes for H2O Cafe (anchor)
-- Discovers 5 other cafés to try
+- Discovers 5 other cafes to try
 - Makes return visit to try each
-- Brings friends to "café district"
-- Others plan visit to "area" not just one café
+- Brings friends to "cafe district"
+- Others plan visit to "area" not just one cafe
 
-IMPLICATION FOR NEW CAFÉ #6:
-✓ You benefit from 5×1.5 multiplier from existing cafés
+IMPLICATION FOR NEW CAFE #6:
+✓ You benefit from 5×1.5 multiplier from existing cafes
 ✓ You're beneficiary of existing network value
 ✓ Your presence increases network value for all (positive feedback)
 ✓ This is mutually beneficial clustering effect
@@ -329,7 +329,7 @@ IMPLICATION FOR NEW CAFÉ #6:
 
 Result: All competitors can grow even with 6-7 viable players.
 
-### Applied to Kathmandu Café Market
+### Applied to Kathmandu Cafe Market
 
 ```
 QUALITY SPIRAL: Competition Increases Excellence
@@ -345,22 +345,22 @@ Year 2:  Competitors see success, study H2O's formula
 
 Year 3:  Cafe Zen (91), क्याफे डे पासज (89) enter
          └─ Now 5 quality options
-         └─ Media attention: "Kathmandu's café district"
+         └─ Media attention: "Kathmandu's cafe district"
          └─ Tourism increases region-wide
 
-Year 4:  NEW CAFÉ #6 OPPORTUNITY
+Year 4:  NEW CAFE #6 OPPORTUNITY
          └─ Quality floor is now 89+
-         └─ Can't open mediocre café
+         └─ Can't open mediocre cafe
          └─ Must match or exceed 85+ standard
          └─ But: Reputation of area attracts customers
          └─ Customer base has 4× grown from Year 1
 
 CUSTOMER PERCEPTION
 Without cluster:        "H2O Cafe. Good place."
-With cluster:           "That café district. Must visit when in Kathmandu."
+With cluster:           "That cafe district. Must visit when in Kathmandu."
 
 BUSINESS IMPACT
-Single café in isolation:    100 customers/day (depends entirely on H2O)
+Single cafe in isolation:    100 customers/day (depends entirely on H2O)
 Part of district:            150-200 customers/day (benefits from cluster)
 └─ Extra 50-100 customers come from spillover traffic
 ```
@@ -376,46 +376,46 @@ Case studies compared:
 
 ```
 MELBOURNE'S LANEWAYS (Australia)
-├─ Number of cafés: 40+ in 2-3 blocks
+├─ Number of cafes: 40+ in 2-3 blocks
 ├─ Market saturation: Extreme
 ├─ Success factor: Quality differentiation
-├─ Customer behavior: Multi-café tours, cafe-hopping
+├─ Customer behavior: Multi-cafe tours, cafe-hopping
 ├─ Tourist appeal: Major destination (500,000+ annual cafe visitors)
-└─ Lesson: Can support 10x more cafés if all differentiated
+└─ Lesson: Can support 10x more cafes if all differentiated
 
 PORTLAND'S COFFEE SCENE (USA)
-├─ Number of cafés: 200+ specialty coffee shops in 2 miles
-├─ Market saturation: Extreme (1 café per 1,200 people)
+├─ Number of cafes: 200+ specialty coffee shops in 2 miles
+├─ Market saturation: Extreme (1 cafe per 1,200 people)
 ├─ Success factor: Specialty positioning (roastery model takes 20% market)
-├─ Customer behavior: Brand loyalty + café exploration
+├─ Customer behavior: Brand loyalty + cafe exploration
 ├─ Economic impact: Coffee district drives ~$500M annual economy
 └─ Lesson: Market grows with quality improvement; specialty segments thrive
 
-KATHMANDU'S EMERGING CAFÉ CLUSTER (Nepal)
-├─ Number of cafés: 5 major quality shops (current)
+KATHMANDU'S EMERGING CAFE CLUSTER (Nepal)
+├─ Number of cafes: 5 major quality shops (current)
 ├─ Market saturation: OPTIMAL (far from Melbourne/Portland levels)
 ├─ Success factor: Area reputation building
 ├─ Customer behavior: Emerging multi-stop visits
-├─ Growth potential: Could support 10-15 quality cafés
+├─ Growth potential: Could support 10-15 quality cafes
 └─ Lesson: You're at early growth phase; room for deliberate expansion
 
 RECOMMENDATION FOR KATHMANDU:
 Your cluster is 10 years behind Melbourne, 5 years behind Portland.
 - NOT at risk of oversaturation
 - RIPE for planned growth
-- Café #6 should be ENCOURAGED not discouraged
+- Cafe #6 should be ENCOURAGED not discouraged
 ```
 
 ---
 
-## 9. Financial Impact: Revenue Model for Café #6
+## 9. Financial Impact: Revenue Model for Cafe #6
 
 ### Based on Academic Findings
 
-**Assumption**: New café matches area quality (suitability score 85+)
+**Assumption**: New cafe matches area quality (suitability score 85+)
 
 ```
-REVENUE ANALYSIS - NEW CAFÉ #6
+REVENUE ANALYSIS - NEW CAFE #6
 
 Customer Traffic Sources:
 ┌─────────────────────────────────┐
@@ -431,20 +431,20 @@ Customer Traffic Sources:
 │                         ($650k-$1M USD equivalent)
 └─────────────────────────────────┘
 
-Comparison to single-location café:
-- Isolated café: 50-80 customers/day
-- Cluster café: 130-200 customers/day  (2.5-3.5x higher!)
+Comparison to single-location cafe:
+- Isolated cafe: 50-80 customers/day
+- Cluster cafe: 130-200 customers/day  (2.5-3.5x higher!)
 - Reason: Spillover + network effects
 ```
 
 ---
 
-## 10. Decision Framework: Should You Open Café #6?
+## 10. Decision Framework: Should You Open Cafe #6?
 
 ### Synthesis of All Academic Evidence
 
 ```
-DECISION TREE: Opening New Café in High-Performance Cluster
+DECISION TREE: Opening New Cafe in High-Performance Cluster
 
                       Is location in                    
                       top-performing cluster?           
@@ -482,12 +482,12 @@ DECISION TREE: Opening New Café in High-Performance Cluster
 
 ### Final Recommendation
 
-**✅ YES, OPEN CAFÉ #6 IF:**
+**✅ YES, OPEN CAFE #6 IF:**
 
 1. **Location Criteria:**
    - [ ] Score ≥85 on suitability metrics (yours: 89-95 range ✓)
    - [ ] Part of established high-foot-traffic cluster (yours: confirmed ✓)
-   - [ ] Within 1km of existing quality cafés (yours: yes ✓)
+   - [ ] Within 1km of existing quality cafes (yours: yes ✓)
 
 2. **Quality Criteria:**
    - [ ] Match or exceed area quality standards (area avg: 91 ✓)
@@ -495,7 +495,7 @@ DECISION TREE: Opening New Café in High-Performance Cluster
    - [ ] Service quality ≥80 percentile for area
 
 3. **Differentiation Criteria:**
-   - [ ] Distinct positioning vs. 5 existing cafés
+   - [ ] Distinct positioning vs. 5 existing cafes
    - [ ] Unoccupied market segment
    - [ ] Sustainable competitive advantage
 
@@ -526,6 +526,6 @@ For detailed citations and academic sources, see:
 ---
 
 **Analysis Type**: Evidence-Based Strategic Assessment
-**Data Source**: Your café suitability regression model (1,072 Kathmandu locations)
+**Data Source**: Your cafe suitability regression model (1,072 Kathmandu locations)
 **Academic Rigor**: All conclusions backed by peer-reviewed research
 **Date**: March 22, 2026

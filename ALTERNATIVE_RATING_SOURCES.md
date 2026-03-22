@@ -1,4 +1,4 @@
-# Alternative Café Rating Data Sources (Non-Google)
+# Alternative Cafe Rating Data Sources (Non-Google)
 
 **Status**: Without Google Maps API, you have several viable alternatives  
 **Recommendation**: Hybrid approach using OpenStreetMap + supplementary sources
@@ -12,7 +12,7 @@
 **Availability**: Ratings are stored in tags, but sparse coverage in Nepal
 
 ```python
-# What OSM stores for cafés
+# What OSM stores for cafes
 {
     "tags": {
         "name": "Morning Brew Coffee",
@@ -31,7 +31,7 @@
 ```
 
 **Coverage for Kathmandu**: 
-- 70% of cafés have basic data (name, location)
+- 70% of cafes have basic data (name, location)
 - ~15% have ratings tag
 - ~5% have comprehensive reviews
 
@@ -86,7 +86,7 @@ import requests
 
 def search_cafes_tripadvisor(location, radius_km=2):
     """
-    Search for cafés on TripAdvisor with ratings
+    Search for cafes on TripAdvisor with ratings
     """
     api_key = "YOUR_TRIPADVISOR_API_KEY"
     
@@ -121,7 +121,7 @@ def search_cafes_tripadvisor(location, radius_km=2):
 
 **Pros**:
 - ✅ Free tier available (limited requests)
-- ✅ Good coverage of restaurants/cafés globally
+- ✅ Good coverage of restaurants/cafes globally
 - ✅ Well-maintained API
 
 **Cons**:
@@ -140,7 +140,7 @@ def search_cafes_tripadvisor(location, radius_km=2):
 ```python
 def search_cafes_yelp(location, radius_m=2000):
     """
-    Search for cafés on Yelp with ratings
+    Search for cafes on Yelp with ratings
     """
     api_key = "YOUR_YELP_API_KEY"
     headers = {'Authorization': f'Bearer {api_key}'}
@@ -199,7 +199,7 @@ Since no single source covers everything, combine multiple sources:
 ```python
 def collect_cafe_ratings_hybrid(latitude, longitude, radius=500):
     """
-    Collect café data and ratings from multiple sources
+    Collect cafe data and ratings from multiple sources
     Combines OSM (free, local) + TripAdvisor/Yelp (global) + manual
     """
     
@@ -329,10 +329,10 @@ Features include:
   - population_density ✓
   
 NOT USED:
-  - café rating/review count ❌ (would be competitor_quality)
+  - cafe rating/review count ❌ (would be competitor_quality)
 ```
 
-**KEY INSIGHT**: Your ML model doesn't currently use café ratings/reviews! So missing Google data isn't breaking anything.
+**KEY INSIGHT**: Your ML model doesn't currently use cafe ratings/reviews! So missing Google data isn't breaking anything.
 
 ---
 
@@ -372,7 +372,7 @@ requests==2.31.0
 
 ### **Option C: Manual/Crowdsourced Ratings** ⚡ (ALTERNATIVE)
 
-If users can rate cafés in your app:
+If users can rate cafes in your app:
 
 ```python
 # In django models:
@@ -425,7 +425,7 @@ Create `cafelocate/ml/collect_ratings_multiple.py`:
 
 ```python
 """
-Collect café ratings from multiple sources without Google API
+Collect cafe ratings from multiple sources without Google API
 """
 import requests
 import pandas as pd
@@ -462,7 +462,7 @@ class CafeRatingCollector:
         pass
 ```
 
-### **Step 2: Update Café Model** (1 hour)
+### **Step 2: Update Cafe Model** (1 hour)
 
 ```python
 # cafelocate/backend/api/models.py
@@ -526,11 +526,11 @@ def analyze_location(request):
 ### **For Better Ratings (2-3 days work)**
 1. Add TripAdvisor API (free tier)
 2. Create rating aggregation logic
-3. Update café model with source tracking
+3. Update cafe model with source tracking
 
 ### **For Long-term (Product Feature)**
 1. Add user review system to your app
-2. Let users rate/review cafés
+2. Let users rate/review cafes
 3. Build community-driven rating system
 4. Export aggregated ratings back to OSM (contribute to community!)
 

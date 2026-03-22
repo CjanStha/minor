@@ -1,6 +1,6 @@
 """
 Regression vs Classification Analysis
-Shows why regression is better for café suitability prediction
+Shows why regression is better for cafe suitability prediction
 """
 
 import pandas as pd
@@ -219,7 +219,7 @@ analysis = {
             'cons': [
                 'Loses information - score 14.9 and 15.1 treated as different categories',
                 'Arbitrary thresholds - why not 14.5 or 15.5?',
-                'Cannot express uncertainty (e.g., a café on the boundary)',
+                'Cannot express uncertainty (e.g., a cafe on the boundary)',
                 'All "High" scores treated equally (99 vs 15)',
                 'Doesn\'t match underlying data generation (synthetic score formula)'
             ],
@@ -231,7 +231,7 @@ analysis = {
             'pros': [
                 'Preserves information - 14.9 and 15.1 are different',
                 'No arbitrary boundaries',
-                'Can rank cafés naturally (99 > 50 > 15)',
+                'Can rank cafes naturally (99 > 50 > 15)',
                 'Matches underlying data (synthetic score formula)',
                 'Flexible thresholds - can set different cutoffs for different use cases',
                 'Can express confidence (score distribution)'
@@ -252,9 +252,9 @@ analysis = {
     },
     'business_value': {
         'regression_advantages': [
-            'Rank cafés by suitability (score provides ordering)',
+            'Rank cafes by suitability (score provides ordering)',
             'Flexibility: Can use different thresholds for different markets',
-            'Explainability: Show café its suitability score + how to improve',
+            'Explainability: Show cafe its suitability score + how to improve',
             'Feature importance: Understand what drives the continuous score',
             'Uncertainty: Can show confidence range (e.g., 65±5)'
         ]
@@ -266,7 +266,7 @@ print(f"\n[Step 7] Saving comprehensive analysis...")
 
 report = {
     'timestamp': datetime.now().isoformat(),
-    'analysis_type': 'Regression vs Classification for Café Suitability',
+    'analysis_type': 'Regression vs Classification for Cafe Suitability',
     'key_finding': 'Regression is fundamentally better for this project',
     'why': 'Labels are generated from continuous score formula; regression predicts the underlying score directly',
     'is_unsupervised': False,
@@ -342,7 +342,7 @@ summary = f"""
 
 ## Executive Summary
 
-For café suitability prediction:
+For cafe suitability prediction:
 - **REGRESSION is better** ✅
 - **Regression is still SUPERVISED** (not unsupervised)
 - **Classification loses information** unnecessarily
@@ -364,7 +364,7 @@ For café suitability prediction:
 - Directly predicts the underlying continuous score (0-100)
 - No arbitrary boundaries
 - Preserves information (99 >> 50 >> 15)
-- Naturally ranks cafés by suitability
+- Naturally ranks cafes by suitability
 - Matches how labels were actually generated
 
 ### Analogy
@@ -431,7 +431,7 @@ from sklearn.cluster import KMeans
 
 kmeans = KMeans(n_clusters=3)
 clusters = kmeans.fit_predict(X_train)  # No y needed!
-# Discovers natural café types without knowing suitability
+# Discovers natural cafe types without knowing suitability
 
 # UNSUPERVISED: Dimensionality Reduction
 from sklearn.decomposition import PCA
@@ -448,7 +448,7 @@ X_reduced = pca.fit_transform(X_train)  # No y needed!
 ### Business Value of Regression
 
 1. **Ranking:**
-   - Sort cafés by suitability score (99 > 50 > 15)
+   - Sort cafes by suitability score (99 > 50 > 15)
    - Show "Top 10 best locations" with scores
 
 2. **Flexibility:**
@@ -458,7 +458,7 @@ X_reduced = pca.fit_transform(X_train)  # No y needed!
    - Avoid hard-coded boundaries
 
 3. **Transparency:**
-   - Show café its suitability score (e.g., 67.3)
+   - Show cafe its suitability score (e.g., 67.3)
    - Explain: "You're a good location because of X and Y"
    - Tell them: "Improve Z to reach 75"
 
@@ -473,13 +473,13 @@ X_reduced = pca.fit_transform(X_train)  # No y needed!
 ### Example Use Case
 
 **Classification Output:**
-- Café on score 15.1 → "High suitability"
-- Café on score 14.9 → "Medium suitability"
+- Cafe on score 15.1 → "High suitability"
+- Cafe on score 14.9 → "Medium suitability"
 - User confused: "What's the difference?"
 
 **Regression Output:**
-- Café with score 15.1 → "Suitability: 15.1/100"
-- Café with score 14.9 → "Suitability: 14.9/100"
+- Cafe with score 15.1 → "Suitability: 15.1/100"
+- Cafe with score 14.9 → "Suitability: 14.9/100"
 - User understands: "Very similar locations, both challenging"
 
 ---
@@ -534,7 +534,7 @@ low_suitability = predictions < 25
 ### To Make It UNSUPERVISED:
 - Use clustering (K-Means, DBSCAN, etc.)
 - No labels needed
-- Discover natural café groupings
+- Discover natural cafe groupings
 - Then validate with business logic
 
 ---
@@ -547,7 +547,7 @@ low_suitability = predictions < 25
 - Still supervised (uses labeled data)
 - More flexible and interpretable
 
-If you want truly unsupervised learning, switch to **clustering** to discover natural café types.
+If you want truly unsupervised learning, switch to **clustering** to discover natural cafe types.
 """
 
 summary_path = models_dir / "REGRESSION_VS_CLASSIFICATION_SUMMARY.md"

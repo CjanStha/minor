@@ -28,6 +28,7 @@ class MapManager {
         this.initialized = true;
         this.initializeMap();
         this.setupEventListeners();
+        this.loadDatasetStats();
     }
 
     initializeMap() {
@@ -220,7 +221,7 @@ class MapManager {
         const top5List = document.getElementById('top5-list');
         if (top5List && data.top5) {
             if (data.top5.length === 0) {
-                top5List.innerHTML = '<p class="no-data">No cafés found in this area</p>';
+                top5List.innerHTML = '<p class="no-data">No cafes found in this area</p>';
             } else {
                 top5List.innerHTML = data.top5.map(cafe => `
                     <div class="cafe-item">
@@ -278,7 +279,7 @@ class MapManager {
         }
 
         if (window.uiManager) {
-            window.uiManager.showNotification('Please select a café type first!', 'warning');
+            window.uiManager.showNotification('Please select a cafe type first!', 'warning');
         }
     }
 
@@ -297,6 +298,53 @@ class MapManager {
         if (window.uiManager) {
             window.uiManager.showNotification('Analysis failed. Check backend connection.', 'error');
         }
+    }
+
+    async loadDatasetStats() {
+        if (!window.apiManager) return;
+
+        const statsEl = document.getElementById('dataset-stats');
+        if (statsEl) {
+            statsEl.innerHTML = '<p>Loading dataset insights...</p>';
+        }
+
+        try {
+            const stats = await window.apiManager.getCafeDatasetStats();
+            this.displayDatasetStats(stats);
+        } catch (error) {
+            console.warn('Unable to fetch dataset stats', error);
+            if (statsEl) {
+                statsEl.innerHTML = '<p style="color:#e17055">Unable to load dataset stats.</p>';
+            }
+        }
+    }
+
+    displayDatasetStats(stats) {
+        const statsEl = document.getElementById('dataset-stats');
+        if (!statsEl) return;
+
+        if (!stats || typeof stats !== 'object') {
+            statsEl.innerHTML = '<p style="color:#e17055">Dataset stats unavailable.</p>';
+            return;
+        }
+
+        const typeList = stats.top_type_ranking || [];
+        statsEl.innerHTML = `
+            <div class="dataset-card-grid">
+                <div class="dataset-card"><strong>Total Cafes:</strong><br>${this.formatNumber(stats.total_cafes || 0)}</div>
+                <div class="dataset-card"><strong>Open Cafes:</strong><br>${this.formatNumber(stats.open_cafes || 0)}</div>
+                <div class="dataset-card"><strong>Avg Rating:</strong><br>${stats.avg_rating !== null ? stats.avg_rating.toFixed(2) : 'N/A'}</div>
+                <div class="dataset-card"><strong>Avg Reviews:</strong><br>${this.formatNumber(stats.avg_review_count || 0)}</div>
+            </div>
+            <div class="dataset-type-ranking">
+                <strong>Top Cafe Types:</strong>
+                <ul>${typeList.map(item => `<li>${item.type} — ${item.count}</li>`).join('')}</ul>
+            </div>
+        `;
+    }
+
+    formatNumber(value) {
+        return Number(value || 0).toLocaleString('en-US');
     }
 
     clearMarkerAndCircle() {
@@ -478,7 +526,7 @@ class MapManager {
                 <div class="report-grid">
                     <div class="report-item"><strong>Coordinates:</strong><br>${lat.toFixed(6)}, ${lng.toFixed(6)}</div>
                     <div class="report-item"><strong>Analysis Radius:</strong><br>${this.analysisRadius} meters</div>
-                    <div class="report-item"><strong>Café Type:</strong><br>${cafeTypeFormatted}</div>
+                    <div class="report-item"><strong>Cafe Type:</strong><br>${cafeTypeFormatted}</div>
                 </div>
             </div>
 
@@ -572,7 +620,7 @@ class MapManager {
                     <li><strong>Competition Level:</strong> ${this._getCompetitionLevel(competitors)}</li>
                     <li><strong>Market Potential:</strong> ${this._getMarketPotential(population)}</li>
                     <li><strong>Recommendation:</strong> ${parseInt(score) >= 60
-                        ? '✅ This location shows good potential for a café business.'
+                        ? '✅ This location shows good potential for a cafe business.'
                         : '⚠️ Consider alternative locations with less competition or better road access.'}</li>
                 </ul>
             </div>

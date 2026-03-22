@@ -31,7 +31,7 @@ class CafeSerializer(serializers.ModelSerializer):
         #       We expose latitude/longitude instead (simpler for Leaflet.js).
 
     def get_score(self, obj):
-        """Weighted score used to rank Top 5 cafés.
+        """Weighted score used to rank Top 5 cafes.
         Formula: rating × log(review_count + 1)
         Higher rating AND more reviews = higher score.
         The +1 avoids log(0) error for cafes with 0 reviews.

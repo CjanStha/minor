@@ -1575,7 +1575,7 @@ osm_id,amenity_type,name,latitude,longitude
 2509326776,place_of_worship,टुसालेश्वर,27.7311412,85.3340498
 2509326882,place_of_worship,Unnamed,27.7314892,85.3364993
 2515022672,place_of_worship,Unnamed,27.7366893,85.3426897
-2520619641,cafe,Café Soma,27.6786722,85.3104479
+2520619641,cafe,Cafe Soma,27.6786722,85.3104479
 2521940680,fast_food,Sandwich Hub,27.6763777,85.3118222
 2521950150,cafe,Roadhouse Cafe,27.6761042,85.3130233
 2522200805,restaurant,तत्वा बिस्ट्रो एण्ड बार,27.6850573,85.3127069
@@ -2065,7 +2065,7 @@ osm_id,amenity_type,name,latitude,longitude
 3384179699,shelter,Unnamed,27.678701,85.2732937
 3384180010,place_of_worship,Unnamed,27.6787065,85.2732813
 3391516597,restaurant,Unnamed,27.726878,85.3305236
-3391516598,cafe,Café Soma,27.7275171,85.330661
+3391516598,cafe,Cafe Soma,27.7275171,85.330661
 3391516599,restaurant,Moonlight Khaja Ghar and Restaurant,27.7286084,85.3310479
 3393705294,place_of_worship,हनुमान मन्दिर,27.7273121,85.3412188
 3393817990,place_of_worship,स्वेत गणेश,27.7099056,85.3047097
@@ -2108,7 +2108,7 @@ osm_id,amenity_type,name,latitude,longitude
 3413954371,school,संस्कृती अन्तर्राष्ट्रिय विद्यालय,27.7187532,85.2862689
 3415418903,place_of_worship,Fruits worship,27.666265,85.3110507
 3415419787,place_of_worship,क्रस वे सामुदायिक चर्च,27.6673445,85.31149
-3416542473,bar,Café des arts,27.716542,85.3124623
+3416542473,bar,Cafe des arts,27.716542,85.3124623
 3420819093,health_post,Syuchatar Health Post,27.7027224,85.2694403
 3428158794,restaurant,Mezze by Roadhouse,27.7128231,85.3175004
 3428209883,drinking_water,Unnamed,27.676004,85.27954
@@ -2591,7 +2591,7 @@ osm_id,amenity_type,name,latitude,longitude
 4407915589,police,Unnamed,27.6937083,85.3137333
 4409745491,atm,Unnamed,27.6793541,85.3492094
 4411013920,place_of_worship,Ganesh shrine,27.6775609,85.3214627
-4411398993,restaurant,Green Organic Café,27.7145392,85.3100898
+4411398993,restaurant,Green Organic Cafe,27.7145392,85.3100898
 4411694208,cafe,बिया क्याफे बेकरी,27.7121724,85.2880845
 4413244077,restaurant,स्वयम्भू कफी हाउस,27.7150324,85.2852563
 4415838883,toilets,Unnamed,27.7039163,85.3080024
@@ -3246,7 +3246,7 @@ osm_id,amenity_type,name,latitude,longitude
 4811245027,pharmacy,Unnamed,27.7013067,85.3402862
 4811266921,college,गोल्डेनगेट कलेज ब्लक २,27.7038519,85.3412815
 4812698121,bank,एनआईसी एशिया कर्पोरेट कार्यालय,27.6922959,85.3191911
-4813035322,cafe,The Café with No Name,27.7149427,85.3106301
+4813035322,cafe,The Cafe with No Name,27.7149427,85.3106301
 4813039923,cafe,भगवान बाहल क्याफे,27.7153536,85.3123371
 4813448122,pharmacy,Unnamed,27.6888072,85.3355201
 4813486121,shelter,Unnamed,27.7010561,85.2742051
@@ -3743,7 +3743,7 @@ osm_id,amenity_type,name,latitude,longitude
 5239930456,toilets,Unnamed,27.6829728,85.3112967
 5239936321,hospital,मानसिक शरण,27.6830328,85.3115909
 5239936421,restaurant,Unnamed,27.7064943,85.3421953
-5243848923,fast_food,Valley Café,27.7017571,85.3258629
+5243848923,fast_food,Valley Cafe,27.7017571,85.3258629
 5245742424,dentist,Unnamed,27.7396669,85.3369943
 5245742428,pharmacy,Unnamed,27.7398707,85.3368436
 5245747522,school,पाइलन एकेडेमी,27.7396226,85.3369805
@@ -4534,7 +4534,7 @@ osm_id,amenity_type,name,latitude,longitude
 6480664986,community_centre,Unnamed,27.7143581,85.3249101
 6484363986,shelter,Unnamed,27.7473164,85.3225229
 6484968586,bus_station,Unnamed,27.6639122,85.3148968
-6487188985,restaurant,Northfield Café and bar,27.7155256,85.3099595
+6487188985,restaurant,Northfield Cafe and bar,27.7155256,85.3099595
 6488345310,dentist,Phendey Dental Care Center,27.722579,85.2794114
 6491265588,cafe,Unnamed,27.7170094,85.3101934
 6493691586,atm,Unnamed,27.692146,85.3284671
@@ -6381,7 +6381,7 @@ osm_id,amenity_type,name,latitude,longitude
 9662482712,cafe,Kirtipur Cafeteria,27.6799577,85.2845558
 9662484293,social_facility,Vitamin A distribution,27.6789807,85.2802611
 9662506368,university,Tribhuwan University Service Commission,27.6784732,85.2880748
-9662537965,cafe,Newa Café,27.6744488,85.2769286
+9662537965,cafe,Newa Cafe,27.6744488,85.2769286
 9662547113,music_school,Taal mantra music academy,27.6746792,85.2784018
 9662688967,restaurant,Czech Pub,27.7172681,85.3102239
 9665838317,restaurant,Unnamed,27.7167634,85.3114266
@@ -9143,7 +9143,7 @@ osm_id,amenity_type,name,latitude,longitude
 12675767201,restaurant,Kathmandu Grill,27.7163967,85.3099754
 12675806139,events_venue,Swoyambhu Banquet,27.7128219,85.2948817
 12681210301,restaurant,Sicily Pizzeria,27.7135611,85.3101814
-12681210401,restaurant,Elegant Café & Restaurant,27.7173872,85.3092443
+12681210401,restaurant,Elegant Cafe & Restaurant,27.7173872,85.3092443
 12713504801,restaurant,Temple Town Inn,27.7156995,85.3078795
 12715278801,restaurant,Club House Restaurant and Bar,27.7163506,85.3125958
 12717486301,atm,Unnamed,27.6629912,85.3062263

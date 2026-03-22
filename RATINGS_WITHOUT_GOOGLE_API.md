@@ -1,4 +1,4 @@
-# 🌟 How to Get Café Ratings WITHOUT Google Maps API
+# 🌟 How to Get Cafe Ratings WITHOUT Google Maps API
 
 ## ✅ TL;DR - Quick Answer
 
@@ -29,7 +29,7 @@ Your project **already works without Google Maps API**!
 ✗ Rating enrichment (nice-to-have, not critical)
 ```
 
-**Your ML model doesn't even use café ratings yet**, so you're not losing functionality.
+**Your ML model doesn't even use cafe ratings yet**, so you're not losing functionality.
 
 ---
 
@@ -46,7 +46,7 @@ Already integrated in your collect_data.py
 ```
 
 **Status in Kathmandu**:
-- ~1,700 cafés mapped ✓
+- ~1,700 cafes mapped ✓
 - ~15% have rating tags ⚠️
 - Ratings often outdated
 
@@ -55,7 +55,7 @@ Already integrated in your collect_data.py
 Need: API key (free registration)
 ✓ High-quality ratings (tourist-focused)
 ✓ Review counts (reliable)
-✓ Great for restaurants/cafés
+✓ Great for restaurants/cafes
 ✓ Price level estimation
 ✗ Limited coverage in developing countries
 ```
@@ -72,7 +72,7 @@ Need: API key (free registration)
 ✓ Good quality reviews (500M+ reviews)
 ✓ Business details (hours, phone, website)
 ✓ Category information
-✗ Very limited coverage in Nepal (maybe 10-20 cafés)
+✗ Very limited coverage in Nepal (maybe 10-20 cafes)
 ```
 
 **How to get API key** (5 min):
@@ -86,7 +86,7 @@ Need: API key (free registration)
 Perfect for long-term competitive advantage
 
 Users can:
-✓ Rate/review cafés in your app
+✓ Rate/review cafes in your app
 ✓ Contribute to OpenStreetMap
 ✓ Build community data
 
@@ -189,7 +189,7 @@ What you're already doing:
 Add these lines (optional but recommended):
 
 ```bash
-# ── API Keys (Optional - for enhanced café ratings) ──────────────
+# ── API Keys (Optional - for enhanced cafe ratings) ──────────────
 # Leave blank to skip TripAdvisor/Yelp
 TRIPADVISOR_API_KEY=
 YELP_API_KEY=
@@ -227,18 +227,18 @@ cd cafelocate
 python ml/collect_ratings_alternative.py
 
 # Output:
-# 🔍 Collecting café data from multiple sources...
-# 1️⃣  OpenStreetMap... ✓ Found 847 cafés
-# 2️⃣  TripAdvisor... ✓ Found 34 cafés
-# 3️⃣  Yelp... ✓ Found 8 cafés
-# 4️⃣  Merging and deduplicating... ✓ Final count: 892 unique cafés
+# 🔍 Collecting cafe data from multiple sources...
+# 1️⃣  OpenStreetMap... ✓ Found 847 cafes
+# 2️⃣  TripAdvisor... ✓ Found 34 cafes
+# 3️⃣  Yelp... ✓ Found 8 cafes
+# 4️⃣  Merging and deduplicating... ✓ Final count: 892 unique cafes
 ```
 
 ### **4. Save Results**
 
 ```python
 # Automatically creates: kathmandu_cafes_with_ratings_hybrid.csv
-# Contains best available ratings for each café
+# Contains best available ratings for each cafe
 ```
 
 ---
@@ -254,7 +254,7 @@ Blue Cup Cafe,"3.8",openstreetmap
 ...
 ```
 
-Cafés with ratings: ~15%
+Cafes with ratings: ~15%
 
 ### **After Adding TripAdvisor**
 ```csv
@@ -266,7 +266,7 @@ New Found,4.2,tripadvisor,45
 ...
 ```
 
-Cafés with ratings: ~60-70%
+Cafes with ratings: ~60-70%
 
 ---
 
@@ -279,7 +279,7 @@ Cafés with ratings: ~60-70%
 
 ### **Ongoing Cost**: $0-$5/month
 - If you exceed free tier limits: ~$0.005/request
-- For Kathmandu (~1,000 cafés): ~$5/month if you refresh monthly
+- For Kathmandu (~1,000 cafes): ~$5/month if you refresh monthly
 - OR: Build in-house review system (no marginal cost)
 
 ---
@@ -329,7 +329,7 @@ Cafés with ratings: ~60-70%
 ## ❓ FAQ
 
 **Q: Will ratings be as good as Google Maps?**  
-A: For Kathmandu's tourist-popular cafés, yes! TripAdvisor often has more detailed reviews. For local cafés, OSM community will need to contribute.
+A: For Kathmandu's tourist-popular cafes, yes! TripAdvisor often has more detailed reviews. For local cafes, OSM community will need to contribute.
 
 **Q: Do I need API keys to start?**  
 A: No! OSM works immediately. API keys are optional enhancements.
@@ -347,7 +347,7 @@ A: Common for free tiers. Solutions:
 2. Upgrade to paid API (~$50-100/month)
 3. Contribute to OSM (encourage community)
 
-**Q: How do I handle duplicate cafés from multiple sources?**  
+**Q: How do I handle duplicate cafes from multiple sources?**  
 A: Done automatically in `HybridCafeCollector._merge_results()`
 - Uses location (lat/lng rounded to ~100m) as key
 - Deduplicates by name + location

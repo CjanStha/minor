@@ -1,6 +1,6 @@
 """
-Alternative Café Ratings Collection - Implementation Guide
-Collects café ratings from OpenStreetMap, TripAdvisor, Yelp without Google API
+Alternative Cafe Ratings Collection - Implementation Guide
+Collects cafe ratings from OpenStreetMap, TripAdvisor, Yelp without Google API
 """
 
 import requests
@@ -27,7 +27,7 @@ def collect_osm_cafe_ratings(bbox_dict):
     """
     overpass_url = "http://overpass-api.de/api/interpreter"
     
-    # Query for cafés WITH rating information
+    # Query for cafes WITH rating information
     query = f"""
     [out:json][timeout:30];
     (
@@ -104,7 +104,7 @@ def collect_osm_cafe_ratings(bbox_dict):
 
 class TripAdvisorCollector:
     """
-    Collect café ratings from TripAdvisor API (free tier)
+    Collect cafe ratings from TripAdvisor API (free tier)
     
     Setup:
     1. Go to https://developer.tripadvisor.com/
@@ -121,14 +121,14 @@ class TripAdvisorCollector:
     
     def search_cafes(self, latitude: float, longitude: float, radius_km: float = 2) -> List[Dict]:
         """
-        Search for cafés near a location
+        Search for cafes near a location
         
         Args:
             latitude, longitude: Center point
             radius_km: Search radius
         
         Returns:
-            List of cafés with ratings
+            List of cafes with ratings
         """
         if not self.api_key:
             print("⚠️  TripAdvisor API key not set. Skipping TripAdvisor collection.")
@@ -175,7 +175,7 @@ class TripAdvisorCollector:
 
 class YelpCollector:
     """
-    Collect café ratings from Yelp API (free tier)
+    Collect cafe ratings from Yelp API (free tier)
     
     Setup:
     1. Go to https://www.yelp.com/developers/
@@ -192,14 +192,14 @@ class YelpCollector:
     
     def search_cafes(self, latitude: float, longitude: float, radius_m: float = 2000) -> List[Dict]:
         """
-        Search for cafés in an area
+        Search for cafes in an area
         
         Args:
             latitude, longitude: Center point
             radius_m: Search radius in meters
         
         Returns:
-            List of cafés with ratings
+            List of cafes with ratings
         """
         if not self.api_key:
             print("⚠️  Yelp API key not set. Skipping Yelp collection.")
@@ -251,7 +251,7 @@ class YelpCollector:
 
 class HybridCafeCollector:
     """
-    Collects café data from multiple sources and intelligently merges them
+    Collects cafe data from multiple sources and intelligently merges them
     """
     
     def __init__(self):
@@ -260,18 +260,18 @@ class HybridCafeCollector:
     
     def collect_all(self, latitude: float, longitude: float, radius_km: float = 2) -> pd.DataFrame:
         """
-        Collect café data from all available sources
+        Collect cafe data from all available sources
         
         Priority for ratings:
-        1. TripAdvisor (most reliable for tourism/cafés)
+        1. TripAdvisor (most reliable for tourism/cafes)
         2. Yelp (good quality reviews)
         3. OpenStreetMap (community-driven)
         4. Aggregate if multiple sources
         
         Returns:
-            DataFrame with deduplicated cafés and best available ratings
+            DataFrame with deduplicated cafes and best available ratings
         """
-        print("🔍 Collecting café data from multiple sources...\n")
+        print("🔍 Collecting cafe data from multiple sources...\n")
         
         results = {
             'osm': [],
@@ -289,30 +289,30 @@ class HybridCafeCollector:
         }
         osm_cafes = collect_osm_cafe_ratings(bbox)
         results['osm'] = osm_cafes
-        print(f"✓ Found {len(osm_cafes)} cafés")
+        print(f"✓ Found {len(osm_cafes)} cafes")
         
         # 2. TripAdvisor (if API key available)
         print("2️⃣  TripAdvisor...", end=" ")
         ta_cafes = self.tripadvisor.search_cafes(latitude, longitude, radius_km)
         results['tripadvisor'] = ta_cafes
-        print(f"✓ Found {len(ta_cafes)} cafés")
+        print(f"✓ Found {len(ta_cafes)} cafes")
         
         # 3. Yelp (if API key available)
         print("3️⃣  Yelp...", end=" ")
         yelp_cafes = self.yelp.search_cafes(latitude, longitude, radius_km * 1000)
         results['yelp'] = yelp_cafes
-        print(f"✓ Found {len(yelp_cafes)} cafés")
+        print(f"✓ Found {len(yelp_cafes)} cafes")
         
         # 4. Merge and deduplicate
         print("\n4️⃣  Merging and deduplicating...", end=" ")
         merged_df = self._merge_results(results)
-        print(f"✓ Final count: {len(merged_df)} unique cafés")
+        print(f"✓ Final count: {len(merged_df)} unique cafes")
         
         return merged_df
     
     def _merge_results(self, results: Dict[str, List[Dict]]) -> pd.DataFrame:
         """
-        Merge cafés from multiple sources, de-duplicate by location
+        Merge cafes from multiple sources, de-duplicate by location
         """
         merged = {}
         
@@ -416,8 +416,8 @@ if __name__ == "__main__":
     }
     osm_cafes = collect_osm_cafe_ratings(bbox)
     df_osm = pd.DataFrame(osm_cafes)
-    print(f"\nFound {len(df_osm)} cafés with OSM data")
-    print(f"Cafés with ratings: {df_osm['rating'].notna().sum()}")
+    print(f"\nFound {len(df_osm)} cafes with OSM data")
+    print(f"Cafes with ratings: {df_osm['rating'].notna().sum()}")
     print("\nSample:")
     print(df_osm[['name', 'rating', 'website']].head(10))
     
@@ -433,14 +433,14 @@ if __name__ == "__main__":
     )
     
     if len(df_merged) > 0:
-        print("\nTop-rated cafés:")
+        print("\nTop-rated cafes:")
         print(df_merged[['name', 'rating', 'review_count', 'primary_rating_source']].head(10))
         
         print("\nRating source distribution:")
         print(df_merged['primary_rating_source'].value_counts())
         
         print(f"\nAverage rating: {df_merged['rating'].mean():.2f}")
-        print(f"Cafés with multiple source ratings: {(df_merged['total_review_sources'] > 1).sum()}")
+        print(f"Cafes with multiple source ratings: {(df_merged['total_review_sources'] > 1).sum()}")
         
         # Save to CSV
         output_file = 'kathmandu_cafes_with_ratings_hybrid.csv'

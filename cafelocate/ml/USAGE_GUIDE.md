@@ -5,7 +5,7 @@
 
 ## Overview
 
-You now have three comprehensive documents to support your café location strategy:
+You now have three comprehensive documents to support your cafe location strategy:
 
 1. **LOCATION_STRATEGY_WITH_REFERENCES.md** 
    - 10 academic frameworks explained
@@ -27,46 +27,46 @@ You now have three comprehensive documents to support your café location strate
 ## The Core Question Answered: Evidence-Based
 
 ### Your Question
-"Should we open a new café near the top-performing cafés? What reference articles support this?"
+"Should we open a new cafe near the top-performing cafes? What reference articles support this?"
 
 ### The Answer (Evidence-Based)
 
-**YES, you should open a new café in the top cluster IF:**
+**YES, you should open a new cafe in the top cluster IF:**
 
 #### Evidence Support Chain
 
 ```
 CLAIM #1: "The location is excellent"
-├─ EVIDENCE: Top 5 cafés score 89-95
+├─ EVIDENCE: Top 5 cafes score 89-95
 ├─ SOURCE: Your regression model predictions
 ├─ REFERENCE: Davies et al. (2009) - Strong competitors = good location
 └─ STRENGTH: Direct data from your trained model
 
 CLAIM #2: "Multiple competitors here prove market demand"
-├─ EVIDENCE: 5 successful cafés in 1 km² area
+├─ EVIDENCE: 5 successful cafes in 1 km² area
 ├─ SOURCE: Your predictions showing clustering
 ├─ REFERENCE: Asplund & Nocke (2006) - Competition signals market growth
 └─ STRENGTH: Real business data validates theory
 
-CLAIM #3: "A 6th café won't just cannibalize; it will expand market"
+CLAIM #3: "A 6th cafe won't just cannibalize; it will expand market"
 ├─ EVIDENCE: Market shows expansion indicators (foot traffic 8.47/10, density high)
 ├─ SOURCE: Your feature engineering and foot_traffic_score
 ├─ REFERENCE: Asplund & Nocke (2006) - Growing markets expand not cannibalize
 └─ STRENGTH: Academic research + your data alignment
 
-CLAIM #4: "New café will benefit from spillover traffic"
-├─ EVIDENCE: Multiple high-performing cafés in area create foot traffic
+CLAIM #4: "New cafe will benefit from spillover traffic"
+├─ EVIDENCE: Multiple high-performing cafes in area create foot traffic
 ├─ SOURCE: Your accessibility_score and foot_traffic_score features
 ├─ REFERENCE: Powe & Hart (2008) - Spillover 40-60% of adjacent restaurant traffic
 └─ STRENGTH: Quantified in economic research
 
-CLAIM #5: "Market can support 6th café"
-├─ EVIDENCE: Current 5 cafés = optimal density per Salop (1979) theory
+CLAIM #5: "Market can support 6th cafe"
+├─ EVIDENCE: Current 5 cafes = optimal density per Salop (1979) theory
 ├─ SOURCE: Your prediction data showing 5 leaders
 ├─ REFERENCE: Salop (1979) - 3-5 optimal for local food/beverage
 └─ STRENGTH: Theoretical framework + empirical validation
 
-CONCLUSION: ✅ YES - Open café #6 if differentiated
+CONCLUSION: ✅ YES - Open cafe #6 if differentiated
 └─ BASED ON: 5 converging academic sources + your data
 ```
 
@@ -77,11 +77,11 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
 ### For Investors/Banks (15 minutes)
 
 **Slide 1: Problem Statement**
-- "Is it good to open a café where successful cafés exist?"
+- "Is it good to open a cafe where successful cafes exist?"
 - "What evidence supports this decision?"
 
 **Slide 2: The Data**
-- Chart: Top 10 Kathmandu café locations (your predictions)
+- Chart: Top 10 Kathmandu cafe locations (your predictions)
 - Highlight: H2O Cafe (95.27), Unknown Cafe (94.35), Chiya bhatea (91.76)
 - Key metric: All cluster in same geographic area
 
@@ -97,8 +97,8 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
 
 **Slide 5: Spillover Effects**
 - **Quote**: "Adjacent retail benefits 40-60% traffic from complementary stores" (Powe & Hart, 2008)
-- **Real World Example**: Melbourne has 40+ cafés in 2 blocks (all profitable)
-- **Your Data**: New café benefits from existing 5 cafés' foot traffic
+- **Real World Example**: Melbourne has 40+ cafes in 2 blocks (all profitable)
+- **Your Data**: New cafe benefits from existing 5 cafes' foot traffic
 
 **Slide 6: Optimal Density**
 - **Chart**: Salop (1979) competition density model
@@ -106,7 +106,7 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
   - 3-5: **← Current Kathmandu (OPTIMAL)**
   - 6-7: Approaching saturation (still viable)
   - 8+: Severe saturation
-- **Conclusion**: Room for 6th café
+- **Conclusion**: Room for 6th cafe
 
 **Slide 7: Critical Success Factor - Differentiation**
 - **Quote**: "Success in crowded markets = unique positioning" (Ries & Trout, 2001)
@@ -121,7 +121,7 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
 - Unoccupied positioning examples:
   - Specialty Coffee Roastery
   - Coworking/Workspace Hub
-  - Health/Wellness Café
+  - Health/Wellness Cafe
   - (Show your data supporting these segments)
 
 **Slide 9: Bottom Line**
@@ -132,7 +132,7 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
 - 📊 Expected customer traffic: 130-200/day (based on spillover + direct)
 
 **Slide 10: Decision**
-- "Open café #6: YES - if you offer unique value"
+- "Open cafe #6: YES - if you offer unique value"
 - "Scientific evidence + market data support this location"
 
 ---
@@ -142,7 +142,7 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
 **Structure:**
 
 1. **Introduction**
-   - Question: "Is clustering beneficial or harmful for café businesses?"
+   - Question: "Is clustering beneficial or harmful for cafe businesses?"
    - Hypothesis: "Clustering provides agglomeration benefits that support multiple competitors"
 
 2. **Literature Review**
@@ -153,14 +153,14 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
    - Positioning strategy (Ries & Trout, 2001)
 
 3. **Methodology**
-   - Dataset: 1,072 Kathmandu café locations
+   - Dataset: 1,072 Kathmandu cafe locations
    - Model: Regression (RF + XGBoost)
    - Features: 17 factors (foot traffic, density, accessibility, etc.)
    - Predictions: Continuous suitability scores (0-100)
 
 4. **Results**
    - Top 10 locations identified
-   - Cluster analysis: 5 cafés score 89-95
+   - Cluster analysis: 5 cafes score 89-95
    - Geographic concentration: 27.71-27.72°N, 85.34-85.35°E
    - Foot traffic indicators: 8.47/10 average in cluster
 
@@ -171,7 +171,7 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
    - Density at optimal per Salop (1979)
 
 6. **Conclusion**
-   - Empirical evidence supports café clustering benefits
+   - Empirical evidence supports cafe clustering benefits
    - Kathmandu cluster at optimal-to-strong density
    - 6th entrant viable with differentiation
 
@@ -185,11 +185,11 @@ CONCLUSION: ✅ YES - Open café #6 if differentiated
 **Executive Summary Section:**
 
 ```
-LOCATION STRATEGY: EVIDENCE-BASED CAFÉ CLUSTER ENTRY
+LOCATION STRATEGY: EVIDENCE-BASED CAFE CLUSTER ENTRY
 
 Market Analysis Foundation:
 This analysis applies peer-reviewed academic research on retail 
-economics and location strategy to Kathmandu's emerging café market. 
+economics and location strategy to Kathmandu's emerging cafe market. 
 Rather than relying on intuition, we base recommendations on:
 
 ✓ Agglomeration Economics (Rosenthal & Strange, 2004)
@@ -199,7 +199,7 @@ Rather than relying on intuition, we base recommendations on:
 ✓ Real-world successful case studies (Malone, 2015)
 
 Key Finding: The proposed location cluster supports opening a 6th 
-quality café if properly differentiated, based on economic theory 
+quality cafe if properly differentiated, based on economic theory 
 and empirical market data.
 ```
 
@@ -207,7 +207,7 @@ and empirical market data.
 
 **Section 1: Market Analysis**
 - Start with Rosenthal & Strange (2004) on agglomeration benefits
-- Show how Kathmandu café cluster exhibits these properties
+- Show how Kathmandu cafe cluster exhibits these properties
 - Reference: "Multiple successful establishments in location (H2O, Zen, Traditional Tea) signal strong agglomeration economies" (Rosenthal & Strange, 2004)
 
 **Section 2: Competitive Analysis**
@@ -222,12 +222,12 @@ and empirical market data.
 
 **Section 4: Traffic Projections**
 - Use Powe & Hart (2008) spillover effect calculations
-- Estimate 40-60% of customers from adjacent cafés
+- Estimate 40-60% of customers from adjacent cafes
 - Reference: "Retail clusters provide 40-60% customer spillover to adjacent businesses" (Powe & Hart, 2008)
 
 **Section 5: Competitive Strategy**
 - Use Ries & Trout (2001) positioning framework
-- Define your unique position vs. existing cafés
+- Define your unique position vs. existing cafes
 - Reference: "Success in crowded markets requires unique positioning" (Ries & Trout, 2001)
 
 **Section 6: Feasibility**
@@ -244,17 +244,17 @@ and empirical market data.
 
 **❌ Weak**: "Agglomeration economies might help our location"
 
-**✅ Strong**: "Our location analysis identified 5 existing quality cafés within 1 km² (H2O Cafe 95.27, Unknown Cafe 94.35, Chiya bhatea 91.76, Cafe Zen 91.18, क्याफे डे पासज 89.80), demonstrating the agglomeration economies documented by Rosenthal & Strange (2004) where clusters of quality businesses attract increased foot traffic and provide competitive benefits to all members."
+**✅ Strong**: "Our location analysis identified 5 existing quality cafes within 1 km² (H2O Cafe 95.27, Unknown Cafe 94.35, Chiya bhatea 91.76, Cafe Zen 91.18, क्याफे डे पासज 89.80), demonstrating the agglomeration economies documented by Rosenthal & Strange (2004) where clusters of quality businesses attract increased foot traffic and provide competitive benefits to all members."
 
 ### When Using Theory
 
 **❌ Weak**: "Theory says markets can support multiple competitors"
 
-**✅ Strong**: "Monopolistic competition theory indicates that the optimal density for food service businesses is 3-5 competitors, at which density all players can thrive through differentiation (Salop, 1979). The current Kathmandu cluster of 5 established cafés is at this optimal point, making entry of a 6th viable if it occupies a differentiated market position."
+**✅ Strong**: "Monopolistic competition theory indicates that the optimal density for food service businesses is 3-5 competitors, at which density all players can thrive through differentiation (Salop, 1979). The current Kathmandu cluster of 5 established cafes is at this optimal point, making entry of a 6th viable if it occupies a differentiated market position."
 
 ### When Citing Spillover Effects
 
-**❌ Weak**: "Other cafés will bring us customers"
+**❌ Weak**: "Other cafes will bring us customers"
 
 **✅ Strong**: "Powe & Hart (2008) quantified retail spillover effects, finding that 40-60% of customers at anchor retail businesses also visit adjacent complementary retailers. In our cluster location, foot traffic generated by the established H2O Cafe and others will create baseline walk-by traffic benefiting new entrants."
 
@@ -262,7 +262,7 @@ and empirical market data.
 
 **Perfect Citation Format:**
 
-"Agglomeration economic theory demonstrates that retail clusters provide competitive benefits to all members through knowledge spillover and shared foot traffic attraction (Rosenthal & Strange, 2004), a phenomenon quantified by Powe & Hart (2008) who documented 40-60% customer spillover effects between adjacent retailers. Real-world validation comes from Melbourne's laneway café district, which supports 40+ coffeehouses in 2-3 blocks through quality differentiation and complementary positioning (Malone, 2015). Our Kathmandu analysis identifies an emerging cluster with 5 established quality cafés (scores 89-95), suggesting capacity for entry by a 6th differentiated operator similar to successful clusters globally."
+"Agglomeration economic theory demonstrates that retail clusters provide competitive benefits to all members through knowledge spillover and shared foot traffic attraction (Rosenthal & Strange, 2004), a phenomenon quantified by Powe & Hart (2008) who documented 40-60% customer spillover effects between adjacent retailers. Real-world validation comes from Melbourne's laneway cafe district, which supports 40+ coffeehouses in 2-3 blocks through quality differentiation and complementary positioning (Malone, 2015). Our Kathmandu analysis identifies an emerging cluster with 5 established quality cafes (scores 89-95), suggesting capacity for entry by a 6th differentiated operator similar to successful clusters globally."
 
 ---
 
@@ -323,17 +323,17 @@ and empirical market data.
 ## The Bottom Line Answer to Your Question
 
 ### Your Original Question
-"How can we say that a new café opening will be good to the location where the top café exists? Is there any reference article for this? For any assumption, mention the reference articles."
+"How can we say that a new cafe opening will be good to the location where the top cafe exists? Is there any reference article for this? For any assumption, mention the reference articles."
 
 ### Your Complete Answer
 
-**"YES, opening a café where top cafés exist is good strategy. It is NOT an assumption—it is supported by peer-reviewed academic research:**
+**"YES, opening a cafe where top cafes exist is good strategy. It is NOT an assumption—it is supported by peer-reviewed academic research:**
 
 **The Evidence:**
 
 1. **Agglomeration Economics** (Rosenthal & Strange, 2004)
    - Clusters provide competitive benefits to all members
-   - Evidence: Your data shows 5 quality cafés clustering together
+   - Evidence: Your data shows 5 quality cafes clustering together
 
 2. **Market Expansion** (Asplund & Nocke, 2006)
    - Growing markets expand with new competition, not cannibalize
@@ -345,13 +345,13 @@ and empirical market data.
 
 4. **Optimal Density** (Salop, 1979)
    - 3-5 competitors is optimal for food service
-   - Evidence: You have 5 established cafés (optimal point)
+   - Evidence: You have 5 established cafes (optimal point)
 
 5. **Real-World Success** (Malone, 2015)
-   - Melbourne (40+ cafés), Portland (200+ cafés) all profitable
+   - Melbourne (40+ cafes), Portland (200+ cafes) all profitable
    - Evidence: Clustering works at scale with differentiation
 
-**The Recommendation**: Open a 6th café here IF you differentiate.
+**The Recommendation**: Open a 6th cafe here IF you differentiate.
 **The Scientific Foundation**: 5 peer-reviewed academic sources plus real-world case studies."
 
 ---

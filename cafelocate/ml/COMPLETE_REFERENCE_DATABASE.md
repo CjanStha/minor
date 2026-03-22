@@ -1,14 +1,14 @@
-# Complete Reference Database for Café Location Strategy
+# Complete Reference Database for Cafe Location Strategy
 ## Citeable Academic Sources (APA, Harvard, Chicago Formats)
 
 ---
 
 ## Overview
-This document provides complete reference information for all 10+ academic sources used in the café location strategy analysis. Each reference includes:
+This document provides complete reference information for all 10+ academic sources used in the cafe location strategy analysis. Each reference includes:
 - APA format (for academic papers)
 - Harvard format (for business)
 - DOI/Link information (for access)
-- Key findings relevant to café location strategy
+- Key findings relevant to cafe location strategy
 
 ---
 
@@ -23,15 +23,15 @@ Rosenthal, S.S. and Strange, W.C. (2004) 'Evidence on the nature and sources of 
 ### Full Citation (Chicago)
 Rosenthal, Stuart S., and William C. Strange. "Evidence on the Nature and Sources of Agglomeration Economies." In Handbook of Regional and Urban Economics, edited by J. Vernon Henderson and Jacques-François Thisse, 4:2119-2171. Elsevier, 2004. https://doi.org/10.1016/S1574-0080(04)80006-3.
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - Businesses benefit from clustering in high-demand areas
 - Shared infrastructure reduces costs
 - Knowledge spillover increases innovation
-- Restaurant/café sector shows strong positive agglomeration effects
+- Restaurant/cafe sector shows strong positive agglomeration effects
 - Multiple competitors in same location increase overall market competitiveness
 
 ### How to Cite in Your Work
-"Research on agglomeration economies demonstrates that restaurant and café businesses benefit significantly from clustering in established high-demand locations (Rosenthal & Strange, 2004), suggesting that opening a new café near successful competitors is economically rational."
+"Research on agglomeration economies demonstrates that restaurant and cafe businesses benefit significantly from clustering in established high-demand locations (Rosenthal & Strange, 2004), suggesting that opening a new cafe near successful competitors is economically rational."
 
 ---
 
@@ -41,20 +41,20 @@ Rosenthal, Stuart S., and William C. Strange. "Evidence on the Nature and Source
 Oldenburg, R. (1989). The great good place: Cafes, coffee shops, bookstores, bars, and other hangouts at the heart of a community. Paragon House.
 
 ### Full Citation (Harvard - Revised Edition)
-Oldenburg, R. (2011) The Great Good Place: Cafés, Coffee Shops, Bookstores, Bars and Other Hangouts at the Heart of a Community. Rev. edn. Marlowe & Company.
+Oldenburg, R. (2011) The Great Good Place: Cafes, Coffee Shops, Bookstores, Bars and Other Hangouts at the Heart of a Community. Rev. edn. Marlowe & Company.
 
 ### ISBN
 978-1-56924-764-0 (2011 edition)
 
-### Key Findings for Café Strategy
-- Cafés serve as "third places" crucial for community gathering (after home and work)
+### Key Findings for Cafe Strategy
+- Cafes serve as "third places" crucial for community gathering (after home and work)
 - Successful third places create destination areas
 - Customers deliberately travel to neighborhoods with multiple quality options
-- Café clustering creates "café districts" that attract tourism and regular visitors
+- Cafe clustering creates "cafe districts" that attract tourism and regular visitors
 - The more quality third places in an area, the stronger the draw
 
 ### How to Cite in Your Work
-"The concept of the 'third place' (Oldenburg, 1989) explains why café clusters become destination areas; customers are attracted not just to individual cafés but to neighborhoods known for multiple quality options."
+"The concept of the 'third place' (Oldenburg, 1989) explains why cafe clusters become destination areas; customers are attracted not just to individual cafes but to neighborhoods known for multiple quality options."
 
 ### Access
 Available in most university libraries; also available for purchase through:
@@ -77,7 +77,7 @@ Asplund, Marcus, and Volker Nocke. "Does Competition Reduce Costs?" The Review o
 ### DOI
 10.1111/j.1467-937X.2006.00380.x
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - In growing/popular markets: New competition EXPANDS total market size
 - In stagnant markets: New competition causes cannibalization
 - Market expansion depends on whether total consumer demand grows
@@ -85,7 +85,7 @@ Asplund, Marcus, and Volker Nocke. "Does Competition Reduce Costs?" The Review o
 - Early movers benefit most, but later entrants can still thrive in growth markets
 
 ### How to Cite in Your Work
-"Economic research on competition dynamics reveals that in growing market segments such as café culture in Kathmandu, new market entrants typically expand total market size rather than merely cannibalizing existing competitors (Asplund & Nocke, 2006)."
+"Economic research on competition dynamics reveals that in growing market segments such as cafe culture in Kathmandu, new market entrants typically expand total market size rather than merely cannibalizing existing competitors (Asplund & Nocke, 2006)."
 
 ---
 
@@ -103,7 +103,7 @@ Powe, Neil A., and Tim Hart. "Retail Trade Spillover Effects in Urban Areas." In
 ### DOI
 10.1108/09590550810911682
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - Spillover effects: 40-60% of customers at primary business also visit adjacent businesses
 - Customer attraction to flagship business creates baseline foot traffic for neighbors
 - Association effect: Customers linger longer in areas with multiple options
@@ -111,7 +111,7 @@ Powe, Neil A., and Tim Hart. "Retail Trade Spillover Effects in Urban Areas." In
 - Empirically measured: Associated retailers benefit 20-40% traffic increase from proximity
 
 ### How to Cite in Your Work
-"Spillover effects in retail clusters demonstrate that a new café benefits from baseline foot traffic generated by nearby successful cafés, with research indicating 40-60% of customers at anchor businesses also visit adjacent locations (Powe & Hart, 2008)."
+"Spillover effects in retail clusters demonstrate that a new cafe benefits from baseline foot traffic generated by nearby successful cafes, with research indicating 40-60% of customers at anchor businesses also visit adjacent locations (Powe & Hart, 2008)."
 
 ---
 
@@ -126,7 +126,7 @@ Davies, R.L., Rogers, D.S. and Wong, D.W.S. (2009) Retail Geography and Consumer
 ### ISBN
 978-0-203-87379-6
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - Five key location quality factors:
   1. Demographic demand (population, income)
   2. Competition strength (signals market demand)
@@ -156,7 +156,7 @@ Salop, Steven C. "Monopolistic Competition with Outside Goods." The Bell Journal
 ### JSTOR Link
 https://www.jstor.org/stable/3003534
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - Monopolistic competition model shows optimal competitor density
 - For food/beverage: 3-5 competitors = optimal (all can thrive)
 - Below 3: Market undersupplied, growth opportunity
@@ -165,7 +165,7 @@ https://www.jstor.org/stable/3003534
 - Theory predicts: 5th competitor creates threshold; 6th is marginal
 
 ### How to Cite in Your Work
-"Monopolistic competition theory suggests that for local café markets, an optimal density of 3-5 competitors allows all to thrive through differentiation, with research indicating that a 6th entrant becomes viable only with strong differentiation (Salop, 1979)."
+"Monopolistic competition theory suggests that for local cafe markets, an optimal density of 3-5 competitors allows all to thrive through differentiation, with research indicating that a 6th entrant becomes viable only with strong differentiation (Salop, 1979)."
 
 ---
 
@@ -184,7 +184,7 @@ Ries, A. and Trout, J. (2001) Positioning: The Battle for Your Mind. Rev. edn. M
 First edition: 1981 (Harper & Row)
 Revised edition: 2001 (McGraw-Hill)
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - Success in crowded markets requires unique "position" in consumer minds
 - Followers must occupy different position than market leader
 - Differentiation on service, experience, or product all valid approaches
@@ -192,7 +192,7 @@ Revised edition: 2001 (McGraw-Hill)
 - In saturated markets, finding unoccupied position is survival strategy
 
 ### How to Cite in Your Work
-"Strategic positioning theory demonstrates that in competitive café markets with multiple established players, new entrants succeed by occupying a unique position distinct from competitors rather than attempting head-to-head competition (Ries & Trout, 2001)."
+"Strategic positioning theory demonstrates that in competitive cafe markets with multiple established players, new entrants succeed by occupying a unique position distinct from competitors rather than attempting head-to-head competition (Ries & Trout, 2001)."
 
 ---
 
@@ -210,15 +210,15 @@ Metcalfe, Bob M. "The Law of the Telecosm." IEEE Spectrum 32, no. 9 (1995): 20-2
 ### Publication
 IEEE Spectrum Magazine, September 1995
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - Network value grows exponentially: V = n²
 - Doubling number of nodes increases network value by 4x
-- Applied to retail: Doubling quality café count = quadrupling district attractiveness
+- Applied to retail: Doubling quality cafe count = quadrupling district attractiveness
 - Clustering becomes progressively more valuable with each addition
 - Each new member benefits all existing members (positive externality)
 
 ### How to Cite in Your Work
-"Network effect theory (Metcalfe, 1995) demonstrates that the value of a café cluster grows exponentially with the number of quality establishments, suggesting that a 6th café doesn't just compete with existing 5, but increases overall district attractiveness by approximately 40% (from 25 to 36 units using Metcalfe's formula)."
+"Network effect theory (Metcalfe, 1995) demonstrates that the value of a cafe cluster grows exponentially with the number of quality establishments, suggesting that a 6th cafe doesn't just compete with existing 5, but increases overall district attractiveness by approximately 40% (from 25 to 36 units using Metcalfe's formula)."
 
 ---
 
@@ -233,7 +233,7 @@ Heskett, J.L., Sasser, W.E. and Schlesinger, L.A. (1997) The Service Profit Chai
 ### ISBN
 0-684-83555-3
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 Success factors ranked by importance:
 1. Service Quality: 50% of success
 2. Location Quality: 30% of success  
@@ -245,11 +245,11 @@ Success factors ranked by importance:
 - Customer satisfaction drives loyalty and word-of-mouth
 
 ### How to Cite in Your Work
-"The Service Profit Chain model indicates that while location quality is important (30% factor), service quality dominates success (50% factor), suggesting that a new café in an excellent location can succeed only with superior service (Heskett et al., 1997)."
+"The Service Profit Chain model indicates that while location quality is important (30% factor), service quality dominates success (50% factor), suggesting that a new cafe in an excellent location can succeed only with superior service (Heskett et al., 1997)."
 
 ---
 
-## Reference 10: Café Clustering - Case Study Analysis
+## Reference 10: Cafe Clustering - Case Study Analysis
 
 ### Full Citation (APA)
 Malone, A. (2015). Why do coffee shops cluster together? The Guardian. Retrieved from https://www.theguardian.com/lifeandstyle/2015/jan/25/why-do-coffee-shops-cluster-together
@@ -265,25 +265,25 @@ The Guardian, Business & Economics Section
 Published: January 25, 2015
 Author: Andrew Malone
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 Melbourne Case Study:
-- 40+ cafés in 2-3 block area
+- 40+ cafes in 2-3 block area
 - All highly profitable despite extreme density
 - Success factors: Quality variation, unique positioning
 
 Portland Case Study:
 - 200+ specialty coffee shops in 2-mile radius
-- Market density supports 1 café per 1,200 people
+- Market density supports 1 cafe per 1,200 people
 - Specialty segments all profitable
 - Coffee culture zone = $500M+ annual economic impact
 
 Istanbul Case Study:
-- Çiçek Pasajı: 55+ restaurants/cafés in single arcade
+- Çiçek Pasajı: 55+ restaurants/cafes in single arcade
 - Major tourist destination
 - Extreme competition leads to excellence
 
 ### How to Cite in Your Work
-"Real-world case studies demonstrate that café clustering can support far higher densities than currently exist in Kathmandu; Melbourne's laneway culture supports 40+ cafés in minimal space while maintaining profitability through differentiation (Malone, 2015)."
+"Real-world case studies demonstrate that cafe clustering can support far higher densities than currently exist in Kathmandu; Melbourne's laneway culture supports 40+ cafes in minimal space while maintaining profitability through differentiation (Malone, 2015)."
 
 ### Online Access
 https://www.theguardian.com/lifeandstyle/2015/jan/25/why-do-coffee-shops-cluster-together
@@ -310,7 +310,7 @@ ICSC Research Reports on:
 - Academic libraries often have subscriptions
 - Contact: research@icsc.org for institution access
 
-### Key Findings for Café Strategy
+### Key Findings for Cafe Strategy
 - Professional retail location analysis framework
 - Validated site selection methodology
 - Competitive density optimal ranges
@@ -326,7 +326,7 @@ ICSC Research Reports on:
 ### Recommended Sources
 1. **Google Scholar**
    - URL: https://scholar.google.com
-   - Search: "café location strategy" or "restaurant clustering"
+   - Search: "cafe location strategy" or "restaurant clustering"
    - Free access to abstracts, some full texts
 
 2. **JSTOR**
@@ -356,7 +356,7 @@ ICSC Research Reports on:
 4. Conclude with Heskett et al. (1997) - success factors
 
 **Sample Paragraph:**
-"Research demonstrates that café clusters provide significant competitive advantages through agglomeration economies (Rosenthal & Strange, 2004) and positive spillover effects (Powe & Hart, 2008). Optimal market density for food service is 3-5 competitors (Salop, 1979), and real-world data from Melbourne, Portland, and Istanbul shows that café districts can support even higher densities when properly differentiated (Malone, 2015). The existing Kathmandu café cluster of 5 quality establishments is at optimal density but has room for a 6th differentiated entrant with strong service quality (Heskett et al., 1997)."
+"Research demonstrates that cafe clusters provide significant competitive advantages through agglomeration economies (Rosenthal & Strange, 2004) and positive spillover effects (Powe & Hart, 2008). Optimal market density for food service is 3-5 competitors (Salop, 1979), and real-world data from Melbourne, Portland, and Istanbul shows that cafe districts can support even higher densities when properly differentiated (Malone, 2015). The existing Kathmandu cafe cluster of 5 quality establishments is at optimal density but has room for a 6th differentiated entrant with strong service quality (Heskett et al., 1997)."
 
 ### For Academic Paper
 Use Harvard or APA format from **References section 1-11 above**

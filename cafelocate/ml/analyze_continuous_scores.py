@@ -1,6 +1,6 @@
 """
 Continuous Score Assignment: Synthetic vs Real-World Analysis
-Shows the gap between synthetic suitability and real-world café success
+Shows the gap between synthetic suitability and real-world cafe success
 """
 
 import pandas as pd
@@ -43,8 +43,8 @@ print("        - (0.20 * competition_pressure) - (0.10 * competitors_200m)")
 
 print("\nProblems with this formula:")
 print("  ❌ Weights are arbitrary (why 0.20 for density, not 0.25?)")
-print("  ❌ No business validation (does it predict actual café success?)")
-print("  ❌ All cafés same weight (both in high-traffic areas get same score)")
+print("  ❌ No business validation (does it predict actual cafe success?)")
+print("  ❌ All cafes same weight (both in high-traffic areas get same score)")
 print("  ❌ No temporal aspect (doesn't account for changing conditions)")
 print("  ❌ No market segmentation (coffee shops vs restaurants vs co-working spaces)")
 
@@ -75,8 +75,8 @@ print(f"  Std: {df['synthetic_score_normalized'].std():.2f}")
 print("\n[Step 3] What Would REAL-WORLD Continuous Scores Look Like?")
 
 real_world_factors = {
-    'Café Success Metrics': [
-        'Is café still operating? (0-1 binary)',
+    'Cafe Success Metrics': [
+        'Is cafe still operating? (0-1 binary)',
         'Years in operation (0-20+ years)',
         'Customer foot traffic (count/day)',
         'Revenue/profitability (0-100 business score)',
@@ -143,9 +143,9 @@ comparison_data = {
         'Strong\n(Proven predictor)'
     ],
     'Examples': [
-        'Café A: "High"\nCafé B: "High"\n(Both same category)',
-        'Café A: 67.5\nCafé B: 63.2\n(Distinguishable)',
-        'Café A: 67.5\n(Likely to succeed)\nCafé B: 35.1\n(Likely to fail)'
+        'Cafe A: "High"\nCafe B: "High"\n(Both same category)',
+        'Cafe A: 67.5\nCafe B: 63.2\n(Distinguishable)',
+        'Cafe A: 67.5\n(Likely to succeed)\nCafe B: 35.1\n(Likely to fail)'
     ]
 }
 
@@ -160,10 +160,10 @@ print("\n[Step 5] How Real-World Scoring Would Actually Work")
 example_real_world_scoring = """
 REAL-WORLD APPROACH (What You Should Do):
 
-Step 1: Collect Historical Café Data
+Step 1: Collect Historical Cafe Data
 ┌─────────────────────────────────────────────────┐
-│ For each café location in dataset, find:        │
-│ • Is the café still open? (success indicator)   │
+│ For each cafe location in dataset, find:        │
+│ • Is the cafe still open? (success indicator)   │
 │ • How long has it been operating?               │
 │ • Customer reviews/ratings on Google, TripAd...│
 │ • Estimated daily foot traffic (from Google)   │
@@ -172,14 +172,14 @@ Step 1: Collect Historical Café Data
 └─────────────────────────────────────────────────┘
 
 Step 2: Calculate Real Suitability Score
-For Café A:
+For Cafe A:
   • Operating: Yes (since 2019, 5 years)
   • Google Rating: 4.7/5 (excellent)
   • Estimated Traffic: 1,200 visitors/day (high)
   • Reviews: "Always packed, great location"
   → Real Suitability Score: 82/100 (validated success)
 
-For Café B:
+For Cafe B:
   • Operating: Closed (2023)
   • Google Rating: 2.1/5 (poor reviews before closure)
   • Near closure: Complaints about low traffic
@@ -210,11 +210,11 @@ gaps = {
         '✅ Accessibility metrics (roads, schools, transit)',
         '✅ Location coordinates',
         '✅ Synthetic suitability labels',
-        '✅ 1,000+ café locations'
+        '✅ 1,000+ cafe locations'
     ],
     'What You\'re Missing': [
-        '❌ Café operating status (open/closed)',
-        '❌ Historical café data (when opened, when closed)',
+        '❌ Cafe operating status (open/closed)',
+        '❌ Historical cafe data (when opened, when closed)',
         '❌ Revenue/profitability data',
         '❌ Customer satisfaction scores',
         '❌ Actual foot traffic counts',
@@ -223,13 +223,13 @@ gaps = {
         '❌ Time series data (trends over years)'
     ],
     'How to Get Missing Data': [
-        '📍 Google Maps: Is café currently shown? When did it close?',
+        '📍 Google Maps: Is cafe currently shown? When did it close?',
         '🌐 Web archives: Wayback Machine to find historical data',
         '⭐ Reviews: Google/TripAdvisor ratings = satisfaction proxy',
         '📊 Business databases: OpenTable, Yelp, local registration',
         '🚶 Foot traffic: Google Popular Times, foot traffic APIs',
         '💰 Financial: Better Business Bureau, D&B scores',
-        '📰 News: Local news for café closures, expansions',
+        '📰 News: Local news for cafe closures, expansions',
         '📸 Satellite: Google Earth historical images'
     ]
 }
@@ -269,7 +269,7 @@ PHASE 1 (Next Step - RECOMMENDED)
 │  ✓ No information loss
 │  ✓ Scores are more interpretable
 │  ✓ Foundation for real-world transition
-│  └─ Better for ranking cafés
+│  └─ Better for ranking cafes
 └─ Disadvantages:
    ✗ Still synthetic
    ✗ Still not validated
@@ -302,7 +302,7 @@ analysis_report = {
         'current_state': 'Using synthetic formula to generate labels',
         'continuous_scores_help': 'Yes - reduces information loss and removes arbitrary boundaries',
         'makes_real_world': 'No - still predicting synthetic scores, not actual business outcomes',
-        'validation_needed': 'Must collect real café success/failure data to validate predictions'
+        'validation_needed': 'Must collect real cafe success/failure data to validate predictions'
     },
     'score_assignment_methods': {
         'current_synthetic': {
@@ -318,9 +318,9 @@ analysis_report = {
             'validation': None
         },
         'real_world_needed': {
-            'method': 'Regression on actual café success metrics',
+            'method': 'Regression on actual cafe success metrics',
             'data_sources': [
-                'Café operating status (open/closed)',
+                'Cafe operating status (open/closed)',
                 'Years in operation',
                 'Customer reviews',
                 'Foot traffic estimates',
@@ -333,7 +333,7 @@ analysis_report = {
     'gap_analysis': gaps,
     'recommendations': [
         'Phase 1: Implement continuous regression scores (better than categories)',
-        'Phase 2: Collect real café outcome data (6-12 months)',
+        'Phase 2: Collect real cafe outcome data (6-12 months)',
         'Phase 3: Retrain models on real data',
         'Phase 4: Validate predictions against new locations'
     ]
@@ -375,7 +375,7 @@ Score = 0.20 × density + 0.15 × accessibility + 0.15 × traffic
 
 ### Problems
 1. **Arbitrary Weights**: Why 0.20 for density? No justification.
-2. **Unvalidated**: Does a score of 75 actually predict café success?
+2. **Unvalidated**: Does a score of 75 actually predict cafe success?
 3. **Missing Ground Truth**: No actual outcome data (open/closed, revenue, etc.)
 4. **No Causation**: Formula doesn't capture why locations succeed/fail.
 5. **No Updates**: Weights never change based on real results.
@@ -386,21 +386,21 @@ Score = 0.20 × density + 0.15 × accessibility + 0.15 × traffic
 
 ### Categorical (Currently Used - BAD)
 ```
-Café A: Score 15.1 → "High Suitability"
-Café B: Score 14.9 → "Medium Suitability"
+Cafe A: Score 15.1 → "High Suitability"
+Cafe B: Score 14.9 → "Medium Suitability"
 Problem: Almost identical scores placed in different categories!
 ```
 
 ### Continuous (BETTER)
 ```
-Café A: Score 76.8/100
-Café B: Score 71.2/100
+Cafe A: Score 76.8/100
+Cafe B: Score 71.2/100
 Advantage: Subtle differences preserved, no artificial boundaries
 ```
 
 ### But: Both Are Still SYNTHETIC
 - Both predict a score generated by a formula
-- Neither uses real café success/failure data
+- Neither uses real cafe success/failure data
 - Neither can be validated against reality
 
 ---
@@ -409,8 +409,8 @@ Advantage: Subtle differences preserved, no artificial boundaries
 
 ### Real-World Data You'd Need
 
-**Café Operating Status:**
-- **Café operating status** (open/closed): {df['suitability'].notna().sum()} labeled locations
+**Cafe Operating Status:**
+- **Cafe operating status** (open/closed): {df['suitability'].notna().sum()} labeled locations
 
 **Success Metrics:**
 - Customer satisfaction (Google reviews: 4.7/5 = excellent)
@@ -424,7 +424,7 @@ Advantage: Subtle differences preserved, no artificial boundaries
 ```
 Example Real-World Scoring:
 
-Café A - HILO Coffee (Kathmandu)
+Cafe A - HILO Coffee (Kathmandu)
 ├─ Location Features: competitors=3, density=high, foot_traffic=0.92
 ├─ Operating Status: ✓ Open since 2018 (6 years)
 ├─ Google Reviews: 4.6/5 (200+ reviews)
@@ -433,7 +433,7 @@ Café A - HILO Coffee (Kathmandu)
 └─ Real-World Suitability Score: 81/100
     (High score backed by actual success metrics)
 
-Café B - OLD PLACE (Kathmandu)
+Cafe B - OLD PLACE (Kathmandu)
 ├─ Location Features: competitors=5, density=low, foot_traffic=0.31
 ├─ Operating Status: ✗ Closed 2022
 ├─ Google Reviews: 2.3/5 (10 reviews, mostly negative)
@@ -459,7 +459,7 @@ Café B - OLD PLACE (Kathmandu)
 
 The difference is:
 - **Synthetic Continuous**: Predicts formula-generated scores
-- **Real-World Continuous**: Predicts actual café success likelihood
+- **Real-World Continuous**: Predicts actual cafe success likelihood
 
 ---
 
@@ -486,7 +486,7 @@ predictions = reg.predict(X_test)  # [67.3, 45.2, 88.9, ...]
 ### Phase 3: Collect Real Outcome Data (6-12 months)
 ```
 Data to Collect:
-├─ Café operating status (Google Maps, web archives)
+├─ Cafe operating status (Google Maps, web archives)
 ├─ Customer reviews (Google, TripAdvisor, Yelp)
 ├─ Foot traffic proxies (Google Popular Times, observations)
 ├─ Business news (local news, social media)
@@ -517,12 +517,12 @@ reg.fit(X_real, y_real_outcomes)  # Real validation!
 
 ### You HAVE:
 ✅ Geographic features (18 engineered features)
-✅ Café locations (1,000+ samples)
+✅ Cafe locations (1,000+ samples)
 ✅ Synthetic labels
 ✅ Trained models
 
 ### You NEED (for real-world):
-❌ Café operating status (open/closed)
+❌ Cafe operating status (open/closed)
 ❌ Customer satisfaction data (reviews)
 ❌ Business success/failure outcomes
 ❌ Foot traffic validation
@@ -535,7 +535,7 @@ reg.fit(X_real, y_real_outcomes)  # Real validation!
 - ⭐ **Google Reviews**: Rating = satisfaction proxy
 - 📊 **Business Registries**: Operating status from government
 - 🚶 **Popular Times**: Google's foot traffic heatmaps
-- 📰 **News Scraping**: Café closures, openings mentioned
+- 📰 **News Scraping**: Cafe closures, openings mentioned
 - 🗺️ **Street View History**: Visual confirmation of status
 
 ---
@@ -574,7 +574,7 @@ Moderate Accuracy = Meaningful
    - Require real data to be meaningful
 
 3. **To model real-world scenarios, you must:**
-   - Collect actual café success/failure data
+   - Collect actual cafe success/failure data
    - Map features to real outcomes
    - Validate predictions
    - Update continuously with new data
@@ -615,7 +615,7 @@ print(f"{'='*100}")
 print(f"\n📊 Key Findings:")
 print(f"  1. Continuous scores are BETTER than categories ✅")
 print(f"  2. But NOT automatically real-world ⚠️")
-print(f"  3. Need actual café outcome data for real-world validation")
+print(f"  3. Need actual cafe outcome data for real-world validation")
 print(f"  4. Requires 6-12 months of data collection")
 print(f"\n📁 Generated Files:")
 print(f"  ✓ continuous_score_analysis.json")

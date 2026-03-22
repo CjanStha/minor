@@ -2,7 +2,7 @@
 
 ## 📊 PROJECT OVERVIEW
 **Project Name**: CafeLocate ML  
-**Purpose**: Machine learning-powered café location recommendation system for Kathmandu, Nepal  
+**Purpose**: Machine learning-powered cafe location recommendation system for Kathmandu, Nepal  
 **Language**: Python (Backend), JavaScript/HTML/CSS (Frontend)  
 **Status**: MVP Completed with XGBoost Model Integration
 
@@ -31,7 +31,7 @@
 
 ### 3. **DATA PIPELINE**
 - ✅ Data collection from multiple sources:
-  - Café data from Google Places API
+  - Cafe data from Google Places API
   - Census data from Nepal Census 2021
   - Road networks from OpenStreetMap
   - Ward boundaries from GeoJSON
@@ -56,8 +56,8 @@
 - ✅ Guest access functionality
 - ✅ Location analysis endpoint (POST /api/analyze/)
 - ✅ ML prediction endpoints
-- ✅ Nearby café discovery
-- ✅ Top 5 cafés ranking
+- ✅ Nearby cafe discovery
+- ✅ Top 5 cafes ranking
 - ✅ User profile management
 - ✅ Admin endpoints
 
@@ -66,11 +66,11 @@
 - ✅ Interactive map with Leaflet
 - ✅ User authentication UI (login/register)
 - ✅ Guest mode access
-- ✅ Café type selector
+- ✅ Cafe type selector
 - ✅ Location pinning interface
 - ✅ Real-time analysis display
 - ✅ Suitability score visualization
-- ✅ Results dashboard with top 5 cafés
+- ✅ Results dashboard with top 5 cafes
 - ✅ Password toggle visibility
 
 ### 7. **TESTING & VALIDATION**
