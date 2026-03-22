@@ -10,22 +10,32 @@ def download_kathmandu_roads():
     """
     Download road network data for Kathmandu from OpenStreetMap
     """
-    overpass_url = "http://overpass-api.de/api/interpreter"
+    # Prefer a reliable HTTPS Overpass endpoint; try a couple if one fails
+    overpass_endpoints = [
+        "https://overpass.openstreetmap.fr/api/interpreter",
+        "https://overpass.kumi.systems/api/interpreter",
+        "https://overpass-api.de/api/interpreter",
+    ]
 
     # Kathmandu bounding box (more precise than area query)
     # Format: (min_lon, min_lat, max_lon, max_lat)
-    kathmandu_bbox = "85.25,27.65,85.40,27.75"
+    # Slightly expanded Kathmandu bbox to capture edge roads
+    kathmandu_bbox = "85.20,27.60,85.45,27.80"
 
-    # Query for roads in Kathmandu bounding box
-    # This includes major roads that would affect café accessibility
+    # Query for a wide set of highway types in the bounding box.
+    # Include links, living_street, service, and others commonly used.
+    highway_tags = [
+        'motorway','trunk','primary','secondary','tertiary','motorway_link',
+        'trunk_link','primary_link','secondary_link','tertiary_link',
+        'residential','living_street','service','unclassified','road'
+    ]
+
+    query_parts = "\n".join([f"  way[\"highway\"=\"{t}\"]({kathmandu_bbox});" for t in highway_tags])
+
     query = f"""
-    [out:json][timeout:60];
+    [out:json][timeout:120];
     (
-      way["highway"="primary"]({kathmandu_bbox});
-      way["highway"="secondary"]({kathmandu_bbox});
-      way["highway"="tertiary"]({kathmandu_bbox});
-      way["highway"="residential"]({kathmandu_bbox});
-      way["highway"="unclassified"]({kathmandu_bbox});
+{query_parts}
     );
     out geom;
     """
@@ -34,9 +44,21 @@ def download_kathmandu_roads():
     print("This may take a few minutes...")
 
     try:
-        response = requests.post(overpass_url, data={'data': query}, timeout=120)
-        response.raise_for_status()
-        data = response.json()
+        # Try endpoints until one succeeds
+        data = None
+        last_err = None
+        for overpass_url in overpass_endpoints:
+            try:
+                response = requests.post(overpass_url, data={'data': query}, timeout=180)
+                response.raise_for_status()
+                data = response.json()
+                break
+            except Exception as e:
+                last_err = e
+                print(f"Endpoint {overpass_url} failed: {e}")
+
+        if data is None:
+            raise last_err
 
         # Convert to GeoJSON format
         geojson = {

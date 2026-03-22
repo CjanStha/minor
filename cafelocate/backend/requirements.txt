@@ -64,6 +64,9 @@ requests==2.31.0
 # scikit-learn: contains RandomForestClassifier and all evaluation tools
 scikit-learn==1.4.2
 
+# XGBoost: gradient boosting algorithm for improved accuracy
+xgboost==2.0.3
+
 # Pandas: data tables, CSV reading/writing, feature engineering
 pandas==2.2.2
 

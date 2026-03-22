@@ -1,0 +1,165 @@
+{
+  "model_type": "Regression (Random Forest & XGBoost)",
+  "target_type": "Continuous Suitability Score (0-100)",
+  "dataset": "combined_comprehensive_dataset_ft_enriched.csv",
+  "features": [
+    "competitors_within_500m",
+    "competitors_within_200m",
+    "competitors_min_distance",
+    "competitors_avg_distance",
+    "roads_within_500m",
+    "roads_avg_distance",
+    "schools_within_500m",
+    "schools_within_200m",
+    "schools_min_distance",
+    "hospitals_within_500m",
+    "hospitals_min_distance",
+    "bus_stops_within_500m",
+    "bus_stops_min_distance",
+    "population_density_proxy",
+    "accessibility_score",
+    "foot_traffic_score",
+    "competition_pressure"
+  ],
+  "feature_count": 17,
+  "v2_80_20": {
+    "version": "v2_80_20",
+    "rf_model": "RandomForestRegressor(max_depth=15, min_samples_leaf=2, min_samples_split=5,\n                      n_estimators=200, n_jobs=-1, random_state=42)",
+    "xgb_model": "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=0.8, device=None, early_stopping_rounds=None,\n             enable_categorical=False, eval_metric=None, feature_types=None,\n             feature_weights=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=0.1, max_bin=None, max_cat_threshold=None,\n             max_cat_to_onehot=None, max_delta_step=None, max_depth=6,\n             max_leaves=None, min_child_weight=None, missing=nan,\n             monotone_constraints=None, multi_strategy=None, n_estimators=100,\n             n_jobs=None, num_parallel_tree=None, ...)",
+    "rf_metrics": {
+      "train": {
+        "r2": 0.9869392223146702,
+        "rmse": 2.198251173656858,
+        "mae": 1.40681365838569,
+        "median_ae": 0.8903459831884497,
+        "mape": 131933641604407.05,
+        "mse": 4.832308222483755
+      },
+      "test": {
+        "r2": 0.9515913270939588,
+        "rmse": 3.9555016502670446,
+        "mae": 2.92632686953444,
+        "median_ae": 1.8774135631585231,
+        "mape": 0.06318219995102375,
+        "mse": 15.645993305265314
+      },
+      "cv": {
+        "r2_mean": 0.9271766235231084,
+        "r2_std": 0.011978998958056729,
+        "rmse_mean": 5.129792320780903,
+        "rmse_std": 1.6993241556699166,
+        "mae_mean": 3.582560270043635,
+        "mae_std": -0.15251912961424663
+      }
+    },
+    "xgb_metrics": {
+      "train": {
+        "r2": 0.9997341241188888,
+        "rmse": 0.3136405929290721,
+        "mae": 0.23473916899150207,
+        "median_ae": 0.17882650959615276,
+        "mape": 9257228530781.096,
+        "mse": 0.09837042153289989
+      },
+      "test": {
+        "r2": 0.9657799717494726,
+        "rmse": 3.3256777393674377,
+        "mae": 2.3784822770170537,
+        "median_ae": 1.7627303250207333,
+        "mape": 0.052832618332054854,
+        "mse": 11.06013242612411
+      },
+      "cv": {
+        "r2_mean": 0.9529173236996297,
+        "r2_std": 0.00295162481212395,
+        "rmse_mean": 4.155379379022426,
+        "rmse_std": 1.5144979858873635,
+        "mae_mean": 2.723699436061644,
+        "mae_std": -0.1381078980084361
+      }
+    },
+    "X_train": "     competitors_within_500m  ...  competition_pressure\n387                 0.113103  ...              0.627365\n140                -0.683363  ...             -0.800855\n561                -0.223863  ...              0.627365\n498                -0.591463  ...             -0.077274\n308                 2.196169  ...              0.627365\n..                       ...  ...                   ...\n144                -0.162597  ...              0.627365\n196                -0.193230  ...              0.627365\n453                 1.981736  ...              0.627365\n874                -0.591463  ...             -0.077274\n191                 0.756403  ...              0.627365\n\n[418 rows x 17 columns]",
+    "X_test": "      competitors_within_500m  ...  competition_pressure\n1016                -0.254497  ...              0.627365\n636                 -0.652730  ...             -0.558399\n17                  -0.744630  ...             -1.281980\n325                 -0.713997  ...             -1.043312\n156                 -0.652730  ...             -0.558399\n...                       ...  ...                   ...\n591                 -0.223863  ...              0.627365\n742                 -0.744630  ...             -1.281980\n490                 -0.377030  ...              0.627365\n868                 -0.285130  ...              0.627365\n268                  0.174370  ...              0.627365\n\n[105 rows x 17 columns]",
+    "y_train": "387    14.449699\n140    18.297646\n561    39.524300\n498    50.422937\n308    43.339475\n         ...    \n144    45.025323\n196    65.161956\n453    65.075995\n874    33.153806\n191    61.228151\nName: suitability_score_continuous, Length: 418, dtype: float64",
+    "y_test": "1016    38.304418\n636     26.646733\n17      74.811549\n325     49.022951\n156     46.572990\n          ...    \n591     35.557562\n742     92.288783\n490     39.678177\n868     51.665289\n268     47.365602\nName: suitability_score_continuous, Length: 105, dtype: float64"
+  },
+  "v3_85_15": {
+    "version": "v3_85_15",
+    "rf_model": "RandomForestRegressor(max_depth=15, min_samples_leaf=2, min_samples_split=5,\n                      n_estimators=200, n_jobs=-1, random_state=42)",
+    "xgb_model": "XGBRegressor(base_score=None, booster=None, callbacks=None,\n             colsample_bylevel=None, colsample_bynode=None,\n             colsample_bytree=0.8, device=None, early_stopping_rounds=None,\n             enable_categorical=False, eval_metric=None, feature_types=None,\n             feature_weights=None, gamma=None, grow_policy=None,\n             importance_type=None, interaction_constraints=None,\n             learning_rate=0.1, max_bin=None, max_cat_threshold=None,\n             max_cat_to_onehot=None, max_delta_step=None, max_depth=6,\n             max_leaves=None, min_child_weight=None, missing=nan,\n             monotone_constraints=None, multi_strategy=None, n_estimators=100,\n             n_jobs=None, num_parallel_tree=None, ...)",
+    "rf_metrics": {
+      "train": {
+        "r2": 0.9869713924165374,
+        "rmse": 2.1973346077614964,
+        "mae": 1.4781689958932285,
+        "median_ae": 0.9949997536214497,
+        "mape": 113408463004789.25,
+        "mse": 4.82827937846637
+      },
+      "test": {
+        "r2": 0.9534576394242517,
+        "rmse": 3.7689623470907314,
+        "mae": 2.8066598204615176,
+        "median_ae": 1.9345410576712823,
+        "mape": 0.061555267808966016,
+        "mse": 14.205077173787675
+      },
+      "cv": {
+        "r2_mean": 0.9327724198951597,
+        "r2_std": 0.005588632738375054,
+        "rmse_mean": 4.967536722381717,
+        "rmse_std": 1.4790396150763507,
+        "mae_mean": 3.522187518598691,
+        "mae_std": -0.16986778117956478
+      }
+    },
+    "xgb_metrics": {
+      "train": {
+        "r2": 0.9997033774122194,
+        "rmse": 0.3315502073255534,
+        "mae": 0.2571569388028274,
+        "median_ae": 0.2083526345339095,
+        "mape": 6174707737092.618,
+        "mse": 0.10992553997761743
+      },
+      "test": {
+        "r2": 0.96846274420243,
+        "rmse": 3.1024839672984372,
+        "mae": 2.1575801032747055,
+        "median_ae": 1.3767089621559947,
+        "mape": 0.0516951432225076,
+        "mse": 9.62540676734385
+      },
+      "cv": {
+        "r2_mean": 0.9634891870971647,
+        "r2_std": 0.0046887188082812906,
+        "rmse_mean": 3.694826208843226,
+        "rmse_std": 1.7848647588593174,
+        "mae_mean": 2.6111843011196223,
+        "mae_std": -0.2987661704881571
+      }
+    },
+    "X_train": "      competitors_within_500m  ...  competition_pressure\n55                  -0.622097  ...             -0.319731\n432                 -0.560830  ...              0.165182\n863                 -0.223863  ...              0.627365\n394                 -0.101330  ...              0.627365\n1009                -0.805896  ...             -1.766893\n...                       ...  ...                   ...\n144                 -0.162597  ...              0.627365\n196                 -0.193230  ...              0.627365\n453                  1.981736  ...              0.627365\n874                 -0.591463  ...             -0.077274\n191                  0.756403  ...              0.627365\n\n[444 rows x 17 columns]",
+    "X_test": "      competitors_within_500m  ...  competition_pressure\n1016                -0.254497  ...              0.627365\n636                 -0.652730  ...             -0.558399\n17                  -0.744630  ...             -1.281980\n325                 -0.713997  ...             -1.043312\n156                 -0.652730  ...             -0.558399\n...                       ...  ...                   ...\n154                 -0.652730  ...             -0.558399\n160                 -0.622097  ...             -0.319731\n9                    0.205003  ...              0.627365\n31                  -0.377030  ...              0.627365\n425                 -0.101330  ...              0.627365\n\n[79 rows x 17 columns]",
+    "y_train": "55      36.086947\n432     18.641961\n863     43.140811\n394     71.252070\n1009    41.688542\n          ...    \n144     45.025323\n196     65.161956\n453     65.075995\n874     33.153806\n191     61.228151\nName: suitability_score_continuous, Length: 444, dtype: float64",
+    "y_test": "1016    38.304418\n636     26.646733\n17      74.811549\n325     49.022951\n156     46.572990\n          ...    \n154     45.273284\n160     64.599220\n9       20.670838\n31      49.284187\n425     57.459486\nName: suitability_score_continuous, Length: 79, dtype: float64"
+  },
+  "comparison": {
+    "v2_80_20": {
+      "rf_test_r2": 0.9515913270939588,
+      "rf_test_rmse": 3.9555016502670446,
+      "rf_test_mae": 2.92632686953444,
+      "xgb_test_r2": 0.9657799717494726,
+      "xgb_test_rmse": 3.3256777393674377,
+      "xgb_test_mae": 2.3784822770170537
+    },
+    "v3_85_15": {
+      "rf_test_r2": 0.9534576394242517,
+      "rf_test_rmse": 3.7689623470907314,
+      "rf_test_mae": 2.8066598204615176,
+      "xgb_test_r2": 0.96846274420243,
+      "xgb_test_rmse": 3.1024839672984372,
+      "xgb_test_mae": 2.1575801032747055
+    }
+  }
+}

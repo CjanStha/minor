@@ -1,0 +1,15 @@
+{
+  "total_predictions": 1072,
+  "mean_score": 44.58729190269399,
+  "median_score": 41.18917080899459,
+  "std_score": 13.286961990479814,
+  "min_score": 6.223505684460848,
+  "max_score": 95.26517893470748,
+  "distribution": {
+    "very_poor_0_30": 101,
+    "poor_30_45": 686,
+    "average_45_60": 130,
+    "good_60_75": 108,
+    "excellent_75_100": 47
+  }
+}

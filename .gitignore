@@ -1,0 +1,99 @@
+# Python & Virtual Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Database
+*.sqlite3
+db.sqlite3
+
+# Django
+*.log
+/static/
+/media/
+
+# ML Models (keep only production models)
+cafelocate/ml/models/rf_model.pkl
+cafelocate/ml/models/label_encoder.pkl
+cafelocate/ml/models/final_*
+cafelocate/ml/models/comparison_report_*.txt
+cafelocate/ml/models/best_*.pkl
+
+# Node modules (if added)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Temporary Files
+*.tmp
+*.bak
+*.temp
+
+# IDE Python template
+*.py[cod]
+
+# C extensions
+*.so
+
+# Package directories
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg

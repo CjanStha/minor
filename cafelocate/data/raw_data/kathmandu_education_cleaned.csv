@@ -1,0 +1,1120 @@
+id,amenity,name,name:en,name:ne,operator:type,education_level,student:count,personnel:count,building_count,phone_combined,email_combined,web_social,opening_hours,address,addr:street,addr:tole,addr:ward,addr:city,building:levels,building:structure,building:ownership,physical_condition,roof:shape,roof:material,floor:material,building:soft_storey,seismic_resistance,retrofit,wheelchair,source,latitude,longitude,osm_last_updated
+relation/2025798,school,Adarsha Lower Secondary School,,,Government,Lower Secondary,101,13,1,01-417757,,,,,,,,,3,load_bearing_stone_wall_in_mud_mortar,rent,poor,gabled,roof_tiles,jack_arch,no,no,no,,,27.7136072,85.3313708,2017-03-24T13:06:11Z
+relation/4046810,school,Alok Vidyashram,,,Private,Higher Secondary,500,40,2,,,,,,,,,,,,,,,,,,,,,,27.7071562,85.341882,2014-09-17T07:25:22Z
+relation/12266985,school,Mount Glory English Boarding High School,,,Private,Higher Secondary,800,50,3,01-4276477,,,,,,,,,,,,,,,,,,,,,27.7060226,85.2987605,2021-02-02T15:22:37Z
+relation/12267162,school,Future Star English Secondary School,,,Private,Secondary,450,40,2,,,,,,,,,,,,,,,,,,,,,,27.7074977,85.3006046,2021-02-02T16:11:36Z
+relation/12271329,school,Gurukul Pearl's school,,,Private,Lower Secondary,178,20,1,,,,,,,,,,,,,,,,,,,,,,27.7029976,85.285952,2021-02-03T17:16:49Z
+relation/12271330,college,Rupy's International College,,,Private,Higher Secondary,317,57,6,,,,,,,,,,,,,,,,,,,,,,27.7041386,85.2860158,2021-02-03T17:16:49Z
+relation/12271768,school,Jana Prabhat Secondary School,,,Government,Secondary,650,43,4,,,,,,,,,,,,,,,,,,,,,,27.6983871,85.2936896,2021-02-03T19:11:16Z
+relation/12274530,school,Modern Nepal Academy,,,Private,Secondary,350,25,1,01-4301680,,,,,,,,,,,,,,,,,,,,,27.710754,85.2947475,2021-02-04T15:47:45Z
+relation/12274724,school,Divyatara Boarding School,,,Private,Secondary,120,14,4,,,,,,,,,,,,,,,,,,,,,,27.7123445,85.2880067,2021-02-04T16:46:21Z
+relation/12286059,school,Academy of Sacred Hearts,,,Private,Secondary,200,20,3,,,,,,,,,,,,,,,,,,,,,,27.7139465,85.303514,2021-02-07T14:42:09Z
+relation/13773448,college,Don Bosco College,,,Private,College/Higher Education,285,55,2,01-4600546,,,,,,,,,,,,,,,,,,,,,27.6748344,85.341972,2022-02-08T07:52:45Z
+relation/15882210,school,Snow Apex Academy,,,Private,Secondary,325,32,4,,,,,,,,,,,,,,,,,,,,,,27.7090003,85.3241177,2023-05-21T05:25:11Z
+way/84035026,college,St. Xavier's College,,,Private Non-Profit,College/Higher Education,2800,200,5,,,https://sxc.edu.np/,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6932545,85.3211397,2022-05-24T06:49:44Z
+way/84035028,university,TU Controller of Examinations,,Pariksha niyantran karyalaya,Unknown,,,,,,,https://www.tuexam.edu.np/,,,,,,,,,,,,,,,,,,,27.684145,85.295339,2022-05-24T06:46:56Z
+way/112654802,school,Tindhara Pathshala,,तीनधारा पाठशाला,Unknown,,,,,,,,,,,,,,2,,,,gabled,,,,,,,,27.7095553,85.317464,2019-03-20T07:15:33Z
+way/124300987,college,Olympia World College / Milton International College,,,Private,College/Higher Education,95,28,1,"01-4220449(Olympia), 01-4785658(Milton)",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6871727,85.3274061,2017-12-14T19:37:09Z
+way/125637523,college,Classic College International,,,Private,Upper Secondary,850,108,1,,,,6:30-17:00,"gausala -9, kathmandu municipality",,,,kathmandu municipality,,,,,,,,,,,yes,OpenDRI survey,27.7024764,85.3492296,2021-03-21T09:57:55Z
+way/126322078,school,Lincoln School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6939547,85.2937244,2026-02-01T02:21:36Z
+way/136485908,college,Public Youth Campus,,,Government,College/Higher Education,1800,145,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7130129,85.307282,2023-06-04T08:52:49Z
+way/168839124,school,Glacier International Higher Secondary School,,,Private,Higher Secondary,550,60,2,4107803,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6880102,85.3454512,2021-03-13T17:09:52Z
+way/169078006,school,Jaljala Shishu Sadan Secondary School,,,Private,Secondary,400,32,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7086511,85.3051369,2025-07-25T06:37:09Z
+way/169429526,school,Nava Adarsha Secondary School,,,Government,Secondary,287,28,1,,,,,,,,,,4,load_bearing_brick_wall_in_mud_mortar,self,poor,flat,cgi,wood,no,no,no,,METEOR Kathmandu Field Survey 2019,27.7035555,85.3066794,2025-04-07T08:24:38Z
+way/172953244,school,Cosmic International Academy,,,Private,Secondary,850,70,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6747776,85.3453689,2022-02-09T04:37:22Z
+way/172954057,school,SOS koteshwar,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6762594,85.3443378,2021-03-12T05:48:44Z
+way/176926682,college,Yeti Health Science Academy,,,Private,College/Higher Education,380,40,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7355423,85.3281315,2013-08-18T05:58:27Z
+way/177789379,school,Malpi International College,,,Private,College/Higher Education,100,30,3,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7239844,85.3280021,2018-11-13T06:32:57Z
+way/178914637,school,Malpi Primary School,,,Private,Primary,210,52,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.71708,85.3268415,2021-02-12T13:29:19Z
+way/179465469,school,Mount Gaurishankar School,,,Private,Secondary,200,20,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7220606,85.3282048,2013-08-26T10:23:31Z
+way/179736868,school,Shaheed Shukra Secondary School,,,Government,Secondary,400,30,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7035377,85.3188015,2022-08-05T11:03:59Z
+way/180082302,school,Samye Memorial Buddist Vihara,,,Community,Secondary,200,20,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.740012,85.3440226,2014-06-11T05:43:36Z
+way/180082335,college,Norvic Institute of Nursing Education,,,Private,College/Higher Education,290,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7401804,85.3400055,2013-08-18T05:58:12Z
+way/180087479,school,Phoenix College,,,Unknown,,,,,,,,,maitidevi,maitidevi,,,,,,,,,,,,,,,,27.7041607,85.3321749,2025-07-07T12:16:23Z
+way/180349345,school,Shiradi Sai Academy,,,Private,Secondary,155,14,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7268894,85.334345,2013-08-26T10:25:34Z
+way/180682226,college,British Gorkha College,,,Private,College/Higher Education,,,3,"01-4017806, 01-4378483",,,,Bansbari,,,,Bansbari,,,,,,,,,,,limited,OpenDRI survey,27.7436546,85.3399707,2018-10-08T13:40:00Z
+way/180933580,school,Guheswari Higher Secondary School,,,Government,Higher Secondary,1000,35,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6947063,85.3519545,2021-08-24T12:18:34Z
+way/181340174,school,,,,Unknown,,,,,,,,,"TBD, Kathmandu, Ward TBD",TBD,,,Kathmandu,,,,,,,,,,,,,27.6843119,85.3446517,2013-05-18T09:10:26Z
+way/183256312,college,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6943167,85.3374527,2013-03-05T04:14:34Z
+way/206078320,college,,,,Unknown,,,,,,,,,,,,,,3,load_bearing_brick_wall_in_cement_mortar,self,average,gabled,metal,concrete,yes,no,no,limited,OpenDRI survey,27.7027281,85.319445,2020-02-17T09:47:36Z
+way/206848560,school,,,,Unknown,,,,,,,,,,,,,,4,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6869615,85.3359119,2013-09-01T08:41:56Z
+way/206986083,college,,,,Unknown,,,,,,,,,,,,,,3,non_engineered_reinforced_concrete;load_bearing_brick_wall_in_cement_mortar,rent,average,gabled,metal,concrete,yes,no,no,,OpenDRI survey,27.6860749,85.3348624,2013-09-01T08:41:28Z
+way/209529915,school,,,,Unknown,,,,,,,,,,,,,,4,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7197388,85.3624246,2021-02-28T16:58:41Z
+way/217957279,school,,,,Unknown,,,,,,,,,,,,,,3,engineered_reinforced_concrete,self,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7044669,85.3035617,2025-07-17T06:31:01Z
+way/218460860,college,,,,Unknown,,,,,,,,,,,,,,4,engineered_reinforced_concrete,self,good,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7180447,85.3024023,2014-03-18T09:07:23Z
+way/219619227,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.716299,85.3531742,2018-11-22T06:55:24Z
+way/219775946,college,,,,Private,,761,55,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7292084,85.3153667,2021-02-03T06:28:10Z
+way/221295626,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7195513,85.3243079,2021-03-19T16:31:17Z
+way/221376649,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7200761,85.3477244,2021-03-01T04:22:49Z
+way/221699902,school,,,,Unknown,,,,,,,,,shanti sikshya margha,shanti sikshya margha,,,,1,load_bearing_brick_wall_in_mud_mortar,self,poor,gabled,metal,wood,no,no,no,,OpenDRI survey,27.7112972,85.3100405,2017-06-19T07:49:36Z
+way/221797124,school,,,,Unknown,,,,,,,,,"byathit marg, jyatha, 27",byathit marg,jyatha,27,,1,load_bearing_brick_wall_in_cement_mortar,rent,poor,gabled,metal,wood,no,no,no,,OpenDRI survey,27.7105468,85.3134223,2021-02-11T04:18:49Z
+way/223092762,school,,,,Unknown,,,,,,,,,,,,,,5,non_engineered_reinforced_concrete,rent,good,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6883085,85.3454154,2023-05-10T11:22:23Z
+way/225008708,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6888694,85.3243672,2021-02-09T06:05:07Z
+way/226335130,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6968777,85.3311553,2021-02-10T12:48:48Z
+way/226358336,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7096955,85.3067807,2015-07-04T10:12:16Z
+way/340714195,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7224647,85.3675618,2021-03-01T15:55:35Z
+way/540190094,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6934065,85.3504216,2017-11-13T13:36:50Z
+node/1941204615,college,,,हिमालय ईन्जिनियरिङ्ग कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6871904,85.3271716,2013-04-28T16:34:38Z
+node/3640850574,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7118201,85.2877803,2015-07-08T12:20:36Z
+node/4484880889,school,,Nawaneet Toddlers' Zone,,Unknown,,,,,4286300,thetoddlerszone@gmail.com,,Su-Fr 10:00-22:00,Pradhikaran Marg,Pradhikaran Marg,,,,,,,,,,,,,,,,27.6924624,85.2956151,2016-11-06T04:21:39Z
+node/4558046690,college,,Chakrabarti HaBi Law College,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.6912294,85.3293796,2018-10-04T16:08:32Z
+node/4681234990,school,,CAI International (for CA classes since 1996),,Unknown,,,,,014168051,caipvtltd@gmail.com,,,,,,,,,,,,,,,,,,,,27.7024948,85.3217645,2017-02-12T06:45:11Z
+node/4795372226,college,,Maharajgunj Medical Campus,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7343844,85.3303478,2020-02-28T07:13:25Z
+node/4813487123,school,,Iacer Institute,,Unknown,,,,,014471915,info@iacer.edu.np,https://www.iacer.edu.np/,,Tanka Prasad Marga,Tanka Prasad Marga,,,,,,,,,,,,,,,,27.7001115,85.3353715,2022-05-24T06:40:46Z
+node/4844865058,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7004744,85.3208527,2019-05-03T20:04:25Z
+node/4875293522,college,,Florida International College,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6876702,85.3431228,2020-02-28T06:16:17Z
+node/4956147121,college,,Chelsea College,,Unknown,,,,,,,,,Lakhe Chaur Marga,Lakhe Chaur Marga,,,,,,,,,,,,,,,,27.6948713,85.3347644,2020-02-28T08:44:08Z
+node/5013793822,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7104768,85.3310345,2017-08-04T09:43:48Z
+node/5101981923,school,,SAB Public School,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.703466,85.3303921,2017-09-12T21:11:02Z
+node/5248166722,college,,Presidential Buisness School,,Unknown,,,,,,,https://presidential.edu.np/,,Bijulibazar Marg,Bijulibazar Marg,,,,,,,,,,,,,,no,,27.6920584,85.330404,2019-03-27T21:26:25Z
+node/5619805721,college,,Sunway International Business School,,Unknown,,,,,01-4431725,info@sunway.edu.np,https://sunway.edu.np/,,Maiti Devi marg,Maiti Devi marg,,,,,,,,,,,,,,,,27.7054273,85.3343332,2019-03-27T21:26:18Z
+node/5677695624,college,,Jubilant College,,Unknown,,,,,,,,Su-Fr 06:00-17:00,Dhaukhel Marg,Dhaukhel Marg,,,,,,,,,,,,,,yes,,27.6984796,85.3017015,2018-11-24T16:48:18Z
+node/5848783091,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7053049,85.3218772,2021-02-09T05:00:51Z
+node/6018706843,school,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7081839,85.3316655,2018-10-28T04:11:32Z
+node/6056988585,college,,National College,,Unknown,,,,,014420871,,https://nationalcollege.edu.np/,Su-Fr 09:00-16:00,Pragati Tole Marg,Pragati Tole Marg,,,,,,,,,,,,,,,,27.7315694,85.3413543,2023-10-17T09:39:45Z
+node/6135611485,college,,ISMT College,,Unknown,,,,,01-4499013,info@ismt.edu.np,https://ismt.edu.np/,Mo-Su 06:30-17:00,,,,,,,,,,,,,,,,,,27.6887388,85.3491251,2022-05-24T06:46:59Z
+node/6149298085,college,,Santy dai ko college,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6876323,85.3344991,2018-12-20T08:30:08Z
+node/6880658485,college,,Kathmandu Campus,,Unknown,,,,,,,,Su-Fr 10:00-17:00,,,,,,,,,,,,,,,,,,27.6967705,85.2969882,2019-10-15T06:42:52Z
+node/7198279985,college,,Gurukul CA,,Unknown,,,,,01-4251342,,http://www.gurukulca.com,Mo-Su 06:00-18:30,Baghbazar Road,Baghbazar Road,,,,,,,,,,,,,,,,27.7062105,85.320228,2020-02-09T18:58:59Z
+node/11035159505,college,,"Institute of Engineering, Thapathali Campus",,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6941299,85.3190851,2023-07-09T04:58:25Z
+node/11336017070,college,,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6991023,85.2809866,2023-11-09T14:57:39Z
+node/11767842469,college,,Triton College,,Unknown,,,,,,,,,Koteshwor Jhulungepul,Koteshwor Jhulungepul,,,,,,,,,,,,,,,,27.6760205,85.3384467,2024-03-28T02:07:50Z
+node/11876294169,college,,King collage,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6891256,85.3279853,2024-05-03T11:27:48Z
+way/181376781,school,Arunima Higher Secondary School,,,Private,College/Higher Education,2100,150,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7169274,85.3587031,2021-03-09T04:14:58Z
+way/181376800,school,Samata School,,,Private,Lower Secondary,1500,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7169602,85.3609223,2025-04-09T10:38:37Z
+way/181573414,college,Bridgewater College,,,Private,College/Higher Education,250,72,1,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.6962953,85.3523481,2018-11-08T11:34:08Z
+way/181573533,college,Ace Institute of Management,,,Private,College/Higher Education,480,70,1,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6991152,85.3477204,2018-11-07T05:16:11Z
+way/181977687,school,Ace Institute of Management,,,Private,College/Higher Education,900,70,1,01410451,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6908336,85.3392586,2016-08-12T08:13:09Z
+way/181976128,school,Bhimsengola Secondary School,,,Government,Secondary,300,23,1,4115709,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6899712,85.3406887,2013-08-26T10:20:48Z
+way/182040664,school,Angel Lord Academy High School,,,Private,Secondary,480,35,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6798573,85.3475342,2018-11-20T10:24:48Z
+way/182974756,college,Nepal Commerce Campus,,,Government,College/Higher Education,7000,200,6,01-4107044,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6853644,85.3374628,2018-11-29T11:33:41Z
+way/182979027,college,Little Buddha College of Health Science,,,Private,College/Higher Education,320,25,3,"01-4784458, 01-4784459",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6837171,85.3374688,2021-03-12T12:30:36Z
+way/182979998,school,V. S. Niketan HS School,,,Private,Secondary,2100,300,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6859613,85.342788,2018-11-29T10:19:19Z
+way/184109157,school,Shrijanshil English School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6883352,85.3264354,2021-02-09T08:21:40Z
+way/184128909,college,Mahendra Ratna Campus(Tahachal Campus),,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,limited,,27.7036389,85.3002436,2019-05-26T05:51:01Z
+way/185578988,school,Ekita International School,,,Private,Secondary,250,27,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.729997,85.3359315,2019-03-18T08:37:12Z
+way/186144703,school,NIIT Kathmandu Center,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7094933,85.3148673,2020-10-06T08:04:49Z
+way/186144710,school,जन प्रसासन केन्द्रिय विभाग,,,Unknown,,,,,,,http://cdpa.edu.np/,,,,,,,,,,,,,,,,,,,27.7095409,85.3152216,2020-10-06T08:04:49Z
+way/187756136,school,Shree Rani Bari Lower Secondary School,,,Government,Lower Secondary,350,15,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7272682,85.3209739,2021-02-17T16:45:31Z
+way/188322217,school,Kenji International School,,,Private,Primary,125,10,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6817995,85.3428837,2013-09-21T21:45:22Z
+way/188434753,college,Old Whitehouse International College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6940314,85.3373085,2021-02-25T11:36:51Z
+way/188723398,college,Kantipur Dental College,,,Private,College/Higher Education,500,125,1,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7364593,85.323944,2018-10-06T14:38:54Z
+way/190005944,school,Shree Tangal Higher Secondary School,,,Government,Higher Secondary,900,50,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7161517,85.3318996,2021-02-20T16:32:10Z
+way/191189605,school,Wendy's House,,,Private,Secondary,170,42,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7225365,85.3331836,2018-11-23T10:42:20Z
+way/191412300,school,The Spangle Boarding School,,,Private,Secondary,315,26,2,014424885,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7021757,85.3261976,2021-02-23T01:56:35Z
+way/191533972,college,Saipal Academy,,,Unknown,,,,,014009054,mail@saipal.edu.np,https://www.saipal.edu.np/,,,,,,,,,,,,,,,,,,,27.7234944,85.3388944,2022-05-24T06:42:52Z
+way/191861041,college,Baneshwar Campus,,,Community,College/Higher Education,,,4,014620332,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6889854,85.3477792,2020-08-03T07:08:51Z
+way/191861070,school,Continental Academy,,,Private,Secondary,206,26,4,01-4108706,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6930525,85.3507272,2018-11-25T08:07:08Z
+way/192049641,school,Mount Gauri Shankar School,,,Unknown,,,,,"00977 1 4423061,4438696",,,,"Baluwatar, Kathmandu",,,,Kathmandu,3,load_bearing_brick_wall_in_cement_mortar,,,,,,no,,,,,27.7217277,85.3281527,2018-01-09T09:10:34Z
+way/192050727,school,Nepal Pathfinder Co-ed School,,,Private,Upper Secondary,200,17,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7028404,85.3458357,2025-04-05T19:51:53Z
+way/192307560,college,Global College of Management,,,Private,College/Higher Education,1215,103,3,4488312,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6986116,85.3422839,2018-11-25T06:03:10Z
+way/192307568,school,Sishu Niketan School,,,Private,Secondary,225,33,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6998198,85.3412845,2021-03-08T08:15:01Z
+way/192882935,school,Mahendra Rastriya Higher Secondary School,,,Government,Higher Secondary,420,27,3,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7249496,85.3310564,2018-10-08T13:50:59Z
+way/193088953,school,Anapuram Vidya Sadan Elementary School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7198128,85.3237915,2021-02-15T04:36:49Z
+way/193295133,college,International College Of Hotel Management And Tourism,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7098393,85.3330021,2021-03-01T18:24:27Z
+way/194056909,school,Best's Montessori Children's House,,,Unknown,,,,,,,,,"81/34, old baneshowr-9",,,,,,,,,,,,,,,,,27.7023358,85.3402346,2021-03-06T06:37:01Z
+way/194286927,college,Reliance International Academy (RIA),,,Private,College/Higher Education,1400,120,10,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7226676,85.3487435,2013-08-18T05:58:18Z
+way/194292909,school,Apex School,,,Private,Secondary,695,70,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7264853,85.3560003,2022-09-04T16:20:26Z
+way/195856303,college,Shanker Dev Campus,,,Government,College/Higher Education,5000,300,5,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.703588,85.3218764,2020-09-17T20:14:19Z
+way/196060481,school,Baluwatar School,,,Private,Primary,50,6,1,,,,,,,,,,3,load_bearing_brick_wall_in_cement_mortar,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.726496,85.3343555,2018-11-23T10:15:25Z
+way/196060510,school,Prime Time Pre-School,,,Private,Pre-Primary,45,13,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7345403,85.3367789,2013-08-26T10:24:59Z
+way/196838739,school,Sun Moon English School,,,Private,Primary,7,3,1,427240,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7312896,85.3259985,2018-11-21T14:25:40Z
+way/196950152,school,Shivapuri High School,,,Government,Secondary,1300,70,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7305462,85.3301663,2018-11-21T07:36:00Z
+way/197128939,college,Morgan College,,,Private,College/Higher Education,3000,150,4,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7390591,85.3276726,2021-02-17T16:23:35Z
+way/197144818,school,GCA higer secondary school,,,Unknown,,,,,,,,9:00-16:00,"ranibari samakhusi marga, kathmandu municipality",ranibari samakhusi marga,,,kathmandu municipality,,,,,,,,,,,,,27.7313531,85.3183992,2018-11-18T03:28:31Z
+way/197486695,school,Minar English Boarding School,,,Private,Secondary,130,19,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7421829,85.3354739,2013-08-26T10:23:27Z
+way/197753615,school,Glen BUDS Secondary School,,,Private,Secondary,250,32,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7354439,85.3278106,2013-10-18T05:27:10Z
+way/198024439,school,Shri Pashupati Mitra Secondary School,,,Government,Secondary,2000,53,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7164232,85.3459174,2025-04-10T05:32:54Z
+way/198118238,school,shree amritanksha jadibuti udyog,,,Unknown,,,,,,,,,"25, bishalnagar, bhatbhateni, 4, municipality",bishalnagar,bhatbhateni,4,municipality,3,non_engineered_reinforced_concrete,,,,,,no,,,,,27.7202381,85.3341255,2017-06-19T07:27:40Z
+way/198118487,school,St. George International School,,,Private,Secondary,350,33,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7205552,85.3381373,2013-08-26T10:26:37Z
+way/198635907,school,Euro School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7193516,85.3353091,2016-12-09T07:46:26Z
+way/198893865,school,Meridian International School,,,Private,Secondary,1000,35,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7279391,85.3263649,2023-04-12T08:32:19Z
+way/199011348,school,Ashirwad Boarding School,,,Private,Secondary,300,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7280701,85.3330778,2013-10-18T05:30:22Z
+way/199785860,school,New Knowledge Boarding Secondary School,,,Private,Secondary,350,20,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7304259,85.3356049,2018-11-20T09:13:42Z
+way/199964916,school,nawa jeewan sisu niketan,,,Unknown,,,,,,,,8:00-6:00,"nahar marga, jadibuti 32, kathmandu municipality",nahar marga,,,kathmandu municipality,,,,,,,,,,,,,27.6708794,85.3462925,2017-06-21T11:21:41Z
+way/200101355,school,Sanskar School,,,Unknown,,,,,01-4428766,,,,,,,,,,,,,,,,,,,,,27.7294416,85.3394646,2013-07-30T11:24:13Z
+way/201380500,school,Maple School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7066206,85.3265056,2018-11-26T04:56:11Z
+way/225662964,school,Maple School,,,Private,Primary,20,5,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7090186,85.3306848,2018-11-27T06:31:39Z
+way/202773359,school,Sigma Higher Secondary School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,no,,27.7182905,85.3080394,2018-10-29T03:38:28Z
+way/202983099,school,Shanti Nikanj School,,,Government,Higher Secondary,900,42,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7045586,85.3039693,2025-07-17T06:31:01Z
+way/203098747,school,J.P. School,,,Government,Secondary,1200,35,2,,,,,JP High School,,,,,,,,,,,,,,,,OpenDRI survey,27.7124828,85.3099364,2020-05-12T19:55:28Z
+way/203573932,school,Bon Sky Lark INt. School,,,Unknown,,,,,,,,08:00-17:00,"Hospital Margh, chabahil 7",Hospital Margh,,,,,,,,,,,,,,,,27.7183844,85.3222899,2019-09-05T03:57:06Z
+way/203906443,college,Kathmandu Engineering College,,,Private,College/Higher Education,1700,170,7,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6987797,85.297029,2023-01-17T05:09:40Z
+way/203968995,school,Seasons Academic Boarding School,,,Unknown,,,,,014473867,,,,,,,,,,,,,,,,,,,,,27.6941456,85.3387171,2021-03-14T05:17:10Z
+way/204099236,school,Columbus School,,,Unknown,,,,,,,,,,,,,,1,load_bearing_brick_wall_in_cement_mortar,rent,average,flat,metal,,no,no,no,,OpenDRI survey,27.6872777,85.331193,2021-03-13T06:59:11Z
+way/204906259,college,Excel International College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.6939741,85.3353732,2021-02-22T03:54:59Z
+way/205714652,school,Ankur Vidyashram,,,Private,Secondary,300,30,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7014329,85.3462747,2021-03-07T08:53:57Z
+way/205724200,school,Nepal Music School,,,Community,Secondary,500,40,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7021565,85.3486465,2021-03-07T14:06:01Z
+way/205874172,school,Shambhavi School,,,Private,Secondary,385,35,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7058558,85.3441338,2018-11-12T09:57:00Z
+way/206055273,college,Wigan & Leigh College,,,Private,College/Higher Education,80,20,1,,,,,,,,,,5,engineered_reinforced_concrete,rent,average,flat,concrete,concrete,yes,,no,,OpenDRI survey,27.7081615,85.3391489,2025-06-17T11:32:28Z
+way/206055275,school,Himalaya Vidya Mandir Higher Secondary School,,,Private,Higher Secondary,250,30,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.709776,85.3386808,2021-02-12T09:38:25Z
+way/206100460,school,Venus English School,,,Private,Secondary,130,20,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7000509,85.3474754,2018-11-19T06:33:49Z
+way/206343634,school,New English School,,,Private,Secondary,470,38,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7171459,85.3522187,2018-11-22T06:12:04Z
+way/206508440,school,The Chanbagh School (SLC Block),,,Private,Secondary,703,65,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7446763,85.342858,2020-07-29T11:00:36Z
+way/206762991,school,Alliance Academy Higher Secondary School,,,Private,Secondary,500,75,3,014493198,,,,,,,,,5,load_bearing_brick_wall_in_cement_mortar,rent,average,flat,concrete;metal,concrete,yes,no,no,,OpenDRI survey,27.6917131,85.3308487,2023-03-23T06:28:49Z
+way/206835937,school,Golden Peak High School,,,Private,Secondary,540,55,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.725895,85.3540857,2015-07-15T16:43:57Z
+way/206839568,college,International College of Hospitality management,,,Private,College/Higher Education,250,22,1,014107834,,,,,,,,,6,non_engineered_reinforced_concrete,rent,good,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6923682,85.3403581,2013-09-01T08:41:12Z
+way/206840867,school,Sagarmatha High School,,,Private,Secondary,400,24,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7265913,85.3530848,2021-02-27T09:02:07Z
+way/207150005,school,Pathshala Nepal Foundation,,,Private,Secondary,600,100,4,"01- 4490451, 4495653","info@pathshala.edu.np, pnf2002@pathshala.edu.np",https://pathshala.edu.np/,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6946326,85.3328901,2022-05-24T06:45:02Z
+way/207265905,school,Moral Academy,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6955554,85.3368814,2013-02-26T04:00:44Z
+way/207267417,college,SchEMS,,,Private,College/Higher Education,450,110,2,01-4482475,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6941902,85.3373893,2018-11-07T05:55:37Z
+way/207268965,school,Prefect Educational Institute,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.694291,85.3392812,2021-03-06T16:22:17Z
+way/207269660,college,WELHAMS COLLEGE ( वेलहम्स कलेज ),,,Private,College/Higher Education,600,80,3,01-4482982,welhamscollege@gmail.com,www.welhamscollege.com,,Okharbot Marga,Okharbot Marga,,,,,,,,,,,,,,,OpenDRI survey,27.6929279,85.3359754,2025-07-09T11:23:53Z
+way/207298033,school,Ananda Kuti Vidyapeth,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7159899,85.2865882,2018-10-20T02:59:16Z
+way/207416843,school,Nepal Ideal School,,,Private,Secondary,285,30,3,4470773,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6970243,85.3372821,2013-08-26T10:24:23Z
+way/207464038,school,Sitala Higher Secondary School,,,Government,Higher Secondary,450,32,1,01-5102076,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7369442,85.2947788,2016-11-11T20:38:42Z
+way/208172022,school,Vidya Sadan School,,,Private,Lower Secondary,80,10,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7242242,85.3492093,2021-02-28T05:21:58Z
+way/208172023,college,Om Nursing College,,,Private,College/Higher Education,150,40,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7214951,85.3488384,2021-03-01T16:54:52Z
+way/208869758,college,Gateway College,,,Unknown,,,,,,,,,"mathur marga, shrijal tol-3, kathmandu municipality",mathur marga,,,kathmandu municipality,,,,,,,,,,,,,27.7457779,85.3355926,2017-06-26T12:13:27Z
+way/219208222,college,Gateway College,,,Private,College/Higher Education,120,20,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7323497,85.3163932,2017-05-29T05:57:37Z
+way/209129746,school,Twinkle Toes Infant School,,,Private,,70,15,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7329932,85.2987542,2021-02-04T17:07:44Z
+way/209529981,college,xavier international school and college,Xavier Int’l College,,Unknown,,,,,,,,,"boudha marg, tushal, 6, municipality",boudha marg,tushal,6,municipality,,,,,,,,,,,yes,,27.7204664,85.3586194,2021-03-08T09:24:00Z
+way/209530175,school,mohan siddartha H.S. school,,,Unknown,,,,,,,,,"boudha marg, kumarigal, 6, municipality",boudha marg,kumarigal,6,municipality,,,,,,,,,,,,,27.7153376,85.3567155,2017-06-20T08:04:42Z
+way/209534677,college,Crimson International College,,,Unknown,,,,,,,,,,,,,,6,engineered_reinforced_concrete,rent,average,flat,metal,concrete,no,no,no,,OpenDRI survey,27.6831505,85.3333831,2021-03-14T11:17:46Z
+way/210579938,school,Gitanjali Secondary School,,,Unknown,,,,,,,,10:00-17:00,Khushi Bu,Khushi Bu,,,,,,,,,,,,,,,,27.7099562,85.3073561,2021-02-10T08:06:25Z
+way/210706863,school,Bonsai Academy,,,Unknown,,,,,,,,Su-Fr 09:00-15:00,"Sunar Gau Marg, Suntalabari 14, Kathmandu Municipality",Sunar Gau Marg,,,Kathmandu Municipality,,,,,,,,,,,,,27.6901761,85.2864861,2021-02-05T07:06:22Z
+way/211260702,school,Bhrikuti Secondary School,,,Private,Secondary,400,30,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.726662,85.3570671,2021-02-27T11:16:22Z
+way/211752795,school,Marvellous English Boarding School,,,Private,Secondary,450,45,4,,,,,,,,,,3,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7027913,85.3337576,2018-02-20T17:01:30Z
+way/211752904,school,Pious English Boarding School,,,Private,Secondary,225,30,4,01-4439103,,,,,,,,,4,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.7006506,85.3323826,2015-05-11T04:39:09Z
+way/211905458,school,nilkantha secondary boarding school,,,Unknown,,,,,,,,09:00 - 5:00,"nageshwor galli, boudha marg, boudha, 6, municipality","nageshwor galli, boudha marg",boudha,6,municipality,,,,,,,,,,,,nextview,27.7197971,85.3641587,2021-03-07T08:31:01Z
+way/213694297,school,Shree Krishna Prabha Primary School,,,Government,Lower Secondary,90,11,1,+977 4438470,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7185427,85.3365204,2018-11-28T02:58:45Z
+way/213699273,school,Little Children Academy,,,Private,Secondary,245,60,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7165716,85.335403,2022-03-11T10:22:33Z
+way/214073216,college,Ambition College(Affiliated to TU),,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6950985,85.3351648,2021-02-22T06:42:42Z
+way/214073368,school,Axis International Higher Secondary School,,,Private,Secondary,160,22,2,4109225,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6956905,85.3442621,2017-07-28T07:07:40Z
+way/214961077,school,Faryland Boarding School,,,Private,Secondary,215,24,3,,,,10:00-17:00,"Nil Saraswoti Sthan, Saraswoti Than 2",Nil Saraswoti Sthan,,,,,,,,,,,,,,,OpenDRI survey,27.7203684,85.3256042,2021-02-16T00:26:45Z
+way/215032245,college,Kantipur City College,,,Private,College/Higher Education,1150,200,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.703607,85.323302,2023-01-03T04:21:39Z
+way/215034905,college,KIST College,,,Private,College/Higher Education,1600,131,6,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7117257,85.3252112,2021-02-12T10:59:47Z
+way/215037376,college,National Integrated College,,,Private,College/Higher Education,1650,80,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7067518,85.3255975,2023-05-19T06:57:13Z
+way/215053610,college,Gunraj Pathak Memorial Nursing Campus,,,Private,College/Higher Education,120,17,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7249855,85.3349994,2021-02-14T19:07:58Z
+way/215053611,school,John Dewey School,,,Private,Primary,150,35,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.73124,85.3298059,2018-11-21T07:36:01Z
+way/215053613,school,Morning Bells Montessori,,,Private,Pre-Primary,60,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7315429,85.3294625,2015-07-17T06:34:01Z
+way/215053734,college,Prolific Higher Secondary School,,,Private,College/Higher Education,495,42,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7295355,85.3445344,2013-08-18T05:58:15Z
+way/215212424,school,Ananda Bhumi High School,,,Private,Secondary,450,50,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7054366,85.3343987,2018-11-25T11:03:15Z
+way/215212425,school,Bal Bagaicha,,,Private,Pre-Primary,60,10,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.705296,85.3295557,2025-07-07T12:12:15Z
+way/215212426,school,Maitidevi Boarding High School,,,Private,Secondary,275,30,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.703808,85.3281094,2022-05-24T05:21:35Z
+way/215212428,college,Mid-Valley International College,,,Private,College/Higher Education,33,27,1,+977014537188,info@midvalley.edu.np,https://midvalley.edu.np/ | midvalleynepal | midvalleyinternationalcollege,,Gyaneshwar Marg,Gyaneshwar Marg,,,,,,,,,,,,,,,OpenDRI survey,27.7067832,85.3307232,2024-08-22T01:50:31Z
+way/215212430,college,Sagarmatha Multiple College,,,Private,College/Higher Education,875,111,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.70366,85.3293235,2022-05-24T05:21:35Z
+way/215212438,college,Lord Budhha Education Foundation,,,Private,College/Higher Education,1800,80,7,,,,,,,,,,3,load_bearing_brick_wall_in_cement_mortar,rent,poor,flat,concrete,concrete,no,,no,yes,OpenDRI survey,27.7056312,85.3330767,2018-11-08T12:09:38Z
+way/215390882,college,Thapathali Engineering Campus,,,Government,College/Higher Education,1100,200,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6945773,85.3188494,2025-04-03T07:34:34Z
+way/216441227,school,Advanced English Boarding High School,,,Private,Secondary,430,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7164104,85.3375075,2021-02-15T11:13:26Z
+way/216441228,school,Boston International High School,,,Private,Secondary,300,20,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7124563,85.3365525,2018-11-27T08:13:25Z
+way/216441231,school,New Sunshine Secondary School,,,Private,Secondary,400,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.717716,85.3387087,2013-08-26T10:24:31Z
+way/216441232,college,Xavier International College,,,Private,College/Higher Education,1560,145,3,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.7140032,85.3369953,2018-12-10T06:17:37Z
+way/216441234,school,Xavier International School,,,Private,Secondary,600,25,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7156838,85.337555,2021-02-15T11:54:06Z
+way/216443374,college,Kendriya Bahira Higher Secondary School,,,Government,College/Higher Education,400,39,5,01-4410179,,,,Naxal,,,,Naxal,,,,,,,,,,,,OpenDRI survey,27.7143659,85.3311395,2013-10-18T06:29:49Z
+way/216443377,school,Nandi Secondary School,,,Government,Secondary,981,47,5,01-4411754,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7137408,85.3254195,2022-02-17T21:00:05Z
+way/216607331,school,Albert English Boarding School,,,Private,Secondary,400,36,2,01-4425936,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7063498,85.3346489,2013-08-26T10:20:16Z
+way/216607332,school,Apple Academy,,,Private,Secondary,350,25,3,01-4418856,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7084943,85.3354413,2021-02-12T12:33:13Z
+way/216607333,school,Little Flower Secondary School,,,Private,Secondary,330,29,1,01-4422549,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7086843,85.3340548,2018-11-27T11:11:25Z
+way/216607334,school,Martyrs' Memorial Boarding Secondary School,,,Private,Secondary,450,40,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7096342,85.3360814,2018-11-27T11:11:25Z
+way/216607335,school,Sai Educare Boarding High School,,,Private,Secondary,140,14,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7098021,85.3364399,2018-11-25T06:24:24Z
+way/216612476,school,Eden Public School,,,Private,Secondary,325,23,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7169721,85.3433949,2013-08-26T10:21:35Z
+way/216612478,school,Shridiwa International School,,,Private,Secondary,300,55,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7183599,85.3379258,2013-08-26T10:26:26Z
+way/216612479,school,Subharambha Secondary School,,,Private,Secondary,200,26,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7175719,85.3424783,2013-08-26T10:26:41Z
+way/216612503,school,Clinton School,,,Private,Primary,300,47,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7172909,85.3438352,2021-03-03T15:42:59Z
+way/216704725,school,Holy Care School,,,Private,Secondary,225,20,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7440408,85.3453495,2021-02-21T06:16:23Z
+way/216704727,college,Orient College (A level),,,Private,College/Higher Education,340,25,4,4017813,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7434009,85.3395606,2018-10-06T14:45:52Z
+way/216705045,school,The Chandbagh Pre-School,,,Private,Pre-Primary,60,15,3,4017105,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7427628,85.3449619,2021-02-21T07:08:32Z
+way/216705741,school,Elim Kids Academy,,,Private,Secondary,260,35,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7342723,85.3321629,2016-08-31T12:12:27Z
+way/216705742,school,Gorakshya Dibya Nikhil Jyoti Vidyashram,,,Community,Secondary,400,47,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7385961,85.3291839,2021-02-21T16:42:14Z
+way/216914206,school,Whiz Kids International School,,,Private,Secondary,380,28,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.727966,85.3301195,2023-04-12T08:22:39Z
+way/216931869,school,Anupam Higher Secondary School,,,Private,Secondary,400,40,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7198874,85.3256499,2021-02-15T06:26:16Z
+way/216931872,school,Newton High School,,,Private,Secondary,630,47,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7257166,85.3365458,2013-08-26T10:24:33Z
+way/216935004,college,AJW College - (A Level),,,Private,College/Higher Education,80,20,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7301901,85.3260521,2013-10-18T06:39:18Z
+way/216935005,school,Bellmount International School,,,Private,Secondary,300,28,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.731722,85.3171487,2013-08-26T10:20:42Z
+way/216935006,school,Diptimaya Bal Awasiya Vidyalaya,,,Private,Primary,150,12,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7308815,85.3241998,2013-10-18T06:40:47Z
+way/216939553,school,Motherland Academy,,,Private,Secondary,300,35,4,01 4427831,info@motherland.edu.np,www.motherlandschool.edu.np,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7219896,85.3311039,2015-03-16T20:01:24Z
+way/216939554,school,New Leera School,,,Private,Pre-Primary,360,20,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7210337,85.328819,2018-01-11T06:11:53Z
+way/216940426,college,Everest College,,,Private,College/Higher Education,480,70,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6926474,85.3176014,2013-08-18T05:57:53Z
+way/216940427,college,Lincoln College,,,Private,College/Higher Education,950,80,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7333769,85.3173254,2013-08-18T05:58:04Z
+way/216940429,college,Takshashila Academy,,,Private,College/Higher Education,450,35,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7355055,85.3220094,2014-09-10T03:42:31Z
+way/219223402,school,Takshashila Academy,,,Private,Secondary,300,28,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7331269,85.3199303,2018-11-27T10:58:04Z
+way/217106760,school,Learning Zone Academy,,,Private,Secondary,350,35,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7306606,85.3176861,2021-02-16T17:43:58Z
+way/217117229,college,Pushpalal Memorial College,,,Government,College/Higher Education,1200,50,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.718018,85.345304,2013-08-18T05:58:16Z
+way/217523977,school,Suryodaya Jyoti Awasiya English Boarding School,,,Private,Secondary,450,40,3,014433619,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7036606,85.330235,2013-08-26T10:26:47Z
+way/217525517,school,Charumati English School,,,Private,Secondary,260,18,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7165358,85.343734,2018-11-22T10:09:44Z
+way/217525521,school,Texas International School,,,Private,College/Higher Education,,,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7128366,85.3411713,2021-03-03T14:55:13Z
+way/217525625,college,Cosmopolitan College,,,Private,College/Higher Education,250,22,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7148725,85.3424455,2021-03-03T02:19:09Z
+way/217525626,school,Jagat Mandir English Boarding School,,,Private,Higher Secondary,500,45,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7151716,85.3424043,2021-03-03T02:19:09Z
+way/217526506,school,nepal mega school,,,Private,Secondary,300,27,2,01-4232343,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6967452,85.3300474,2019-12-23T17:30:13Z
+way/217526507,school,City Montessori,,,Private,Pre-Primary,125,21,2,01-44771037,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7001823,85.3288524,2021-02-10T15:42:53Z
+way/217526987,school,Paradise International Academy,,,Private,Higher Secondary,275,25,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7132622,85.3392422,2013-08-26T10:24:45Z
+way/217533470,school,Creative English School,,,Private,Secondary,280,23,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7140638,85.3433918,2018-11-23T06:49:10Z
+way/217534479,college,Nepa School of Social Sciences and Humanities,,,Private,College/Higher Education,18,26,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.714948,85.3430259,2018-11-23T06:17:52Z
+way/217535658,school,National Orchid Boarding School,,,Private,Secondary,400,42,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7150764,85.3438366,2013-08-26T10:24:16Z
+way/217607659,school,Mahendra Bhawan Higher Secondary School,,,Community,Higher Secondary,300,40,16,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.7129711,85.3339602,2018-11-27T07:20:47Z
+way/217608186,school,Bijaya Smarak Higher Secondary School,,,Government,Higher Secondary,900,75,2,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7050113,85.3269892,2025-07-07T13:15:02Z
+way/217614016,college,Canvas International College,,,Private,College/Higher Education,1200,44,4,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7383607,85.3267853,2021-02-17T16:23:35Z
+way/217616641,school,Padma Gyan Mandir English School,,,Private,Primary,125,12,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7171421,85.3364583,2013-08-26T10:24:43Z
+way/217616698,school,Vidya Sadan High School,,,Private,Secondary,350,25,1,,,,,,,,,,3,non_engineered_reinforced_concrete,rent,average,flat;gabled,concrete,concrete,no,no,no,,OpenDRI survey,27.7231259,85.3506029,2021-03-01T09:46:06Z
+way/217617107,school,Jeevan Jyoti Baikalpik School,,,Private,Secondary,70,9,1,,,,,,,,,,3,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.7237653,85.3466084,2013-08-26T10:22:35Z
+way/217617209,school,Tashi Waldorf School,,,Private,Primary,60,16,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7416331,85.3393582,2019-11-08T09:12:39Z
+way/217621346,college,SchEMS Public School/College,,,Private,Higher Secondary,40,18,2,2297720,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7408439,85.3383771,2018-11-25T05:44:39Z
+way/217622177,school,Universal College Preparatory School,,,Private,Secondary,540,60,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7264656,85.3350043,2018-04-11T11:07:46Z
+way/217622732,school,Compact English School,,,Private,Lower Secondary,110,13,4,4420343,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7186518,85.3349381,2018-11-28T07:08:02Z
+way/217622812,school,Children's Model High School,,,Private,Secondary,270,32,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7241367,85.3327313,2021-02-17T14:55:24Z
+way/217622833,school,Alakapuri Boarding High School,,,Private,Secondary,200,25,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7207643,85.3356865,2013-08-26T10:20:15Z
+way/217630048,college,Campion Kathmandu College,,,Private,College/Higher Education,223,38,4,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7172601,85.333342,2021-02-12T15:13:39Z
+way/217654467,school,Anmol Jyoti Secondary English Boarding School,,,Private,Secondary,415,30,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7141641,85.3355011,2018-11-27T07:56:25Z
+way/217656357,school,Anmol Jyoti Secondary School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7138438,85.3349549,2018-11-27T07:56:26Z
+way/217720479,school,Columbus International School,,,Private,Secondary,250,27,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7136211,85.3352685,2018-11-27T07:56:26Z
+way/217724333,school,St. Julian English Boarding School,,,Private,Primary,35,7,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7239639,85.3520871,2025-07-01T07:00:37Z
+way/217726517,college,College of Business Management,,,Private,College/Higher Education,200,26,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7059832,85.3261093,2021-02-11T16:01:47Z
+way/217727953,school,The Elite's Co-Ed,,,Private,Secondary,220,45,2,,,,,Kathmandu,,,,Kathmandu,,,,,,,,,,,yes,OpenDRI survey,27.7120492,85.3298607,2021-03-20T08:15:46Z
+way/218352812,school,Global Public School,,,Unknown,,,,,,,,9:00-16:00,"chuchuro marga, kathmandu municipality",chuchuro marga,,,kathmandu municipality,,,,,,,,,,,,,27.6958616,85.3671435,2020-10-06T14:35:29Z
+way/220702741,school,Global Public School,,,Private,Secondary,600,50,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6925075,85.3677038,2013-08-26T10:22:01Z
+way/218429130,school,Ashraya Vidya Sadan,,,Private,Higher Secondary,450,32,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7033672,85.3038006,2022-02-12T04:13:19Z
+way/218429131,school,Kalash Vidya Mandir,,,Private,Secondary,230,19,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7030646,85.3036817,2022-02-12T04:13:19Z
+way/218430310,school,Paropakar Higher Secondary School,,,Government,Higher Secondary,500,40,3,,,,,,,,,,,,,,,,,,,,,HERD Urban Health Survey,27.7017687,85.3032328,2025-07-14T13:26:28Z
+way/218433448,school,English Preparatory School,,,Private,Secondary,250,27,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6999549,85.3080564,2025-07-29T13:16:53Z
+way/218433450,school,Shree Saraswati Niketan Secondary School,,,Government,Higher Secondary,650,32,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6988984,85.3040473,2013-08-26T10:26:16Z
+way/218441369,school,Gautam English Boarding School,,,Private,Higher Secondary,180,26,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7003415,85.3080679,2025-07-29T13:16:53Z
+way/218458931,college,Prime College,,,Private,College/Higher Education,1300,150,3,,,,,Nayabazzar,,,,Nayabazzar,,,,,,,,,,,,OpenDRI survey,27.7207912,85.3028998,2013-10-18T07:44:43Z
+way/218463953,college,Darwin Academy,,,Private,Secondary,350,40,1,01-4364300,,,,Nayabazzar,,,,Nayabazzar,,,,,,,,,,,,OpenDRI survey,27.7192549,85.3044619,2013-08-18T05:57:52Z
+way/218464703,school,Kathmandu Model School,,,Private,Secondary,400,34,1,01-4360464,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7191916,85.3053733,2013-08-26T10:22:46Z
+way/218465676,college,Geetanjali English Higher Secondary School,,,Private,College/Higher Education,940,60,5,10-4359440,,,,Sorahakhutte,,,,Sorahakhutte,,,,,,,,,,,,OpenDRI survey,27.7214064,85.3040372,2013-08-18T05:57:54Z
+way/218467223,college,Manasalu Public Higher Secondary School,,,Private,Higher Secondary,1200,70,8,01-4360634,,,,Nayabazzar,,,,Nayabazzar,,,,,,,,,,,,OpenDRI survey,27.720908,85.3072726,2021-02-04T09:10:10Z
+way/218469511,college,Sigma College,,,Private,College/Higher Education,1400,75,4,10-4358484,,,,Nayabazzar,,,,Nayabazzar,,,,,,,,,,,limited,OpenDRI survey,27.7193448,85.3077902,2021-02-02T17:29:58Z
+way/218567238,college,Shahid Ramnath Dahal Memorial Academy,,,Private,College/Higher Education,500,43,2,01-4386578,,,,Banasthali,,,,Banasthali,,,,,,,,,,,,OpenDRI survey,27.7244014,85.2976441,2018-11-27T09:51:29Z
+way/218567651,college,Oxford Higher Secondary School,,,Private,College/Higher Education,800,50,2,01-4364446,,,,Nayabazzar,,,,Nayabazzar,,,,,,,,,,,,OpenDRI survey,27.7224038,85.3026833,2018-11-29T05:15:18Z
+way/218573677,school,A.V.M Secondary School,,,Private,Secondary,350,30,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7208783,85.2974168,2013-10-18T07:50:08Z
+way/218574909,school,Paradise English Secondary School,,,Private,Secondary,290,25,1,01-4357205,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7230637,85.2999525,2013-10-18T07:51:03Z
+way/218576371,school,Namuna English Boarding School,,,Private,Lower Secondary,200,19,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.703438,85.3032141,2013-08-26T10:23:39Z
+way/218583059,school,Columbus College,,,Private,College/Higher Education,350,70,3,"4781747, 4784883",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6861008,85.3348417,2013-08-26T10:21:14Z
+way/218583062,school,Kavya School,,,Private,Primary,200,100,1,01-4780214/310,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6875601,85.3347831,2018-12-04T05:20:15Z
+way/219276292,school,Kavya School,,,Private,Secondary,225,23,3,"01-4783312, 01-4780310",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6868336,85.3317741,2013-08-26T10:22:48Z
+way/218583064,school,Kids Land Montessori Based School,,,Private,Pre-Primary,30,8,1,01620399,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6874293,85.3357398,2013-08-26T10:22:51Z
+way/218583065,school,Swoyambhu College/Prime CA,,,Private,College/Higher Education,400,40,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6869688,85.3357323,2016-11-18T13:30:52Z
+way/218587567,school,Gyan Niketan School,,,Private,Higher Secondary,500,65,4,4783688/ 756,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6838887,85.3336386,2018-12-04T06:21:41Z
+way/218689327,school,Shuvadeep Primary School,,,Government,Secondary,190,20,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.69788,85.3107949,2021-02-06T14:49:05Z
+way/218982315,school,Madan Bhandari Memorial English Boarding School,,,Community,Secondary,357,31,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7197039,85.362488,2013-10-18T08:04:01Z
+way/218983251,school,Kathmandu International School,,,Private,Secondary,900,80,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7131775,85.3531938,2021-03-03T02:39:27Z
+way/218983815,school,Hilary High School,,,Private,Secondary,400,22,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7139632,85.3496509,2025-08-21T15:09:28Z
+way/218983816,school,Som Sarala Ved Vidhyala,,,Community,Secondary,15,15,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7138698,85.3498815,2018-11-22T09:32:31Z
+way/218984209,school,Gyandeep Siksha Sadan,,,Private,Secondary,250,23,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7147317,85.3498641,2025-03-31T13:16:32Z
+way/218985741,college,Innovative College of Health Science Pvt. Ltd.,,,Private,College/Higher Education,31,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7112601,85.3403695,2020-02-28T08:44:08Z
+way/218986249,school,Vishwa Niketan Higher Secondary School,,,Government,Higher Secondary,2200,120,5,,,,,Kathmandu,,,,Kathmandu,,,,,,,,,,,no,OpenDRI survey,27.6928832,85.3118714,2024-05-29T03:44:26Z
+way/218986452,school,Mahan Siddhartha High School,,,Private,Secondary,600,45,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7153147,85.3545485,2021-02-27T11:41:50Z
+way/218993943,school,Shree Bal Byabasayi Kendra Secondary School,,,Government,Secondary,500,28,2,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7107363,85.3405708,2025-06-17T11:28:00Z
+way/218994582,school,Deerwalk Sifal School,,,Private,Secondary,375,45,3,+977 01 4478482,contact@sifal.deerwalk.edu.np,https://deerwalk.edu.np/sifalschool/ | DeerwalkSifalSchool | deerwalk_sifal_school | DWSifalSchool,Mo-Fr 09:00-18:00,"Jaya Bagheshwori Marga, Kathmandu, 44600",Jaya Bagheshwori Marga,,,Kathmandu,,,,,,,,,,,,OpenDRI survey,27.7119365,85.3414065,2024-08-20T02:52:38Z
+way/218995225,school,Seto Bangla Boarding School,,,Private,Secondary,130,18,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7116333,85.3381587,2021-02-11T04:06:11Z
+way/218995380,college,Newton International College,,,Private,College/Higher Education,400,22,1,,,,,,,,,,6,engineered_reinforced_concrete,rent,good,flat,concrete,concrete,yes,,no,,OpenDRI survey,27.7134672,85.3426319,2025-07-14T10:33:07Z
+way/218996294,school,Mount View School,,,Private,Secondary,250,25,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7136594,85.3435727,2013-08-26T10:23:34Z
+way/218996765,school,Indrawati Public School,,,Private,Secondary,400,25,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.715135,85.359221,2025-04-09T09:48:38Z
+way/218996984,school,Buddha Pashupati Academy,,,Private,Secondary,150,17,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7154436,85.360082,2025-07-03T06:36:53Z
+way/218997258,school,Lords Light Academy,,,Private,Secondary,650,50,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7155819,85.3641262,2013-08-26T10:23:07Z
+way/218998068,school,HEMS School,,,Private,Secondary,500,55,3,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7086585,85.337856,2018-11-18T08:33:37Z
+way/219001123,school,Nepal Adarsha Secondary School,,,Government,Secondary,425,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7007214,85.3095602,2021-02-23T14:28:14Z
+way/219001310,school,Nirmal Vidyapeeth Secondary School,,,Government,Secondary,200,15,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7015176,85.3094977,2022-02-09T10:21:03Z
+way/219001687,school,Bal Sewa Secondary School,,,Government,Secondary,200,22,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7027078,85.3084951,2021-02-14T07:03:01Z
+way/219002367,school,Bidhyodaya Secondary School,,,Government,Secondary,100,15,1,,,,,,,,,,3,engineered_reinforced_concrete,self,good,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7025108,85.3071586,2013-08-26T10:20:49Z
+way/219174110,school,Angel's World International Academy,,,Private,Secondary,300,33,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.740552,85.3335498,2013-08-26T10:20:21Z
+way/219197831,school,Himalaya Higher Secondary School,,,Private,Higher Secondary,850,35,8,01-4600320,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6794519,85.3482043,2018-11-21T05:30:11Z
+way/219208221,school,Canvas International Higher Secondary School,,,Private,Secondary,275,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.726399,85.3177071,2021-02-16T12:31:58Z
+way/219221073,school,Nepal Police School,,,Private,Secondary,750,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7329245,85.3189028,2018-12-05T08:29:38Z
+way/219221074,college,Pasang Lhamu Sherpa Memorial College,,,Community,College/Higher Education,1050,40,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7332714,85.3185428,2018-12-05T08:29:38Z
+way/219221075,college,Pasang Lhamu Sherpa Memorial College,,,Private,College/Higher Education,820,82,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7341027,85.3153595,2019-11-28T05:50:41Z
+way/219223399,school,Amity Wits Co-Education English Secondary School,,,Private,Secondary,400,20,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7347409,85.3209078,2023-06-26T04:06:49Z
+way/219223400,school,My Land Academy,,,Private,Primary,60,10,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7323118,85.3202671,2013-08-26T10:23:35Z
+way/219223401,school,Oracle Ray Academy,,,Private,Secondary,300,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.733429,85.3193928,2013-08-26T10:24:41Z
+way/219227506,school,Janajagriti Gyan Rashmi Secondary School,,,Community,Secondary,544,26,5,01-4851720,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7300961,85.2947208,2013-08-26T10:22:34Z
+way/219268454,school,Olympia World Higher Secondary School,,ओलम्पिया वोर्ल्ड उच्च माध्यामिक बिद्यालय,Private,Post-Secondary,250,40,3,"4220449,4220265",,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6885279,85.3276556,2025-04-05T20:12:04Z
+way/219268455,school,South Point Boarding High School (Junior block),,,Private,Primary,160,11,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6885868,85.3285467,2013-10-18T08:51:12Z
+way/219268469,school,Rose Bud School,,रोजबड स्कुल,Private,Higher Secondary,1500,250,2,01-4783003,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6880449,85.3249996,2023-05-19T11:43:35Z
+way/219276285,school,Heartland Montessori Based Pre-School and Child Care Center,,,Private,Pre-Primary,80,16,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6844177,85.3328209,2013-10-20T04:50:38Z
+way/219276289,college,Kantipur International College (Kantipur Hotel Management College),,,Private,College/Higher Education,600,85,6,01-4780564,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6883218,85.3313155,2021-03-09T15:14:28Z
+way/219358150,college,Kantipur Academy of Health Sciences,,,Private,Secondary,156,40,1,,,,,,,,,,6,engineered_reinforced_concrete,rent,good,flat,concrete,concrete,yes,,no,,OpenDRI survey,27.6868129,85.3481434,2021-06-07T12:26:08Z
+way/219358205,school,Rara Secondary School,,,Private,Secondary,250,20,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6890875,85.3502948,2018-11-25T09:48:31Z
+way/219358260,college,Sauriya Education Foundation,,,Private,Higher Secondary,200,32,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6913332,85.3509385,2018-11-25T08:07:10Z
+way/219358404,college,Himalayan Institute of Science and Technology,,हिमालयन इन्स्टिच्युट अफ साइन्स एण्ड टेक्नोलोजि,Private,College/Higher Education,278,23,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6912259,85.3499625,2025-03-31T11:27:30Z
+way/219358673,school,Apple International School,,,Private,Secondary,250,25,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6873854,85.3475708,2021-06-07T12:26:10Z
+way/219359041,college,Pentagon International College,,,Unknown,,,,,,,http://www.pentagonintl.com/,,,,,,,,,,,,,,,,,,,27.6863078,85.3480653,2023-05-23T05:23:03Z
+way/219364256,school,Good Shepherd School,,,Private,Secondary,130,20,4,01-4600927,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6792627,85.3457212,2018-11-22T09:23:37Z
+way/219364258,school,Nava Jyoti Higher Secondary School (Junior Block),,,Private,Primary,300,26,2,01-4600389,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6788549,85.3471332,2018-11-22T09:19:04Z
+way/219366304,school,New Vision Academy,,,Private,Secondary,500,36,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6757766,85.3432831,2022-02-02T15:56:55Z
+way/219393813,school,Bon Skylark International Secondary School,,,Private,Secondary,285,23,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7190851,85.346076,2013-08-26T10:20:56Z
+way/219397381,school,Sagarmatha Vidya Mandir,,,Private,Lower Secondary,120,15,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7152182,85.3471862,2013-08-26T10:25:15Z
+way/219397645,college,St. Lawrence College,,,Private,College/Higher Education,1400,120,3,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7153335,85.3468676,2021-02-24T09:04:56Z
+way/219400172,school,Elixir Academy,,,Private,Secondary,450,32,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7144747,85.354405,2018-11-22T10:20:47Z
+way/219401229,school,Prerana School,,,Private,Secondary,250,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7157351,85.3510357,2018-11-22T05:34:32Z
+way/219404251,college,Liberty college,,,Private,College/Higher Education,315,40,2,4222612,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6944796,85.3289191,2013-08-18T05:58:04Z
+way/219418707,school,Pragya Jyoti English School,,,Private,Secondary,210,32,2,01-4277720,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7134595,85.2975562,2021-02-08T10:07:03Z
+way/219421232,school,KERIC Academy Secondary School,,,Private,Secondary,300,30,3,01-4389047,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7357522,85.3029528,2013-10-18T09:01:03Z
+way/219424539,school,Pragati Higher Secondary Boarding School,,,Private,Higher Secondary,400,40,2,01-4350360,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7314751,85.3037388,2018-11-28T08:17:44Z
+way/219424798,school,Elysian Fields School,,,Private,Pre-Primary,130,18,1,01-4359015,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7211077,85.29534,2021-02-04T13:39:36Z
+way/219425521,school,Birat Boarding School,,,Private,Secondary,225,22,3,01-4782212,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6836109,85.3354107,2013-08-26T10:20:52Z
+way/219425524,college,"Crimson International College, Higher Secondary School (Lali Gurans Higher Secondary School and College)",,,Private,College/Higher Education,600,65,1,01-4782414,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6829227,85.3335012,2018-12-05T08:58:23Z
+way/219425530,school,Pacific Academy (PAC) Secondary Boarding School,,,Private,Secondary,500,30,2,01-4782414,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6832599,85.3335778,2021-03-14T11:16:44Z
+way/219428836,college,Swopna Vatika Academic College,,,Private,College/Higher Education,550,50,1,01-47839913,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6840039,85.3290406,2013-08-18T05:58:23Z
+way/219428837,school,Swapna Vatika Academic Higher Secondary School,,,Private,Higher Secondary,325,25,1,01-4782186,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6837037,85.3293029,2014-09-26T07:16:43Z
+way/219431016,college,Gyan Niketan College,,,Private,College/Higher Education,180,30,2,01-4783840,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.683337,85.3366448,2018-11-23T09:58:10Z
+way/219431018,school,Gyan Niketan Secondary School (Junior Block),,,Private,Pre-Primary,187,15,2,01-4783186,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6843183,85.33404,2018-12-04T06:21:41Z
+way/219522113,college,British Gurkha Academy College,,,Private,College/Higher Education,250,15,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7456862,85.3413864,2015-07-16T14:27:52Z
+way/219523804,school,British Gurkha Academy School,,,Private,Secondary,300,40,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7457724,85.3402808,2021-02-20T05:52:59Z
+way/219544010,school,House of Montessori World,,,Private,Pre-Primary,45,9,2,01-4781245,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6862085,85.3300401,2018-11-30T06:48:42Z
+way/219544011,school,Innovative English School,,,Private,Secondary,800,70,7,"4782422, 4782412",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6838221,85.3312176,2013-08-26T10:22:25Z
+way/219544013,school,Traibidhya Sikshya Sadan,,,Private,Pre-Primary,20,5,1,01-4783435,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6814625,85.3332928,2013-10-18T09:13:51Z
+way/219612708,school,Peace Point Secondary Boarding School,,,Private,Secondary,250,27,3,4110606,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6970512,85.3484258,2018-11-19T09:28:15Z
+way/219616616,school,Occidental Public School,,,Private,Secondary,1250,101,6,,,,,,,,,,4,engineered_reinforced_concrete,rent,good,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6970219,85.3307352,2013-08-26T10:24:38Z
+way/219616903,school,Saurdeep Boarding School,,,Private,Secondary,410,55,5,01-4951000,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7263962,85.2961982,2023-10-08T06:28:09Z
+way/219616912,school,Bhadra Ghale Sikshya Sadan,,,Community,Secondary,150,20,2,01420461,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6986832,85.3311037,2021-02-09T19:18:33Z
+way/219617127,school,Supreme International High School,,,Private,Lower Secondary,250,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7169704,85.3511285,2021-03-03T06:43:31Z
+way/219617170,school,Sayapatri Children Education Academy,,,Private,Primary,85,10,1,016220690,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7021488,85.3294981,2021-02-09T16:05:51Z
+way/219617232,school,Esteem Learning School,,,Private,Pre-Primary,19,5,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7179801,85.351207,2021-03-08T15:12:43Z
+way/219617663,school,Disneyland Pre-School,,,Private,Pre-Primary,50,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7185324,85.3507058,2013-08-26T10:21:30Z
+way/219617712,school,Bright Land Higher Secondary School,,,Private,Higher Secondary,350,42,1,01-4315112,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7306417,85.3043517,2013-08-26T10:20:59Z
+way/219617749,school,Riviera International School,,,Private,Secondary,420,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7183339,85.3536205,2021-03-02T11:43:21Z
+way/219617768,school,Kohinoor School,,,Private,Lower Secondary,30,250,2,01-4365332,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7322306,85.3038178,2018-11-28T08:08:10Z
+way/219617902,school,Bright Heaven Boarding School,,,Private,Secondary,500,30,4,01-381121,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7330936,85.3040267,2013-10-18T09:28:08Z
+way/219618179,school,Baba Boarding High School,,,Private,Secondary,550,70,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7200177,85.3490742,2013-08-26T10:20:30Z
+way/219618182,school,Arunodaya Secondary School,,,Government,Secondary,200,15,1,,,,,,,,,,3,load_bearing_brick_wall_in_cement_mortar,self,poor,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7058257,85.3057241,2021-02-14T05:32:49Z
+way/219618184,school,Kanya Secondary School,,,Government,Secondary,300,27,1,,,,,,,,,,5,load_bearing_brick_wall_in_cement_mortar,self,poor,double_pitch,cgi,wood,no,no,no,,METEOR Kathmandu Field Survey 2019,27.7059137,85.3068239,2025-07-15T12:15:44Z
+way/219618185,school,Kesh Chandra Primary School,,,Government,Primary,55,5,1,,,,,,,,,,2,load_bearing_brick_wall_in_cement_mortar,rent,good,gabled,thatch,wood,no,no,no,,OpenDRI survey,27.7069315,85.3080016,2015-04-05T10:09:38Z
+way/219618186,school,Next Generation Residential Academy,,,Private,Secondary,550,54,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7059057,85.3062733,2025-07-21T09:58:46Z
+way/219618302,school,Stephens International School,,,Private,Lower Secondary,125,22,3,,,,,,,,,,,,,,,,,,,,,HERD Urban Health Survey 2015,27.7410384,85.3372275,2022-12-30T04:10:40Z
+way/219618307,school,Ekta English Boarding School,,,Private,Primary,200,22,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7084411,85.3067336,2021-02-24T05:03:25Z
+way/219618308,school,Kanya Mandir Higher Secondary School,,,Government,Higher Secondary,700,41,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.70996,85.3088814,2025-07-16T11:15:30Z
+way/219618372,school,Lumbini Academic Foundation,,,Private,Higher Secondary,900,53,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7202444,85.3494727,2019-03-21T17:00:18Z
+way/219618762,school,Little Genius English Secondary School,,,Private,Secondary,350,32,3,01-6213042,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7212692,85.2917016,2013-10-18T09:51:47Z
+way/219618844,school,Bhakta Vidhyashram Secondary School,,,Government,Secondary,150,27,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7088266,85.3070378,2025-07-25T07:17:50Z
+way/219619032,school,Shree Shram Rastriya Secondary School,,,Government,Secondary,800,39,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7170114,85.3547697,2018-11-22T06:55:24Z
+way/219619221,school,Satya Sai Academy,,,Private,Secondary,250,21,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.715789,85.3528486,2018-11-22T07:28:53Z
+way/219620011,school,Open House English Boarding School,,,Private,Secondary,383,35,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7079222,85.3038631,2014-03-11T06:54:52Z
+way/219620012,school,Swarnim Sikshya Sadan,,,Private,Secondary,120,22,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7100088,85.3049807,2021-02-06T23:50:12Z
+way/219620580,school,Paradigm Public School,,,Private,Pre-Primary,300,24,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7289,85.3130968,2021-02-04T14:33:36Z
+way/219620581,school,Pushpa Kunja High School,,,Private,Secondary,364,34,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7325241,85.3121048,2021-02-15T10:20:25Z
+way/219620582,school,SEB School,,,Private,Pre-Primary,450,40,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7287033,85.3128205,2021-02-04T14:33:36Z
+way/219620583,school,Scholar's Home Academy,,,Private,Secondary,600,30,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7327491,85.3142362,2021-02-15T15:52:24Z
+way/219620584,school,Shree Ganesh Himal Secondary School,,,Private,Secondary,350,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7335688,85.3131918,2015-03-26T06:51:24Z
+way/219621365,school,Small Heaven Boarding School,,,Private,Secondary,400,28,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7108609,85.3054698,2015-04-07T09:38:06Z
+way/219621367,school,Whitefield English Boarding School,,,Private,Higher Secondary,320,14,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7104596,85.3061172,2021-02-21T03:32:50Z
+way/221016688,school,Whitefield English Boarding School,,,Private,Secondary,1400,77,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7157411,85.3030752,2013-08-26T10:27:17Z
+way/219623005,school,Saraswati Boarding School,,,Private,Higher Secondary,750,75,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7123638,85.3083955,2025-07-23T10:37:18Z
+way/219624683,school,Ananta Mangal Sadan,,,Private,Lower Secondary,100,15,1,01-4384717,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7335987,85.3034684,2013-10-18T09:59:48Z
+way/219624704,school,Nepal Yubak Secondary School,,,Government,Secondary,500,35,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7147021,85.3079796,2021-07-18T09:28:18Z
+way/219625627,college,Asian College of Management and Technology,,,Private,College/Higher Education,175,30,2,01-4107184,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6867234,85.3379742,2013-10-18T10:00:30Z
+way/219625631,school,Awareness International Academy (AIA),,,Private,Secondary,550,65,5,01-4782629,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6805549,85.3325966,2025-07-30T16:02:28Z
+way/219625646,college,Nova International College,,,Private,College/Higher Education,230,30,2,"01-4107030, 01-6223236",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6869102,85.3377008,2018-11-23T09:49:20Z
+way/219625647,college,Premier College,,,Private,College/Higher Education,821,76,1,"01-4107138,01-4107198",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6872487,85.3370044,2021-03-15T12:30:42Z
+way/219625649,school,Shree Sanjaya Sai Vidhya Mandir,,,Community,Lower Secondary,250,30,1,01-4780528,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6854562,85.3282088,2018-11-30T07:15:00Z
+way/219625848,school,Morning Glory High School,,,Private,Secondary,300,20,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6965649,85.3095642,2013-08-26T10:23:30Z
+way/219625933,school,Shree Panchakanya Lower Secondary School,,,Private,Lower Secondary,375,15,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7313895,85.3368308,2021-02-19T15:41:31Z
+way/219625934,college,Valley College of Technical Sciences,,,Private,College/Higher Education,220,50,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7308624,85.3317048,2021-02-18T16:08:09Z
+way/219627300,school,Basbari Higher Secondary School / Chiran Milan Bishwashanti Campus,,,Government,Higher Secondary,650,22,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7410968,85.3450245,2013-10-18T10:06:03Z
+way/219627301,school,Euro Kids Pre School Specialist,,,Private,Primary,100,25,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7397392,85.3436755,2013-10-18T10:06:34Z
+way/219627303,school,Guheshwari Boarding High School,,,Private,Secondary,230,32,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7414229,85.3441419,2021-03-25T08:56:04Z
+way/219627306,school,Oliver Public School,,,Private,Higher Secondary,800,50,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7378187,85.3449058,2021-03-25T06:25:36Z
+way/219627674,school,National Academy,,,Private,Secondary,350,25,2,01-9781091,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6866968,85.3275722,2018-11-30T06:06:30Z
+way/219627677,college,Presidential Business Academy,,,Private,College/Higher Education,327,40,2,"01-4780474, 4780005, 01-4780681, 01-4784894",,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.686611,85.3278895,2013-08-18T05:58:15Z
+way/219627750,school,Mini Montessori,,,Private,Pre-Primary,14,3,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6909229,85.3321983,2013-10-19T00:41:08Z
+way/219628766,school,Araniko Secondary Boarding School,,,Private,Secondary,,,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6972969,85.3096173,2021-02-06T16:25:16Z
+way/219628768,school,Deep High School,,,Private,Secondary,300,27,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6964127,85.3101325,2021-02-06T16:25:16Z
+way/219628975,college,Madan Bhandari Memorial College,,,Community,College/Higher Education,1500,105,2,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6950721,85.3295759,2018-12-03T11:22:43Z
+way/219628976,school,नोबेल एकेडेमी,Nobel Academy,नोबेल एकेडेमी,Private,Higher Secondary,1150,100,8,4781401,info@nobel.edu.np,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6899097,85.3318419,2023-03-21T10:42:56Z
+way/219629528,school,Dewy Dawn High School,,,Private,Secondary,200,14,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6981843,85.310279,2013-08-26T10:21:27Z
+way/219630636,school,Gyan Jyoti Academy,,,Private,Secondary,450,30,4,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7433706,85.3406525,2025-06-18T06:30:32Z
+way/219630637,school,Modern Educare Montessori Based School,,,Private,Primary,100,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7462049,85.3413152,2013-10-19T00:47:17Z
+way/219631364,college,College of Applied Sciences,,,Private,College/Higher Education,80,10,1,4102687,,,,,,,,,5,load_bearing_brick_wall_in_cement_mortar,rent,poor,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.6959204,85.3298099,2021-02-10T16:26:54Z
+way/219631565,school,Azad Lower Secondary School,,,Government,Lower Secondary,175,11,2,,,,,,,,,,2,load_bearing_brick_wall_in_cement_mortar;load_bearing_brick_wall_in_mud_mortar,self,poor,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6977518,85.3084933,2021-02-06T16:51:12Z
+way/219633721,school,Kumari English Boarding School,,,Private,Secondary,500,37,1,,,,,,,,,,5,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.700932,85.3048064,2013-08-26T10:22:56Z
+way/219634548,college,Asian Engineering College,,,Private,College/Higher Education,200,60,1,"01-4783350, 01-4783981",,,,,,,,,4,engineered_reinforced_concrete,rent,good,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.6824359,85.333308,2023-03-28T01:04:16Z
+way/219634554,college,Kathmandu Institute of Technical  Science (KITS),,,Private,College/Higher Education,120,18,1,01-4418198,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6869017,85.3313887,2013-10-19T00:51:48Z
+way/219634557,school,Neric Academy,,,Private,Secondary,350,38,3,01-4781825,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6806446,85.3333193,2018-12-03T07:30:23Z
+way/219636294,school,The Chandbagh School Pipalbot,,,Private,Secondary,370,50,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7414355,85.343798,2021-03-25T10:50:55Z
+way/219636396,school,Pine Ridge Academy,,,Private,Lower Secondary,80,11,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7269073,85.3261866,2023-04-12T07:10:41Z
+way/219640825,school,Bhanubhakta Memorial Higher Secondary School,,,Community,Higher Secondary,2200,135,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7267965,85.3249251,2025-04-01T10:06:08Z
+way/219640827,school,Chandra Tara School,,,Private,Primary,80,10,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7237108,85.3239812,2013-08-26T10:21:07Z
+way/219640830,college,Redhon College,,,Private,College/Higher Education,678,43,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.727942,85.3135534,2021-02-05T13:12:43Z
+way/219640846,school,Sunrise Boarding School,,,Private,Secondary,300,50,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7261672,85.3252004,2013-08-26T10:26:44Z
+way/219640915,school,Marie Gold Boarding School,,,Private,Primary,135,10,3,4490354,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6935256,85.3327247,2013-10-19T01:08:31Z
+way/219640919,school,Chelsea International Academy,,,Private,College/Higher Education,1200,120,19,,,,,,,,,,1,load_bearing_brick_wall_in_cement_mortar,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6944278,85.3354676,2021-02-22T05:28:42Z
+way/219644145,college,Apollo International College,,,Private,College/Higher Education,250,20,3,4474845,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.6946455,85.3351377,2018-11-17T12:04:48Z
+way/219644146,school,Kathmandu Xavier Public School,,,Private,Secondary,300,35,2,014469987,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6940011,85.3357667,2018-11-17T12:04:47Z
+way/219646092,school,Ratna Rajya Higher Secondary School,,,Government,Higher Secondary,1650,66,4,4471757,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.695802,85.3373294,2018-11-17T12:04:47Z
+way/219759757,college,KFA Business School,,,Private,College/Higher Education,180,75,2,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.695388,85.3377664,2021-02-26T02:37:03Z
+way/219775935,college,Amrit Secondary Boarding School,,,Private,Secondary,350,30,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7263606,85.3066006,2014-09-09T10:02:32Z
+way/219775936,school,Aradhana Academy,,,Private,Secondary,200,26,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7311593,85.3104316,2013-08-26T10:20:24Z
+way/219775937,school,Basanta Ritu English Boarding School,,,Private,Secondary,350,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7268184,85.316677,2021-02-15T18:33:35Z
+way/219775941,school,Gandaki Public Boarding School,,,Private,Secondary,350,30,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7253736,85.3080719,2013-08-26T10:21:46Z
+way/219775942,school,Marshyangdi Boarding High School,,,Private,Secondary,200,35,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7262689,85.3078874,2021-02-06T06:17:57Z
+way/219775943,school,Mother International Academy,,,Private,Lower Secondary,125,18,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7258923,85.3123815,2013-08-26T10:23:30Z
+way/219775947,college,Navodit Vidya Kunja Higher Secondary School,,,Private,Secondary,320,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7252449,85.3129202,2013-10-19T01:13:19Z
+way/219775948,school,New Himalayan Bidya Mandir Higher Secondary School,,,Private,Higher Secondary,800,37,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7238823,85.3147435,2018-11-28T07:21:28Z
+way/219775949,school,The Imperial Academy,,,Private,Secondary,300,25,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7298058,85.3107823,2013-08-26T10:26:55Z
+way/219775950,school,Vijaya Secondary Boarding School,,,Private,Secondary,60,15,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.727415,85.3108436,2021-02-06T15:47:07Z
+way/219775951,school,White Haven Academy,,,Private,Secondary,350,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7335537,85.3106393,2013-08-26T10:27:16Z
+way/219893803,college,Sunway International Business School,,,Private,College/Higher Education,212,32,1,014464524,,,,,,,,,3,load_bearing_brick_wall_in_cement_mortar,rent,average,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.6962306,85.3377143,2021-02-23T15:31:20Z
+way/219895242,college,The Aryan School,,,Private,College/Higher Education,200,20,5,4485146,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6960496,85.3382894,2018-11-17T12:04:47Z
+way/219896798,school,Parijat Vidya Punja,,,Private,Lower Secondary,150,13,4,4474207,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6949949,85.3356597,2013-10-19T01:14:55Z
+way/219899054,college,Premier College (BBS Block),,,Private,College/Higher Education,600,38,2,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6921795,85.336788,2021-03-14T11:13:32Z
+way/219900955,college,Anmol Rastriya College,,,Unknown,College/Higher Education,330,,1,,,,,,,,,,,,,,,,,,,,,,27.7237612,85.3085321,2014-03-19T05:59:00Z
+way/219900956,college,Ashirwad College,,,Private,College/Higher Education,672,50,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7255756,85.31346,2013-08-18T05:57:44Z
+way/219900957,college,Atlantic International College,,,Private,College/Higher Education,400,50,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7225185,85.3123071,2013-08-18T05:57:45Z
+way/219900958,school,Childrens Eternal Academy,,,Private,Secondary,500,32,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7211181,85.3088416,2013-08-26T10:21:12Z
+way/219900964,school,Eternal Light Public Higher Secondary School,,,Private,Higher Secondary,750,60,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7217554,85.3089309,2013-10-19T01:16:22Z
+way/219900965,school,National Star High School,,,Private,Secondary,70,17,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7202636,85.3103776,2013-08-26T10:24:17Z
+way/219900966,school,Precious National Academy Higher Secondary School,,,Private,Higher Secondary,445,58,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7238918,85.3084808,2013-10-19T01:17:05Z
+way/219900967,school,Siddhi Ganesh Higher Secondary School,,,Community,Higher Secondary,650,35,0,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.7183656,85.3102379,2021-02-18T16:45:30Z
+way/220108551,school,World Angel Academy,,,Private,Pre-Primary,30,4,1,01-4274792,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7097301,85.3015561,2021-02-07T05:47:16Z
+way/220108682,school,Buddha Jyoti Academy,,,Private,Higher Secondary,500,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7096966,85.3010987,2021-02-07T05:47:16Z
+way/220109996,school,Little Buddhas Academy,,,Private,Secondary,350,40,2,01-4284237,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7119063,85.2993589,2021-02-03T16:15:12Z
+way/220110829,school,Bibhuti International School,,,Private,Lower Secondary,220,20,1,01-4670047,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.710592,85.3001496,2013-10-19T01:19:54Z
+way/220111963,school,New Arunodaya English Higher Secondary School,,,Private,Secondary,800,50,2,01-4275993,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.710914,85.2989711,2021-02-03T16:15:12Z
+way/220189972,school,A&A Academy,,,Private,Primary,70,9,2,9808442349,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6751096,85.3406219,2022-02-04T16:55:47Z
+way/220189973,college,Kathmandu Forestry College,,,Private,College/Higher Education,290,49,4,01-4600342,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6748094,85.3411647,2013-08-18T05:58:01Z
+way/220190725,school,Hebron Public School,,,Private,Secondary,400,30,6,01-4600869,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6732918,85.3436073,2022-02-04T07:08:03Z
+way/220198407,school,Great Wall International School,,,Private,Secondary,250,46,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6828807,85.3381476,2018-11-23T09:58:10Z
+way/220201768,school,Shubham Pathshala,,,Private,Lower Secondary,50,10,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6852118,85.3355069,2013-10-19T01:25:59Z
+way/220211878,school,Kathmandu Vidya Mandir,,,Private,Secondary,350,28,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7227793,85.3525793,2013-08-26T10:22:47Z
+way/220211881,school,Tara Sadan English School,,,Private,Secondary,350,28,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7218826,85.3523881,2021-03-08T05:57:18Z
+way/220212852,school,Arunima Sishu Sadan,,,Private,Lower Secondary,390,28,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7253632,85.3573576,2025-04-05T19:41:18Z
+way/220212854,school,Shri Janakalyan Higher Secondary School,,,Government,Higher Secondary,1500,45,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7257278,85.3580243,2020-09-01T11:31:44Z
+way/220213331,school,Progressive English Secondary School,,,Unknown,,,,,,,,,"mahankal oralo, mahankal 6",mahankal oralo,,,,4,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7233756,85.3554974,2021-02-28T17:42:14Z
+way/220214314,college,Kumari Engineering College,,कुमारी इन्जिनियरिंग कलेज,Private,College/Higher Education,400,30,2,,,,,"Boudha Main Road, kathmandu",Boudha Main Road,,,kathmandu,,,,,,,,,,,,OpenDRI survey,27.7222947,85.3592097,2025-07-17T00:55:13Z
+way/220214960,school,three star school,,,Private,Secondary,375,35,2,,,,,"ramhiti, ramahiti, 6, municipality",ramhiti,ramahiti,6,municipality,,,,,,,,,,,,OpenDRI survey,27.7258854,85.3631433,2017-06-19T10:04:55Z
+way/220215433,school,Three Star English School,,,Private,Lower Secondary,50,7,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7263265,85.3629762,2013-08-26T10:27:00Z
+way/220215977,school,Shree Nawa Jagriti Secondary School,,,Government,Secondary,800,21,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7282953,85.3633435,2013-10-19T01:28:06Z
+way/220227884,school,Adarsha Yog-Hari Higher Secondary School,,,Community,Higher Secondary,355,37,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.718488,85.3149298,2023-05-09T10:31:55Z
+way/220227917,college,National College,,,Private,College/Higher Education,70,40,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7183122,85.3152195,2013-10-19T01:32:26Z
+way/220294712,school,Vidyodaya English School,,,Private,Secondary,300,26,2,01-275955,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7087681,85.2989709,2021-02-06T18:03:54Z
+way/220314701,school,Divya Gyan English Boarding High School,,,Private,Higher Secondary,650,50,3,01-4276061,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7069228,85.3009033,2025-08-19T09:46:37Z
+way/220316757,school,Dallu Awasiya Vidyalaya,,,Private,Secondary,590,51,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7088028,85.3009702,2021-02-07T07:18:40Z
+way/220317559,school,Holy Vision International Higher Secondary School,,,Private,Higher Secondary,980,100,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7017582,85.2942376,2018-11-30T06:18:08Z
+way/220317955,school,Kathmandu Valley School and College,,,Private,Higher Secondary,413,25,2,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7033117,85.2949682,2018-11-23T16:16:05Z
+way/220319539,school,Greyfort International School,,,Private,Secondary,,,1,4462505,,,,,,,,,2,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.6947762,85.3445195,2013-08-26T10:22:07Z
+way/220321372,school,Reliance Residential Higher Secondary School,,,Private,Higher Secondary,300,45,8,4473237,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6970847,85.3434512,2017-08-02T07:10:38Z
+way/220323725,school,Blooming Buds International School,,,Private,Secondary,300,28,4,4483223,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7006425,85.34125,2013-08-26T10:20:53Z
+way/220325114,school,Loyala Higher Secondary School,,,Private,Secondary,340,42,3,447116,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.700189,85.3424733,2014-08-15T09:21:52Z
+way/501368621,college,Loyala Higher Secondary School,,,Unknown,,,,,,,,07:00-19:00,"baburam acharya marga, old baneshowr 31, municipality",baburam acharya marga,,,municipality,,,,,,,,,,,,,27.7007293,85.3411612,2019-09-05T03:57:06Z
+way/220325633,school,Kathmandu Pragya Kunja School,,,Private,Secondary,603,65,5,0097714488438,pragyakunja@mail.com.np,https://pragyakunja.edu.np/,,"Sangam chowk, Kathmandu, 00977",Sangam chowk,,,Kathmandu,,,,,,,,,,,,OpenDRI survey,27.6935444,85.3404646,2021-12-30T08:35:44Z
+way/220414608,school,Pragya Sadan Primary School,,,Private,Primary,150,12,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7233326,85.3130897,2025-09-11T04:40:00Z
+way/220424182,school,High Himalayan Academy,,,Private,Pre-Primary,55,5,1,,,,,,,,,,2,load_bearing_brick_wall_in_cement_mortar,rent,average,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.6929207,85.3400565,2013-10-19T01:59:25Z
+way/220553630,school,Om Education Academy,,,Private,Secondary,350,30,1,,,,,,,,,,4,non_engineered_reinforced_concrete,rent,poor,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7109371,85.3076268,2013-08-26T10:24:39Z
+way/220554777,school,Bal Bikash Lower Secondary School,,,Government,Lower Secondary,200,15,1,,,,,,,,,,4,load_bearing_brick_wall_in_cement_mortar,self,average,flat,concrete,concrete,no,partial,no,,OpenDRI survey,27.7118415,85.3060425,2013-08-26T10:20:33Z
+way/220555380,school,Ursa Major Children's Academy,,,Private,Secondary,250,25,1,,,,,,,,,,6,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7166162,85.3044935,2021-02-07T07:43:55Z
+way/220558190,college,Bishwa Bhasha Campus,,,Government,College/Higher Education,1600,56,2,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.7026063,85.3191622,2021-02-11T06:51:30Z
+way/220558191,college,Nepal Law Campus,,,Government,College/Higher Education,3300,150,3,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.7026051,85.3194746,2021-02-23T01:25:00Z
+way/220558892,college,Ratna Rajya Campus,,,Government,College/Higher Education,7500,250,5,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7026155,85.319786,2021-02-23T01:25:00Z
+way/220577239,school,Blue Horizon Academy,,,Private,Primary,65,10,1,01-4432797,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7232915,85.3259596,2018-11-29T04:35:38Z
+way/220577248,school,Shree Dhumrabarah Secondary School,,,Government,Secondary,650,19,2,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7252291,85.3428433,2018-11-16T14:28:18Z
+way/220577250,school,The Insight Vision Higher Secondary School,,,Private,Higher Secondary,600,50,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7268803,85.3418952,2013-10-19T02:05:20Z
+way/220577254,school,Universal Higher Secondary School,,,Private,Higher Secondary,331,40,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7227441,85.3403075,2018-11-26T05:39:37Z
+way/220577286,school,The Insight Vision HS School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,no,,27.7259827,85.3432925,2018-11-16T14:28:18Z
+way/220690478,college,Hillside College of Engineering,,,Private,College/Higher Education,32,17,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6739251,85.3421901,2022-02-04T16:46:03Z
+way/220697628,college,King's College,,किङ्ग्स कलेज,Private,College/Higher Education,600,90,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6890006,85.327867,2023-05-19T11:28:51Z
+way/220702738,school,Bal Batika,,,Private,Primary,51,15,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6927974,85.3674429,2013-08-26T10:20:33Z
+way/220702742,college,Greenwich Academy,,,Private,Secondary,850,65,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6921583,85.3615928,2021-06-09T13:32:54Z
+way/220702744,school,Mangal English School,,,Private,Secondary,300,22,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6909131,85.3617668,2013-08-26T10:23:20Z
+way/220702746,school,Pritima English Secondary School,,,Unknown,,,,,,,,,,,,,,4,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6921493,85.3639886,2021-03-08T12:24:18Z
+way/220704533,school,Nepal Everest Montessori School,,,Private,Primary,88,14,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6989191,85.3479752,2018-03-15T07:07:20Z
+way/220984941,school,Pratima English School,,,Private,Secondary,400,27,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6922395,85.364013,2013-10-18T06:42:25Z
+way/220987840,college,Himal Dental Hospital & Institute of Dental Science,,,Private,College/Higher Education,70,100,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7199611,85.3459304,2013-10-18T06:43:46Z
+way/220990736,school,Kankeshwori Secondary School,,,Government,Lower Secondary,400,16,1,,,,,,,,,,5,non_engineered_reinforced_concrete,self,average,flat,concrete;metal,concrete,no,no,no,,OpenDRI survey,27.7071374,85.3033612,2022-02-11T06:28:41Z
+way/220993531,school,New Zenith English Model School,,,Private,Secondary,750,75,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.710611,85.3037061,2021-02-06T23:50:12Z
+way/220995240,school,Nepal Rastriya Lower Secondary School,,,Government,Lower Secondary,250,17,1,,,,,,,,,,4,non_engineered_reinforced_concrete,self,average,flat,metal,concrete,no,no,no,,OpenDRI survey,27.7116455,85.3040358,2021-02-05T16:11:22Z
+way/220996442,school,Surena English Boarding School,,,Private,Secondary,170,23,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7128206,85.3031315,2022-01-17T10:01:53Z
+way/221016700,college,Whitefield International College,,,Private,College/Higher Education,,,1,,,,,,,,,,4,engineered_reinforced_concrete,self,good,flat,concrete,concrete,yes,no,no,limited,OpenDRI survey,27.7155562,85.3029933,2021-02-06T15:31:21Z
+way/221027479,school,Shobha Bhagwati English Boarding School,,,Private,Secondary,550,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7156027,85.302497,2013-08-26T10:25:36Z
+way/221050572,school,Siddhartha Public Academy,,,Private,Secondary,400,22,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7047991,85.3178652,2021-02-11T08:42:24Z
+way/221179243,school,Adwitiya Boarding School,,,Private,,325,30,3,01-4362090,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7352061,85.298615,2021-02-04T17:00:41Z
+way/221179244,school,Asha Vidhyashram,,,Private,Lower Secondary,115,10,1,9841773795,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7360686,85.2963765,2013-10-18T06:44:47Z
+way/221295615,school,Creative Model Academy Boarding High School,,,Private,Secondary,200,21,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.719259,85.3244504,2013-10-18T07:53:00Z
+way/221295616,school,Pushpa Bal Academy,,,Private,Secondary,150,24,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7185378,85.3229709,2017-09-07T09:15:21Z
+way/221326057,school,Lily Flower Boarding School,,,Private,Primary,35,7,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7206086,85.3507016,2013-08-26T10:23:02Z
+way/221328637,school,Hamro Sunshine School,,,Private,Secondary,160,22,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7334176,85.3679851,2025-06-03T11:50:43Z
+way/221330736,school,Kailash Bodhi School,,,Private,Secondary,940,38,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7312027,85.3649956,2013-08-26T10:22:40Z
+way/221331607,school,Gangchen Samling School,,,Private,Lower Secondary,263,19,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7297056,85.3701324,2013-08-26T10:21:49Z
+way/221337501,school,Mini Land School,,,Private,Secondary,490,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6976486,85.3054585,2025-06-05T04:09:12Z
+way/221350571,school,Shri Mahendra Saraswati Sewa Lower Secondary School,,,Government,Lower Secondary,120,11,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6940678,85.3038801,2021-08-12T07:24:31Z
+way/221351928,school,Laxmi Sikshya Sadan Higher Secondary School,,,Private,Higher Secondary,250,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6954111,85.3039569,2021-02-05T05:04:39Z
+way/221353507,school,Mansarovar Academy,,,Private,Primary,340,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7268313,85.3641108,2021-02-28T04:34:52Z
+way/221354402,school,Shree Mangal Dvip Boarding School,,,Private,Secondary,546,41,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7258359,85.3644577,2021-02-28T05:36:21Z
+way/221354601,school,Subash Smrity School,,,Private,Lower Secondary,150,20,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6712402,85.3462123,2025-06-19T08:58:10Z
+way/221354602,school,New Tulips Secondary School,,,Private,Secondary,450,15,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6724684,85.3453598,2022-02-04T08:47:34Z
+way/221355227,school,Sambotta High School,,,Private,Secondary,300,27,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7285173,85.3684254,2013-08-26T10:25:17Z
+way/343523193,school,Sambotta High School,,,Unknown,,,,,,,,09:00-16:00,"Pasang Lamhu sadak, Tin chuli 6",Pasang Lamhu sadak,,,,,,,,,,,,,,,,27.6973954,85.2912142,2021-02-06T05:03:23Z
+way/221355228,school,Srongtsen Bhrikuti Boarding High School,,,Unknown,,,,,,,,,"Tinchuli, Tinchuli, 6, municipality",Tinchuli,Tinchuli,6,municipality,,,,,,,,,,,,,27.7282138,85.3668135,2023-05-24T08:27:43Z
+way/221356302,school,Genesis Academy,,,Private,Secondary,230,25,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7260102,85.3691127,2021-03-06T14:55:01Z
+way/221356504,school,Tashi Orphan School,,,Private,Lower Secondary,106,16,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7244672,85.3664684,2021-02-26T13:59:48Z
+way/221356893,school,Samata Academy,,,Private,Higher Secondary,3300,80,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7227083,85.3681149,2021-02-28T09:06:02Z
+way/221357309,school,Lord Buddha Secondary School,,,Private,Secondary,400,29,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7220673,85.3679103,2021-03-01T15:55:35Z
+way/221359084,college,Bajra International College,,,Private,College/Higher Education,1400,75,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7217242,85.3686346,2013-08-18T05:57:46Z
+way/221359778,school,Wits Academy,,,Private,Secondary,600,32,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7263322,85.3719719,2013-08-26T10:27:19Z
+way/221362688,school,Manjushree Community School,,,Community,Lower Secondary,59,11,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7241869,85.3705678,2021-02-28T07:06:10Z
+way/221376644,school,Vinayak English Higher Secondary School,,,Private,Secondary,485,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7195744,85.3477003,2018-11-21T07:31:44Z
+way/221377997,school,Kathmandu Unified City School,,,Private,Secondary,125,18,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7164083,85.3454484,2021-03-04T06:30:06Z
+way/221378134,college,Kailashkut Multiple College,,,Community,College/Higher Education,780,50,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7154133,85.3463823,2018-11-22T09:25:51Z
+way/221380198,college,Pashupati Multiple College,,,Community,College/Higher Education,8000,200,1,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7134303,85.3446218,2018-11-07T04:02:27Z
+way/221380544,college,Opal College of Applied Management,,,Private,Post-Secondary,,,,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7136651,85.3422351,2025-04-11T07:50:47Z
+way/221381695,college,Texas International College,,,Private,College/Higher Education,800,200,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7125074,85.3446253,2018-11-23T07:22:45Z
+way/221419704,school,Kotdevi Public Secondary School,,,Private,Secondary,500,35,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6716497,85.3490412,2013-10-18T08:46:56Z
+way/221419705,school,Laliguras Secondary School,,,Private,Secondary,241,25,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6685993,85.3498849,2025-05-29T10:32:01Z
+way/221419926,school,Nepal Central Higher Secondary School,,,Private,,425,35,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6719071,85.3504968,2022-02-08T11:09:42Z
+way/221420265,school,Mount Seb English School,,,Private,Secondary,450,35,3,,,https://www.facebook.com/pg/mountsebschool/about/?ref=page_internal,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6722362,85.3512511,2025-05-29T10:32:01Z
+way/221428063,university,Islington College-Brit House,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7083525,85.3253706,2023-10-25T03:37:00Z
+way/221481055,school,Seraphims' Public School,,,Private,Secondary,250,20,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6966716,85.300172,2021-02-07T16:30:24Z
+way/221558875,school,Jagriti Academy school,,,Private,Secondary,375,25,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6732446,85.3502425,2018-11-22T06:32:50Z
+way/221558876,school,Oriental Academy school,,,Private,Lower Secondary,250,18,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6729186,85.3527245,2024-07-27T02:38:19Z
+way/221605638,school,Camelliya English Boarding School,,,Private,Higher Secondary,300,45,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6953922,85.2996956,2021-02-08T05:11:21Z
+way/221642736,school,Paramount English Boarding School,,,Private,Secondary,300,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6917149,85.2957024,2015-07-17T06:36:38Z
+way/221685879,school,Ikeda International School,,,Private,Secondary,230,29,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6935195,85.2902395,2021-02-04T20:21:49Z
+way/221685880,school,Mitra High School,,,Private,Secondary,270,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6946401,85.2989256,2021-02-08T03:11:18Z
+way/221690463,college,Tri Chandra Campus,,,Government,College/Higher Education,12000,685,5,,,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.7081477,85.3162957,2025-07-04T12:42:16Z
+way/221694251,school,Dreamland Public School,,,Private,Secondary,320,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7048522,85.3218358,2021-02-09T05:00:51Z
+way/221694254,school,Madrasha Islamiya Secondary School,,,Private,Lower Secondary,300,26,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7067837,85.3170852,2021-02-12T08:33:55Z
+way/221694625,college,Balmeeki Campus,,,Government,College/Higher Education,1000,100,3,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7024896,85.3205646,2021-02-10T03:26:28Z
+way/221699896,school,National Star School,,,Private,Pre-Primary,70,10,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7123939,85.309029,2018-11-29T07:49:39Z
+way/221699897,school,Prabhat Secondary School,,,Government,Secondary,300,37,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7096683,85.3094821,2022-02-01T14:56:56Z
+way/221699898,school,Shanti Shikshya Mandir,,,Government,Secondary,250,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7113705,85.3098911,2018-11-29T07:49:39Z
+way/221727450,college,Kathmandu Model Hospital School of Oral Health,,,Private,Higher Secondary,53,17,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7064853,85.3180992,2018-11-25T05:17:42Z
+way/221752137,school,Kamyak School,,,Private,Secondary,250,25,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7061585,85.320177,2021-02-18T16:30:58Z
+way/221752138,college,Kathmandu Model College,,,Private,College/Higher Education,1800,150,5,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7062899,85.3188952,2018-11-25T05:17:43Z
+way/221752139,college,Padma Kanya Campus,,,Government,College/Higher Education,4500,580,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7064459,85.3210531,2023-05-29T10:37:53Z
+way/221765596,school,Jana Kalyan Primary School,,,Private,Primary,40,13,2,,,,,,,,,,2,load_bearing_brick_wall_in_cement_mortar,rent,poor,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.7134963,85.3066886,2013-08-26T10:22:28Z
+way/221765600,school,Maya Lok English School,,,Private,Primary,50,10,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7130085,85.3063554,2022-01-18T08:40:56Z
+way/221765601,school,Neelgiri School,,,Private,Secondary,240,33,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7174855,85.30772,2021-02-11T14:19:26Z
+way/221769819,school,Pragya Higher Secondary School,,,Private,Primary,60,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.717154,85.3114911,2021-02-06T18:03:13Z
+way/221797111,school,Albert Einstein Academy,,,Private,Secondary,300,25,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7107877,85.3133242,2018-11-28T14:20:53Z
+way/221797112,school,Annapurna Higher Secondary School,,,Private,Post-Secondary,1400,80,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7095986,85.3134276,2022-02-10T08:09:20Z
+way/221797115,school,Lokhit Lower Secondary School,,,Government,Secondary,200,19,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7158803,85.3125451,2018-11-28T10:59:19Z
+way/221801515,school,Bal Ujjwol Primary School,,,Government,Primary,40,9,1,,,,,,,,,,4,non_engineered_reinforced_concrete,self,poor,flat,concrete;metal,concrete,no,no,no,,OpenDRI survey,27.7104627,85.3111777,2013-08-26T10:20:36Z
+way/221801516,school,Tyauda Secondary School,,,Government,Secondary,370,31,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7099497,85.311266,2025-09-08T11:03:52Z
+way/221806624,school,Bodhisatta Primary School,,,Private,Primary,65,12,1,,,,,,,,,,7,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.7056647,85.3113065,2013-08-26T10:20:56Z
+way/221820525,school,Himalaya Secondary School,,,Government,Secondary,275,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7036014,85.3118448,2021-02-11T10:18:04Z
+way/221932004,school,City English School,,,Private,Secondary,375,28,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6815125,85.3472156,2021-08-07T00:00:51Z
+way/221933343,school,Sai Trinity School,,,Private,Secondary,110,17,1,,,,,"108, Shiddha Marga",Shiddha Marga,,,,,,,,,,,,,,,OpenDRI survey,27.6815701,85.3474645,2021-03-12T14:58:26Z
+way/221936324,college,Nava Jyoti College,,,Private,College/Higher Education,520,50,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6824591,85.3485383,2021-03-12T15:54:21Z
+way/221938657,school,Aakriti English Secondary Boarding School,,,Private,Secondary,80,12,3,,,,,"Subidha Marga, Kathmandu, 44600",Subidha Marga,,,Kathmandu,,,,,,,,,,,,OpenDRI survey,27.6828528,85.3475925,2021-06-07T12:26:12Z
+way/221951335,school,Kathmandu Barsha School,,,Private,Secondary,520,45,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6850448,85.3448503,2021-06-07T12:26:12Z
+way/221951617,school,Whitehouse school and College,Himalayan WhiteHouse International college,,Unknown,,,,,015199456,whitehouse@gmail.com.np,https://www.whitehouse.edu.np/,Su-Fr 07:00-17:00,WhiteHouse street,WhiteHouse street,,,,,,,,,,,,,,,,27.6842278,85.3471585,2022-05-24T06:49:11Z
+way/221954824,college,Triton International College,,,Private,College/Higher Education,900,135,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6825543,85.3438628,2018-11-23T07:51:27Z
+way/221955575,school,Triton internation school,,,Private,Secondary,206,35,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6841405,85.3444019,2021-06-07T12:26:13Z
+way/221956065,college,Trinity International College and Higher Secondary School,,,Private,College/Higher Education,,,4,014445955,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7035689,85.3250537,2018-11-26T09:06:27Z
+way/221956316,college,Platinum Management College,,,Private,College/Higher Education,320,13,1,4420928,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7032394,85.3262074,2021-02-09T13:24:50Z
+way/222136573,school,Kamal English Boarding Higher Secondary School,,,Private,Higher Secondary,475,45,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6860138,85.2977581,2021-02-04T10:01:28Z
+way/222136574,college,Kathmandu BernHardt College,,,Private,Higher Secondary,1550,150,5,"4036106, 4036107",BernHardt@wlink.com.np,https://www.bernhardt.edu.np/,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6859065,85.2963671,2021-02-04T09:31:11Z
+way/222180844,school,Gurukul National School,,,Private,Secondary,150,36,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7042217,85.3478181,2018-11-22T06:28:41Z
+way/222180845,school,Keta Keti Spowc Free School,,,Community,Primary,200,11,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7066187,85.3503831,2013-08-26T10:22:49Z
+way/222180849,school,Midland English School,,,Private,Secondary,250,25,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7024538,85.3478527,2021-12-31T10:51:16Z
+way/222180851,college,Nepal Institute of Medical Science and Technology,,,Private,College/Higher Education,500,75,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7050555,85.3474307,2018-11-25T05:17:43Z
+way/222180854,school,New Shrine Boarding School,,,Private,Secondary,365,28,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7046896,85.3486728,2018-11-25T05:17:43Z
+way/222180857,school,Shri Bal Batika Secondary School,,,Community,Secondary,300,23,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.704885,85.3506528,2021-08-24T12:18:34Z
+way/222180858,school,Shri Sharada Higher Secondary School,,,Government,Higher Secondary,585,34,3,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7017193,85.3500525,2022-02-17T13:13:48Z
+way/222180859,school,Shri Sharada Lower Secondary School,,,Government,Lower Secondary,187,13,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7050511,85.3517618,2020-12-08T13:02:28Z
+way/222254771,college,Greenfield National College,,,Private,College/Higher Education,120,24,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7042704,85.2832552,2022-09-11T09:22:33Z
+way/222255329,school,Wilson Academy,,,Private,Secondary,200,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7032915,85.2842376,2021-02-04T09:40:31Z
+way/222255848,school,Harvard International School,,,Private,Secondary,375,43,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6996605,85.2860173,2013-10-18T10:01:59Z
+way/222256678,school,Gaurishanker Higher Secondary School,,,Private,College/Higher Education,300,35,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7022252,85.2867167,2015-06-10T17:00:34Z
+way/222258194,school,Tiny Toys Kindergarten,,,Private,Pre-Primary,40,7,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7026536,85.2872022,2019-02-20T19:54:17Z
+way/222258459,college,Everest International College,,,Private,Higher Secondary,400,22,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6975237,85.2919551,2020-02-28T09:00:26Z
+way/222258498,school,Swayambhu English Boarding School,,,Private,Secondary,275,27,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7159511,85.2939413,2013-10-18T10:01:59Z
+way/222267299,school,Capital Hill Academy,,,Private,Primary,21,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6992627,85.2883921,2018-11-28T10:38:46Z
+way/222269822,school,Zenith English Secondary School,,,Private,Secondary,324,31,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6993049,85.2871809,2013-08-26T10:27:22Z
+way/222271306,school,Sirius Higher Secondary School,,,Private,Secondary,350,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7004113,85.2835334,2021-02-06T14:56:09Z
+way/222272515,college,Rising Star College of Management,,,Private,College/Higher Education,650,40,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6988236,85.2853295,2020-02-28T09:00:26Z
+way/222349192,college,College of Journalism and Mass Communication(CJMC),,,Private,College/Higher Education,80,20,1,01-20707440,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6744045,85.3416066,2022-02-04T16:33:50Z
+way/222467452,school,Shree Buddhanagar Lower Secondary School,,,Government,Lower Secondary,145,7,1,9841834523,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6887428,85.3285331,2013-10-19T04:05:59Z
+way/222495752,school,Edify International School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6931839,85.2849378,2018-11-28T08:16:47Z
+way/222495754,school,Janapath Secondary School,,,Government,Secondary,410,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6933735,85.2838005,2021-02-05T08:02:46Z
+way/222495756,school,Pinnacle Scholars' Academy,,,Private,Secondary,700,65,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6940999,85.2832798,2021-02-02T14:52:16Z
+way/222716500,school,East-West English Boarding School,,,Private,Secondary,260,29,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6870772,85.2983897,2021-02-04T15:48:22Z
+way/222716504,school,Pragyan School,,,Private,Primary,100,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6882316,85.2988605,2013-08-26T10:24:56Z
+way/222716691,school,Blue Wren International Boarding School,,,Private,Secondary,339,33,2,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6942147,85.2812603,2018-11-24T15:38:54Z
+way/222716692,school,Cambridge International Boarding Higher Secondary School,,,Private,Higher Secondary,300,30,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6935855,85.2803903,2018-11-29T08:17:57Z
+way/222752995,college,Orchid College,,,Private,College/Higher Education,200,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6974379,85.3496684,2020-02-28T09:00:26Z
+way/222753145,school,Kathmandu New Castle School,,,Private,Secondary,300,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7460188,85.3357635,2013-08-26T10:22:46Z
+way/222753146,college,Kathmandu Nursing Campus,,,Private,College/Higher Education,119,25,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7466299,85.335717,2013-08-18T05:58:02Z
+way/222753364,college,Brookfield College,,,Private,College/Higher Education,175,25,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6977075,85.3487315,2013-10-19T04:17:33Z
+way/222754220,school,Summer Hill School,,,Private,Lower Secondary,100,20,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6984171,85.3473649,2021-03-08T15:52:50Z
+way/222755373,school,Landmark Education Foundation,,,Private,Secondary,200,18,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6904286,85.3508396,2018-11-25T09:48:32Z
+way/222756530,school,Koteshwor Saraswoti School,,,Government,College/Higher Education,2533,96,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6803653,85.3411609,2018-11-23T05:40:47Z
+way/222761771,school,Ganga Secondary School,,,Private,Secondary,650,42,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6969729,85.279307,2013-08-26T10:21:49Z
+way/222761775,school,Mandala International School,,,Private,Secondary,300,35,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6947889,85.2784683,2018-11-28T10:55:29Z
+way/222761777,school,White Pearls Academy,,,Private,Lower Secondary,150,50,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6961092,85.2774895,2013-08-26T10:27:17Z
+way/222764576,school,Diana Secondary School,,,Private,Secondary,300,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6796379,85.3422757,2018-11-22T10:59:30Z
+way/222764866,school,Grammar Public Higher Secondary School,,,Private,Secondary,400,70,3,+977 01 4602735; +977 01 4600367; +977 01 4601213,info@grammarschool.edu.np,https://grammarschool.edu.np/ | https://www.facebook.com/grammarschool.college,,,,,,,,,,,,,,,,,,,27.6789804,85.3413939,2023-10-17T09:38:40Z
+way/222765859,school,Manakamana English Boarding School,,,Private,Secondary,600,15,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6770494,85.3386474,2022-01-31T04:31:45Z
+way/222766471,school,Creation International Academy,,,Private,Secondary,300,23,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6801328,85.3377688,2018-11-23T10:57:09Z
+way/222769695,college,Everest College of Nursing,,,Private,College/Higher Education,65,15,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6853504,85.3436667,2025-08-19T02:36:42Z
+way/222782392,college,Ratna Sikshya Sadan,,,Private,Secondary,300,30,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6798806,85.3485296,2022-02-02T07:53:56Z
+way/222839525,school,Satya Sai School,,,Private,Secondary,290,43,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7039678,85.3469138,2021-03-06T08:00:04Z
+way/222840384,school,Care English Boarding School,,,Private,Secondary,400,35,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7053236,85.3459113,2018-11-23T10:46:46Z
+way/222842146,school,Shri Mangaladevi Secondary School,,,Government,Secondary,300,22,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7076499,85.3429903,2021-03-07T13:12:51Z
+way/222842638,college,Ganesh Man Singh Multiple Campus,,,Community,College/Higher Education,500,40,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6918151,85.2849047,2023-08-16T05:47:52Z
+way/222842639,school,Kalanki English Medium School,,,Private,Lower Secondary,142,16,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6915587,85.2861614,2013-08-26T10:22:40Z
+way/222843739,school,Intensive International Academy,,,Private,Secondary,340,35,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6966404,85.2952855,2021-02-06T07:03:35Z
+way/222843740,school,Sai Nilayam Secondary Boarding School,,,Private,Secondary,200,20,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6969005,85.2960642,2021-02-06T07:11:05Z
+way/222852322,school,Leads Academy,,,Private,Secondary,325,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6864921,85.3636829,2022-01-05T10:46:40Z
+way/222854154,school,Highland English School,,,Private,Secondary,260,21,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6957732,85.3654843,2021-02-26T10:35:14Z
+way/222854155,school,Special School for Disabled and Rehabilitation center,,,Private,Other,30,11,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6948607,85.3626172,2021-02-25T04:16:28Z
+way/222872125,school,Gyankanj School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6928544,85.2905916,2021-08-12T07:24:31Z
+way/222872130,school,Telic International Model English School (Times),,,Private,Secondary,450,40,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6899909,85.2909899,2018-11-29T09:52:48Z
+way/222872132,school,United Scholars' Academy,,,Private,Secondary,350,31,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6890637,85.2871412,2021-02-02T10:05:32Z
+way/222872151,school,Richmond Academy,,,Private,Secondary,140,30,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6906275,85.289104,2021-02-02T10:05:32Z
+way/222874298,school,Kathmandu Bonsai Academy,,,Private,Lower Secondary,200,19,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6876551,85.2931479,2018-11-27T16:13:24Z
+way/223091832,school,Asha Mandir English High School,,,Private,Higher Secondary,200,26,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6931034,85.3461162,2020-08-19T16:45:30Z
+way/223093013,school,Siddheshwor Secondary School,,,Government,Secondary,350,20,3,4622730,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6869326,85.3439989,2025-03-31T09:19:36Z
+way/223093275,school,Shri Nepal Bedh Vidhyashram,,,Community,Secondary,140,23,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7094672,85.3448067,2021-02-26T16:51:52Z
+way/223093414,school,Mt. Sinai English Boarding School,,,Private,Secondary,110,25,2,4462966,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.688034,85.3407634,2023-01-20T08:32:33Z
+way/223093896,school,Shatabdi Higher Secondary School,,,Private,Higher Secondary,300,48,4,4115754,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6919872,85.3407594,2016-09-12T01:45:23Z
+way/223100712,school,Pioneer Scholars' Academy,,,Private,Secondary,342,28,3,4492436,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6964384,85.3414934,2013-10-19T04:30:15Z
+way/223101414,school,Indradhanush Higher Secondary School,,,Private,Higher Secondary,400,30,6,4476499,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6959867,85.3440285,2015-04-09T14:28:39Z
+way/223106674,college,School of Geomatics,,,Private,College/Higher Education,180,20,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6976866,85.3426411,2022-06-25T17:06:14Z
+way/223107335,school,Babylon National School,,,Private,Secondary,687,80,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6942447,85.3469935,2013-10-19T04:30:53Z
+way/223132669,school,Aruni Secondary English Boarding School,,,Private,Secondary,400,25,1,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7372995,85.3065386,2021-02-03T17:54:26Z
+way/223132671,school,Siddhartha Vanasthali Institute,,,Community,Pre-Primary,2200,250,9,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7257691,85.2980309,2021-02-03T15:31:05Z
+way/223132672,school,Trilok Children's Academy,,,Private,Secondary,500,27,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.738228,85.3071051,2021-02-03T17:54:26Z
+way/223231636,school,Pascal International Academy,,,Private,Lower Secondary,115,13,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.726449,85.3133605,2013-08-26T10:24:48Z
+way/223299779,school,Akshamala Vidya Sadan,,,Private,Secondary,153,22,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7047133,85.339539,2013-08-26T10:20:15Z
+way/223299783,college,Golden Gate International College,,,Private,College/Higher Education,3500,75,2,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7034935,85.3400581,2022-06-09T09:30:46Z
+way/223299784,college,Nepal College of Travel and Tourism Management,,,Private,College/Higher Education,450,25,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.70771,85.3395295,2025-04-10T07:31:03Z
+way/223299786,college,Thames International College,,,Private,College/Higher Education,490,69,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7015791,85.3422511,2021-03-06T12:25:28Z
+way/223300840,school,Bibhuti Pragya Niketan,,,Private,Secondary,400,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7284226,85.3547971,2013-08-26T10:20:49Z
+way/223301198,college,National Academy for Medical Science,,,Private,College/Higher Education,400,25,2,,,,,"pingla marga, bhimsengola-9, kathmandu municipality",pingla marga,,,kathmandu municipality,,,,,,,,,,,yes,OpenDRI survey,27.7010646,85.3421652,2018-11-28T11:07:31Z
+way/223301200,school,Sewa Sadan School,,,Private,Secondary,330,54,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7030844,85.3422268,2015-04-26T03:23:35Z
+way/223301201,school,Stepping Stone Pre-School,,,Private,Pre-Primary,60,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7034558,85.3423952,2015-04-26T03:23:34Z
+way/223301202,college,Vinayak College of Health Science,,,Private,College/Higher Education,360,52,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7039058,85.3436544,2021-03-05T16:08:03Z
+way/223364712,school,Kamal Netra Chuna Muna English Boarding School,,,Private,Secondary,379,32,2,4490647,,,,,,,,,4,non_engineered_reinforced_concrete,rent,poor,gabled,metal,concrete,yes,no,no,,OpenDRI survey,27.6978146,85.3440357,2013-10-19T04:53:34Z
+way/223365207,school,Bluebell English Boarding School,,,Private,Secondary,207,25,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6942738,85.3459069,2018-11-20T05:02:41Z
+way/223400799,school,National College NIST Higher Education Complex,,,Private,College/Higher Education,400,60,2,01-4360096,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7179022,85.3049984,2013-10-19T04:54:04Z
+way/223489571,school,The Acme Academy High School,,,Private,Secondary,250,25,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6937554,85.3447599,2013-08-26T10:26:53Z
+way/223489970,school,Shatabdi Secondary Boarding School,,,Private,Secondary,185,24,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6940507,85.3455962,2013-10-19T05:00:28Z
+way/223490607,college,Liverpool International College,,,Private,College/Higher Education,1600,150,5,"01-4781230, 4782509",,,,,,,,,,,,,,,,,,,limited,OpenDRI survey,27.687705,85.3344338,2018-12-04T05:20:15Z
+way/223491275,school,New Drighayu secondary boarding school,,,Private,Secondary,225,22,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6894813,85.3470161,2013-10-19T05:01:01Z
+way/223500010,college,Kantipur College of Management and Information Technology,,,Private,College/Higher Education,400,45,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.698488,85.3406237,2021-03-08T11:12:08Z
+way/223500634,school,Ambience International School,,,Private,Secondary,200,27,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6990061,85.3386634,2021-03-07T04:45:39Z
+way/223683247,school,Green Valley English Boarding School,,,Private,Secondary,140,25,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.707459,85.3049812,2013-08-26T10:22:07Z
+way/223683251,school,Krishna Mandir Primary School,,,Government,Primary,110,19,1,,,,,,,,,,1,load_bearing_brick_wall_in_cement_mortar,self,poor,flat,metal,,no,no,no,,OpenDRI survey,27.7087594,85.3086486,2021-02-10T05:08:34Z
+way/223684777,school,Bernhardt MTI School,,,Private,Lower Secondary,250,35,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7006277,85.2961378,2015-06-15T13:31:41Z
+way/224086347,school,Balpith Primary School,,,Government,Pre-Primary,56,7,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6991387,85.3516381,2018-09-22T05:48:09Z
+way/224087343,school,Arun Dip Academy,,,Private,Secondary,300,30,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6902311,85.3348553,2020-12-09T12:30:35Z
+way/224088279,school,Ambition Academy,,,Private,Higher Secondary,375,20,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7026213,85.3384714,2013-08-26T10:20:19Z
+way/224089122,school,Annapurna English Secondary School,,,Private,Secondary,331,24,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6898533,85.3515769,2021-03-16T05:04:09Z
+way/224089644,school,Prasphutan international Academy,,,Private,Secondary,320,32,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6994883,85.3515909,2018-11-20T05:42:16Z
+way/224091007,school,Abhishekh Gyan Mandir,,,Private,Secondary,300,22,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.697859,85.3508258,2018-11-21T06:09:42Z
+way/224091746,school,Mount Olives High School,,,Private,Secondary,350,35,2,+977 01 4473913,mountolivesschool@gmail.com,,,"Panchakumari Marg, Kathmandu, 5878",Panchakumari Marg,,,Kathmandu,,,,,,,,,,,,OpenDRI survey,27.6986996,85.3508685,2020-12-22T12:51:43Z
+way/224094242,school,N.K. Singh Memorial English Prepartory School,,,Private,Secondary,950,100,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6890644,85.3412379,2013-10-19T05:17:29Z
+way/224192386,school,Manang Children Paradise School,,,Private,Secondary,270,32,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6853231,85.3569828,2025-04-02T12:49:17Z
+way/224441079,school,Saint Paul International School,,,Private,Secondary,300,45,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6928008,85.3376943,2021-03-14T11:13:32Z
+way/224441409,school,Rudramati Primary School,,,Government,Primary,85,6,1,,,,,,,,,,3,load_bearing_brick_wall_in_cement_mortar,self,poor,gabled,metal,concrete,yes,no,no,,OpenDRI survey,27.6982295,85.3313917,2021-02-09T19:18:33Z
+way/224441455,school,Gyan Bikash Lower Secondary School,,,Government,Lower Secondary,180,15,1,,,,,,,,,,4,engineered_reinforced_concrete,self,good,flat,concrete;metal,concrete,no,no,no,,OpenDRI survey,27.7100824,85.333222,2021-02-12T10:15:15Z
+way/224469076,school,Gitamata Higher Secondary School,,,Government,Higher Secondary,850,40,2,,,,,,,,,,4,load_bearing_brick_wall_in_cement_mortar;load_bearing_brick_wall_in_mud_mortar,self,average,flat,metal,concrete,no,no,no,,OpenDRI survey,27.7136513,85.299796,2013-08-26T10:21:59Z
+way/224864559,school,Bright Field Education Academy,,,Private,Lower Secondary,250,23,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7176175,85.3022407,2021-02-02T16:22:55Z
+way/224867661,school,Rashmi Secondary School,,,Private,Secondary,250,28,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7172403,85.29404,2013-08-26T10:25:08Z
+way/224875982,college,Carina International Academy Higher Secondary School,,,Private,Higher Secondary,500,60,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7180171,85.2981327,2021-02-02T07:03:42Z
+way/224949192,school,Shankari School,,,Private,Lower Secondary,110,33,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7073366,85.2881168,2018-11-27T06:29:56Z
+way/224951439,school,Jana Sudhar Lower Secondary School,,,Government,Lower Secondary,300,14,4,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7139701,85.2889575,2018-11-28T06:27:42Z
+way/224951440,school,Maitri School,,,Private,Secondary,530,40,4,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.7108056,85.289863,2018-10-20T03:05:12Z
+way/224951441,school,Niravana Academy,,,Private,Lower Secondary,270,70,9,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7135996,85.2876952,2018-11-28T06:27:42Z
+way/224955257,school,Tri Ratna Awashiya Vidyalaya,,,Private,Secondary,547,39,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.712564,85.2947602,2021-02-02T17:12:04Z
+way/224958189,school,Shining Path Public School,,,Private,Secondary,235,17,3,,,,,,,,,,4,non_engineered_reinforced_concrete,self,good,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.7094612,85.2982908,2013-08-26T10:25:33Z
+way/224959487,school,Jagat Sundar Bwonekuthi Secondary School,,,Community,Secondary,275,27,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7074343,85.3018406,2018-11-29T16:25:01Z
+way/224964866,school,Gyanodaya Secondary School,,,Government,Higher Secondary,2000,78,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6992213,85.2844943,2021-02-05T12:31:03Z
+way/225008692,school,Mary Poppins,,,Private,Primary,75,22,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6891118,85.3205556,2021-02-09T07:52:52Z
+way/225023084,school,Kamolodaya Cambridge School,,,Private,Primary,70,13,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6902186,85.3246171,2013-08-26T10:22:42Z
+way/225090694,school,Pancha Kanya Secondary School,,,Government,Secondary,400,24,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7046926,85.2901575,2021-02-02T08:54:53Z
+way/225411935,school,Pragya Secondary School,,,Private,College/Higher Education,200,21,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6752295,85.3463798,2022-02-01T10:25:55Z
+way/225411936,school,Sakela Academy,,,Private,Primary,80,21,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6778112,85.3434438,2022-02-06T10:58:51Z
+way/225411939,school,Tridevi Secondary School,,,Private,Secondary,165,20,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6768187,85.3476387,2018-11-20T06:15:00Z
+way/225415050,school,Dipika School,,,Private,Secondary,250,21,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6795878,85.3440567,2022-02-06T06:49:58Z
+way/225415051,school,Swarnim Tara Vidya Sadan,,,Private,Secondary,220,35,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6801306,85.3392864,2018-11-23T10:57:10Z
+way/225416471,school,Kids International Academy,,,Private,Primary,90,8,1,,,,,,,,,,3,non_engineered_reinforced_concrete,rent,average,flat,concrete,concrete,no,no,no,,OpenDRI survey,27.6893829,85.3639873,2013-08-26T10:22:50Z
+way/225416472,school,Liberty Public School,,,Private,Primary,150,10,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6907954,85.363213,2021-02-23T08:36:57Z
+way/225416473,school,Manank Children's paradise Secondary School,,,Private,Secondary,275,26,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6873651,85.3584593,2021-02-23T02:42:52Z
+way/225416474,school,Shri Sarweshwar Lower Secondary School,,,Government,Lower Secondary,300,12,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6821715,85.3547286,2022-01-12T05:19:12Z
+way/225659849,school,Fresh Buds School,,,Private,Primary,30,7,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.710245,85.336011,2013-09-30T06:13:28Z
+way/225662357,school,Aman English Boarding School,,,Private,Secondary,300,25,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7046517,85.3233944,2021-02-09T12:14:56Z
+way/225662358,school,Asphodel Public school,,,Private,Secondary,540,28,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7025225,85.3270935,2021-02-09T18:32:25Z
+way/225662359,school,New Don Bosco Academy,,,Private,Secondary,450,50,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7023659,85.3232529,2025-07-15T06:19:47Z
+way/225662360,school,Trivei Public School,,,Private,Secondary,260,15,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7022579,85.3340237,2021-02-08T16:51:51Z
+way/225662755,school,Aasha Mandir English Boarding School,,,Private,Secondary,70,10,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7053799,85.3329642,2021-03-01T16:38:05Z
+way/226064424,school,Alpine Valley School,,,Private,Secondary,250,35,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7325376,85.3393516,2016-08-02T09:19:15Z
+way/226064425,school,National Creative Co-Educational School,,,Private,Secondary,180,50,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7279581,85.3391731,2025-03-15T12:17:09Z
+way/226064426,school,Saraswati Education Academy,,,Private,Pre-Primary,85,3,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7282941,85.3356608,2013-08-26T10:25:20Z
+way/226335479,school,Gorkha Kali English Boarding School,,,Private,Secondary,600,52,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7375411,85.3039406,2013-10-18T06:42:54Z
+way/226335860,college,liberty college,,,Unknown,,,,,,,,,"anamnagar, 29",,anamnagar,29,,,,,,,,,,,,,,27.6927285,85.3281453,2021-02-10T03:41:55Z
+way/226353137,college,Everest Enginnering And MAnagement College,,,Unknown,,,,,,,,07:00-19:00,"Raman Chwok, Buddha Nagar",Raman Chwok,,,,,,,,,,,,,,,,27.6859729,85.327884,2025-01-17T09:10:13Z
+way/226353252,college,Kadambari College(SSW),,,Unknown,,,,,01-4785051,,https://kadambari.edu.np/,,"Shram Marga, Kathmandu, 44617",Shram Marga,,,Kathmandu,,,,,,,,,,,yes,,27.6871544,85.3289898,2022-05-24T06:58:54Z
+way/226392914,school,V.S Angel World,,,Private,Pre-Primary,24,8,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6853741,85.3462217,2018-11-23T07:31:28Z
+way/226392915,school,Utprerana Women Secondary School,,,Community,Secondary,100,12,1,,,,,,,,,,5,non_engineered_reinforced_concrete,rent,good,flat,concrete,concrete,yes,partial,no,,OpenDRI survey,27.6845444,85.3454983,2013-08-26T10:27:09Z
+way/226475864,school,Abhiyan Public School,,,Private,Secondary,321,24,4,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7390527,85.3064829,2021-02-03T18:07:18Z
+way/226670897,school,Career Building International Academy,,,Private,Secondary,650,40,3,+977-01-5156266,info@cbia.edu.np,http://cbia.edu.np/ | https://www.facebook.com/cbiaschool/,,Kathmandu,,,,Kathmandu,,,,,,,,,,,,OpenDRI survey,27.6910348,85.3632112,2018-07-10T17:16:14Z
+way/226671393,school,Nexus Academy,,,Private,Secondary,950,75,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.69136,85.3660491,2022-02-22T12:32:07Z
+way/226672278,school,Kathmandu Neb Kider Garten,,,Unknown,,,,,,,,10:00-17:00,Khushi Bu,Khushi Bu,,,,,,,,,,,,,,,,27.7103446,85.3057731,2019-09-05T03:57:06Z
+way/226693204,college,ACME Engineering College,,,Unknown,,,,,01-4444444,,,,"ACME Building, Banasthali",Banasthali,,,,,,,,,,,,,,,,27.7248014,85.2967802,2018-11-27T09:51:29Z
+way/226694729,college,Manmohan Memorial College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7250986,85.2962981,2021-02-04T12:47:02Z
+node/2127154506,college,Manmohan Memorial College,,,Unknown,,,,,01-4360271,,,,,,,,,,,,,,,,,,,,,27.7184913,85.3091159,2021-02-03T16:49:44Z
+way/226694751,college,Balaju school Of Engineering,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,limited,,27.730204,85.3010297,2018-10-31T03:16:13Z
+way/226935927,school,Lotus Feet Boarding School,,,Private,Pre-Primary,40,8,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7266009,85.3131777,2013-08-26T10:23:07Z
+way/226936250,school,Genius English Boarding School,,,Private,Primary,118,11,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7243012,85.3057648,2021-02-06T15:45:03Z
+way/226936253,school,Kathmandu Little Blossoms Public School,,,Private,Secondary,340,34,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7229732,85.3044501,2013-08-26T10:22:46Z
+way/226936254,school,Namuna Women School,,,Community,Secondary,130,13,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7221446,85.3060201,2013-10-18T06:33:17Z
+way/226936938,school,Grace Educational Foundation,,,Community,Pre-Primary,27,6,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7264988,85.3111604,2013-08-26T10:22:04Z
+way/226936939,school,Gyan Sarobar Global English School,,,Private,Lower Secondary,150,16,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7287952,85.305915,2013-10-18T06:33:17Z
+way/226936940,school,Gyanmandir Secondary English School,,,Private,Secondary,500,36,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7320018,85.2964951,2018-11-22T08:05:47Z
+way/226936942,school,Kids Learning School,,,Private,Primary,325,22,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7388466,85.3043505,2013-08-26T10:22:52Z
+way/226936944,school,Nava Indra Dhanus B H School,,,Private,,230,16,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7322283,85.2989782,2021-02-04T17:07:44Z
+way/226936945,school,Shree Bal Kalyan Primary School,,,Government,Primary,151,10,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7290187,85.306576,2013-08-26T10:25:40Z
+way/226936946,school,Swati Sadan Higher Secondary School,,,Private,Higher Secondary,850,60,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7364613,85.3044934,2013-10-18T06:33:18Z
+way/226936947,school,Tarun Secondary School,,,Government,Secondary,1922,52,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7384026,85.302842,2013-10-18T06:33:18Z
+way/226937084,school,Rajan Memorial International School,,,Community,Secondary,585,47,5,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7374769,85.3033777,2015-04-29T21:12:08Z
+way/226971573,college,New Summit College,,,Private,College/Higher Education,705,55,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6990166,85.3395145,2015-04-21T06:39:38Z
+way/227099243,school,Rising Rays Boarding School,,,Private,Secondary,450,29,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7030389,85.324685,2021-02-09T12:14:56Z
+way/227100156,school,Rayners high school,,,Private,Secondary,130,18,4,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6910695,85.3413057,2013-08-26T10:25:09Z
+way/227102784,school,Canvas English Boarding School,,,Private,Secondary,347,28,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6947505,85.3312127,2018-11-12T07:46:12Z
+way/227104165,college,Islington College,,,Private,College/Higher Education,1000,65,7,,,,,"Islington College, Kamal Marga, Kathmandu",Kamal Marga,,,Kathmandu,,,,,,,,,,,yes,OpenDRI survey,27.707604,85.3253467,2023-05-17T10:48:41Z
+node/9450093117,college,Islington College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7090276,85.3251957,2022-01-26T13:09:29Z
+way/227104167,college,Administrative Block,,,Unknown,,,,,,,,,,,,,,2,load_bearing_brick_wall_in_cement_mortar,rent,average,gabled,metal,concrete,no,no,no,,OpenDRI survey,27.7076703,85.3252123,2014-04-05T17:57:49Z
+way/227122518,college,Nobel College,,,Private,College/Higher Education,1100,360,3,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.6978578,85.3472892,2018-11-18T07:10:53Z
+way/227266651,school,Shri Gyan Jyoti Women School,,,Government,Secondary,300,12,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7130718,85.3441184,2021-08-24T12:18:34Z
+way/227267817,school,बृहस्पति विद्यासदन,Brihaspati VidyaSadan,,Private,Lower Secondary,1217,196,8,4418030,contact@bvs.edu.np,https://bvs.edu.np/,Su-Fr 06:00-17:00,"Naxal, Kathmandu, 44600",,,,Kathmandu,,,,,,,,,,,yes,OpenDRI survey,27.7142544,85.3314592,2025-09-15T09:34:42Z
+way/227276576,school,Buddha Jyoti Bal Udhan Lower Secondary School,,,Government,Lower Secondary,400,14,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7373212,85.3082426,2013-08-26T10:21:00Z
+way/227300984,school,Nil barahi Higher Secondary School,,,Community,Higher Secondary,800,50,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.700417,85.3016995,2018-12-04T12:12:22Z
+way/227752903,school,Punarbal Sikshya Sadan,,,Community,Primary,56,12,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.709382,85.2842591,2018-11-29T08:16:12Z
+way/227767847,school,AIMS International Academy,,,Private,Secondary,300,40,3,01 4600464,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6788821,85.3453171,2021-03-14T16:05:51Z
+way/227767849,college,Kanjirowa College,,,Private,Higher Secondary,271,60,4,01 4601004,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6734243,85.3433189,2017-06-16T05:24:42Z
+way/227767851,school,Kanjirowa National School,,,Private,Secondary,493,48,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6737267,85.3435889,2017-06-16T05:24:42Z
+way/227894765,school,Onyx School,,,Private,Primary,50,9,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.677192,85.3540242,2021-02-22T04:13:42Z
+way/228484986,school,Galaxy Public School,,,Private,Higher Secondary,1900,230,12,,,,,,,,,,,,,,,,,,,,yes,OpenDRI survey,27.70754,85.33101,2021-03-01T16:38:05Z
+way/228497416,school,Shine Model School,,,Private,Secondary,300,45,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7111333,85.2836722,2013-08-26T10:25:33Z
+way/228661942,school,Jana Bikash Ucchha Secondary School,,,Government,Higher Secondary,300,21,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6825907,85.2980913,2021-02-04T06:34:51Z
+way/228661953,school,West Kids Montessori,,,Private,Primary,53,11,1,,,,,,,,,,3,load_bearing_brick_wall_in_cement_mortar,rent,average,flat,concrete,concrete,yes,no,no,,OpenDRI survey,27.682333,85.2979584,2013-08-26T10:27:15Z
+way/229132274,school,KMC School,,,Private,Secondary,1200,150,9,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.685004,85.3330978,2021-03-13T16:34:40Z
+way/229132277,school,Kuleshwar Awas Secondary School,,,Community,Secondary,800,52,7,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6907436,85.2931213,2021-02-03T10:32:23Z
+way/229143708,school,Rastriya Bal Sikshya,,,Private,Secondary,284,17,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7099645,85.3005868,2024-07-20T17:33:03Z
+way/229144315,school,Educational Environment,,,Private,Primary,60,10,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7130057,85.3010312,2018-11-29T15:35:09Z
+way/229262874,school,Golden Rays Academic Foundation,,,Private,Secondary,300,26,2,01 4330817,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.684022,85.2805595,2013-08-26T10:22:03Z
+way/229959120,college,Nepal Engineering College (PU),,,Private,College/Higher Education,257,28,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6800558,85.2968245,2018-11-27T07:56:13Z
+way/230423018,college,Himalaya College,,,Private,College/Higher Education,500,,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6790166,85.3463816,2018-11-22T09:19:05Z
+way/231835213,college,Amrit Science Campus,,,Government,College/Higher Education,2100,115,2,,,,,,,,,,,,,,,,,,,,no,OpenDRI survey,27.7176279,85.312787,2021-02-14T11:18:09Z
+way/237203333,school,लर्नहब प्राथमिक विद्यालय,Learnhub Primary School,लर्नहब प्राथमिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.719596,85.3391064,2024-07-31T15:28:46Z
+way/237652528,school,kids heaven kindergarden school,,,Unknown,,,,,,,,,"rudreshwor marg, naya basti, 6, municipality",rudreshwor marg,naya basti,6,municipality,,,,,,,,,,,,,27.7134213,85.3625928,2017-06-20T09:14:13Z
+way/237678350,college,Herald College,,,Unknown,,,,,,,,,"rudra mati marg, bhatkeko pul, 5, municipality",rudra mati marg,bhatkeko pul,5,municipality,7,engineered_reinforced_concrete,rent,,,,,yes,,,,,27.7188584,85.3388631,2022-02-21T05:15:38Z
+way/238430767,college,IIMS college,,,Unknown,,,,,,,,07:00 - 17:00,"putalisadak, dhobidhara 28, municipality",putalisadak,,,municipality,,,,,,,,,,,yes,,27.7086663,85.3237413,2023-05-17T11:01:00Z
+way/240183554,college,Brooklfield College,,,Private,Post-Secondary,175,25,6,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6972681,85.3494719,2025-04-05T19:53:58Z
+way/243644616,school,Pennwood School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7133591,85.3334708,2021-03-20T13:27:04Z
+way/244356596,school,excelsior school,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7173937,85.2854264,2023-05-24T04:50:25Z
+way/255889219,college,Kathmandu Model Hospital School of Nursing,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,limited,,27.7152196,85.2876865,2018-10-20T03:10:50Z
+way/261370147,college,Institute of Crisis Management Studies,,,Unknown,,,,,01-4008181,,https://www.tuicms.edu.np/,,"824, Dhumbharai Marg, 44600",Dhumbharai Marg,,,,,,,,,,,,,,limited,,27.7273851,85.342005,2022-05-24T06:43:33Z
+way/267021194,college,Anmol Institute of Medical Sciences,,,Unknown,,,,,,,,,"Tafo Swo Marg, Kathmandu",Tafo Swo Marg,,,Kathmandu,,,,,,,,,,,,,27.717701,85.3039845,2021-02-16T12:43:13Z
+way/267237192,college,National College of Computer Studies (NCCS),,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7147862,85.3088461,2022-01-10T09:37:10Z
+way/297861510,college,Bir Aspatal Nursing Campus,,,Unknown,,,,,,,,,"surya bikram gyawali marg, gausala -9, kathmandu municipality",surya bikram gyawali marg,,,kathmandu municipality,,,,,,,,,,,,,27.7066347,85.3440499,2018-11-28T08:52:58Z
+way/300634292,school,Durbar High School,,दरवार हाई स्कुल,Government,Secondary,200,29,1,,,,,,,,,,4.5,,,,hipped,,,,,,,OpenDRI survey,27.7077846,85.3139695,2025-06-17T12:22:32Z
+way/328701969,university,त्रिभुवन विश्वविद्यालय,Tribhuvan University,त्रिभुवन विश्वविद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6812249,85.2896284,2025-10-31T21:27:56Z
+way/334271590,school,Gyankunj College,,,Unknown,,,,,,,,Su-Fr 06:00-16:00,Nag Marg,Nag Marg,,,,,,,,,,,,,,,,27.6937725,85.2907147,2023-08-11T05:56:55Z
+way/340547845,school,Purple Home International Pre-School,,,Unknown,,,,,,,,08:00-17:00,"158/65, old baneshowr",,,,,,,,,,,,,,,,,27.7035237,85.3396164,2021-03-05T15:07:50Z
+way/340721582,school,International Buddhist Academy,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7289725,85.3699448,2017-08-21T11:12:24Z
+way/341029033,school,Elite Grand School,,,Unknown,,,,,,,,,"pasang lamhu sadak, pani tanki 6",pasang lamhu sadak,,,,,,,,,,,,,,yes,,27.7208349,85.3517777,2022-04-07T10:34:04Z
+way/341032125,college,lumbini academy college,,,Unknown,,,,,,,,,"chuchepati, chuchepati, 6, municipality",chuchepati,chuchepati,6,municipality,,,,,,,,,,,,,27.7193637,85.3495772,2018-11-21T07:31:47Z
+way/341552756,school,Mila Academy,,,Unknown,,,,,,,,,"mahankal margh, mahankal 6",mahankal margh,,,,,,,,,,,,,,,,27.7260795,85.3585203,2017-06-19T16:51:19Z
+way/341800380,school,bodhi batika montessori based pre school,,,Unknown,,,,,,,,,"benk tes marga, gausala -9, kathmandu municipality",benk tes marga,,,kathmandu municipality,,,,,,,,,,,,,27.7063538,85.3434496,2021-03-04T16:02:55Z
+way/341883346,college,CA Academy Of Commerce,,,Unknown,,,,,,,,,"ram shah path, putalisadak 28",ram shah path,,,,,,,,,,,,,,,,27.7005232,85.3218152,2017-06-19T07:13:03Z
+way/341977221,school,Nisarga Batika school,,,Unknown,,,,,,,,9:00-17:00,"machha gate, machha gate 14",machha gate,,,,,,,,,,,,,,,,27.6945301,85.2910064,2017-06-18T10:05:29Z
+way/342425083,school,Uniglobe College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6897227,85.3399847,2016-08-12T09:53:12Z
+way/342561812,school,shree tripura sundari grill udhyog,,,Unknown,,,,,,,,,"rudramati marg, kalopul, municipality",rudramati marg,kalopul,,municipality,,,,,,,,,,,,,27.7122632,85.3371326,2017-09-30T21:02:03Z
+way/347544886,school,Saraswoti Academy English School,,,Private,Secondary,400,30,3,4811342_4498828,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7239307,85.3499665,2023-03-28T01:17:34Z
+way/374102769,school,Lord Buddha School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7055443,85.3334895,2021-03-01T16:38:05Z
+way/405959403,college,Sahid Ramnath Smriti College(BBATower),,,Unknown,,,,,,,,,,,,,,1,,,,,,,,,,,,27.7244167,85.3017663,2018-11-29T05:15:18Z
+way/427163244,school,Elite Kid's Zone,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7253904,85.3512747,2016-06-27T08:50:32Z
+way/440880092,college,Apex College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6989763,85.337904,2025-09-10T11:38:19Z
+way/496391174,school,Tyod Secondary School,,,Unknown,,,,,,,,,"tanglachi marg, tanglachi tyod, 27, municipality",tanglachi marg,tanglachi tyod,27,municipality,,,,,,,,,,,,,27.7092632,85.3119648,2018-11-29T06:33:02Z
+way/500938895,school,Kuleshwar Secondry School,,,Unknown,,,,,,,,Su - Th 05:00-16:00; Fr 05:00 - 14:00,"kuleshwor, Kuleshwor Mahadevsthan, kathmandu",kuleshwor,,,kathmandu,,,,,,,,,,,,NRCS Local Data Ward - 14 KTM Metro,27.6910984,85.3017376,2022-12-15T07:21:45Z
+way/501308948,college,Capital Hill College,,,Unknown,,,,,,,,06:30 - 10:30,"vhansar marga, Mayal Bari, kathmandu",vhansar marga,,,kathmandu,,,,,,,,,,,,,27.6960178,85.3032397,2017-12-06T09:06:51Z
+way/501317432,college,xavier academy,,,Unknown,,,,,,,,06:00-17:00,,,,,,,,,,,,,,,,,,27.7205054,85.321693,2025-05-21T07:04:53Z
+way/501327959,school,shemrock school,,,Unknown,,,,,,,,08:00-16:00,"samamarg, naxal 1, kathmandu metro",samamarg,,,kathmandu metro,,,,,,,,,,,,,27.7108378,85.326506,2025-06-26T12:00:17Z
+way/501368622,school,kathmandu national school,,,Unknown,,,,,,,,09:00-19:00,"surya bikram gyawali marga, old baneshowr 31, municipality",surya bikram gyawali marga,,,municipality,,,,,,,,,,,,,27.6997534,85.3414033,2019-09-05T03:57:06Z
+way/501368623,college,Shantwona Kathmandu College,,,Unknown,,,,,,,,07:00-19:00,"shreenagar madhya marga, shankhamul 31, municipality",shreenagar madhya marga,,,municipality,,,,,,,,,,,,,27.6848852,85.3403071,2019-09-05T03:57:06Z
+way/501368625,school,sharaha international school,,,Unknown,,,,,,,,09:00-16:00,"shankhamul marga, shankhamul 31, municipality",shankhamul marga,,,municipality,,,,,,,,,,,,,27.6827762,85.3378924,2021-03-14T07:07:09Z
+way/501568405,school,pure love nursery,,,Unknown,,,,,,,,9:00 - 15:00,"hadigaun, hadigaun, 5, municipality",hadigaun,hadigaun,5,municipality,,,,,,,,,,,,,27.714881,85.3354015,2017-06-19T05:31:02Z
+way/501637860,college,NCMT College,,,Unknown,,,,,,,,Su-Fr 6:30-15:30,"ranibari samakhusi marga, samakhusi-3, kathmandu municipality",ranibari samakhusi marga,,,kathmandu municipality,,,,,,,,,,,,,27.7320534,85.3178645,2021-02-15T18:01:52Z
+way/501644996,school,ashirv boarding school,,,Unknown,,,,,,,,,"bhakta marg, balwater, 4, municipality",bhakta marg,balwater,4,municipality,,,,,,,,,,,,,27.7283309,85.3332176,2017-06-19T09:12:45Z
+way/501658742,school,Boudha Secondary School,,,Private,,,,,,,,,"ramhiti, ramahiti, 6, Kathmandu",ramhiti,ramahiti,6,Kathmandu,,,,,,,,,,,,,27.7256419,85.3629873,2017-08-02T09:47:37Z
+way/501767410,college,SANN institute of Nurshing pvt.ltd.,,,Unknown,,,,,,,,09:00-17:00,"vrikuti chwok, saraswori nagar 6",vrikuti chwok,,,,,,,,,,,,,,,,27.7272176,85.356872,2021-03-04T03:04:34Z
+way/501871530,school,penwood academy,,,Unknown,,,,,,,,,"224, kapan marga, maharajgunj 3, kathmandu municipality",kapan marga,,,kathmandu municipality,,,,,,,,,,,,,27.7407848,85.3402129,2017-06-20T02:28:14Z
+way/501968361,school,john academy,,,Unknown,,,,,,,,,"sarbeshwor marg, nayabasti, municipality",sarbeshwor marg,nayabasti,,municipality,,,,,,,,,,,,,27.7137179,85.3654815,2025-05-10T10:52:27Z
+way/502008359,college,Silkroad Internatinal Collage,,,Unknown,,,,,,,,6:00-11:00,"samanantar marga, basundhara-3, kathmandu municipality",samanantar marga,,,kathmandu municipality,,,,,,,,,,,,,27.741395,85.3352123,2019-11-13T10:51:56Z
+way/502019828,school,Little Genius Boarding School,,,Unknown,,,,,,,,10:00-16:00,"swoyambhu marga, Sano Bharyang 15, Kathmandu Metro",swoyambhu marga,,,Kathmandu Metro,,,,,,,,,,,,,27.7215023,85.2915321,2019-09-05T03:57:06Z
+way/502026014,school,little sweet heart kindergarden school,,,Unknown,,,,,,,,,"rudreshwor marg, patitar, 6, municipality",rudreshwor marg,patitar,6,municipality,,,,,,,,,,,,,27.7151883,85.3641394,2017-06-20T09:14:13Z
+way/502033643,college,jubilant college,,,Unknown,,,,,,,,06:30-10:30,"thankasore marg, neal bhati",thankasore marg,,,,,,,,,,,,,,,,27.6932119,85.3044974,2022-07-08T11:20:37Z
+way/502269458,school,Kalalaya Art School,,,Unknown,,,,,,,,,"Shrigha Chwok, Shrigha 25",Shrigha Chwok,,,,,,,,,,,,,,,,27.7084705,85.310105,2021-02-24T05:14:47Z
+way/502288729,college,Nepal Sanskrit BiswoVidyalaya,,,Unknown,,,,,,,,,"Nisthananda marg, Bashantapur23",Nisthananda marg,,,,,,,,,,,,,,,,27.7034129,85.3068008,2021-02-23T19:30:39Z
+way/502293407,school,traibideya secondary school,,,Private,,,,,,,,10:00-16:00,"yatapau marg, sankamul",yatapau marg,,,,,,,,,,,,,,,,27.6815537,85.3332488,2022-07-08T11:19:22Z
+way/502296725,school,liverpoolschool,,,Private,,,,,,,,10:00-17:00,"yatapau marg, sankamul",yatapau marg,,,,,,,,,,,,,,,,27.6826587,85.3366684,2022-07-08T11:18:34Z
+way/502324260,school,Buddha Nagar Higher Sec. School,,,Unknown,,,,,,,,10:00-17:00,"Kanyam Chwok, Buddha Nagar",Kanyam Chwok,,,,,,,,,,,,,,,,27.6885818,85.3289232,2019-09-05T03:57:06Z
+way/502355924,school,Manamuhan Memorial College,,,Unknown,,,,,,,,Su-Fr 06:00-17:00,"Balaju, Balaju 16, Kathmandu Metro",Balaju,,,Kathmandu Metro,,,,,,,,,,,,,27.7277917,85.3037799,2019-09-05T03:57:06Z
+way/502357414,college,kastuv college,,,Unknown,,,,,,,,7:00-19:00,"suganda marga, pepsicola-32, kathmandu municipality",suganda marga,,,kathmandu municipality,,,,,,,,,,,,,27.6877933,85.3587494,2022-01-10T08:55:04Z
+way/511205282,school,Valley View English Boarding School,,,Unknown,,,,,4473693,,proed.edu.np,,,,,,,,,,,,,,,,,,,27.6967768,85.3395803,2018-11-27T07:52:03Z
+way/511302578,school,INDEBS Kids World,,,Unknown,,,,,4476499,,,,,,,,,,,,,,,,,,,,,27.6959874,85.3436023,2017-07-29T15:31:32Z
+way/523660615,school,Gitamata Madhyamik Vidyalaya,,,Unknown,,,,,01-4671534/4272351,,,,"Bijeshori Dallu, Kathmandu Metropolitan City",,,,Kathmandu Metropolitan City,,,,,,,,,,,,,27.7099676,85.2968491,2025-06-05T03:59:15Z
+way/557947985,college,Sirjana College Of Fine Arts,,,Unknown,,,,,01-4418455,,,,"Uttar Dhoka Road, kathmandu, +977",Uttar Dhoka Road,,,kathmandu,,,,,,,,,,,,,27.7184227,85.3216271,2021-02-12T10:07:07Z
+node/575231600,school,अक्सफर्ड बोर्डिङ स्कुल,Oxford Boarding School,अक्सफर्ड बोर्डिङ स्कुल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7201758,85.3017867,2023-03-25T06:22:33Z
+way/614248625,college,Himalayan college of Geomatics Engineering and Land Resourse Management.,,,Unknown,,,,,+977-01-4107721,himalayangeomatic@gmail.com,,,"Omkar Marga, Kathmandu, 44600",Omkar Marga,,,Kathmandu,,,,,,,,,,,,,27.6887592,85.3439972,2021-03-14T06:35:01Z
+way/648644120,school,Aditya School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.732564,85.2924756,2022-06-08T16:54:22Z
+way/652003436,school,New Florence International Boarding School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7009824,85.3018164,2021-02-05T08:38:33Z
+way/770747145,school,Trimurti Academy,,त्रिमूर्ति एकेडेमी,Private Non-Profit,,,,,+97714373605,enquiries@trimurti.edu.np,https://trimurti.edu.np,Mo-Su 9:00-15:00,,,,,,,,,,,,,,,,,,27.7403128,85.3441792,2020-02-07T21:38:25Z
+way/904157282,school,Aroma Kids Zone,,,Unknown,,,,,,,https://www.facebook.com/profile.php?id=100010500396309,,,,,,,,,,,,,,,,,,,27.696619,85.2847872,2022-09-04T13:05:26Z
+way/962521315,university,"Kathmandu University Land, Gyaneshwor",,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7100842,85.3292006,2025-11-07T13:15:59Z
+way/1093173631,college,Kumari engineering college,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7221824,85.3593052,2025-07-17T00:55:06Z
+way/1120950483,school,Riviera Internation School,,,Private,,,,,,,https://www.riviera.edu.np/,,"New Shreejan Galli, Chabahil Kathmandu, 44600",New Shreejan Galli,,,Chabahil Kathmandu,,,,,,,,,,,,,27.7176414,85.3523139,2025-04-05T17:21:26Z
+way/1178788192,school,Durga Bhawani Academy (DBA) School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7291534,85.3418729,2023-06-04T15:51:29Z
+way/1186458007,school,Kathmandu Valley School,,,Unknown,,,,,,,,,"Kathmandu, 44600",,,,Kathmandu,,,,,,,,,,,,,27.7388852,85.2907903,2024-11-01T14:43:51Z
+way/1207662490,college,CITE College,,,Unknown,,,,,,,https://www.cit.edu.np/,,,,,,,,,,,,,,,,,,,27.6840657,85.3454779,2023-09-14T06:13:39Z
+way/1287859229,college,CIST College Ground,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.693276,85.3400702,2024-05-30T00:58:45Z
+node/12118555656,college,Geomatic Institute of Technology,,,Private,,,,,,,surveycollegenepal.edu.np,09:00-14:00,,,,,,,,,,,,,,,,,,27.687247,85.3237092,2024-08-18T15:00:06Z
+way/1329933995,school,Deerwalk Group,,,Unknown,,,,,,,https://deerwalk.edu.np/,,,,,,,,,,,,,,,,,,,27.7122469,85.3423092,2024-11-01T15:41:15Z
+way/1426158325,college,Cosmos College of Management and Technology,,,Unknown,,,,,,,https://cosmoscollege.edu.np/,,,,,,,,,,,,,,,,,,,27.7082349,85.2842032,2025-08-31T06:18:01Z
+node/1892796767,school,सचदेवा संस्थान,Sachdeva Institute,सचदेवा संस्थान,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7032639,85.3192223,2023-03-22T15:21:31Z
+node/1894371660,school,डेनेब इन्टरनेशनल स्कुल,Deneb International School,डेनेब इन्टरनेशनल स्कुल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6915987,85.3318806,2023-03-25T06:22:33Z
+node/1899470621,school,सहयोगी बैकलपिक विद्यालय,Sahayogi Baikalpik Vidyalaya,सहयोगी बैकलपिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7209655,85.3316446,2023-03-25T07:06:23Z
+node/1905155374,school,शुसिला कला एकेडेमी,Sushila Arts Academy,शुसिला कला एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7385565,85.343658,2023-03-25T04:43:32Z
+node/1905312697,school,न्यु सम्मिट विद्यालय,New Summit School,न्यु सम्मिट विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7038766,85.3332513,2023-03-20T06:08:30Z
+node/1905319787,school,बेगीनर्स होम एकेडेमी,Beginners' Home academy,बेगीनर्स होम एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7008865,85.3220186,2023-03-22T11:18:08Z
+node/1905319789,college,वेस्टबाउन्ड इन्टरनेशनल कलेज,Westbound International College,वेस्टबाउन्ड इन्टरनेशनल कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7005535,85.3219524,2024-08-12T11:05:25Z
+node/1905332715,school,काठमाडौं उपत्यका शिक्षा केन्द्र,Kathmandu Valley Education Center,काठमाडौं उपत्यका शिक्षा केन्द्र,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.701804,85.322144,2023-03-25T07:06:23Z
+node/1905343593,school,अमेरिकन एजुकेशन फाउण्डेशन,American Education Foundation,अमेरिकन एजुकेशन फाउण्डेशन,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7029137,85.3225938,2023-02-27T03:47:03Z
+node/1905354084,school,राइजिङ रे बोर्डिङ स्कूल,Rising ray bording school,राइजिङ रे बोर्डिङ स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7026443,85.3230168,2023-02-27T03:47:03Z
+node/1905359703,school,सिमा सीए वर्गहरू क्लासेस,CIMA CA classes,सिमा सीए वर्गहरू क्लासेस,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7021604,85.3244126,2023-03-22T11:18:08Z
+node/1905365904,school,भाइब्रेन्ट प्रवेश तयारी संस्था,Vibrant Entrance Preparation Institute,भाइब्रेन्ट प्रवेश तयारी संस्था,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7011113,85.3237769,2025-10-21T18:03:37Z
+node/1905368913,college,CCMA college,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7009679,85.3236267,2021-02-09T17:45:28Z
+node/1905390641,school,Universal language and computer institute,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7050283,85.3250159,2021-02-09T12:14:56Z
+node/1911303392,college,Chiran-Milan Bishwoshanti Campus,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7411795,85.3449938,2012-09-12T10:09:02Z
+node/1914258275,college,Brilliant Multiple Campus,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.71399,85.3410942,2013-05-14T18:55:37Z
+node/1917102703,college,महाराजगञ्ज नर्सिङ क्याम्पस,Maharajganj Nursing Campus,महाराजगञ्ज नर्सिङ क्याम्पस,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7362438,85.3315215,2025-10-06T15:15:29Z
+node/1918582159,college,"Institute of Medicine, Deans Office",,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,no,,27.7348763,85.3306769,2018-10-08T14:03:01Z
+node/1923834353,school,lगोल्डेन अफ विश्डम विद्यालय,Garden of Wisdom School,गोल्डेन अफ विश्डम विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6784452,85.3410579,2023-06-07T08:26:11Z
+node/1923834368,college,भ्याली कलेज अफ इन्जिनियरिङ,Valley College of Engineering,भ्याली कलेज अफ इन्जिनियरिङ,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6784538,85.341397,2024-01-28T15:25:01Z
+node/1923848923,school,बाबा शिक्षा एकेडेमी,Baba Education Academy,बाबा शिक्षा एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6790867,85.3478143,2023-06-07T09:13:47Z
+node/1927515429,college,विज्ञान र प्रविधि इन्जिनियरिङ एकेडेमी,Engineering Academy of Science and Technology,विज्ञान र प्रविधि इन्जिनियरिङ एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6742472,85.342491,2024-02-01T15:03:07Z
+node/1936280980,college,College of Applied Food and Dairy Technology,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6865485,85.3379942,2012-09-28T06:16:42Z
+node/1939209004,school,एपेक्स लाइफ स्कुल,apex life school,एपेक्स लाइफ स्कुल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6990267,85.3377305,2023-03-20T06:08:30Z
+node/1962290903,college,IEC College of Art & Fashion,,,Unknown,,,,,014432178,,https://ieccollege.com.np/,,,,,,,,,,,,,,,,,,,27.7233063,85.3365159,2023-10-17T09:36:01Z
+node/1962367562,school,काठमाडौं अंग्रेजी विद्यालय,Kathmandu English School,काठमाडौं अंग्रेजी विद्यालय,Unknown,,,,,01 4414369,,,Su-Fr; Sa 10:00-16:00,,,,,,,,,,,,,,,,,,27.7132927,85.3324399,2023-06-15T09:50:37Z
+node/1967824798,college,एभरेस्ट कलेज अफ मल्टिपल स्टडीज,Everest College of Multiple Studies,एभरेस्ट कलेज अफ मल्टिपल स्टडीज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.719856,85.3128745,2023-06-15T09:50:37Z
+node/1967824833,school,वेस्टवुड  इन्टरनेसनल प्री विद्यालय,Westwood International Pre School,वेस्टवुड  इन्टरनेसनल प्री विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7225939,85.3134439,2023-03-22T11:18:08Z
+node/1977514708,school,किन्डर केयर इन्टरनेसनल,Kinder Care International,किन्डर केयर इन्टरनेसनल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7204411,85.3096223,2023-03-22T11:18:08Z
+node/1979178693,school,सेक्रेड कोस्मोस इन्टरनेशनल एजुकेशन फाउन्डेशन प्रि-स्कूल,Sacred Cosmos International Education Foundation Pre School,सेक्रेड कोस्मोस इन्टरनेशनल एजुकेशन फाउन्डेशन प्रि-स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7260679,85.3132038,2023-03-22T11:18:08Z
+node/1982131524,school,क्युट चाइल्ड मन्टेश्वरी,Cute Child's Montessori,क्युट चाइल्ड मन्टेश्वरी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7283845,85.3126767,2023-03-25T04:43:32Z
+node/1989508667,college,NavaJyoti College of Management,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6824493,85.3482625,2018-11-20T09:31:29Z
+node/1996610093,college,Himalayan WhiteHouse International College,Himalayan Whitehouse Graduate School of Management,,Unknown,,,,,,,,Su-Fr 06:00-04:00,Devkota Sadak,Devkota Sadak,,,,,,,,,,,,,,,,27.6944094,85.3374622,2017-05-20T04:44:36Z
+node/1996610766,school,पाठशाला नेपाल,Pathshala Nepal,पाठशाला नेपाल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6941911,85.3336305,2023-06-27T10:58:35Z
+node/1996639812,college,Rajdhani Model college,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6995256,85.3386698,2021-03-07T04:45:39Z
+node/1996650874,college,Institute of International Management Science,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7087943,85.332132,2012-11-05T07:04:18Z
+node/1996650875,college,International Centre for Academics,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7092423,85.3324131,2018-10-28T04:05:00Z
+node/1999696344,college,Xavier Academy,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,no,,27.7208653,85.3216785,2025-05-21T06:37:58Z
+node/2011847246,school,अन्तर्राष्ट्रिय फ्रान्सेली विद्यालय-इकोल फ्रान्सेइज इन्टरनेसनल,International French School - Ecole Francaise Internationale,अन्तर्राष्ट्रिय फ्रान्सेली विद्यालय-इकोल फ्रान्सेइज इन्टरनेसनल,Unknown,,,,,+977-1-4411203,,www.ecolenepal.com,,"Khursanitaar Marga, Kathmandu, 00977",Khursanitaar Marga,,,Kathmandu,,,,,,,,,,,,,27.7251132,85.3246132,2023-08-21T10:03:10Z
+node/2011861271,school,गोरखा शिक्षा तथा करियर संस्थान,Gurkha Institute of Education and Career,गोरखा शिक्षा तथा करियर संस्थान,Unknown,,,,,,,,,"Srijana Marga, Kathmandu, 00977",Srijana Marga,,,Kathmandu,,,,,,,,,,,,,27.7239808,85.3242486,2023-03-25T07:06:23Z
+node/2027856790,school,होलिभिजन टेक्निकल क्याम्पस,Holivision Technical Campus,होलिभिजन टेक्निकल क्याम्पस,Unknown,,,,,,,,,New Baneshwor,New Baneshwor,,,,,,,,,,,,,,,,27.6913849,85.3335848,2023-03-22T15:16:21Z
+node/2027857088,school,मेट्रो हाई स्कूल,Metro High School,मेट्रो हाई स्कूल,Unknown,,,,,,,,,New Baneshwor,New Baneshwor,,,,,,,,,,,,,,,,27.6913137,85.3336707,2023-02-28T17:56:41Z
+node/2027864941,college,K&K College,,,Unknown,,,,,,,,Su-Fr 06:00-17:00,,,,,,,,,,,,,,,,,,27.6898793,85.3351213,2020-02-28T08:44:08Z
+node/2027880628,school,नोर्खिल एकेडेमी,"Chakrabarti Law College, PU",नोर्खिल एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.691241,85.3293237,2023-03-25T06:22:33Z
+node/2027891170,college,Mega College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6914955,85.3282606,2020-02-28T08:44:08Z
+node/2027893827,school,साउथपोइन्ट बोर्डिङ हाई स्कूल,Southpoint Boarding High School,साउथपोइन्ट बोर्डिङ हाई स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6887369,85.3284228,2023-02-28T17:56:41Z
+node/2074278686,college,AJW College- A Level,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7304238,85.3263299,2012-12-19T09:09:43Z
+node/2079675413,college,Modern Hotel Management and Tourism Technology,,,Unknown,,,,,+977014363215,,,,,,,,,,,,,,,,,,,,,27.7410586,85.334427,2015-07-17T06:42:18Z
+node/2090735367,school,एकता सदन आवासीय विद्यालय,Ekata Sadan Boarding School,एकता सदन आवासीय विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7165875,85.3336128,2023-06-15T09:50:37Z
+node/2101286233,school,मिल्स बेरी स्कूल,Mills Berry School,मिल्स बेरी स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7208063,85.3191849,2025-10-21T11:33:18Z
+node/2108676792,college,International School of Tourism & Hotel Management,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7072192,85.3278517,2015-07-17T06:43:52Z
+node/2111864386,college,Mountain Television,COLLEGE OF BUSINESS MANAGEMENT (CBM),,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7058896,85.3264215,2018-11-23T12:00:53Z
+node/2122390088,college,BERNHARDT COLLEGE,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,limited,,27.7020617,85.2831206,2020-02-28T08:44:08Z
+node/2127144885,school,सान्द्रा नमुना विद्यालय,Sandra Namuna School,सान्द्रा नमुना विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7194598,85.3095534,2023-03-22T11:18:08Z
+node/2127188291,college,People Campus (Block A),,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7145238,85.3083443,2022-01-13T08:44:53Z
+node/2127188292,college,People Campus (Block B),,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7144347,85.3085421,2022-01-13T08:44:53Z
+node/2127195667,school,वेस्टवुड इन्टरनेसनल प्री विद्यालय,West Wood International Pre-school,वेस्टवुड इन्टरनेसनल प्री विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7226708,85.3134273,2023-03-22T11:18:08Z
+node/2165424724,school,कान्ति इश्वरी विद्यालय,Kanti Ishwari School,कान्ति इश्वरी विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6933442,85.3131083,2023-03-22T15:21:31Z
+node/2176765801,college,काठमाडौं एकेडेमी अफ टुरिजम एण्ड हस्पिटालिटी म्यानेजमेन्ट,Kathmandu Academy Of Tourism and Hospitality Management,काठमाडौं एकेडेमी अफ टुरिजम एण्ड हस्पिटालिटी म्यानेजमेन्ट,Unknown,,,,,9866877113,,,Su-Fr 07:00-12:00,,,,,,,,,,,,,,,,,,27.6934156,85.2924954,2024-08-06T15:12:15Z
+node/2184993862,college,U2 International College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7223934,85.344431,2013-03-04T05:23:08Z
+node/2185607000,college,CITE,CITE College,,Unknown,,,,,0097714111840,info@cit.edu.np,https://www.cit.edu.np/,Su-Fr 06:30-14:30,"Sudidhanagar Marg, 44600",Sudidhanagar Marg,,,,,,,,,,,,,,,,27.6843781,85.3456109,2022-05-24T06:42:31Z
+node/2185607008,school,किड्स गार्डन मन्टेश्वरी स्कूल,Kids Garden Montessori School,किड्स गार्डन मन्टेश्वरी स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6819924,85.3481103,2023-06-27T10:58:35Z
+node/2185607011,school,नवज्योति विद्यालय एंड कलेज,NavaJyoti School and College,नवज्योति विद्यालय एंड कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6823907,85.3482925,2023-06-08T11:05:03Z
+node/2187991864,college,"IEC College of Art & Fashion, Chandol",,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7275896,85.338357,2018-11-27T06:22:23Z
+node/2236944132,school,स्टिनर एकेडेमी,Stiener Academy,स्टिनर एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6938686,85.3387237,2023-06-08T06:04:06Z
+node/2249051082,school,Padmakanya Vidyashram H.S. School and College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.705349,85.3259582,2013-04-04T17:41:12Z
+node/2293445120,college,Samaj School of Dentistry,,,Private,College/Higher Education,100,35,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7257973,85.3576673,2013-09-01T10:40:18Z
+node/2300443767,school,मनाङ सीपीएस,Manang CPS,मनाङ सीपीएस,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6894641,85.3604248,2023-06-08T11:07:34Z
+node/2316603873,college,Cambridge College,,,Private,College/Higher Education,100,22,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6871127,85.2983923,2015-07-17T06:43:43Z
+node/2381971836,college,Cambridge College,Cambridge International H.S.School/College,,Private,College/Higher Education,600,50,4,,,,Su-Fr 06:00-16:00,Kalanki Chowk,Kalanki Chowk,,,,,,,,,,,,,,,OpenDRI survey,27.6936118,85.2804068,2016-12-22T18:57:05Z
+node/2320299473,college,intensive international college,,,Private,College/Higher Education,500,30,1,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.6967359,85.2953077,2013-09-01T10:40:18Z
+node/2380966268,college,Janamaitre Foundation Institute of Health Science,,,Private,College/Higher Education,30,11,3,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.728144,85.3031224,2013-09-01T10:40:18Z
+node/2591253673,school,बेला प्रि स्कुल,Bella Pre School,बेला प्रि-स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7055958,85.2953507,2023-06-15T09:50:37Z
+node/3074577227,school,नेपाली महारिसी फाउन्डेसन फर भैदिक कल्चर,Nepali Maharisi Foundation for Bhaidhik Culture,नेपाली महारिसी फाउन्डेसन फर भैदिक कल्चर,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7112838,85.3398568,2023-03-22T10:59:19Z
+node/3074577231,school,सेतो बंगला आवासीय विद्यालय,Seto Bangla Boarding School,सेतो बंगला आवासीय विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7117352,85.3379743,2023-06-08T06:06:31Z
+node/3074577232,school,श्री बाल बयाबासाई केन्द्र माध्यमिक विद्यालय,Shree Bal Byabasayi Kendra Secondary School,श्री बाल बयाबासाई केन्द्र माध्यमिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7109927,85.3406025,2023-03-22T10:59:19Z
+node/3074581506,college,Kailashkot Multiple Campus,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7107406,85.3438498,2019-04-21T10:20:26Z
+node/3074593657,school,लिसेम मोडेल विद्यालय,Lyceum Model School,लिसेम मोडेल विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.714924,85.3405445,2023-06-08T11:07:34Z
+node/3081631946,college,HVM College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7096746,85.3387152,2020-02-28T08:44:08Z
+node/3122035876,university,Rangjung Yeshe Institute,,,Unknown,,,,,,,https://www.ryi.org/,,,,,,,,,,,,,,,,,,,27.724279,85.3630395,2022-05-24T06:50:57Z
+node/3189982097,school,मानसरोवास एकेडेमी,Manasarovas academy,मानसरोवास एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7269249,85.3643667,2023-03-22T10:59:19Z
+node/3413954371,school,संस्कृती अन्तर्राष्ट्रिय विद्यालय,Sanskriti International School,संस्कृती अन्तर्राष्ट्रिय विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7187532,85.2862689,2023-06-15T09:50:37Z
+node/3506396287,school,रसायन विज्ञान विभाग,Department of Chemistry,रसायन विज्ञान विभाग,Unknown,,,,,9860140513,,,,,,,,,,,,,,,,,,,,,27.7088736,85.3162192,2023-06-26T10:14:36Z
+node/3506399401,school,जीवविज्ञान विभाग,Department of Biology,जीवविज्ञान विभाग,Unknown,,,,,9860140513,,,,,,,,,,,,,,,,,,,,,27.7086504,85.3158005,2023-06-26T10:14:36Z
+node/3506400900,school,भौतिकशास्त्र विभाग,Department of Physics,भौतिकशास्त्र विभाग,Unknown,,,,,9860140513,,,,,,,,,,,,,,,,,,,,,27.7086655,85.3162155,2023-06-26T10:14:36Z
+node/3640853051,school,अनाथ विद्यालय,Orphan School,अनाथ विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7121382,85.2881646,2023-06-15T09:50:37Z
+node/3766701680,college,Presidential College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,no,,27.6919101,85.3306919,2018-10-04T16:13:06Z
+node/3766701683,college,प्रिमियर कलेज,Premier College,प्रिमियर कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6918547,85.3308944,2025-02-21T08:20:21Z
+node/3774437963,school,Apex Life School,एपेक्स लाइफ विद्यालय,एपेक्स लाइफ विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7010309,85.3397059,2023-03-22T11:14:04Z
+node/4063662843,school,रुपी विद्यालय,Rupy's School,रुपी विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7040669,85.2861028,2023-07-08T07:41:44Z
+node/4077719698,school,JosephPublic school,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7273407,85.3578958,2025-08-17T13:31:03Z
+node/4192737489,school,व्यवस्थापन संघ नेपाल अनाम नगर,Management association of nepal aname nagar,व्यवस्थापन संघ नेपाल अनाम नगर,Unknown,,,,,,,,24/7,,,,,,,,,,,,,,,,,,27.6964754,85.3283484,2023-06-08T06:06:31Z
+node/4200025289,school,द ब्रिटिश कलेज,The British College,द ब्रिटिश कलेज,Unknown,,,,,,,,,Thapathali,Thapathali,,,,,,,,,,,,,,,,27.692103,85.3195495,2023-03-25T07:06:23Z
+node/4213242789,school,चा: माटी ड्राइभिङ स्कुल,Cha:Mati Driving School,चा: माटी ड्राइभिङ स्कुल,Unknown,,,,,,,,Mo-Su 06:00-19:00,The Gyawali St.,The Gyawali St.,,,,,,,,,,,,,,,,27.7229716,85.299763,2023-03-25T06:22:33Z
+node/4221465190,school,अर्किड इन्टरनेशनल कलेज,Orchid International College,अर्किड इन्टरनेशनल कलेज,Unknown,,,,,014479744,,https://oic.edu.np/,Su-Fr 06:00-18:00,Bijay Chwok,Bijay Chwok,,,,,,,,,,,,,,,,27.7023277,85.3466019,2023-06-08T06:10:09Z
+node/4234105891,school,बिजेश्वरी ज्ञान मन्दिर सैनिक महाविद्यालय,Bijeshwari Gyan Mandir Sainik Mahavidyalaya,बिजेश्वरी ज्ञान मन्दिर सैनिक महाविद्यालय,Unknown,,,,,014271498,info@bgmsm.edu.np,https://www.bgmsm.edu.np/,Su-Fr 09:00-17:00,,,,,,,,,,,,,,,,,,27.7121657,85.2975626,2023-03-22T14:30:13Z
+node/4264068285,school,स्वीट हार्ट मोन्टेस्सोरी र डे केयर,Sweet Heart Montessori & Day Care,स्वीट हार्ट मोन्टेस्सोरी र डे केयर,Unknown,,,,,015102076,,,,Kathmandu,,,,Kathmandu,,,,,,,,,,,,,27.7355047,85.2965478,2023-06-09T09:21:43Z
+node/4264083879,school,ओक्सिडेन्टल विद्यालय मैदान,Occidental School ground,ओक्सिडेन्टल विद्यालय मैदान,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6966693,85.3309295,2023-06-08T06:11:18Z
+node/4286241989,school,नेपाल एकेडेमी अफ टुरिजम एण्ड होटल म्यानेजमेन्ट (नाथम),Nepal Academy of Tourism and Hotel Management (NATHM),नेपाल एकेडेमी अफ टुरिजम एण्ड होटल म्यानेजमेन्ट,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6938831,85.2949151,2023-03-25T06:22:33Z
+node/4292085693,school,"MIRD, TU",,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6867144,85.3279023,2016-07-09T05:02:10Z
+node/4293342728,school,क्यान्भास बसन्त रितु अंग्रेजी बोर्डिङ स्कुल,Canvas Basanta Ritu English Boarding School,क्यान्भास बसन्त रितु अंग्रेजी बोर्डिङ स्कुल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7266599,85.3167392,2023-03-25T04:43:32Z
+node/4331159491,school,माल्पी विज्ञान प्रयोगशाला,Malpi Science Lab,माल्पी विज्ञान प्रयोगशाला,Unknown,,,,,,,,,Shubarna Shamsher Road,Shubarna Shamsher Road,,,,,,,,,,,,,,,,27.7236019,85.3288123,2023-03-25T07:06:23Z
+node/4333786297,school,एस.ई.आर.सी. विद्यालय,SERC School,एस.ई.आर.सी. विद्यालय,Unknown,,,,,,,,Su-Fr 10:00-15:00,"110, Thirbam Sadak",Thirbam Sadak,,,,,,,,,,,,,,,,27.7308154,85.3299801,2023-03-22T15:37:47Z
+node/4355786996,school,IDA,,,Unknown,,,,,,,,Su-Fr 10:00-17:00,Lam Pokhari Marg,Lam Pokhari Marg,,,,,,,,,,,,,,,,27.7150729,85.3431051,2016-08-18T15:08:21Z
+node/4371576817,school,वेस्टवुड इन्टरनेशनल स्कूल,Westwood International School,वेस्टवुड इन्टरनेशनल स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7020967,85.2936272,2023-06-27T11:12:20Z
+node/4384727875,college,Global College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7001962,85.3390309,2016-09-05T02:13:08Z
+node/4384727947,college,SAIM College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7004709,85.3392005,2018-11-28T10:50:32Z
+node/4388706589,school,शिन्वा कोरियन भाषा,Shinwha Korean Language,शिन्वा कोरियन भाषा,Unknown,,,,,016923152,,,,,,,,,,,,,,,,,,,,,27.705451,85.3205277,2023-02-19T18:16:08Z
+node/4396927089,school,आईडीपी अष्ट्रेलिया,IDP Australia,आईडीपी अष्ट्रेलिया,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7182484,85.3190476,2023-03-25T07:06:23Z
+node/4426503392,school,स्टेइनर एकेडेमी,Steiner Academy,स्टेइनर एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6983103,85.3330253,2023-02-19T18:40:45Z
+node/4485653289,school,नवानीत बालबालिका क्षेत्र,Nawaneet Toddlers' Zone,नवानीत बालबालिका क्षेत्र,Unknown,,,,,014286300,thetoddlerszone@gmail.com,,,"44614, Pradhikaran Marg",Pradhikaran Marg,,,,,,,,,,,,,,,,27.6928769,85.2956147,2023-03-25T06:22:33Z
+node/4485658891,school,स्टानडर्ड उच्च विद्यालय,Standard Co-ed High School,स्टानडर्ड उच्च विद्यालय,Unknown,,,,,014280809,,,Mo-Su 09:00-17:00,Syuchatar,Syuchatar,,,,,,,,,,,,,,,,27.6946945,85.2779402,2023-03-25T06:22:33Z
+node/4491059289,university,"Department of Music, Kathmandu University","Kathmandu University, Department of Music",,Unknown,,,,,+977014479505,,,Su-Fr 09:00-16:30,Chabahil Ganesh Marg,Chabahil Ganesh Marg,,,,,,,,,,,,,,,,27.7168188,85.3437353,2020-03-13T08:44:16Z
+node/4516438589,school,हिमावारी जापानी परामर्श,Himawari japanese consultancy,हिमावारी जापानी परामर्श,Unknown,,,,,,,,Su-Fr 10:00-17:00,Dillibazaar Road,Dillibazaar Road,,,,,,,,,,,,,,,,27.7051472,85.3279851,2023-02-19T18:16:08Z
+node/4520851990,school,प्राइम कलेज,Prime College,प्राइम कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7170365,85.3028299,2023-03-25T06:22:33Z
+node/4524218348,school,युनिग्लोब उच्च माध्यमिक विद्यालय,Uniglobe Higher Secondary School,युनिग्लोब उच्च माध्यमिक विद्यालय,Unknown,,,,,977-1-4220722;4251409;4221875,info@uniglobecollege.edu.np,,,,,,,,,,,,,,,,,,,,27.7073629,85.3190501,2023-06-26T10:14:36Z
+node/4526539093,school,जनमैत्री बहुमुखी क्याम्पस,Janamaitri Multiple Campus,जनमैत्री बहुमुखी क्याम्पस,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6919803,85.2922079,2023-03-25T06:22:33Z
+node/4560209792,college,हिमालयन कलेज अफ म्यानेजमेन्ट,Himalayan College of Management,हिमालयन कलेज अफ म्यानेजमेन्ट,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.71143,85.3259698,2025-10-25T13:53:13Z
+node/4565172098,school,व्हाइट फिल्ड स्कूल,White field school,व्हाइट फिल्ड स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7114065,85.306114,2023-06-27T11:12:20Z
+node/4584771290,school,स्मल हेबन मन्टेश्वरी विद्यालय,Small Heaven Montessori School,स्मल हेबन मन्टेश्वरी विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6879201,85.3450659,2023-06-08T11:07:34Z
+node/4585354089,school,ईलाईट बैदेशिक स्टडिज,Elite Abroad Studies,ईलाईट बैदेशिक स्टडिज,Unknown,,,,,+977-1-4489536,info@eliteabroadstudies.com,http://www.eliteabroadstudies.com,Su-Fr 10:00-17:00,"Bhimsen Gola Marga, 44600",Bhimsen Gola Marga,,,,,,,,,,,,,,,,27.7001084,85.3440681,2023-03-22T11:14:04Z
+node/4588419890,school,हिमालय क्लब डे साइन्सिया,Himalayan club de' Scientia,हिमालय क्लब डे साइन्सिया,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6843823,85.3470433,2023-06-08T11:07:34Z
+node/4607247591,school,डफोडिल आवासीय स्कुल-जुनियर विंग,Daffodil Boarding School - Junior Wing,डफडिल आवासीय विद्यालय-जुनियर विंग,Unknown,,,,,4114176,,,,,,,,,,,,,,,,,,,,,27.7265389,85.3553752,2023-06-15T09:50:37Z
+node/4631414801,school,प्राइम इन्टरनेशनल एजुकेशन प्रा. लि.,PRIME INTERNATIONAL EDUCATION PVT. LTD.,प्राइम इन्टरनेशनल एजुकेशन प्रा. लि.,Unknown,,,,,01-4468848,prime321@gmail.com,http://info@primeintl.edu.com,Su-Fr 07:00-18:00,"321, Ring Road, 44600",Ring Road,,,,,,,,,,,,,,,,27.7156468,85.346201,2023-02-19T17:54:49Z
+node/4632281392,school,डीआरएस विद्यालय,DRS School,डीआरएस विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6787187,85.3441951,2023-06-08T06:12:46Z
+node/4636693590,school,सेभेन हिल्स फाउण्डेशन (एजुकेशन कन्सल्टेन्सी),Seven Hills Foundation (Education Consultancy),सेभेन हिल्स फाउण्डेशन (एजुकेशन कन्सल्टेन्सी),Unknown,,,,,012294245,,http://www.7hf.edu.np,Su-Fr 10:00-17:00,00977,,,,,,,,,,,,,,,,,27.7030497,85.3217301,2023-02-19T18:16:08Z
+node/4711040189,college,गौरी क्याम्पस,Gauri Shankar College,गौरी क्याम्पस,Unknown,,,,,,,,Mo-Su 09:00-18:00,T. B. Hospital Marg,T. B. Hospital Marg,,,,,,,,,,,,,,yes,,27.6989455,85.2983636,2023-08-18T14:28:21Z
+node/4732355626,school,इन्टर्नशिप नेपाल,Internship Nepal,इन्टर्नशिप नेपाल,Unknown,,,,,,,https://www.internshipnepal.com/,,,,,,,,,,,,,,,,,,,27.7312958,85.3307161,2023-02-19T17:54:49Z
+node/4785943923,school,महान सिद्धार्थ उच्च माध्यमिक विद्यालय,Mahan Siddhartha High School,महान सिद्धार्थ उच्च माध्यमिक विद्यालय,Unknown,,,,,4114176,,https://www.msschool.edu.np/,,,,,,,,,,,,,,,,,,,27.7157017,85.3567824,2024-06-30T06:38:48Z
+node/4788108722,school,आस्ना शिक्षा संस्थान,Aasna institute of education,आस्ना शिक्षा संस्थान,Unknown,,,,,4720090,,,,,,,,,,,,,,,,,,,,,27.7389143,85.3369616,2023-03-22T15:37:47Z
+node/4793424623,school,मोक्षदा विद्यालय,Mokshada school,मोक्षदा विद्यालय,Unknown,,,,,4114176,,,,,,,,,,,,,,,,,,,,,27.7130764,85.3553954,2023-06-08T11:12:57Z
+node/4797824822,school,ज्ञान मन्दिर माध्यमिक ब्लाक बी,Gyan Mandir Secondary block B,ज्ञान मन्दिर माध्यमिक ब्लाक बी,Unknown,,,,,,,,,Shree Ganesthaan Marga,Shree Ganesthaan Marga,,,,,,,,,,,,,,,,27.7317346,85.2978571,2023-02-19T17:54:49Z
+node/4809187725,school,पद्मोदया उच्च माध्यमिक विद्यालय,Padmodaya Higher Secondary School,पद्मोदया उच्च माध्यमिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7015277,85.3218282,2023-03-22T11:18:08Z
+node/4811266921,college,गोल्डेनगेट कलेज ब्लक २,GoldenGate College Block II,गोल्डेनगेट कलेज ब्लक २,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7038519,85.3412815,2025-09-27T04:08:56Z
+node/4824360523,school,किंडर कास्टल पूर्व-विद्यालय,Kinder Castle Pre-School,किंडर कास्टल पूर्व-विद्यालय,Unknown,,,,,014414151,kindercastle@yahoo.com,,,,,,,,,,,,,,,,,,,,27.72401,85.3318866,2023-03-25T07:06:23Z
+node/4854790124,school,नीलगिरि विद्यालय,Neelgiri schoil,नीलगिरि विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7174321,85.3085101,2023-03-22T11:18:08Z
+node/4879629522,school,एभरेष्ट इन्जिनियरिङ एण्ड म्यानेजमेन्ट कलेज,Everest Engineering and Management College,एभरेष्ट इन्जिनियरिङ एण्ड म्यानेजमेन्ट कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6867088,85.327972,2025-01-17T09:10:13Z
+node/4928424956,college,Nasa Iinternational College,,,Unknown,,,,,,,,6:00-18:00,"sairam marga, gairigaun tinkune-32, kathmandu municipality",sairam marga,,,kathmandu municipality,,,,,,,,,,,,,27.6878966,85.3503984,2023-05-26T09:02:02Z
+node/4929157924,school,ग्लोबल स्टडी पार्टनर्स नेपाल,Global Study Partners Nepal,ग्लोबल स्टडी पार्टनर्स नेपाल,Unknown,,,,,+977 1-2238880,,https://globalstudypartners.com/,Su-Fr 10:00-17:00,New Plaza Road,New Plaza Road,,,,,,,,,,,,,,,,27.700836,85.3237777,2023-02-28T17:56:41Z
+node/4935574824,school,एसीई उच्च माध्यमिक विद्यालय,Ace Higher Secondary School,एसीई उच्च माध्यमिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6915213,85.3499746,2023-06-08T11:14:47Z
+node/4939483121,school,ल्याण्डमार्क कन्सलटेन्सी,Landmark Consultancy,ल्याण्डमार्क कन्सलटेन्सी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7031253,85.3228679,2023-03-22T15:21:31Z
+node/5068575022,school,केईसी इंस्टिट्यूट,Sachdeva Institute,सचदेवा संस्थान,Unknown,,,,,,,,24/7,Adwait Marg,Adwait Marg,,,,,,,,,,,,,,,,27.7030649,85.3219399,2023-03-22T11:18:08Z
+node/5075029393,school,संस्कार विद्यापीठ,Sanskar Vidyapith School,संस्कार विद्यापीठ,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6826868,85.295792,2023-03-25T06:22:33Z
+node/5088825522,school,रेडवुड एजुकेशन नेटवर्क,Redwood Education Network,रेडवुड एजुकेशन नेटवर्क,Unknown,,,,,,,,,Gahana Pokhari Marga,Gahana Pokhari Marga,,,,,,,,,,,,,,,,27.7169892,85.3335788,2023-06-15T09:50:37Z
+node/5200110921,school,अक्षर एकेडेमी,Akashar academy,अक्षर एकेडेमी,Unknown,,,,,,,,,ghatte khulo,ghatte khulo,,,,,,,,,,,,,,,,27.7018248,85.3328741,2023-02-19T18:16:08Z
+node/5245747522,school,पाइलन एकेडेमी,Pylon Academy,पाइलन एकेडेमी,Unknown,,,,,014721043,,,,,,,,,,,,,,,,,,,,,27.7396226,85.3369805,2024-05-28T13:02:16Z
+node/5345124221,college,ब्ल्याक हक कलेज अफ कम्प्युटर स्टडीज,Black Hawk College of Computer Studies,ब्ल्याक हक कलेज अफ कम्प्युटर स्टडीज,Unknown,,,,,014484097,info@Blackhawk.edu.np,https://www.blackhawk.edu.np/,Su-Fr 06:30-20:00; Sa 00:00-24:00,,,,,,,,,,,,,,,,,,27.7178269,85.346475,2023-06-15T09:50:37Z
+node/5349249522,school,एडुकेयर एब्रोयड कन्सल्ट प्रा. लि,Educare Abroad Consult Pvt. Ltd,एडुकेयर एब्रोयड कन्सल्ट प्रा. लि,Unknown,,,,,014288243,educareshashi@gmail.com,http://www.educare.com,Sa 09:00-18:00; Su-Fr 06:00-18:00,,,,,,,,,,,,,,,,,,27.6982139,85.2997341,2023-03-25T04:43:32Z
+node/5465965521,school,स्काइफल शैक्षिक परामर्श,Skyfall Educational Consultancy,स्काइफल शैक्षिक परामर्श,Unknown,,,,,014410965,info@skyfall.edu.np,http://www.skyfall.edu.np,,Dilli Bazaar Road,Dilli Bazaar Road,,,,,,,,,,,,,,,,27.7055393,85.3230444,2023-02-27T03:47:03Z
+node/5472163824,school,सिजल विदेश अध्ययन प्रा. लि,Sijal Abroad Studies Pvt.Ltd,सिजल विदेश अध्ययन प्रा. लि,Unknown,,,,,01-5219099,sijalabroadstudies@gmail.com,,Mo-Su 09:00-18:00,Kalanki,Kalanki,,,,,,,,,,,,,,,,27.6951296,85.2812216,2023-03-22T14:30:13Z
+node/5479588210,school,नेपाल पाथफाईन्दर कोएड,nepal pathfinder coed,नेपाल पाथफाईन्दर कोएड,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7031464,85.3458891,2023-06-08T09:12:19Z
+node/5528676423,college,केयू सिटी कलेज,KU City College,केयू सिटी कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7260737,85.3503571,2024-10-03T14:07:34Z
+node/5616604322,college,मेपल अन्तर्राष्ट्रिय शिक्षा,Maple International Education,मेपल अन्तर्राष्ट्रिय शिक्षा,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.701616,85.3223526,2025-01-27T09:47:16Z
+node/5625028221,school,माया एनिमेसन एकेडेमी,Maya Animation Acadamy,माया एनिमेसन एकेडेमी,Unknown,,,,,9860140513,,https://www.maya-animation.com/,,"Kanti Path, 44600",Kanti Path,,,,,,,,,,,,,,,,27.7092014,85.3149129,2023-10-17T09:36:43Z
+node/5626602821,university,"वातावरण विज्ञान विभाग, त्रिभुवन विश्वविद्यालय","Department of Environmental Science, Tribhuvan University","वातावरण विज्ञान विभाग, त्रिभुवन विश्वविद्यालय",Unknown,,,,,,,,,Jamal Sadak,Jamal Sadak,,,,,,,,,,,,,,,,27.7086341,85.3161155,2023-06-15T09:50:37Z
+node/5645142636,college,Himalaya H.S.S./College,,,Unknown,,,,,+977 01 4600320;+977 01 4600518,info@himalayacollege.com,https://www.himalayacollege.com/ | https://www.facebook.com/pages/category/Community-College/Himalaya-College-Koteshowr-955463497846567/,,Himali Marga,Himali Marga,,,,,,,,,,,,,,,,27.6797896,85.346938,2023-10-17T09:38:14Z
+node/5909455364,college,Times International College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7081572,85.3274529,2018-09-16T09:15:33Z
+node/5921925039,school,बालपिथ प्राथमिक विद्यालय,Balpith Primary School,बालपिथ प्राथमिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6988617,85.3514459,2023-06-08T09:13:17Z
+node/5921937437,school,ग्यालेक्सी पब्लिक विद्यालय,Galaxy Public School,ग्यालेक्सी पब्लिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7082521,85.3303915,2023-06-27T10:58:35Z
+node/5966565997,college,Atharva Business College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,no,,27.7437119,85.3389862,2018-10-08T14:12:25Z
+node/5981623810,school,सहारा मन्टेश्वरी विद्यालय,Sahara Montessori School,सहारा मन्टेश्वरी विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7288719,85.3638078,2023-03-22T10:59:19Z
+node/5995657486,school,एलिम एकेडेमी,Elim Academy,एलिम एकेडेमी,Unknown,,,,,+977-01-4720098,elimkids@gmail.com,,,,,,,,,,,,,,,,,,,,27.7400571,85.3359387,2023-02-28T18:15:37Z
+node/5999458615,school,सर्कोङ दोर्जी चाङ एकेडेमी,Serkong Dorji Chang Academy,सर्कोङ दोर्जी चाङ एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,limited,,27.7141557,85.2875981,2023-06-15T09:50:37Z
+node/6021113419,school,गीतांजली उच्च माध्यमिक विद्यालय,Geetanjali H.S. School,गीतांजली उच्च माध्यमिक विद्यालय,Unknown,,,,,,,https://heavenhimalaya.com,,,,,,,,,,,,,,,,,limited,,27.7192068,85.3049487,2023-03-25T07:06:23Z
+node/6043108727,college,Texas College of Management and IT,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7137392,85.3425066,2021-03-05T03:45:44Z
+node/6043111642,school,श्री बाल बयाबासाये केन्द्र माध्यमिक विद्यालय,Shree Bal Byabasaye Kendra Secondary School,श्री बाल बयाबासाये केन्द्र माध्यमिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7119204,85.3409446,2023-03-22T10:59:19Z
+node/6052160685,college,कलेज अफ बिजनेस म्यानेजमेन्ट (सीबीएम),College of Business Management (CBM),कलेज अफ बिजनेस म्यानेजमेन्ट (सीबीएम),Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7058205,85.3266766,2024-07-21T11:07:44Z
+node/6056569223,college,Baluwatar Model College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,yes,,27.7240818,85.3324672,2021-03-23T10:11:10Z
+node/6056988785,school,नेपालय विद्यालय,Nepalaya School,नेपालय विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6947178,85.2856094,2023-03-25T06:22:33Z
+node/6064240607,school,भिजन मोन्टेस्सोरी विद्यालय,Vision Montessori School,भिजन मोन्टेस्सोरी विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6775996,85.3485328,2023-06-08T09:39:12Z
+node/6064240608,college,समृद्धि कलेज,Samriddhi College,समृद्धि कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,no,,27.6773407,85.3486696,2024-02-12T16:10:42Z
+node/6089307783,school,हिमालय विद्यालय मन्दिर,Himalaya Vidyalaya Mandir,हिमालय विद्यालय मन्दिर,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7102419,85.3387995,2023-06-08T09:40:35Z
+node/6114639138,college,shwoyambhu international college,,,Government,,,,,,,,,"suruchimarga, kathmandu",suruchimarga,,,kathmandu,,,,,,,,,,,,,27.6867161,85.3355279,2025-03-13T15:50:29Z
+node/6118675763,school,शिक्षा बाल विद्यालय,Shiksha Kids Education,शिक्षा बाल विद्यालय,Unknown,,,,,,,,9:00-15:00,"gaurishankar margh, kuleshwor 14",gaurishankar margh,,,,,,,,,,,,,,,,27.6892681,85.2947596,2023-03-22T14:37:29Z
+node/6122932185,school,पाराडाईज अन्तर्राष्ट्रिय एकेडेमी,Paradise International Academy,पाराडाईज अन्तर्राष्ट्रिय एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7135639,85.3395827,2023-06-19T08:18:59Z
+node/6170362473,school,प्यारागन विद्यालय,Paragon school,प्यारागन विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7016314,85.3501038,2023-06-08T09:44:14Z
+node/6771636474,school,चे हाई स्कुल,Che High School,चे हाई स्कुल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7214995,85.3037948,2023-03-25T06:22:33Z
+node/6771638721,college,Geetajali college,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7218842,85.3032672,2019-09-04T10:48:42Z
+node/6771648718,school,गीताञ‍्जली एकेडेमी,Geetajali Academy,गीताञ‍्जली एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7221863,85.3029608,2023-03-25T06:22:33Z
+node/6880658785,school,शाइन होशिमी इन्टरनेसनल प्रा. लि.,Shine Hoshimi International Pvt. Ltd.,शाइन होशिमी इन्टरनेसनल प्रा. लि.,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6943979,85.3375493,2023-02-19T18:40:45Z
+node/7088157087,school,श्री पशुपति माध्यमिक विद्यालय,Shree Pashupati Secondary School,श्री पशुपति मा. माध्यमिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7161811,85.3459386,2023-03-22T10:59:19Z
+node/7285083587,school,तारापुञ्‍ज अंग्रेजी बोर्डिङ् स्कुल,Constellation English Boarding High School,तारापुञ्‍ज अंग्रेजी बोर्डिङ् स्कुल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7219756,85.3384428,2023-06-19T05:36:23Z
+node/7666750265,college,सफ्टवेरिका कलेज अफ आईटी एण्ड ई-कमर्स,Softwarica College of IT & E-Commerce (Block E),सफ्टवेरिका कलेज अफ आईटी एण्ड ई-कमर्स,Unknown,,,,,014541577;014525661,hello@softwarica.com.np,https://softwarica.edu.np/ | softwarica.nepal | softwarica.college,Su-Fr 07:00-17:00,,,,,,,,,,,,,,,,,,27.7061835,85.3300086,2024-10-22T15:18:37Z
+node/7925315385,school,जिलेट स्कुल,Gillette School,जिलेट स्कुल,Unknown,,,,,+97715165136,,,Su-Fr 08:30-17:00,,,,,,,,,,,,,,,,,,27.6973057,85.2974847,2023-03-22T15:43:12Z
+node/8190619857,school,हिमाली आवासीय विद्यालय,Himali Boarding School,हिमाली आवासीय विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7031981,85.3488464,2023-06-08T09:49:46Z
+node/8335731200,college,"Institute of Advanced Communication, Education and Research",,,Unknown,,,,,+997 1 4471915; +997 1 4467528,info@iacer.edu.np,https://iacer.edu.np/ | https://www.facebook.com/IACER.MA.MPhil,,,,,,,,,,,,,,,,,,,27.6909559,85.3354688,2021-01-21T16:37:10Z
+node/8525111118,school,मूनलाइट स्कूल,Moonlight School,मूनलाइट स्कूल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7371184,85.3413873,2023-02-28T18:15:37Z
+node/8609016363,college,Ashirvad Boarding School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7282393,85.333152,2021-04-09T02:58:23Z
+node/8631658317,school,यन्त्र हाउस,Yantra House,यन्त्र हाउस,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7254607,85.3588544,2023-06-08T11:14:47Z
+node/8696390312,school,Linga Learning Institute,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,C2M2 Kathmandu Field Survey 2021,27.7102351,85.3109372,2021-05-04T07:43:03Z
+node/9401668319,school,सेन्ट लरेन्स विद्यालय,St. Lawrence School,सेन्ट लरेन्स विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7146021,85.347502,2023-03-22T10:59:19Z
+node/9401668326,school,सब्दालय नेपाल,Sabdalaya Nepal,सब्दालय नेपाल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7143357,85.3430451,2023-02-19T17:54:49Z
+node/9401668332,school,बिश्व शिक्षा सदन,Bishwa Sikshya Sadan,बिश्व शिक्षा सदन,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7174528,85.3497951,2023-02-19T17:54:49Z
+node/9425107720,school,श्रीति विद्यालय,Shristi School,श्रीति विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7187605,85.3567481,2023-03-22T10:59:19Z
+node/9425130718,school,मिसन पब्लिक विद्यालय,Mission Public School,मिसन पब्लिक विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7188793,85.3568821,2023-03-22T10:59:19Z
+node/9425132317,school,जेभियर इन्टरनेशनल मोन्टेस्सोरी विद्यालय,Xavier International Montessori School,जेभियर इन्टरनेशनल मोन्टेस्सोरी विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7186215,85.3566336,2023-03-22T10:59:19Z
+node/9425159917,school,लारनिंग ट्री विद्यालय,Learning Tree Montessori,लारनिंग ट्री विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7231622,85.3596675,2023-06-08T11:14:47Z
+node/9447487917,college,SAAN International College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7184657,85.3380386,2022-01-25T13:14:47Z
+node/9447487918,school,इम्पाओररिङ्ग एसिया,Empowering Asia,इम्पाओररिङ्ग एसिया,Unknown,,,,,,info@eliteabroadstudies.com,,,,,,,,,,,,,,,,,,,,27.7164631,85.3350835,2023-06-08T09:51:18Z
+node/9450088723,college,हेराल्ड कलेज,Herald College,हेराल्ड कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7122586,85.3309026,2023-06-15T09:50:37Z
+node/9450088725,school,मल्पी सिटी विद्यालय,Malpi City School,मल्पी सिटी विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7126599,85.3295096,2023-06-15T09:50:37Z
+node/9450094317,college,IST College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7100619,85.332784,2022-01-26T13:09:43Z
+node/9482994712,school,संकटा प्राथमिक विद्यालय,Sankata Primary School,संकटा प्राथमिक विद्यालय,Government,,,7,,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7018563,85.3120351,2023-03-25T07:06:23Z
+node/9491901304,school,महानकल माध्यमिक विद्यालय,Mahankal Secondary School,महानकल माध्यमिक विद्यालय,Government,Secondary,415,26,3,,,,,"mahaboudha ason, 27",mahaboudha ason,,27,,,,,,,,,,,,,OpenDRI survey,27.7058779,85.3121169,2023-03-20T06:08:30Z
+node/9494440622,college,नेपाल कला क्याम्पस,Nepal Art Campus,ललितकला क्याम्पस,Government,College/Higher Education,400,20,2,,,,,,,,,,,,,,,,,,,,,OpenDRI survey,27.7077141,85.3138697,2024-11-08T16:14:11Z
+node/9520892132,college,New Millennium College,,,Unknown,,,,,"+977-1-4527987, 1-4518585,",,https://nema.edu.np/,,"Ring Road, Kathmandu, 44600",Ring Road,,,Kathmandu,,,,,,,,,,,,,27.7290482,85.3455184,2022-02-20T04:59:53Z
+node/9524096917,school,एन्जिलको विश्व अन्तर्राष्ट्रिय एकेडेमी,Angel's World International Academy,एन्जिलको विश्व अन्तर्राष्ट्रिय एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7388814,85.3309296,2023-06-09T09:27:49Z
+node/9527376628,college,Orient College,,,Unknown,,,,,014362218,,,,,,,,,,,,,,,,,,,,,27.7413332,85.3310756,2022-02-22T14:37:06Z
+node/9526113117,college,सेन्ट लरेन्स कलेज,St. Lawrence College,सेन्ट लरेन्स कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7180734,85.3489343,2023-06-15T09:50:37Z
+node/9527347512,college,Innovative Technical Education And Vocational Training Centre,,,Unknown,,,,,014380650,,,,,,,,,,,,,,,,,,,,,27.7366854,85.3250529,2022-02-22T14:37:06Z
+node/9527347513,college,Hrit Academy,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7376741,85.3269984,2022-02-22T14:37:06Z
+node/9527347514,college,Institute Of Medicine Central Department Of Public Health,,,Unknown,,,,,4424860,,,,,,,,,,,,,,,,,,,,,27.734291,85.3292595,2022-02-22T14:37:06Z
+node/9527376618,school,स्मृति मोन्टेस्सोरी पूर्व विद्यालय,Smriti Montessori Pre School,स्मृति मोन्टेस्सोरी पूर्व विद्यालय,Unknown,,,,,016924707,,,,,,,,,,,,,,,,,,,,,27.7464842,85.3389501,2023-06-09T09:27:49Z
+node/9527376621,school,स्प्रिङभिल पूर्व विद्यालय,Springville Pre School,स्प्रिङभिल पूर्व विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.745922,85.3351946,2023-06-09T09:27:49Z
+node/9527376624,school,जेस्ट स्कूल,Zesth School,जेस्ट स्कूल,Unknown,,,,,014355754,,,,,,,,,,,,,,,,,,,,,27.7408481,85.3321798,2023-06-27T10:58:35Z
+node/9527376626,school,लिबर्टी माध्यमिक विद्यालय,Liberty Secondary School,लिबर्टी माध्यमिक विद्यालय,Unknown,,,,,016211521,,,,,,,,,,,,,,,,,,,,,27.7398317,85.3301894,2023-06-09T09:27:49Z
+node/9527376627,school,ओरिएण्ट विद्यालय,Orient School,ओरिएण्ट विद्यालय,Unknown,,,,,014354056,,,,,,,,,,,,,,,,,,,,,27.7406612,85.3303007,2023-03-22T10:44:26Z
+node/9527376629,school,बालकुञ्ज एकेडेमी,Balkunj Academy,बालकुञ्ज एकेडेमी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7460406,85.3353824,2023-06-12T06:21:01Z
+node/9527376632,college,Sidhartha Technical Training Center,,,Unknown,,,,,014418252,,,,,,,,,,,,,,,,,,,,,27.7315734,85.3399002,2022-02-22T14:37:06Z
+node/9527376640,school,ग्रेसल्याण्ड मोन्टेस्सोरी र डे केयर,Graceland Montessori And Day Care,ग्रेसल्याण्ड मोन्टेस्सोरी र डे केयर,Unknown,,,,,014017195,,,,,,,,,,,,,,,,,,,,,27.7461898,85.3409464,2023-03-22T10:44:26Z
+node/9527376641,school,रिपु मर्दिनी सैनिक माध्यमिक विधालय,Ripu Mardini Sainik Secondary School,रिपु मर्दिनी सैनिक माध्यमिक विधालय,Unknown,,,,,014374335,,,,,,,,,,,,,,,,,,,,,27.7472381,85.3446848,2023-06-09T09:27:49Z
+node/9527376642,college,Bishwa Shanti Chiran-Milan College,,,Unknown,,,,,014017015,,,,,,,,,,,,,,,,,,,,,27.7430382,85.3455541,2022-02-22T14:37:06Z
+node/9527376644,school,मुलबेरी,Mulberry,मुलबेरी,Unknown,,,,,014017195,,,,,,,,,,,,,,,,,,,,,27.7436846,85.3446585,2023-03-22T10:44:26Z
+node/9527376645,college,Namuna College Of Fashion Technology,,,Unknown,,,,,014377201,,,,,,,,,,,,,,,,,,,,,27.7442449,85.3412227,2025-05-18T11:33:22Z
+node/9626942236,school,बाला बटिका अन्तर्राष्ट्रिय विद्यालय,Bala Batika International School,बाला बटिका अन्तर्राष्ट्रिय विद्यालय,Unknown,,,,,014350678,,,,"Kumarithan Marga, Kathmandu, 44600",Kumarithan Marga,,,Kathmandu,,,,,,,,,,,,,27.7390412,85.3035211,2023-06-09T09:29:52Z
+node/9626942237,school,राष्ट्रिय नमूना माध्यमिक विद्यालय,National model Secondary School,राष्ट्रिय नमूना माध्यमिक विद्यालय,Unknown,,,,,014381731,,,,"Nepaltar Bridge, Kathmandu, 44600",Nepaltar Bridge,,,Kathmandu,,,,,,,,,,,,,27.740617,85.3036347,2023-06-09T09:29:52Z
+node/9722113224,school,युनिकेयर बाल स्कूल,Unicare Kids School,युनिकेयर बाल स्कूल,Unknown,,,,,014466695,,,,,,,,,,,,,,,,,,,,,27.7331252,85.3715762,2023-03-22T15:43:12Z
+node/9818817146,college,school of geomatics,,,Unknown,,,,,,,,Mo-Su 09:00-21:00,,,,,,,,,,,,,,,,no,,27.6976452,85.3426874,2022-06-15T03:16:51Z
+node/9916683278,college,दिव्या ज्ञान कलेज,Divya Gyan College,दिव्या ज्ञान कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.707701,85.3220286,2025-06-04T11:14:31Z
+node/9916683279,college,APU (Asia pacific university of technology & innovation ),,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7077805,85.3219351,2022-07-28T09:46:42Z
+node/9916683303,school,गार्डन अफ बड्स प्रि स्कूल,Garden Of Buds Pre School,गार्डन अफ बड्स प्रि स्कूल,Unknown,,,,,"014371208,014371186 | 9818622622",contact@gardenofbuds.org,https://www.gardenofbuds.org/,,,,,,,,,,,,,,,,,,,27.7070513,85.3225908,2023-03-20T06:08:30Z
+node/9916725531,college,हिमालय ह्वाइट हाउस इन्टरनेशनल कलेज,Himalayan White House International College,हिमालय ह्वाइट हाउस इन्टरनेशनल कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6995798,85.3217551,2023-06-14T06:54:37Z
+node/9926729641,college,एभरेस्ट कलेज,Everest College,एभरेस्ट कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.692235,85.3180979,2026-01-16T07:40:00Z
+node/9927091118,school,जेभियर अन्तर्राष्ट्रिय विद्यालय,Xavier International School,जेभियर अन्तर्राष्ट्रिय विद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7166254,85.3500671,2023-03-22T10:59:19Z
+node/9956153368,college,Koteshwor Multiple Campus,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6757173,85.3546696,2022-08-16T05:16:07Z
+node/9967127073,college,न्यू भिजन एकेडेमी,New Vision Academy,न्यू भिजन एकेडेमी,Unknown,,,,,015147325,newvisionacademy2019@gmail.com,www.visionacademy.edu.np,,,,,,,,,,,,,,,,,,,27.6750633,85.3433359,2023-10-20T06:07:53Z
+node/9969194346,school,स्मृति बहुप्राविधिक शिक्षालय,Smriti Multidisciplinary School,स्मृति प्राध्यापक शिक्षा,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6685844,85.3497323,2023-06-15T09:50:37Z
+node/9969194347,school,फेयरी ल्याण्ड मन्टेश्वरी,Fairy Land Montessori,फेयरी ल्याण्ड मन्टेश्वरी,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6685298,85.3505362,2023-06-15T09:50:37Z
+node/9983502717,college,वी. एस. कलेज,V. S. College,वी. एस. कलेज,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7183793,85.3475981,2025-02-02T10:51:53Z
+node/10018318394,college,XAVIER INTERNATIONAL SCHOOL/COLLEGE,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7203631,85.3587484,2022-09-12T14:33:07Z
+node/10036366886,school,ओलम्पस स्कुल,Olympus School,ओलम्पस स्कुल,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7471533,85.3362124,2023-06-12T06:21:01Z
+node/10121417288,school,प्यासन इन्टरनेसनल एजुकेशन प्रा. लि,Passion International Education Pvt.Ltd,प्यासन इन्टरनेसनल एजुकेशन प्रा. लि,Unknown,,,,,014111608 | 9851054566,,,,,,,,,,,,,,,,,,,,,27.6841295,85.3464702,2023-06-08T11:17:03Z
+node/10121523043,school,शेमरोक किड्स वन्डरल्याण्ड,Shemrock Kids Wonderland,शेमरोक किड्स वन्डरल्याण्ड,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6811396,85.3473492,2023-06-08T09:54:09Z
+node/10221011717,college,Central College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6976342,85.3492613,2022-11-27T08:31:49Z
+node/10290840609,school,जनकनाथ स्मृति माध्यमिक बिद्यालय,Janak Nath Memorial Secondary School,जनकनाथ स्मृति माध्यमिक बिद्यालय,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7182703,85.3136819,2023-03-25T07:06:23Z
+node/10290840610,school,श्री शान्ति बिध्यागृह माध्यमिक विद्यालय,Shree Shanti Vidyagriha S.S.,श्री शान्ति बिध्यागृह माध्यमिक विद्यालय,Unknown,,,,,01-4412099,,,Sa-Th 09:00-16:00,,,,,,,,,,,,,,,,,,27.717951,85.3136696,2023-06-27T11:12:20Z
+node/10654444705,college,loksewa ayoge,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7009649,85.3256352,2023-02-13T11:57:22Z
+node/10716584878,college,Nepal bank limited,,,Unknown,,,,,081391999,info@gmail.com,,,,,,,,,,,,,,,,,,,,27.6896047,85.3253717,2023-03-06T15:15:44Z
+node/11011936485,school,Kathmandu Meridian School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7392757,85.3440446,2023-06-28T09:20:38Z
+node/11442942719,college,Liberty College,,,Unknown,,,,,,,https://libertycollege.edu.np/,,"Anamnagar, Kathmandu, 44600",Anamnagar,,,Kathmandu,,,,,,,,,,,,,27.6944726,85.3288968,2023-12-24T09:31:12Z
+node/11505176618,school,Holi Garden Boarding High School,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.7328033,85.3049494,2024-01-10T05:05:39Z
+node/11875486985,college,CCRC College,CCRC College,,Unknown,,,,,01-5100423,,https://www.ccrc.edu.np/,Sa-Th 06:00-17:00,,,,,,,,,,,,,,,,,,27.6728896,85.3435571,2024-05-17T22:32:56Z
+node/12147778480,school,Deneb Nepal,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6941974,85.338062,2025-05-15T07:00:49Z
+node/12147778481,school,Everest Florida College,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6942016,85.3363406,2024-08-31T13:18:36Z
+node/13347308601,college,St. Xavier's College Loyola Campus,,,Unknown,,,,,,,,,,,,,,,,,,,,,,,,,,27.6917036,85.320327,2025-12-02T07:06:36Z

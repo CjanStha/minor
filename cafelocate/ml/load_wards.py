@@ -15,6 +15,13 @@ django.setup()
 
 from api.models import Ward
 
+try:
+    from shapely.wkt import loads as wkt_loads
+    from shapely.geometry import mapping
+    SHAPELY_AVAILABLE = True
+except ImportError:
+    SHAPELY_AVAILABLE = False
+
 def load_ward_boundaries():
     """
     Load ward boundary data from CSV into the database
@@ -43,13 +50,26 @@ def load_ward_boundaries():
 
             # Parse WKT geometry and convert to GeoJSON
             wkt_geom = row['geometry_wkt']
-
-            # For now, store the WKT as a simple string in JSON
-            # Later when PostGIS is working, we'll convert to proper geometry
-            geometry_json = {
-                'type': 'wkt',
-                'wkt': wkt_geom
-            }
+            
+            # Convert WKT to GeoJSON using shapely
+            geometry_json = None
+            if SHAPELY_AVAILABLE:
+                try:
+                    geom = wkt_loads(wkt_geom)
+                    geometry_json = mapping(geom)  # Convert to GeoJSON
+                except Exception as e:
+                    print(f"Warning: Could not convert WKT for ward {ward_number}: {e}")
+                    # Fallback to storing WKT
+                    geometry_json = {
+                        'type': 'wkt',
+                        'wkt': wkt_geom
+                    }
+            else:
+                # Fallback: store WKT as-is
+                geometry_json = {
+                    'type': 'wkt',
+                    'wkt': wkt_geom
+                }
 
             # Create Ward object
             ward = Ward(

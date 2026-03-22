@@ -1,0 +1,5 @@
+Split,Algorithm,Accuracy,Precision,Recall,F1-Score
+v2_80_20,random_forest,1.0000,1.0000,1.0000,1.0000
+v2_80_20,xgboost,1.0000,1.0000,1.0000,1.0000
+v3_85_15,random_forest,1.0000,1.0000,1.0000,1.0000
+v3_85_15,xgboost,1.0000,1.0000,1.0000,1.0000

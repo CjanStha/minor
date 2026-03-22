@@ -208,11 +208,12 @@ class MapManager {
         const predictionTypeEl = document.querySelector('#prediction-card .prediction-type');
         const predictionConfEl = document.querySelector('#prediction-card .prediction-confidence');
         if (predictionTypeEl) {
-            predictionTypeEl.textContent = prediction.predicted_suitability || suitability.level || 'Unknown';
+            // Show recommended cafe type from AI recommendation
+            predictionTypeEl.textContent = prediction.recommended_cafe_type || prediction.predicted_suitability || suitability.level || 'Unknown';
         }
         if (predictionConfEl) {
-            const conf = prediction.confidence ? (prediction.confidence * 100).toFixed(1) + '%' : 'N/A';
-            predictionConfEl.textContent = `Confidence: ${conf}`;
+            // Remove suitability confidence display as requested
+            predictionConfEl.textContent = '';
         }
 
         // Top 5 cafes
@@ -236,7 +237,12 @@ class MapManager {
         const popEl = document.getElementById('population-density');
 
         if (competitorEl) competitorEl.textContent = suitability.competitor_count ?? data.nearby_count ?? '-';
-        if (roadEl) roadEl.textContent = suitability.road_length_m != null ? suitability.road_length_m + 'm' : '-';
+        // Prefer nearest-main-road distance (`road_distance_m`) but
+        // fall back to legacy `road_length_m` if present.
+        if (roadEl) {
+            const rd = suitability.road_distance_m != null ? suitability.road_distance_m : suitability.road_length_m;
+            roadEl.textContent = rd != null ? rd + 'm' : '-';
+        }
         if (popEl) popEl.textContent = suitability.population_density != null
             ? Number(suitability.population_density).toLocaleString() + '/km²' : '-';
     }
@@ -352,10 +358,55 @@ class MapManager {
         // Fetch amenities and population data
         this.fetchReportData().then(() => {
             reportContent.innerHTML = this.generateFullReport();
+            // Attach event handlers for "See more" buttons after content is inserted
+            this.attachAmenityHandlers();
         }).catch(error => {
             console.error('Error fetching report data:', error);
             reportContent.innerHTML = '<div style="padding: 20px; color: #e17055;"><p>⚠️ Error loading report data. Please try again.</p></div>';
         });
+    }
+
+    attachAmenityHandlers() {
+        const buttons = document.querySelectorAll('.see-more-amenities');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const type = btn.getAttribute('data-type');
+                this.showFullAmenityList(type, btn);
+            });
+        });
+    }
+
+    showFullAmenityList(type, triggerButton) {
+        if (!this.lastAmenitiesReport) return;
+        const report = this.lastAmenitiesReport.amenities_report || {};
+        const data = report[type];
+        if (!data) return;
+
+        // Build full list HTML with extra details (name, distance if available)
+        const itemsHtml = data.amenities.map(a => {
+            const name = a.name || 'Unnamed';
+            const details = [];
+            if (a.amenity_type) details.push(a.amenity_type);
+            if (a.latitude && a.longitude) details.push(`${a.latitude.toFixed(6)}, ${a.longitude.toFixed(6)}`);
+            if (a.distance != null) details.push(`${Math.round(a.distance)} m`);
+            return `<li style="margin:6px 0"><strong>${name}</strong>${details.length?` — <span style="color:#666">${details.join(' · ')}</span>`:''}</li>`;
+        }).join('');
+
+        // Replace the parent <ul> content where the button was located
+        const li = triggerButton.closest('li');
+        if (li) {
+            const parentUl = li.parentElement;
+            if (parentUl) {
+                parentUl.innerHTML = itemsHtml + `<li style="margin-top:8px"><button class="collapse-amenities" style="background:none;border:none;color:#0984e3;cursor:pointer;padding:0">Show less</button></li>`;
+                const collapseBtn = parentUl.querySelector('.collapse-amenities');
+                if (collapseBtn) collapseBtn.addEventListener('click', () => {
+                    // Re-render the report to restore original truncated view
+                    const reportContent = document.getElementById('report-content');
+                    if (reportContent) reportContent.innerHTML = this.generateFullReport();
+                    this.attachAmenityHandlers();
+                });
+            }
+        }
     }
 
     async fetchReportData() {
@@ -438,6 +489,7 @@ class MapManager {
                     <div class="report-item"><strong>Competitors Nearby:</strong><br>${competitors}</div>
                     <div class="report-item"><strong>Road Accessibility:</strong><br>${roadLength}</div>
                     <div class="report-item"><strong>Population Density:</strong><br>${population}</div>
+                    <div class="report-item"><strong>Total Population (in radius):</strong><br>${populationData && populationData.total_population ? Number(populationData.total_population).toLocaleString() : '0'}</div>
                 </div>
             </div>
 
@@ -492,7 +544,7 @@ class MapManager {
                                     ${data.amenities.slice(0, 5).map(amenity => `
                                         <li>${amenity.name || 'Unnamed'}</li>
                                     `).join('')}
-                                    ${data.count > 5 ? `<li><em>...and ${data.count - 5} more</em></li>` : ''}
+                                            ${data.count > 5 ? `<li><button class="see-more-amenities" data-type="${type}" style="background:none;border:none;color:#0984e3;cursor:pointer;padding:0;margin:0">See more (${data.count - 5})</button></li>` : ''}
                                 </ul>
                             </div>
                         `;
