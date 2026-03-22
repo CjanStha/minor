@@ -7,6 +7,7 @@ class MapManager {
         this.marker = null;
         this.circle = null;
         this.cafeMarkers = [];
+        this.amenityMarkers = [];
         this.selectedLocation = null;
         this.selectedCafeType = null;
         this.analysisRadius = 500;
@@ -97,6 +98,13 @@ class MapManager {
             });
         }
 
+        const downloadPdfBtn = document.getElementById('download-pdf-btn');
+        if (downloadPdfBtn) {
+            downloadPdfBtn.addEventListener('click', () => {
+                this.downloadReportAsPdf();
+            });
+        }
+
         const modalClose = document.querySelector('.modal-close');
         if (modalClose) {
             modalClose.addEventListener('click', () => this.hideFullReport());
@@ -183,10 +191,11 @@ class MapManager {
                 fillOpacity: 0.8
             }).addTo(this.map);
 
+            const ratingLine = cafe.rating ? `Rating: ⭐ ${cafe.rating}<br>` : '';
             marker.bindPopup(`
                 <b>${cafe.name}</b><br>
                 <small>Type: ${(cafe.cafe_type || '').replace('_', ' ')}</small><br>
-                Rating: ${cafe.rating ? '⭐ ' + cafe.rating : 'N/A'}<br>
+                ${ratingLine}
                 Reviews: ${cafe.review_count || 0}
             `);
 
@@ -223,29 +232,57 @@ class MapManager {
             if (data.top5.length === 0) {
                 top5List.innerHTML = '<p class="no-data">No cafes found in this area</p>';
             } else {
-                top5List.innerHTML = data.top5.map(cafe => `
+                top5List.innerHTML = data.top5.map(cafe => {
+                    const ratingHtml = cafe.rating ? `<div class="cafe-rating">⭐ ${cafe.rating}</div>` : '';
+                    return `
                     <div class="cafe-item">
                         <div class="cafe-name">${cafe.name}</div>
-                        <div class="cafe-rating">${cafe.rating ? '⭐ ' + cafe.rating : 'N/A'}</div>
+                        ${ratingHtml}
                     </div>
-                `).join('');
+                `;
+                }).join('');
             }
         }
 
-        // Metrics
+        // Metrics - conditionally show based on actual values
         const competitorEl = document.getElementById('competitor-count');
         const roadEl = document.getElementById('road-length');
         const popEl = document.getElementById('population-density');
 
-        if (competitorEl) competitorEl.textContent = suitability.competitor_count ?? data.nearby_count ?? '-';
-        // Prefer nearest-main-road distance (`road_distance_m`) but
-        // fall back to legacy `road_length_m` if present.
-        if (roadEl) {
-            const rd = suitability.road_distance_m != null ? suitability.road_distance_m : suitability.road_length_m;
-            roadEl.textContent = rd != null ? rd + 'm' : '-';
+        const competitorValue = suitability.competitor_count ?? data.nearby_count;
+        const roadValue = suitability.road_distance_m != null ? suitability.road_distance_m : suitability.road_length_m;
+        const popValue = suitability.population_density;
+
+        // Hide/show metric boxes based on whether they have values
+        if (competitorEl) {
+            const metricBox = competitorEl.closest('.metric');
+            if (competitorValue != null) {
+                competitorEl.textContent = competitorValue;
+                if (metricBox) metricBox.style.display = 'block';
+            } else {
+                if (metricBox) metricBox.style.display = 'none';
+            }
         }
-        if (popEl) popEl.textContent = suitability.population_density != null
-            ? Number(suitability.population_density).toLocaleString() + '/km²' : '-';
+
+        if (roadEl) {
+            const metricBox = roadEl.closest('.metric');
+            if (roadValue != null) {
+                roadEl.textContent = roadValue + 'm';
+                if (metricBox) metricBox.style.display = 'block';
+            } else {
+                if (metricBox) metricBox.style.display = 'none';
+            }
+        }
+
+        if (popEl) {
+            const metricBox = popEl.closest('.metric');
+            if (popValue != null) {
+                popEl.textContent = Number(popValue).toLocaleString() + '/km²';
+                if (metricBox) metricBox.style.display = 'block';
+            } else {
+                if (metricBox) metricBox.style.display = 'none';
+            }
+        }
     }
 
     updateScoreCircle(score) {
@@ -357,10 +394,75 @@ class MapManager {
         this.cafeMarkers = [];
     }
 
+    clearAmenityMarkers() {
+        this.amenityMarkers.forEach(m => this.map.removeLayer(m));
+        this.amenityMarkers = [];
+    }
+
+    getAmenityColorAndSymbol(amenityType) {
+        const typeMap = {
+            'school': { color: '#3498db', symbol: '🎓' },
+            'university': { color: '#2980b9', symbol: '🏫' },
+            'hospital': { color: '#e74c3c', symbol: '🏥' },
+            'clinic': { color: '#e67e22', symbol: '⚕️' },
+            'bus_station': { color: '#f39c12', symbol: '🚌' },
+            'bus_stop': { color: '#f39c12', symbol: '🚌' },
+            'pharmacy': { color: '#9b59b6', symbol: '💊' },
+            'bank': { color: '#27ae60', symbol: '🏦' },
+            'atm': { color: '#16a085', symbol: '💰' },
+            'restaurant': { color: '#c0392b', symbol: '🍽️' },
+            'cafe': { color: '#8b4513', symbol: '☕' },
+            'park': { color: '#27ae60', symbol: '🌳' },
+            'library': { color: '#34495e', symbol: '📚' },
+            'police': { color: '#2c3e50', symbol: '🚔' },
+            'fire_station': { color: '#e74c3c', symbol: '🚒' }
+        };
+        
+        return typeMap[amenityType.toLowerCase()] || { color: '#95a5a6', symbol: '📍' };
+    }
+
+    displayAmenitiesOnMap(amenitiesReport) {
+        if (!amenitiesReport || !this.map || !this.selectedLocation) return;
+
+        this.clearAmenityMarkers();
+
+        // Iterate through each amenity type
+        for (const [amenityType, data] of Object.entries(amenitiesReport)) {
+            if (!data || !data.amenities) continue;
+
+            const { color, symbol } = this.getAmenityColorAndSymbol(amenityType);
+
+            data.amenities.forEach(amenity => {
+                if (!amenity.latitude || !amenity.longitude) return;
+
+                const marker = L.circleMarker([amenity.latitude, amenity.longitude], {
+                    radius: 6,
+                    fillColor: color,
+                    color: '#fff',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(this.map);
+
+                const name = amenity.name || `${amenityType.replace('_', ' ')}`;
+                const distance = amenity.distance ? `${Math.round(amenity.distance)} m` : 'N/A';
+
+                marker.bindPopup(`
+                    ${symbol} <b>${name}</b><br>
+                    <small>Type: ${amenityType.replace('_', ' ')}</small><br>
+                    Distance: ${distance}
+                `);
+
+                this.amenityMarkers.push(marker);
+            });
+        }
+    }
+
     clearMap() {
         if (this.map) {
             this.clearMarkerAndCircle();
             this.clearCafeMarkers();
+            this.clearAmenityMarkers();
         }
         this.selectedLocation = null;
         this.selectedCafeType = null;
@@ -380,9 +482,14 @@ class MapManager {
         const top5List = document.getElementById('top5-list');
         if (top5List) top5List.innerHTML = '<p class="no-data">Click on the map to see results</p>';
 
+        // Hide all metric boxes
         ['competitor-count', 'road-length', 'population-density'].forEach(id => {
             const el = document.getElementById(id);
-            if (el) el.textContent = '-';
+            if (el) {
+                el.textContent = '-';
+                const metricBox = el.closest('.metric');
+                if (metricBox) metricBox.style.display = 'none';
+            }
         });
 
         const coordsEl = document.getElementById('location-coords');
@@ -406,6 +513,10 @@ class MapManager {
         // Fetch amenities and population data
         this.fetchReportData().then(() => {
             reportContent.innerHTML = this.generateFullReport();
+            // Display amenities on the map
+            if (this.lastAmenitiesReport && this.lastAmenitiesReport.amenities_report) {
+                this.displayAmenitiesOnMap(this.lastAmenitiesReport.amenities_report);
+            }
             // Attach event handlers for "See more" buttons after content is inserted
             this.attachAmenityHandlers();
         }).catch(error => {
@@ -625,6 +736,40 @@ class MapManager {
                 </ul>
             </div>
         `;
+    }
+
+    downloadReportAsPdf() {
+        if (!this.selectedLocation) {
+            if (window.uiManager) {
+                window.uiManager.showNotification('Pin a location first to generate a report.', 'warning');
+            }
+            return;
+        }
+
+        // Generate the report HTML
+        const reportHtml = this.generateFullReport();
+        
+        // Create a temporary container for PDF generation
+        const element = document.createElement('div');
+        element.style.padding = '20px';
+        element.style.backgroundColor = '#fff';
+        element.innerHTML = `
+            <h1>CafeLocate - Location Analysis Report</h1>
+            <p style="color: #666; margin-bottom: 20px;">Generated on ${new Date().toLocaleDateString()}</p>
+            ${reportHtml}
+        `;
+
+        // Configure PDF generation options
+        const opt = {
+            margin: 10,
+            filename: 'cafelocate-report.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+        };
+
+        // Generate and download PDF
+        html2pdf().set(opt).from(element).save();
     }
 
     _getLocationStrength(score) {

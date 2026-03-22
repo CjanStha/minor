@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
     <!-- Login Page -->
@@ -124,9 +125,22 @@
                     <ol class="instructions">
                         <li>Select your cafe type above</li>
                         <li>Click on the map to pin a location</li>
-                        <li> analysis radius</li>
+                        <li>Adjust analysis radius</li>
                         <li>Get AI recommendations instantly</li>
                     </ol>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>🎨 Amenity Legend</h3>
+                    <div class="legend-items">
+                        <div class="legend-item"><span class="legend-dot" style="background-color: #3498db;"></span> School</div>
+                        <div class="legend-item"><span class="legend-dot" style="background-color: #e74c3c;"></span> Hospital</div>
+                        <div class="legend-item"><span class="legend-dot" style="background-color: #f39c12;"></span> Bus Stop</div>
+                        <div class="legend-item"><span class="legend-dot" style="background-color: #9b59b6;"></span> Pharmacy</div>
+                        <div class="legend-item"><span class="legend-dot" style="background-color: #27ae60;"></span> Bank</div>
+                        <div class="legend-item"><span class="legend-dot" style="background-color: #8b4513;"></span> Cafe</div>
+                    </div>
+                    <small class="help-text">View full report to see amenities on the map</small>
                 </div>
 
                 <div id="loading-indicator" class="loading-indicator" style="display: none;">
@@ -146,14 +160,6 @@
                         <div id="location-coords" class="coords"></div>
                     </div>
 
-                    <!-- Dataset Overview -->
-                    <div class="result-section dataset-overview">
-                        <h4>📦 Dataset Overview</h4>
-                        <div id="dataset-stats">
-                            <p>Loading dataset insights...</p>
-                        </div>
-                    </div>
-
                     <!-- Suitability Score -->
                     <div class="result-section">
                         <h4>🎯 Suitability Score</h4>
@@ -167,7 +173,7 @@
 
                     <!-- ML Prediction -->
                     <div class="result-section">
-                        <h4>🤖 AI Recommendation</h4>
+                        <h4>🤖 Recommended Cafe</h4>
                         <div id="prediction-card" class="prediction-card">
                             <div class="prediction-type">-</div>
                             <div class="prediction-confidence">-</div>
@@ -200,6 +206,7 @@
                             </div>
                         </div>
                         <button id="full-report-btn" class="btn btn-secondary" style="margin-top: 15px; width: 100%;">📋 View Full Report</button>
+                        <button id="download-pdf-btn" class="btn btn-primary" style="margin-top: 10px; width: 100%;">📄 Download as PDF</button>
                     </div>
                 </div>
             </div>
