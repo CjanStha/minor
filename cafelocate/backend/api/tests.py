@@ -342,7 +342,7 @@ class CafeApiTests(TestCase):
 
     @patch('api.views.get_prediction')
     @patch('api.views.get_suitability_prediction')
-    def test_logged_in_analyze_saves_history(self, mock_get_suitability_prediction, mock_get_prediction):
+    def test_logged_in_analyze_does_not_persist_history_entries(self, mock_get_suitability_prediction, mock_get_prediction):
         mock_get_suitability_prediction.return_value = {
             'predicted_score': 66.5,
             'predicted_suitability': 'Medium Suitability',
@@ -369,11 +369,7 @@ class CafeApiTests(TestCase):
         )
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(AnalysisHistory.objects.filter(user=self.user).count(), 1)
-
-        history_item = AnalysisHistory.objects.get(user=self.user)
-        self.assertEqual(history_item.cafe_type, 'coffee_shop')
-        self.assertEqual(history_item.recommended_cafe_type, 'Coffee Shop')
+        self.assertEqual(AnalysisHistory.objects.filter(user=self.user).count(), 0)
 
     def test_history_endpoint_requires_authentication(self):
         response = self.client.get('/api/history/')

@@ -4,6 +4,7 @@
 class MapManager {
     constructor() {
         this.storageKey = 'cafelocate_map_state';
+        this.historyStoragePrefix = 'cafelocate_history_';
         this.map = null;
         this.marker = null;
         this.circle = null;
@@ -200,6 +201,7 @@ class MapManager {
             );
 
             this.lastAnalysisData = analysisData;
+            this.storeCurrentAnalysisInHistory(analysisData);
             this.displayAnalysisResults(analysisData);
 
             if (analysisData.top5) {
@@ -512,10 +514,75 @@ class MapManager {
         }
     }
 
+    getHistoryStorageKey() {
+        const user = window.authManager && window.authManager.getUser();
+        if (!user || !user.id) return null;
+        return `${this.historyStoragePrefix}${user.id}`;
+    }
+
+    getStoredHistory() {
+        const key = this.getHistoryStorageKey();
+        if (!key) return [];
+
+        try {
+            const raw = localStorage.getItem(key);
+            if (!raw) return [];
+            const parsed = JSON.parse(raw);
+            return Array.isArray(parsed) ? parsed : [];
+        } catch (_) {
+            return [];
+        }
+    }
+
+    setStoredHistory(items) {
+        const key = this.getHistoryStorageKey();
+        if (!key) return;
+
+        try {
+            localStorage.setItem(key, JSON.stringify(items));
+        } catch (_) {}
+    }
+
+    storeCurrentAnalysisInHistory(analysisData) {
+        if (!(window.authManager && window.authManager.isAuthenticated()) || !this.selectedLocation || !this.selectedCafeType) {
+            return;
+        }
+
+        const score = Number(analysisData?.suitability?.score);
+        if (!Number.isFinite(score)) return;
+
+        const currentItem = {
+            latitude: this.selectedLocation.lat,
+            longitude: this.selectedLocation.lng,
+            cafe_type: this.selectedCafeType,
+            radius: this.analysisRadius,
+            suitability_score: score,
+            suitability_level: analysisData?.suitability?.level || '-',
+            recommended_cafe_type: analysisData?.prediction?.recommended_cafe_type || '',
+            created_at: new Date().toISOString(),
+        };
+
+        const existing = this.getStoredHistory();
+        const isDuplicate = existing.some(item => {
+            return (
+                item.cafe_type === currentItem.cafe_type &&
+                Number(item.radius) === Number(currentItem.radius) &&
+                Math.abs(Number(item.latitude) - currentItem.latitude) < 0.000001 &&
+                Math.abs(Number(item.longitude) - currentItem.longitude) < 0.000001 &&
+                Math.abs(Number(item.suitability_score) - currentItem.suitability_score) < 0.01
+            );
+        });
+
+        if (isDuplicate) return;
+
+        const updated = [currentItem, ...existing].slice(0, 30);
+        this.setStoredHistory(updated);
+    }
+
     async loadHistoryForCurrentType() {
         this.updateHistoryVisibility();
 
-        if (!(window.authManager && window.authManager.isAuthenticated()) || !this.selectedCafeType || !window.apiManager) {
+        if (!(window.authManager && window.authManager.isAuthenticated()) || !this.selectedCafeType) {
             return;
         }
 
@@ -524,14 +591,11 @@ class MapManager {
             historyList.innerHTML = '<p class="no-data">Loading your saved locations...</p>';
         }
 
-        try {
-            const response = await window.apiManager.getAnalysisHistory(this.selectedCafeType, 8);
-            this.renderHistorySection(response.history || []);
-        } catch (error) {
-            if (historyList) {
-                historyList.innerHTML = `<p class="no-data" style="color:#e17055">${error.message || 'Unable to load history.'}</p>`;
-            }
-        }
+        const historyItems = this.getStoredHistory()
+            .filter(item => item.cafe_type === this.selectedCafeType)
+            .slice(0, 8);
+
+        this.renderHistorySection(historyItems);
     }
 
     renderHistorySection(historyItems) {

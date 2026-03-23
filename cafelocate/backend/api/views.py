@@ -841,18 +841,6 @@ class SuitabilityAnalysisView(APIView):
         prediction['recommended_cafe_type_confidence'] = type_prediction.get('confidence', 0.0)
         prediction['cafe_type_probabilities'] = type_prediction.get('all_probabilities', {})
 
-        if authenticated_user is not None:
-            AnalysisHistory.objects.create(
-                user=authenticated_user,
-                latitude=lat,
-                longitude=lng,
-                cafe_type=cafe_type,
-                radius=radius,
-                suitability_score=float(regression_score),
-                suitability_level=prediction.get('predicted_suitability', 'Unknown'),
-                recommended_cafe_type=prediction.get('recommended_cafe_type') or '',
-            )
-
         return Response({
             'location':     {'lat': lat, 'lng': lng},
             'nearby_count': total_competitors,
