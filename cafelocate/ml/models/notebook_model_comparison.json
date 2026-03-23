@@ -1,0 +1,68 @@
+{
+  "feature_columns": [
+    "is_operational",
+    "competitors_within_500m",
+    "competitors_within_200m",
+    "competitors_min_distance",
+    "competitors_avg_distance",
+    "roads_within_500m",
+    "roads_avg_distance",
+    "schools_within_500m",
+    "schools_within_200m",
+    "schools_min_distance",
+    "hospitals_within_500m",
+    "hospitals_min_distance",
+    "bus_stops_within_500m",
+    "bus_stops_min_distance",
+    "population_density_proxy",
+    "accessibility_score",
+    "foot_traffic_score",
+    "competition_pressure"
+  ],
+  "label_mapping": {
+    "High": 0,
+    "Medium": 1
+  },
+  "results": [
+    {
+      "split_name": "v2_80_20",
+      "model": "Random Forest",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "cv_score": 0.9952153110047847,
+      "cv_folds_used": 2
+    },
+    {
+      "split_name": "v2_80_20",
+      "model": "XGBoost",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "cv_score": 0.9952153110047847,
+      "cv_folds_used": 2
+    },
+    {
+      "split_name": "v3_85_15",
+      "model": "Random Forest",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "cv_score": 0.9954954954954955,
+      "cv_folds_used": 2
+    },
+    {
+      "split_name": "v3_85_15",
+      "model": "XGBoost",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "cv_score": 0.9954954954954955,
+      "cv_folds_used": 2
+    }
+  ]
+}
