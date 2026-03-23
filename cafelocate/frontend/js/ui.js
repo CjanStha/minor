@@ -1,5 +1,5 @@
 /**
- * CafeLocate - UI Management Module
+ * CafeSuitabilityAnalysis - UI Management Module
  * Handles all user interface interactions and event bindings
  */
 
@@ -253,10 +253,10 @@ class UIManager {
      */
     showNotification(message, type = 'info') {
         // Remove existing notifications
-        document.querySelectorAll('.cafelocate-notification').forEach(n => n.remove());
+        document.querySelectorAll('.cafesuitabilityanalysis-notification').forEach(n => n.remove());
 
         const notification = document.createElement('div');
-        notification.className = `cafelocate-notification notification-${type}`;
+        notification.className = `cafesuitabilityanalysis-notification notification-${type}`;
 
         const colors = {
             success: 'linear-gradient(135deg, #00cec9, #00b894)',

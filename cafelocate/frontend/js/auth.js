@@ -1,4 +1,4 @@
-// CafeLocate - Authentication Module
+// CafeSuitabilityAnalysis - Authentication Module
 // Handles user registration and login with username/email and password
 
 class AuthManager {

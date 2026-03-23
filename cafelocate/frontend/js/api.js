@@ -1,4 +1,4 @@
-// CafeLocate - API Module
+// CafeSuitabilityAnalysis - API Module
 // Handles all communication with the Django backend
 
 class APIManager {

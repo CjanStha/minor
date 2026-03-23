@@ -933,7 +933,7 @@ class AmenitiesReportView(APIView):
             )
 
         # Key amenity types we want to report
-        key_amenity_types = ['school', 'hospital', 'bus_station', 'cafe', 'health_post', 'pharmacy']
+        key_amenity_types = ['school', 'college', 'university', 'hospital', 'bus_station', 'cafe', 'health_post', 'pharmacy']
 
         report = {}
         for amenity_type in key_amenity_types:

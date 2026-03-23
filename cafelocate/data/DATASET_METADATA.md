@@ -2,15 +2,15 @@
 
 ## Combined Dataset Information
 - **File**: combined_comprehensive_dataset.csv
-- **Created**: 2026-03-22 14:12:31
-- **Records**: 1,072
-- **Columns**: 28
+- **Created**: 2026-03-23 11:49:36
+- **Records**: 0
+- **Columns**: 0
 
 ## Source Files
 All original data files have been archived in the 'raw_data' folder:
 
-### Café Data
-- kathmandu_cafes.csv (1,072 cafés with coordinates)
+### Cafe Data
+- kathmandu_cafes.csv (1,072 cafes with coordinates)
 
 ### Training Features
 - cafe_location_training_dataset.csv (1,572 records with 17 engineered features)
@@ -27,13 +27,13 @@ All original data files have been archived in the 'raw_data' folder:
 
 ## Column Information
 
-### Café Location Columns
-- place_id: Unique café identifier
-- name: Café name
+### Cafe Location Columns
+- place_id: Unique cafe identifier
+- name: Cafe name
 - lat: Latitude
 - lng: Longitude
 - type: Amenity type
-- rating: Café rating (NULL if not available)
+- rating: Cafe rating (NULL if not available)
 - review_count: Review count (NULL if not available)
 - price_level: Price level (NULL if not available)
 - is_operational: Operation status

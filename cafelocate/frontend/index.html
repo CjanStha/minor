@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CafeLocate - Find Your Perfect Cafe Location</title>
+    <title>CafeSuitabilityAnalysis - Analyze Optimal Cafe Locations</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -14,19 +14,19 @@
     <div id="login-page" class="page active">
         <div class="login-container">
             <div class="login-header">
-                <h1>☕ CafeLocate</h1>
-                <p>Find the perfect location for your cafe in Kathmandu</p>
+                <h1>☕ CafeSuitabilityAnalysis</h1>
+                <p>Analyze optimal cafe locations in Kathmandu using AI-powered analysis</p>
             </div>
             <div class="login-content">
                 <div class="features">
                     <div class="feature">
                         <div class="feature-icon">🗺️</div>
                         <h3>Interactive Map</h3>
-                        <p>Pin any location in Kathmandu and get instant analysis</p>
+                        <p>Pin any location in Kathmandu and get instant suitability analysis</p>
                     </div>
                     <div class="feature">
                         <div class="feature-icon">🤖</div>
-                        <h3>ML Predictions</h3>
+                        <h3>🤖 ML Suitability Predictions</h3>
                         <p>AI-powered recommendations for cafe types that will succeed</p>
                     </div>
                     <div class="feature">
@@ -52,7 +52,7 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </form>
                     <div class="guest-option">
-                        <button type="button" id="guest-login-btn" class="btn btn-secondary">Continue as Guest</button>
+                        <button type="button" id="guest-login-btn" class="btn btn-secondary">Try Demo Mode</button>
                     </div>
                     <p class="auth-switch">Don't have an account? <a href="#" id="show-register">Register here</a></p>
                 </div>
@@ -85,10 +85,10 @@
     <div id="map-page" class="page">
         <div class="header">
             <div class="logo">
-                <h2>☕ CafeLocate</h2>
+                <h2>☕ CafeSuitabilityAnalysis</h2>
             </div>
             <div class="user-info">
-                <span id="user-name">Guest User</span>
+                <span id="user-name">Demo User</span>
                 <button type="button" id="logout-btn" class="btn btn-secondary">Logout</button>
             </div>
         </div>
@@ -126,7 +126,7 @@
                         <li>Select your cafe type above</li>
                         <li>Click on the map to pin a location</li>
                         <li>Adjust analysis radius</li>
-                        <li>Get AI recommendations instantly</li>
+                        <li>Get AI-powered suitability analysis instantly</li>
                     </ol>
                 </div>
 
@@ -172,7 +172,7 @@
                     <div class="result-section">
                         <h4>⭐ Top 5 Nearby Cafes</h4>
                         <div id="top5-list" class="cafe-list">
-                            <p class="no-data">Click on the map to see results</p>
+                            <p class="no-data">Click on the map to analyze location suitability</p>
                         </div>
                     </div>
 

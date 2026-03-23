@@ -1,10 +1,10 @@
-// CafeLocate - Map Module
+// CafeSuitabilityAnalysis - Map Module
 // Handles Leaflet map initialization, markers, and user interactions
 
 class MapManager {
     constructor() {
-        this.storageKey = 'cafelocate_map_state';
-        this.historyStoragePrefix = 'cafelocate_history_';
+        this.storageKey = 'cafesuitabilityanalysis_map_state';
+        this.historyStoragePrefix = 'cafesuitabilityanalysis_history_';
         this.map = null;
         this.marker = null;
         this.circle = null;
@@ -982,7 +982,7 @@ class MapManager {
         element.style.padding = '20px';
         element.style.backgroundColor = '#fff';
         element.innerHTML = `
-            <h1>CafeLocate - Location Analysis Report</h1>
+            <h1>CafeSuitabilityAnalysis - Location Analysis Report</h1>
             <p style="color: #666; margin-bottom: 20px;">Generated on ${new Date().toLocaleDateString()}</p>
             ${reportHtml}
         `;
@@ -990,7 +990,7 @@ class MapManager {
         // Configure PDF generation options
         const opt = {
             margin: 10,
-            filename: 'cafelocate-report.pdf',
+            filename: 'cafesuitabilityanalysis-report.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 2 },
             jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
