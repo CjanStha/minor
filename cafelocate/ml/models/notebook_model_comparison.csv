@@ -1,5 +1,0 @@
-split_name,model,accuracy,precision,recall,f1_score,cv_score,cv_folds_used
-v3_85_15,Random Forest,1.0,1.0,1.0,1.0,0.9954954954954955,2
-v3_85_15,XGBoost,1.0,1.0,1.0,1.0,0.9954954954954955,2
-v2_80_20,Random Forest,1.0,1.0,1.0,1.0,0.9952153110047847,2
-v2_80_20,XGBoost,1.0,1.0,1.0,1.0,0.9952153110047847,2

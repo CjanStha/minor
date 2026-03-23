@@ -1,5 +1,0 @@
-Split,Algorithm,Accuracy,Precision (Weighted),Recall (Weighted),F1 (Weighted),Precision (Macro),Recall (Macro),F1 (Macro),Matthews Corr,ROC-AUC,CV Score (F1-Macro),High_Precision,High_Recall,High_F1,Medium_Precision,Medium_Recall,Medium_F1
-v2_stratified_80_20,random_forest,0.9905,0.9810,0.9905,0.9857,0.4952,0.5000,0.4976,0.0000,1.0,0.8327,0.9905,1.0000,0.9952,0.0000,0.0000,0.0000
-v2_stratified_80_20,xgboost,0.9905,0.9810,0.9905,0.9857,0.4952,0.5000,0.4976,0.0000,0.5,0.6655,0.9905,1.0000,0.9952,0.0000,0.0000,0.0000
-v3_stratified_85_15,random_forest,0.9873,0.9748,0.9873,0.9811,0.4937,0.5000,0.4968,0.0000,1.0,0.8328,0.9873,1.0000,0.9936,0.0000,0.0000,0.0000
-v3_stratified_85_15,xgboost,0.9873,0.9748,0.9873,0.9811,0.4937,0.5000,0.4968,0.0000,0.5,0.6655,0.9873,1.0000,0.9936,0.0000,0.0000,0.0000

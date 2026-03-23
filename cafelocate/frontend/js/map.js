@@ -253,9 +253,10 @@ class MapManager {
         // Suitability score
         const scoreEl = document.getElementById('suitability-score');
         const levelEl = document.getElementById('suitability-level');
+        const numericScore = Number(suitability.score);
         if (scoreEl) {
-            scoreEl.textContent = suitability.score || '-';
-            this.updateScoreCircle(suitability.score || 0);
+            scoreEl.textContent = Number.isFinite(numericScore) ? numericScore.toFixed(2) : '-';
+            this.updateScoreCircle(Number.isFinite(numericScore) ? numericScore : 0);
         }
         if (levelEl) {
             levelEl.textContent = suitability.level || prediction.predicted_suitability || '-';
@@ -958,9 +959,11 @@ class MapManager {
                     <li><strong>Location Strength:</strong> ${this._getLocationStrength(parseInt(score))}</li>
                     <li><strong>Competition Level:</strong> ${this._getCompetitionLevel(competitors)}</li>
                     <li><strong>Market Potential:</strong> ${this._getMarketPotential(population)}</li>
-                    <li><strong>Recommendation:</strong> ${parseInt(score) >= 60
-                        ? '✅ This location shows good potential for a cafe business.'
-                        : '⚠️ Consider alternative locations with less competition or better road access.'}</li>
+                    <li><strong>Recommendation:</strong> ${parseInt(score) >= 70
+                        ? 'This location shows good potential for a cafe business.'
+                        : parseInt(score) >= 40
+                            ? 'This location is workable, but competition and access should be reviewed carefully.'
+                            : 'Consider alternative locations with less competition or better road access.'}</li>
                 </ul>
             </div>
         `;
@@ -1001,23 +1004,23 @@ class MapManager {
     }
 
     _getLocationStrength(score) {
-        if (score >= 80) return "Excellent – high success potential";
-        if (score >= 60) return "Good – moderate success potential";
-        if (score >= 40) return "Fair – consider improvements";
-        return "Poor – high risk, explore alternatives";
+        if (score >= 70) return "Excellent - high success potential";
+        if (score >= 40) return "Good - moderate success potential";
+        if (score >= 20) return "Fair - consider improvements";
+        return "Poor - high risk, explore alternatives";
     }
 
     _getCompetitionLevel(count) {
         const n = parseInt(count) || 0;
-        if (n < 5) return "Low competition – great opportunity";
-        if (n < 15) return "Moderate competition – viable market";
-        return "High competition – saturated market";
+        if (n < 5) return "Low competition - great opportunity";
+        if (n < 15) return "Moderate competition - viable market";
+        return "High competition - saturated market";
     }
 
     _getMarketPotential(population) {
         const density = parseInt((population || '').replace(/[^0-9]/g, '')) || 0;
-        if (density > 15000) return "High population density – strong market";
-        if (density > 8000) return "Moderate density – decent market";
+        if (density > 15000) return "High population density - strong market";
+        if (density > 8000) return "Moderate density - decent market";
         return "Low density – limited foot traffic expected";
     }
 }

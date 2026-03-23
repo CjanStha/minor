@@ -10,10 +10,22 @@ logger = logging.getLogger(__name__)
 BASE_DIR = Path(__file__).resolve().parents[2]
 MODELS_DIR = BASE_DIR / 'ml' / 'models'
 
-RF_MODEL_PATH = MODELS_DIR / 'rf_regressor_v3_85_15.pkl'
-XGB_MODEL_PATH = MODELS_DIR / 'xgb_regressor_v3_85_15.pkl'
-SCALER_PATH = MODELS_DIR / 'scaler_regression.pkl'
-FEATURES_PATH = MODELS_DIR / 'feature_columns_regression.pkl'
+MODEL_CANDIDATES = [
+    {
+        'name': 'observed_v1_85_15',
+        'rf_path': MODELS_DIR / 'rf_regressor_observed_v1_85_15.pkl',
+        'xgb_path': MODELS_DIR / 'xgb_regressor_observed_v1_85_15.pkl',
+        'scaler_path': MODELS_DIR / 'scaler_regression_observed.pkl',
+        'features_path': MODELS_DIR / 'feature_columns_regression_observed.pkl',
+    },
+    {
+        'name': 'pseudo_v3_85_15',
+        'rf_path': MODELS_DIR / 'rf_regressor_v3_85_15.pkl',
+        'xgb_path': MODELS_DIR / 'xgb_regressor_v3_85_15.pkl',
+        'scaler_path': MODELS_DIR / 'scaler_regression.pkl',
+        'features_path': MODELS_DIR / 'feature_columns_regression.pkl',
+    },
+]
 
 DEFAULT_FEATURES = [
     'competitors_within_500m', 'competitors_within_200m',
@@ -30,48 +42,61 @@ _rf_model = None
 _xgb_model = None
 _scaler = None
 _feature_columns = None
+_active_model_name = None
 
 
 def _load_models():
-    global _rf_model, _xgb_model, _scaler, _feature_columns
+    global _rf_model, _xgb_model, _scaler, _feature_columns, _active_model_name
     if _scaler is not None and _feature_columns is not None and (_rf_model is not None or _xgb_model is not None):
         return
 
-    try:
-        _scaler = joblib.load(SCALER_PATH)
-        _feature_columns = joblib.load(FEATURES_PATH)
-    except FileNotFoundError:
-        logger.warning('Regression preprocessing artifacts not found. Using fallback scoring.')
-        _rf_model = None
-        _xgb_model = None
-        _scaler = None
-        _feature_columns = DEFAULT_FEATURES
+    for candidate in MODEL_CANDIDATES:
+        try:
+            scaler = joblib.load(candidate['scaler_path'])
+            feature_columns = joblib.load(candidate['features_path'])
+        except FileNotFoundError:
+            continue
+
+        rf_model = None
+        xgb_model = None
+
+        try:
+            rf_model = joblib.load(candidate['rf_path'])
+            if hasattr(rf_model, 'n_jobs'):
+                rf_model.n_jobs = 1
+        except Exception as exc:
+            logger.warning(f"{candidate['name']} Random Forest regressor could not be loaded: {exc}")
+
+        try:
+            xgb_model = joblib.load(candidate['xgb_path'])
+            if hasattr(xgb_model, 'n_jobs'):
+                xgb_model.n_jobs = 1
+        except Exception as exc:
+            logger.warning(f"{candidate['name']} XGBoost regressor could not be loaded: {exc}")
+
+        if rf_model is None and xgb_model is None:
+            continue
+
+        _scaler = scaler
+        _feature_columns = feature_columns
+        _rf_model = rf_model
+        _xgb_model = xgb_model
+        _active_model_name = candidate['name']
+
+        if _rf_model is not None and _xgb_model is not None:
+            logger.info(f'Regression suitability ensemble loaded successfully: {_active_model_name}')
+        elif _rf_model is not None:
+            logger.info(f'Regression suitability Random Forest model loaded successfully: {_active_model_name}')
+        else:
+            logger.info(f'Regression suitability XGBoost model loaded successfully: {_active_model_name}')
         return
 
-    try:
-        _rf_model = joblib.load(RF_MODEL_PATH)
-        if hasattr(_rf_model, 'n_jobs'):
-            _rf_model.n_jobs = 1
-    except Exception as exc:
-        logger.warning(f'Random Forest regressor could not be loaded: {exc}')
-        _rf_model = None
-
-    try:
-        _xgb_model = joblib.load(XGB_MODEL_PATH)
-        if hasattr(_xgb_model, 'n_jobs'):
-            _xgb_model.n_jobs = 1
-    except Exception as exc:
-        logger.warning(f'XGBoost regressor could not be loaded: {exc}')
-        _xgb_model = None
-
-    if _rf_model is None and _xgb_model is None:
-        logger.warning('No regression models could be loaded. Using fallback scoring.')
-    elif _rf_model is not None and _xgb_model is not None:
-        logger.info('Regression suitability ensemble loaded successfully.')
-    elif _rf_model is not None:
-        logger.info('Regression suitability Random Forest model loaded successfully.')
-    else:
-        logger.info('Regression suitability XGBoost model loaded successfully.')
+    logger.warning('Regression preprocessing artifacts not found. Using fallback scoring.')
+    _rf_model = None
+    _xgb_model = None
+    _scaler = None
+    _feature_columns = DEFAULT_FEATURES
+    _active_model_name = None
 
 
 def _score_to_level(score):
@@ -154,6 +179,7 @@ def get_suitability_prediction(features_dict):
             'predicted_suitability': _score_to_level(ensemble_score),
             'confidence': round(confidence, 3),
             'model_type': model_type,
+            'model_variant': _active_model_name,
             'features_used': len(feature_columns),
             'model_breakdown': {name: round(value, 2) for name, value in model_scores.items()},
         }
