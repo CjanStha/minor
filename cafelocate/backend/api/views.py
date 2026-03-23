@@ -4,8 +4,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 import jwt, math, logging, json
 
-from .models import Cafe, Ward, Road, UserProfile, Amenity
-from .serializers import CafeSerializer, SuitabilityRequestSerializer, UserProfileSerializer, AmenitySerializer
+from .models import Cafe, Ward, Road, UserProfile, Amenity, AnalysisHistory
+from .serializers import CafeSerializer, SuitabilityRequestSerializer, UserProfileSerializer, AmenitySerializer, AnalysisHistorySerializer
+from .location_validation import is_within_kathmandu_metropolitan_city
 from ml_engine.suitability_predictor import get_suitability_prediction
 from ml_engine.predictor import get_prediction
 
@@ -19,6 +20,25 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 
+def get_request_user(request):
+    auth_header = request.headers.get('Authorization', '')
+    if not auth_header.startswith('Bearer '):
+        return None
+
+    token = auth_header.split(' ', 1)[1].strip()
+    if not token:
+        return None
+
+    try:
+        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=['HS256'])
+        user_id = payload.get('user_id')
+        if not user_id:
+            return None
+        return UserProfile.objects.filter(id=user_id, is_active=True).first()
+    except Exception:
+        return None
+
+
 def haversine_distance(lat1, lon1, lat2, lon2):
     """
     Calculate the great circle distance in meters between two points.
@@ -29,6 +49,59 @@ def haversine_distance(lat1, lon1, lat2, lon2):
     a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
     c = 2 * math.asin(math.sqrt(a))
     return c * 6371 * 1000  # metres
+
+
+def _get_amenity_stats(lat, lng, radius):
+    """
+    Build radius-aware amenity features used by the regression model.
+    """
+    amenity_groups = {
+        'schools': ['school', 'college', 'university'],
+        'hospitals': ['hospital', 'health_post', 'clinic', 'pharmacy'],
+        'bus_stops': ['bus_station', 'bus_stop'],
+    }
+
+    stats = {
+        'schools_within_500m': 0,
+        'schools_within_200m': 0,
+        'schools_min_distance': 500.0,
+        'hospitals_within_500m': 0,
+        'hospitals_min_distance': 500.0,
+        'bus_stops_within_500m': 0,
+        'bus_stops_min_distance': 500.0,
+    }
+
+    amenity_records = list(
+        Amenity.objects.filter(
+            amenity_type__in=sum(amenity_groups.values(), [])
+        ).values('amenity_type', 'latitude', 'longitude')
+    )
+
+    for amenity in amenity_records:
+        amenity_type = amenity['amenity_type']
+        distance = haversine_distance(lat, lng, amenity['latitude'], amenity['longitude'])
+
+        if amenity_type in amenity_groups['schools']:
+            if distance <= 500:
+                stats['schools_within_500m'] += 1
+            if distance <= 200:
+                stats['schools_within_200m'] += 1
+            stats['schools_min_distance'] = min(stats['schools_min_distance'], distance)
+
+        elif amenity_type in amenity_groups['hospitals']:
+            if distance <= 500:
+                stats['hospitals_within_500m'] += 1
+            stats['hospitals_min_distance'] = min(stats['hospitals_min_distance'], distance)
+
+        elif amenity_type in amenity_groups['bus_stops']:
+            if distance <= 500:
+                stats['bus_stops_within_500m'] += 1
+            stats['bus_stops_min_distance'] = min(stats['bus_stops_min_distance'], distance)
+
+    for key in ['schools_min_distance', 'hospitals_min_distance', 'bus_stops_min_distance']:
+        stats[key] = round(stats[key], 2)
+
+    return stats
 
 
 def _distance_point_to_segment_m(px, py, x1, y1, x2, y2):
@@ -448,6 +521,12 @@ class NearbyCafesView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+        if not is_within_kathmandu_metropolitan_city(lat, lng):
+            return Response(
+                {'error': 'Location pinning is allowed only inside Kathmandu Metropolitan City.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
         cafes = []
         for cafe in Cafe.objects.filter(is_open=True):
             if not (cafe.location and isinstance(cafe.location, dict)):
@@ -524,6 +603,7 @@ class SuitabilityAnalysisView(APIView):
         if not serializer.is_valid():
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+        authenticated_user = get_request_user(request)
         lat       = serializer.validated_data['lat']
         lng       = serializer.validated_data['lng']
         cafe_type = serializer.validated_data['cafe_type']
@@ -548,6 +628,14 @@ class SuitabilityAnalysisView(APIView):
                     nearby_cafes.append(cafe)
 
         total_competitors = len(nearby_cafes)
+        same_type_cafes = [c for c in nearby_cafes if (c.cafe_type or '').strip() == cafe_type]
+        same_type_competitors = len(same_type_cafes)
+        same_type_within_200m = len([c for c in same_type_cafes if c.distance <= 200])
+        same_type_min_distance = min([c.distance for c in same_type_cafes]) if same_type_cafes else radius
+        same_type_avg_distance = (
+            sum([c.distance for c in same_type_cafes]) / len(same_type_cafes)
+            if same_type_cafes else radius
+        )
 
         # Step 2: Top 5 cafes by score
         top5_qs = sorted(
@@ -663,54 +751,118 @@ class SuitabilityAnalysisView(APIView):
             nearest_main_road_m = round(nearest_main_road_m)
 
         # Step 5: Compute suitability score (0-100)
-        competitor_score = max(0, 1 - (total_competitors / 20)) * 40
+        weighted_competitors = total_competitors + (same_type_competitors * 1.5)
+        competitor_score = max(0, 1 - (weighted_competitors / 20)) * 40
         road_score       = min(1, road_m / 3000) * 30
         pop_score        = min(1, pop_density / 15000) * 30
         suitability_score = round(competitor_score + road_score + pop_score)
 
-        # Step 6: ML suitability prediction with optimized model
+        # Step 6: Regression-based ML suitability prediction
         ratings = [c.rating for c in nearby_cafes if c.rating is not None]
         avg_rating = sum(ratings) / len(ratings) if ratings else 0
+        same_type_ratings = [c.rating for c in same_type_cafes if c.rating is not None]
+        same_type_avg_rating = sum(same_type_ratings) / len(same_type_ratings) if same_type_ratings else 0
 
-        # Prepare features for suitability model (matching training features)
+        amenity_stats = _get_amenity_stats(lat, lng, radius)
+
+        nearest_road_for_features = (
+            float(nearest_main_road_m)
+            if nearest_main_road_m is not None else
+            float(max(50, min(3000, road_m / 2)))
+        )
+
+        road_access_score = max(0.0, min(10.0, 10.0 - (nearest_road_for_features / 150.0)))
+        bus_access_bonus = min(2.5, amenity_stats['bus_stops_within_500m'] * 0.35)
+        school_bonus = min(1.5, amenity_stats['schools_within_500m'] * 0.15)
+        hospital_bonus = min(1.0, amenity_stats['hospitals_within_500m'] * 0.15)
+        accessibility_score = max(0.0, min(10.0, road_access_score + bus_access_bonus + school_bonus + hospital_bonus))
+
+        density_signal = min(4.0, pop_density / 5000.0)
+        transit_signal = min(3.0, amenity_stats['bus_stops_within_500m'] * 0.4)
+        institutional_signal = min(2.0, amenity_stats['schools_within_500m'] * 0.2)
+        commerce_signal = min(2.0, total_competitors * 0.12)
+        road_signal = min(2.0, max(0.0, 2.0 - (nearest_road_for_features / 300.0)))
+        foot_traffic_score = max(
+            0.0,
+            min(10.0, density_signal + transit_signal + institutional_signal + commerce_signal + road_signal)
+        )
+
+        competition_pressure = max(
+            0.0,
+            min(
+                10.0,
+                (total_competitors * 0.30) +
+                (same_type_competitors * 0.85) +
+                min(2.0, avg_rating * 0.25) +
+                min(2.5, same_type_avg_rating * 0.55)
+            )
+        )
+
         features_dict = {
-            'competitors_within_500m': total_competitors,
-            'competitors_within_200m': len([c for c in nearby_cafes if c.distance <= 200]),
-            'competitors_min_distance': min([c.distance for c in nearby_cafes]) if nearby_cafes else 500,
-            'competitors_avg_distance': sum([c.distance for c in nearby_cafes]) / len(nearby_cafes) if nearby_cafes else 500,
-            'roads_within_500m': 1 if road_m < 500 else 0,  # Simplified
+            'competitors_within_500m': round(total_competitors + (same_type_competitors * 1.25), 2),
+            'competitors_within_200m': round(len([c for c in nearby_cafes if c.distance <= 200]) + (same_type_within_200m * 1.5), 2),
+            'competitors_min_distance': round(
+                min(
+                    min([c.distance for c in nearby_cafes]) if nearby_cafes else 500,
+                    same_type_min_distance
+                ),
+                2
+            ),
+            'competitors_avg_distance': round(
+                (
+                    ((sum([c.distance for c in nearby_cafes]) / len(nearby_cafes)) if nearby_cafes else 500) * 0.65 +
+                    same_type_avg_distance * 0.35
+                ) if same_type_cafes else
+                ((sum([c.distance for c in nearby_cafes]) / len(nearby_cafes)) if nearby_cafes else 500),
+                2
+            ),
+            'roads_within_500m': min(20, max(0, round(road_m / 200))),
             'roads_avg_distance': road_m,
-            'schools_within_500m': 0,  # Would need actual school data
-            'schools_within_200m': 0,
-            'schools_min_distance': 500,  # Default
-            'hospitals_within_500m': 0,  # Would need actual hospital data
-            'hospitals_min_distance': 500,  # Default
-            'bus_stops_within_500m': 0,  # Would need actual bus stop data
-            'bus_stops_min_distance': 500,  # Default
+            'schools_within_500m': amenity_stats['schools_within_500m'],
+            'schools_within_200m': amenity_stats['schools_within_200m'],
+            'schools_min_distance': amenity_stats['schools_min_distance'],
+            'hospitals_within_500m': amenity_stats['hospitals_within_500m'],
+            'hospitals_min_distance': amenity_stats['hospitals_min_distance'],
+            'bus_stops_within_500m': amenity_stats['bus_stops_within_500m'],
+            'bus_stops_min_distance': amenity_stats['bus_stops_min_distance'],
             'population_density_proxy': pop_density / 1000,  # Scale down
-            'accessibility_score': 5.0 if road_m < 1000 else 3.0,  # Simplified scoring
-            'foot_traffic_score': 10.0 if pop_density > 10000 else 5.0,  # Simplified
-            'competition_pressure': min(10.0, total_competitors * 0.5)  # Scale competitors
+            'accessibility_score': round(accessibility_score, 2),
+            'foot_traffic_score': round(foot_traffic_score, 2),
+            'competition_pressure': round(competition_pressure, 2)
         }
 
         prediction = get_suitability_prediction(features_dict)
+        regression_score = prediction.get('predicted_score', suitability_score)
 
-        # Also get the recommended cafe type (ML model predicts cafe type labels)
+        # Step 7: Best cafe type recommendation for this location
         type_features = [total_competitors, avg_rating, road_m, pop_density]
         type_prediction = get_prediction(type_features)
-        recommended_type = type_prediction.get('predicted_type') if type_prediction else None
-        if isinstance(prediction, dict):
-            prediction['recommended_cafe_type'] = recommended_type
+        prediction['recommended_cafe_type'] = type_prediction.get('predicted_type')
+        prediction['recommended_cafe_type_confidence'] = type_prediction.get('confidence', 0.0)
+        prediction['cafe_type_probabilities'] = type_prediction.get('all_probabilities', {})
+
+        if authenticated_user is not None:
+            AnalysisHistory.objects.create(
+                user=authenticated_user,
+                latitude=lat,
+                longitude=lng,
+                cafe_type=cafe_type,
+                radius=radius,
+                suitability_score=float(regression_score),
+                suitability_level=prediction.get('predicted_suitability', 'Unknown'),
+                recommended_cafe_type=prediction.get('recommended_cafe_type') or '',
+            )
 
         return Response({
             'location':     {'lat': lat, 'lng': lng},
             'nearby_count': total_competitors,
             'top5':         CafeSerializer(top5_qs, many=True).data,
             'suitability': {
-                'score':              suitability_score,
+                'score':              regression_score,
                 'level':              prediction.get('predicted_suitability', 'Unknown'),
                 'confidence':         prediction.get('confidence', 0),
                 'competitor_count':   total_competitors,
+                'same_type_competitor_count': same_type_competitors,
                 'road_distance_m':    (round(nearest_main_road_m) if nearest_main_road_m is not None else round(road_m)),
                 'population_density': pop_density,
             },
@@ -734,6 +886,12 @@ class AmenitiesView(APIView):
         except (TypeError, ValueError):
             return Response(
                 {'error': 'lat, lng (required) and type, radius (optional) must be valid'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        if not is_within_kathmandu_metropolitan_city(lat, lng):
+            return Response(
+                {'error': 'Location pinning is allowed only inside Kathmandu Metropolitan City.'},
                 status=status.HTTP_400_BAD_REQUEST
             )
 
@@ -780,6 +938,12 @@ class AmenitiesReportView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+        if not is_within_kathmandu_metropolitan_city(lat, lng):
+            return Response(
+                {'error': 'Location pinning is allowed only inside Kathmandu Metropolitan City.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
         # Key amenity types we want to report
         key_amenity_types = ['school', 'hospital', 'bus_station', 'cafe', 'health_post', 'pharmacy']
 
@@ -819,6 +983,12 @@ class AreaPopulationView(APIView):
         except (TypeError, ValueError):
             return Response(
                 {'error': 'lat and lng query parameters are required numbers'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        if not is_within_kathmandu_metropolitan_city(lat, lng):
+            return Response(
+                {'error': 'Location pinning is allowed only inside Kathmandu Metropolitan City.'},
                 status=status.HTTP_400_BAD_REQUEST
             )
 
@@ -893,5 +1063,55 @@ class AreaPopulationView(APIView):
             'total_population': total_population,
             'affected_wards': affected_wards,
             'affected_ward_count': len(affected_wards),
+        })
+
+
+class LocationValidationView(APIView):
+
+    def get(self, request):
+        try:
+            lat = float(request.GET.get('lat'))
+            lng = float(request.GET.get('lng'))
+        except (TypeError, ValueError):
+            return Response(
+                {'error': 'lat and lng query parameters are required numbers'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        is_valid = is_within_kathmandu_metropolitan_city(lat, lng)
+        return Response({
+            'lat': lat,
+            'lng': lng,
+            'is_valid': is_valid,
+            'message': (
+                'Location is inside Kathmandu Metropolitan City.'
+                if is_valid else
+                'Location pinning is allowed only inside Kathmandu Metropolitan City.'
+            ),
+        })
+
+
+class AnalysisHistoryView(APIView):
+
+    def get(self, request):
+        user = get_request_user(request)
+        if user is None:
+            return Response(
+                {'error': 'Authentication required.'},
+                status=status.HTTP_401_UNAUTHORIZED
+            )
+
+        cafe_type = request.GET.get('cafe_type', '').strip()
+        limit = min(max(int(request.GET.get('limit', 10)), 1), 25)
+
+        queryset = AnalysisHistory.objects.filter(user=user)
+        if cafe_type:
+            queryset = queryset.filter(cafe_type=cafe_type)
+
+        history_items = list(queryset[:limit + 1])
+        serializer = AnalysisHistorySerializer(history_items, many=True)
+        return Response({
+            'count': len(serializer.data),
+            'history': serializer.data,
         })
 

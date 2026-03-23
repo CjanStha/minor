@@ -52,7 +52,7 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </form>
                     <div class="guest-option">
-                        <button id="guest-login-btn" class="btn btn-secondary">Continue as Guest</button>
+                        <button type="button" id="guest-login-btn" class="btn btn-secondary">Continue as Guest</button>
                     </div>
                     <p class="auth-switch">Don't have an account? <a href="#" id="show-register">Register here</a></p>
                 </div>
@@ -89,7 +89,7 @@
             </div>
             <div class="user-info">
                 <span id="user-name">Guest User</span>
-                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                <button type="button" id="logout-btn" class="btn btn-secondary">Logout</button>
             </div>
         </div>
 
@@ -155,6 +155,7 @@
                                 <span id="suitability-score">-</span>
                             </div>
                             <div class="score-label">out of 100</div>
+                            <div id="suitability-level" class="score-label">-</div>
                         </div>
                     </div>
 
@@ -192,8 +193,15 @@
                                 <div class="metric-value" id="population-density">-</div>
                             </div>
                         </div>
-                        <button id="full-report-btn" class="btn btn-secondary" style="margin-top: 15px; width: 100%;">📋 View Full Report</button>
-                        <button id="download-pdf-btn" class="btn btn-primary" style="margin-top: 10px; width: 100%;">📄 Download as PDF</button>
+                        <button type="button" id="full-report-btn" class="btn btn-secondary" style="margin-top: 15px; width: 100%;">📋 View Full Report</button>
+                        <button type="button" id="download-pdf-btn" class="btn btn-primary" style="margin-top: 10px; width: 100%;">📄 Download as PDF</button>
+                    </div>
+
+                    <div id="history-section" class="result-section" style="display: none;">
+                        <h4>🕘 History & Compare</h4>
+                        <div id="history-list" class="history-list">
+                            <p class="no-data">Log in and analyze locations to build your cafe history.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,5 +227,4 @@
     <script src="js/api.js"></script>
     <script src="js/map.js"></script>
 </body>
-</html></content>
-<parameter name="filePath">d:\vscode\MP2\cafelocate\frontend\index.html
+</html>

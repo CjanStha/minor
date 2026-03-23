@@ -33,6 +33,14 @@ urlpatterns = [
     # GET /api/cafes/stats/
     # Returns dataset level statistics for all cafes
     path('cafes/stats/', views.CafeStatsView.as_view(), name='cafes-stats'),
+
+    # GET /api/validate-location/?lat=27.71&lng=85.32
+    # Returns whether a point is inside Kathmandu Metropolitan City
+    path('validate-location/', views.LocationValidationView.as_view(), name='validate-location'),
+
+    # GET /api/history/?cafe_type=coffee_shop
+    # Returns saved analysis history for logged-in users
+    path('history/', views.AnalysisHistoryView.as_view(), name='analysis-history'),
 ]
 
 # Final URL structure:

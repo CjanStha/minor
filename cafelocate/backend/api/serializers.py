@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Cafe, Ward, UserProfile, Amenity
+from .models import Cafe, Ward, UserProfile, Amenity, AnalysisHistory
+from .location_validation import is_within_kathmandu_metropolitan_city
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -82,6 +83,14 @@ class SuitabilityRequestSerializer(serializers.Serializer):
         required=False
     )
 
+    def validate(self, attrs):
+        attrs = super().validate(attrs)
+        if not is_within_kathmandu_metropolitan_city(attrs['lat'], attrs['lng']):
+            raise serializers.ValidationError({
+                'lat': 'Location pinning is allowed only inside Kathmandu Metropolitan City.'
+            })
+        return attrs
+
 
 # ═══════════════════════════════════════════════════════════════════
 # UserProfileSerializer
@@ -91,3 +100,19 @@ class UserProfileSerializer(serializers.ModelSerializer):
         model  = UserProfile
         fields = ['id', 'username', 'email', 'date_joined', 'is_active', 'first_name', 'last_name']
         read_only_fields = ['date_joined', 'is_active']  # can't be set by the client
+
+
+class AnalysisHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AnalysisHistory
+        fields = [
+            'id',
+            'latitude',
+            'longitude',
+            'cafe_type',
+            'radius',
+            'suitability_score',
+            'suitability_level',
+            'recommended_cafe_type',
+            'created_at',
+        ]

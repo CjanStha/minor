@@ -57,6 +57,16 @@ class APIManager {
         });
     }
 
+    async validateLocation(lat, lng) {
+        return this.makeRequest(`/validate-location/?lat=${lat}&lng=${lng}`);
+    }
+
+    async getAnalysisHistory(cafeType, limit = 10) {
+        const params = new URLSearchParams({ limit: String(limit) });
+        if (cafeType) params.set('cafe_type', cafeType);
+        return this.makeRequest(`/history/?${params.toString()}`);
+    }
+
     /**
      * Get global cafe dataset statistics
      */

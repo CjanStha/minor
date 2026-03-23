@@ -145,3 +145,26 @@ class UserProfile(AbstractUser):
 
     def __str__(self):
         return f"{self.username} ({self.email})"
+
+
+class AnalysisHistory(models.Model):
+
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='analysis_history')
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    cafe_type = models.CharField(max_length=50)
+    radius = models.IntegerField(default=500)
+    suitability_score = models.FloatField()
+    suitability_level = models.CharField(max_length=50)
+    recommended_cafe_type = models.CharField(max_length=100, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = 'analysis_history'
+        ordering = ['-created_at']
+        indexes = [
+            models.Index(fields=['user', 'cafe_type', 'created_at']),
+        ]
+
+    def __str__(self):
+        return f"{self.user.username} {self.cafe_type} {self.suitability_score:.2f}"

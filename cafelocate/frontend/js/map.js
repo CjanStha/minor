@@ -3,6 +3,7 @@
 
 class MapManager {
     constructor() {
+        this.storageKey = 'cafelocate_map_state';
         this.map = null;
         this.marker = null;
         this.circle = null;
@@ -28,7 +29,9 @@ class MapManager {
         this.initialized = true;
         this.initializeMap();
         this.setupEventListeners();
+        this.restorePersistedState();
         this.loadDatasetStats();
+        this.updateHistoryVisibility();
     }
 
     initializeMap() {
@@ -58,14 +61,15 @@ class MapManager {
     setupEventListeners() {
         if (!this.map) return;
 
-        this.map.on('click', (e) => {
-            this.handleMapClick(e.latlng);
+        this.map.on('click', async (e) => {
+            await this.handleMapClick(e.latlng);
         });
 
         const cafeTypeSelect = document.getElementById('cafe-type-select');
         if (cafeTypeSelect) {
             cafeTypeSelect.addEventListener('change', (e) => {
                 this.selectedCafeType = e.target.value;
+                this.persistState();
                 if (this.selectedLocation && this.selectedCafeType) {
                     this.analyzeLocation();
                 }
@@ -78,6 +82,7 @@ class MapManager {
             radiusSlider.addEventListener('input', (e) => {
                 this.analysisRadius = parseInt(e.target.value);
                 radiusValue.textContent = this.analysisRadius;
+                this.persistState();
                 if (this.circle && this.selectedLocation) {
                     this.circle.setRadius(this.analysisRadius);
                 }
@@ -115,10 +120,42 @@ class MapManager {
                 if (e.target === modal) this.hideFullReport();
             });
         }
+
+        document.addEventListener('keydown', (e) => {
+            const activePage = document.getElementById('map-page');
+            const mapPageActive = activePage && activePage.classList.contains('active');
+            if (!mapPageActive) return;
+            if (e.key === 'Enter' && !e.target.closest('#login-form') && !e.target.closest('#register-form')) {
+                e.preventDefault();
+            }
+        });
     }
 
-    handleMapClick(latlng) {
+    async handleMapClick(latlng) {
         const { lat, lng } = latlng;
+
+        try {
+            if (!window.apiManager) {
+                throw new Error('API manager not initialized');
+            }
+
+            const validation = await window.apiManager.validateLocation(lat, lng);
+            if (!validation.is_valid) {
+                if (window.uiManager) {
+                    window.uiManager.showNotification(validation.message, 'warning');
+                }
+                return;
+            }
+        } catch (error) {
+            console.error('Location validation failed:', error);
+            if (window.uiManager) {
+                window.uiManager.showNotification(
+                    error.message || 'Unable to validate the selected location.',
+                    'error'
+                );
+            }
+            return;
+        }
 
         this.clearMarkerAndCircle();
 
@@ -137,6 +174,7 @@ class MapManager {
 
         this.selectedLocation = { lat, lng };
         this.updateCoordinatesDisplay(lat, lng);
+        this.persistState();
 
         if (this.selectedCafeType) {
             this.analyzeLocation();
@@ -149,6 +187,7 @@ class MapManager {
         if (!this.selectedLocation || !this.selectedCafeType) return;
 
         const { lat, lng } = this.selectedLocation;
+        const viewport = this.captureViewport();
         this.showLoading(true);
 
         try {
@@ -167,11 +206,14 @@ class MapManager {
                 this.displayNearbyCafes(analysisData.top5);
             }
 
+            this.loadHistoryForCurrentType();
+
         } catch (error) {
             console.error('Analysis failed:', error);
             this.showAnalysisError(error.message);
         } finally {
             this.showLoading(false);
+            this.restoreViewport(viewport);
         }
     }
 
@@ -208,21 +250,26 @@ class MapManager {
 
         // Suitability score
         const scoreEl = document.getElementById('suitability-score');
+        const levelEl = document.getElementById('suitability-level');
         if (scoreEl) {
             scoreEl.textContent = suitability.score || '-';
             this.updateScoreCircle(suitability.score || 0);
+        }
+        if (levelEl) {
+            levelEl.textContent = suitability.level || prediction.predicted_suitability || '-';
         }
 
         // ML Prediction card
         const predictionTypeEl = document.querySelector('#prediction-card .prediction-type');
         const predictionConfEl = document.querySelector('#prediction-card .prediction-confidence');
         if (predictionTypeEl) {
-            // Show recommended cafe type from AI recommendation
-            predictionTypeEl.textContent = prediction.recommended_cafe_type || prediction.predicted_suitability || suitability.level || 'Unknown';
+            predictionTypeEl.textContent = prediction.recommended_cafe_type || 'Unknown';
         }
         if (predictionConfEl) {
-            // Remove suitability confidence display as requested
-            predictionConfEl.textContent = '';
+            const typeConfidence = prediction.recommended_cafe_type_confidence;
+            predictionConfEl.textContent = typeConfidence
+                ? `Confidence: ${(typeConfidence * 100).toFixed(1)}%`
+                : 'Best cafe type to open here';
         }
 
         // Top 5 cafes
@@ -383,6 +430,167 @@ class MapManager {
         return Number(value || 0).toLocaleString('en-US');
     }
 
+    persistState() {
+        try {
+            const state = {
+                selectedLocation: this.selectedLocation,
+                selectedCafeType: this.selectedCafeType,
+                analysisRadius: this.analysisRadius,
+            };
+            sessionStorage.setItem(this.storageKey, JSON.stringify(state));
+        } catch (_) {}
+    }
+
+    restorePersistedState() {
+        try {
+            const raw = sessionStorage.getItem(this.storageKey);
+            if (!raw) return;
+
+            const state = JSON.parse(raw);
+            if (state.selectedCafeType) {
+                this.selectedCafeType = state.selectedCafeType;
+                const cafeTypeSelect = document.getElementById('cafe-type-select');
+                if (cafeTypeSelect) {
+                    cafeTypeSelect.value = state.selectedCafeType;
+                }
+            }
+
+            if (state.analysisRadius) {
+                this.analysisRadius = parseInt(state.analysisRadius);
+                const radiusSlider = document.getElementById('radius-slider');
+                const radiusValue = document.getElementById('radius-value');
+                if (radiusSlider) radiusSlider.value = this.analysisRadius;
+                if (radiusValue) radiusValue.textContent = this.analysisRadius;
+            }
+
+            if (state.selectedLocation && typeof state.selectedLocation.lat === 'number' && typeof state.selectedLocation.lng === 'number') {
+                const { lat, lng } = state.selectedLocation;
+                this.selectedLocation = { lat, lng };
+                this.clearMarkerAndCircle();
+                this.marker = L.marker([lat, lng]).addTo(this.map);
+                this.circle = L.circle([lat, lng], {
+                    color: '#6c5ce7',
+                    fillColor: '#6c5ce7',
+                    fillOpacity: 0.08,
+                    weight: 2,
+                    radius: this.analysisRadius
+                }).addTo(this.map);
+                this.updateCoordinatesDisplay(lat, lng);
+            }
+        } catch (_) {}
+    }
+
+    captureViewport() {
+        if (!this.map) return null;
+        return {
+            center: this.map.getCenter(),
+            zoom: this.map.getZoom(),
+        };
+    }
+
+    restoreViewport(viewport) {
+        if (!this.map || !viewport) return;
+
+        requestAnimationFrame(() => {
+            this.map.invalidateSize(false);
+            this.map.setView(viewport.center, viewport.zoom, { animate: false });
+        });
+    }
+
+    updateHistoryVisibility() {
+        const historySection = document.getElementById('history-section');
+        if (!historySection) return;
+
+        const isLoggedIn = !!(window.authManager && window.authManager.isAuthenticated());
+        historySection.style.display = isLoggedIn ? 'block' : 'none';
+
+        if (!isLoggedIn) {
+            const historyList = document.getElementById('history-list');
+            if (historyList) {
+                historyList.innerHTML = '<p class="no-data">Log in and analyze locations to build your cafe history.</p>';
+            }
+        }
+    }
+
+    async loadHistoryForCurrentType() {
+        this.updateHistoryVisibility();
+
+        if (!(window.authManager && window.authManager.isAuthenticated()) || !this.selectedCafeType || !window.apiManager) {
+            return;
+        }
+
+        const historyList = document.getElementById('history-list');
+        if (historyList) {
+            historyList.innerHTML = '<p class="no-data">Loading your saved locations...</p>';
+        }
+
+        try {
+            const response = await window.apiManager.getAnalysisHistory(this.selectedCafeType, 8);
+            this.renderHistorySection(response.history || []);
+        } catch (error) {
+            if (historyList) {
+                historyList.innerHTML = `<p class="no-data" style="color:#e17055">${error.message || 'Unable to load history.'}</p>`;
+            }
+        }
+    }
+
+    renderHistorySection(historyItems) {
+        const historyList = document.getElementById('history-list');
+        if (!historyList) return;
+
+        const currentScore = Number(this.lastAnalysisData?.suitability?.score || 0);
+        const currentLevel = this.lastAnalysisData?.suitability?.level || '-';
+        const currentLocation = this.selectedLocation;
+        const currentRadius = this.analysisRadius;
+
+        const comparableItems = (historyItems || []).filter(item => {
+            if (!currentLocation) return true;
+
+            const sameLat = Math.abs(Number(item.latitude) - currentLocation.lat) < 0.000001;
+            const sameLng = Math.abs(Number(item.longitude) - currentLocation.lng) < 0.000001;
+            const sameRadius = Number(item.radius) === Number(currentRadius);
+            const sameScore = Math.abs(Number(item.suitability_score) - currentScore) < 0.01;
+
+            return !(sameLat && sameLng && sameRadius && sameScore);
+        });
+
+        if (comparableItems.length === 0) {
+            historyList.innerHTML = '<p class="no-data">No previous saved locations yet for this cafe type.</p>';
+            return;
+        }
+
+        historyList.innerHTML = comparableItems.map(item => {
+            const previousScore = Number(item.suitability_score || 0);
+            const diff = currentScore - previousScore;
+            const diffLabel = diff === 0
+                ? 'Same score as current pin'
+                : `${diff > 0 ? '+' : ''}${diff.toFixed(2)} vs current pin`;
+
+            const dateLabel = new Date(item.created_at).toLocaleString();
+            return `
+                <div class="history-item">
+                    <strong>${this.formatCafeType(item.cafe_type)}</strong>
+                    <div class="history-meta">
+                        ${Number(item.latitude).toFixed(5)}, ${Number(item.longitude).toFixed(5)} • ${item.radius}m • ${dateLabel}
+                    </div>
+                    <div class="history-compare">
+                        Previous: ${previousScore.toFixed(2)} (${item.suitability_level})<br>
+                        Current: ${currentScore.toFixed(2)} (${currentLevel})<br>
+                        ${diffLabel}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        this.restoreViewport(this.captureViewport());
+    }
+
+    formatCafeType(cafeType) {
+        return (cafeType || '')
+            .replace(/_/g, ' ')
+            .replace(/\b\w/g, char => char.toUpperCase());
+    }
+
     clearMarkerAndCircle() {
         if (this.marker) { this.map.removeLayer(this.marker); this.marker = null; }
         if (this.circle) { this.map.removeLayer(this.circle); this.circle = null; }
@@ -402,11 +610,15 @@ class MapManager {
         this.selectedCafeType = null;
         this.lastAnalysisData = null;
         this.clearResultsDisplay();
+        this.updateHistoryVisibility();
+        sessionStorage.removeItem(this.storageKey);
     }
 
     clearResultsDisplay() {
         const scoreEl = document.getElementById('suitability-score');
         if (scoreEl) scoreEl.textContent = '-';
+        const levelEl = document.getElementById('suitability-level');
+        if (levelEl) levelEl.textContent = '-';
 
         const predType = document.querySelector('#prediction-card .prediction-type');
         const predConf = document.querySelector('#prediction-card .prediction-confidence');
@@ -428,6 +640,11 @@ class MapManager {
 
         const coordsEl = document.getElementById('location-coords');
         if (coordsEl) coordsEl.textContent = '';
+
+        const historyList = document.getElementById('history-list');
+        if (historyList && window.authManager && window.authManager.isAuthenticated()) {
+            historyList.innerHTML = '<p class="no-data">Analyze a location to compare it with your saved history.</p>';
+        }
     }
 
     showFullReport() {

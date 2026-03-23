@@ -145,6 +145,7 @@ class AuthManager {
         setTimeout(() => {
             if (window.mapManager) {
                 window.mapManager.init();
+                window.mapManager.updateHistoryVisibility();
             }
         }, 100);
     }
